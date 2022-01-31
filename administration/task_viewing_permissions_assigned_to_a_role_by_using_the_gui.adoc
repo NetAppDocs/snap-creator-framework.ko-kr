@@ -1,0 +1,18 @@
+---
+permalink: administration/task_viewing_permissions_assigned_to_a_role_by_using_the_gui.html 
+sidebar: sidebar 
+keywords: snap, creator, permission, gui, role, management 
+summary: Snap Creator GUI를 사용하여 역할에 할당된 모든 Snap Creator 권한 목록을 볼 수 있습니다. 
+---
+= 역할에 할당된 Snap Creator 권한 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 역할에 할당된 모든 Snap Creator 권한 목록을 볼 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 사용자 및 역할 * > * 역할 관리 * 를 선택합니다.
+. [역할 관리]** 탭에서 원하는 역할을 선택합니다.
+. 원하는 역할을 선택하고 역할 및 할당된 권한 창에서 할당된 권한을 확인합니다.
+

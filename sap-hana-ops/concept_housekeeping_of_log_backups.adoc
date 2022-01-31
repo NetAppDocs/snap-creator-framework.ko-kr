@@ -1,0 +1,26 @@
+---
+permalink: sap-hana-ops/concept_housekeeping_of_log_backups.html 
+sidebar: sidebar 
+keywords: housekeeping, log, backups 
+summary: SAP HANA에서 로그 백업의 하우스키핑은 HANA Studio 내의 기능 또는 선택한 백업보다 오래된 모든 백업을 삭제할 수 있는 SQL 문을 기반으로 합니다. 
+---
+= 로그 백업 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAP HANA에서 로그 백업의 하우스키핑은 HANA Studio 내의 기능 또는 선택한 백업보다 오래된 모든 백업을 삭제할 수 있는 SQL 문을 기반으로 합니다.
+
+Snap Creator는 운영 또는 2차 스토리지에서 스냅샷 복사본을 삭제하고 정의된 보존 정책을 기반으로 HANA 카탈로그 내에서 해당 항목을 삭제하여 데이터 백업(스냅샷 복사본)의 관리 업무를 처리합니다.
+
+최신 데이터 백업보다 오래된 로그 백업은 필요하지 않으므로 삭제됩니다.
+
+Snap Creator는 파일 시스템 레벨 및 SAP HANA 백업 카탈로그 내에서 로그 파일 백업의 하우스키핑을 처리합니다. Snap Creator를 통해 각 스냅샷 백업의 일부로 다음 단계가 실행됩니다.
+
+* 백업 카탈로그를 읽고 가장 오래된 데이터 또는 스냅샷 백업의 백업 ID를 얻습니다.
+* 가장 오래된 백업보다 오래된 백업은 모두 삭제합니다.
+
+
+
+NOTE: Snap Creator에서는 스냅샷 복사본을 기반으로 한 백업의 하우스키핑만 처리합니다. 추가 파일 기반 백업을 생성하는 경우 파일 기반 백업이 백업 카탈로그 및 파일 시스템에서 삭제되었는지 확인해야 합니다. 이러한 데이터 백업이 백업 카탈로그에서 수동으로 삭제되지 않으면 가장 오래된 데이터 백업이 될 수 있으며 로그 백업 관리 작업이 실패합니다.

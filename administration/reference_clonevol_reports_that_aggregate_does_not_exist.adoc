@@ -1,0 +1,32 @@
+---
+permalink: administration/reference_clonevol_reports_that_aggregate_does_not_exist.html 
+sidebar: sidebar 
+keywords: clustered, data, ontap, storage, virtual, machine, svm, cloning, clonevol 
+summary: 'Clustered Data ONTAP의 경우 클론 복제 목적으로 애그리게이트를 SVM(스토리지 가상 머신)에 할당해야 합니다. 그렇지 않으면 cloneVol 작업에서 오류가 반환될 수 있습니다.' 
+---
+= CLoneVol은 Aggregate가 존재하지 않음을 보고합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Clustered Data ONTAP의 경우 클론 복제 목적으로 애그리게이트를 SVM(스토리지 가상 머신)에 할당해야 합니다. 그렇지 않으면 cloneVol 작업에서 오류가 반환될 수 있습니다.
+
+* * 문제 *
++
+cloneVol 작업은 다음 예제와 유사한 오류를 반환합니다.
+
++
+[listing]
+----
+ERROR: com.netapp.snapcreator.storage.executor.ZapiExecutorException: netapp.manage.NaAPIFailedException: Aggregate [aggregate name] does not exist (errno=14420)
+----
+* * 원인 *
++
+클론 복제 목적으로는 aggregate를 SVM에 할당하지 않았습니다.
+
+* * 시정 조치 *
++
+클론 생성을 위해 SVM에 애그리게이트 할당: vserver modify -vserver [vserver_name] -aggr -list [aggregate_name]
+
+

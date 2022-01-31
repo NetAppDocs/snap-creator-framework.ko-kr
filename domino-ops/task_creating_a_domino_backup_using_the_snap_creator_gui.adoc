@@ -1,0 +1,29 @@
+---
+permalink: domino-ops/task_creating_a_domino_backup_using_the_snap_creator_gui.html 
+sidebar: sidebar 
+keywords: domino, ibm, backing up, backup, databases, on-demand, on, demand 
+summary: NetApp 스토리지에서 제공되는 즉시 데이터베이스를 백업해야 합니다. 초기 백업 후에 반복 백업을 예약할 수 있습니다. 
+---
+= 필요 시 데이터베이스 백업
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp 스토리지에서 제공되는 즉시 데이터베이스를 백업해야 합니다. 초기 백업 후에 반복 백업을 예약할 수 있습니다.
+
+에 설명된 대로 백업에 대한 구성 파일을 만들어야 합니다 xref:task_using_the_gui_to_create_a_configuration_file.adoc[구성 파일 생성].
+
+. 프로파일 및 구성 창에서 구성 파일을 선택하고 * 작업 * > * 백업 * 을 클릭합니다.
+. 추가 매개 변수 대화 상자의 * 정책 * 드롭다운에서 백업 작업에 대한 정책을 선택하고 * 확인 * 을 클릭합니다.
++
+image::../media/scfw_domino_select_a_policy.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
++
+
+NOTE: 구성 파일에서 정책을 구성해야 합니다.
+
++
+Snap Creator가 백업 작업을 시작합니다. 작업 정보가 콘솔 창에 표시됩니다.
+
+

@@ -1,0 +1,104 @@
+---
+permalink: administration/task_creating_scheduled_jobs_using_sc_gui.html 
+sidebar: sidebar 
+keywords: local, retention, policy, configuration, snap, creator, gui, copy, lun, volume, clone, snapvault, ossv, job 
+summary: '구성 파일에 있는 로컬 보존 정책을 사용하는 경우 Snap Creator 그래픽 사용자 인터페이스(GUI) 스케줄러를 사용하여 스케줄을 생성하고 작업을 실행할 수 있습니다. Snap Creator Server에 포함된 스케줄러는 백업(스냅샷 복사본), LUN 클론, 볼륨 클론, 애플리케이션 정의 클론, OSSV(Open Systems SnapVault) 전송, 아카이브 작업 및 사용자 지정 작업을 예약할 수 있습니다.' 
+---
+= 예약된 작업을 생성하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 파일에 있는 로컬 보존 정책을 사용하는 경우 Snap Creator 그래픽 사용자 인터페이스(GUI) 스케줄러를 사용하여 스케줄을 생성하고 작업을 실행할 수 있습니다. Snap Creator Server에 포함된 스케줄러는 백업(스냅샷 복사본), LUN 클론, 볼륨 클론, 애플리케이션 정의 클론, OSSV(Open Systems SnapVault) 전송, 아카이브 작업 및 사용자 지정 작업을 예약할 수 있습니다.
+
+로컬 보존 정책 대신 정책 개체를 사용하려면 이 절차를 건너뛰고 대신 정책 일정을 만들어야 합니다.
+
+. Snap Creator GUI의 기본 메뉴에서 * Management * > * Schedules * 를 선택하고 * Create * 를 클릭합니다.
+. 새 작업 창에서 작업에 대한 세부 정보를 입력합니다.
++
+image::../media/schedule_new_job_window.gif[새 작업 예약 창]
+
++
+|===
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+작업 이름
+ a| 
+예약된 작업의 이름을 지정합니다.
+
+
+
+ a| 
+시작 날짜
+ a| 
+오늘 날짜 또는 미래 날짜를 선택합니다.
+
+
+
+ a| 
+활성
+ a| 
+작업이 예약된 대로 실행됨을 알리려면 활성으로 설정합니다. 기본 설정은 활성입니다.
+
+
+
+ a| 
+프로파일
+ a| 
+이 작업과 연결할 프로파일을 선택합니다.
+
+
+
+ a| 
+구성
+ a| 
+이 작업과 연결할 구성을 선택합니다.
+
+
+
+ a| 
+조치
+ a| 
+다음 옵션 중 하나를 선택합니다.
+
+** * 백업 *: NetApp 스토리지 기술을 사용하여 백업을 생성합니다.
+** * CloneLun *: lun clone 명령을 사용하여 하나 이상의 LUN을 백업 및 클론 생성합니다.
+** * CloneVol *: 백업을 생성하고 볼륨을 클론합니다.
+** * 클론 *: 플러그인 기반 클론 작업을 수행합니다.
+** * OSSV *: 오픈 시스템 SnapVault를 사용하여 백업을 수행합니다.
++
+운영 백업이 생성되지 않습니다.
+
+** * Arch *: 아카이브 로그 관리만 수행합니다.
++
+백업이 생성되지 않습니다.
+
+** * 사용자 정의 *: 플러그인 정의 클론 생성 작업을 실행합니다.
+
+
+
+
+ a| 
+정책
+ a| 
+이 작업과 연결할 정책을 선택합니다.
+
+
+
+ a| 
+주파수
+ a| 
+이 작업의 빈도를 선택합니다. 선택에 따라 예약된 작업을 실행하기 위한 적절한 시간 필드를 선택해야 합니다.
+
+를 누릅니다
+
+|===
+. 저장 * 을 클릭합니다.
+
+
+* 관련 정보 *
+
+xref:task_creating_policy_schedules.adoc[정책 일정을 생성하는 중입니다]

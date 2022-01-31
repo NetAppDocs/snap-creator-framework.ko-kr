@@ -1,0 +1,87 @@
+---
+permalink: administration/reference_cli_command_results_in_500_cannot_locate_object_error.html 
+sidebar: sidebar 
+keywords: unix, 500, locate, error, cli, ssl, libraries 
+summary: UNIX 환경에서는 CLI 명령을 실행한 후 500에서 개체를 찾을 수 없음 오류가 발생할 수 있습니다. 
+---
+= CLI 명령을 사용하면 500에서 개체 오류를 찾을 수 없습니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX 환경에서는 CLI 명령을 실행한 후 500에서 개체를 찾을 수 없음 오류가 발생할 수 있습니다.
+
+* * 문제 *
++
+UNIX 환경에서는 CLI 명령을 실행하려고 하지만 다음 예제와 같이 500에서 개체 오류를 찾을 수 없습니다.
+
++
+[listing]
+----
+500 Can't locate object method "new" via package "LWP::Protocol::https::Socket"
+----
+* * 원인 *
++
+이 오류 메시지의 가능한 원인은 두 가지입니다.
+
++
+** 이 오류 메시지의 가장 가능성이 높은 원인은 CLI SSL 라이브러리가 연결되어 있지 않기 때문입니다.
+** SSL 라이브러리가 연결되지 않아 오류 메시지가 나타나지 않으면 HTTPS Perl 라이브러리가 누락되었을 수 있습니다.
+
+
+* * 시정 조치 *
++
+라이브러리 파일 연결 문제를 해결하려면 simlinks를 수동으로 만들어야 합니다. 운영 체제 관리자에게 문의하여 libssl.so 및 libcrypto.so 파일이 있는지 확인합니다. SSL 패키지를 설치해야 할 수 있습니다.
+
++
+파일이 있다고 가정하면 파일을 수동으로 연결해야 합니다. 이렇게 하려면 운영 체제에 따라 다음 명령 세트 중 하나를 실행합니다.
+
++
+** 32비트의 경우:
++
+[listing]
+----
+cd /usr/lib
+ln -s libssl.so.1.0.0 libssl.so.6
+ln -s libcrypto.so.1.0.0 libcrypto.so.6
+----
+** 3264IT:
++
+[listing]
+----
+cd /usr/lib64
+ln -s libssl.so.1.0.0 libssl.so.6
+ln -s libcrypto.so.1.0.0 libcrypto.so.6
+----
+
+
+* * 시정 조치 *
++
+누락된 HTTPS Perl 라이브러리 문제를 해결하려면 CPAN 모드에서 LWP::Protocol::https 라이브러리를 설치하십시오.
+
++
+다음 단계를 수행하십시오.
+
++
+.. Linux 서버의 SSH 세션을 열고 perl-mcpan-e shell 명령을 실행합니다
++
+
+NOTE: CPAN을 처음 사용하는 경우 다음과 같은 메시지가 표시됩니다.
+
++
+[listing]
+----
+Would you like me to configure as much as possible automatically? [yes]
+----
++
+Enter * 를 눌러 기본값을 적용합니다. CPAN 셸이 열립니다.
+
+.. 다음 명령을 실행합니다. LWP::Protocol::https
++
+필요한 패키지가 다운로드되고 설치됩니다. 추가 패키지가 필요한 경우 [예]를 선택하여 해당 패키지를 설치하라는 메시지가 표시될 수 있습니다.
+
+.. 설치가 완료되면 exit를 입력하여 일반 쉘로 돌아갑니다.
+
+
+

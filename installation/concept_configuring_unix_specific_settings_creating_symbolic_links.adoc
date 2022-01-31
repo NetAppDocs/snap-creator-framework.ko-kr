@@ -1,0 +1,18 @@
+---
+permalink: installation/concept_configuring_unix_specific_settings_creating_symbolic_links.html 
+sidebar: sidebar 
+keywords: configuring, configure, unix, settings, create, creating, symbolic, links 
+summary: 'UNIX 운영 체제(AIX, Linux 및 Solaris)에 Snap Creator Agent를 설치하려는 경우 IBM Domino 플러그인이 제대로 작동하려면 Domino의 공유 객체 파일에 링크하기 위해 3개의 심볼 링크(symlink)를 생성해야 합니다.' 
+---
+= UNIX 관련 설정 구성: 심볼 링크 생성
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX 운영 체제(AIX, Linux 및 Solaris)에 Snap Creator Agent를 설치하려는 경우 IBM Domino 플러그인이 제대로 작동하려면 Domino의 공유 객체 파일에 링크하기 위해 3개의 심볼 링크(symlink)를 생성해야 합니다.
+
+설치 절차는 운영 체제에 따라 약간씩 다릅니다. 해당 운영 체제에 맞는 절차를 참조하십시오.
+
+
+NOTE: Domino는 HP-UX 운영 체제를 지원하지 않습니다.

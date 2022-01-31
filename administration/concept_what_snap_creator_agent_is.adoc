@@ -1,0 +1,52 @@
+---
+permalink: administration/concept_what_snap_creator_agent_is.html 
+sidebar: sidebar 
+keywords: snap, creator, agent, quiesce, server, plug-in, multi-tenant 
+summary: 일반적으로 응용 프로그램 또는 데이터베이스가 설치된 동일한 호스트에 설치되는 Snap Creator Agent는 Snap Creator Server에서 특정 응용 프로그램으로 일시 중지 및 일시 중지 명령을 처리하고 플러그인이 있는 위치입니다. 에이전트가 Snap Creator 내에서 scAgent로 단축되는 경우도 있습니다. 
+---
+= Snap Creator 에이전트 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+일반적으로 응용 프로그램 또는 데이터베이스가 설치된 동일한 호스트에 설치되는 Snap Creator Agent는 Snap Creator Server에서 특정 응용 프로그램으로 일시 중지 및 일시 중지 명령을 처리하고 플러그인이 있는 위치입니다. 에이전트가 Snap Creator 내에서 scAgent로 단축되는 경우도 있습니다.
+
+Snap Creator Agent는 Agent RESTful 인터페이스를 통해 및 HTTPS를 통해서만 Snap Creator Server의 Agent 인터페이스로부터 통신을 수신합니다. 즉, 보안 및 암호화된 통신을 의미하며, 멀티 테넌트 및 클라우드 환경에서 매우 중요한 기능입니다. 자체 서명된 인증서를 사용하면 Snap Creator Agent에서 생성된 인증서를 사용할 수 있습니다. 그뿐만 아니라 Snap Creator Agent는 디스크에 저장된 구성 가능한 사용자 및 암호 조합을 통해 보호됩니다.
+
+다음 그림에서는 Snap Creator Agent의 아키텍처를 보여 줍니다.
+
+image::../media/scfw_agent_architecture_41_refresh.gif[scfw 에이전트 아키텍처 41 새로 고침]
+
+Snap Creator 에이전트(Snap Creator 자체 내에서 scAgent로 단축되는 경우도 있음) 구성 요소에는 다음과 같은 부분이 포함됩니다.
+
+* * 운영 및 실행 관리자 *
++
+작업 관리자는 수신, 발신 및 완료된 요청을 처리합니다. 실행 관리자는 요청을 실행할 책임이 있습니다.
+
+* * 스레드 풀 *
++
+작업자 스레드로 구성된 스레드 풀은 여러 작업을 실행하는 데 사용됩니다.
+
++
+이 옵션은 지정된 시간에 동시 작업의 수를 결정합니다. 실행 관리자는 플러그인을 실행하고 스레드 풀의 스레드 중 하나에서 실행합니다. 스레드 풀에 8개의 스레드가 있는 경우 8개의 플러그인 작업을 동시에 실행할 수 있습니다. 새로 들어오는 작업은 스레드가 다시 사용 해제될 때까지 대기됩니다.
+
+* * 감시장치 *
++
+특정 작업에 대해 실행 관리자에 의해 트리거되며, 일반적으로 중단은 필요한 경우 작업을 중지하기 위해 지정된 시간 후에 실행 관리자로 다시 호출되고 해당 실행 취소 작업을 실행합니다. 예를 들어, 플러그인 일시 중지 기능이 호출되어 응용 프로그램을 백업 모드로 전환합니다. 감시장치가 듣기 시작합니다. 지정한 시간 범위 내에 Unquiesce가 실행되지 않으면 감시장치가 응용 프로그램을 중지시켜 다시 정상 작동 모드로 전환합니다. 이는 데이터베이스가 백업 모드에서 고착되지 않도록 하기 위한 것입니다.
+
+* * 컨텍스트 저장소 *
++
+워크플로의 수명 동안 필요한 모든 정보를 보유한 Context Store는 필요에 따라 플러그인에 컨텍스트 객체를 제공하며, 워크플로가 실패하거나 완료되지 않은 경우 일정 시간 후에 컨텍스트 객체가 삭제됩니다.
+
++
+완료되지 않거나 정의되지 않은 상태에서 실패한 워크플로의 경우 install_path /etc/agent.properties: context_lifetime_in_msec = 1800000(기본값, 30분)에 지정된 최대 컨텍스트 시간이 있습니다. 이 값이 증가하면 Snap Creator Agent가 더 많은 메모리를 차지합니다.
+
+* * 플러그인 팩토리 *
++
+Plug-in Factory는 플러그인을 시작하고 분리된 공간에서 실행되도록 합니다. 또한 플러그인 팩토리(Plug-in Factory)는 컨텍스트 스토어와 통신하여 저장된 정보에 액세스합니다. 또한 플러그인 통합 엔진을 사용하여 Snap Creator에서 Perl 기반 및 기본 플러그인을 실행할 수 있습니다.
+
++
+Snap Creator Agent는 Java 이외의 언어로 작성된 플러그인을 사용할 수도 있습니다.
+
+

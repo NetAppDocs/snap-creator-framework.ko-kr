@@ -1,0 +1,33 @@
+---
+permalink: administration/task_creating_clones_using_a_mounted_backup.html 
+sidebar: sidebar 
+keywords: clone, volume, lun, existing, backup, server, snap, creator, configuration 
+summary: 기존 백업에서 볼륨 또는 LUN을 소스로 복제할 수 있습니다. 
+---
+= 기존 백업에서 클론 생성
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기존 백업에서 볼륨 또는 LUN을 소스로 복제할 수 있습니다.
+
+* Snap Creator Server가 스토리지 시스템과 통신해야 합니다.
+* 클론 생성 작업을 수행할 수 있는 적절한 권한으로 Snap Creator에 로그인해야 합니다.
+
+
+이 클론 복제 작업은 기존 스냅샷 복사본을 마운트한 다음 기존 백업을 클론 복제하는 작업으로 구성됩니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 관리 * > * 구성 * 을 선택합니다.
+. 구성 * 탭의 * 프로파일 및 구성 * 창에서 구성 파일을 선택합니다.
+. Actions * > * Mount * 를 선택합니다.
+. Additional Parameters(추가 매개변수) 대화 상자에서 마운트할 백업이 포함된 컨트롤러, 볼륨 및 정책을 선택한 다음 마운트할 스냅샷 복사본을 선택하고(클론 복제) * OK * 를 클릭하여 클론 복제 프로세스를 시작합니다.
++
+image::../media/additional_parameters_clone_existing.png[추가 매개 변수 클론이 기존 것입니다]
+
++
+
+NOTE: 선택한 스냅샷 복사본 이름을 기록합니다. 백업을 마운트 해제할 때 동일한 스냅샷 복사본 이름을 선택해야 합니다.
+
+. Console* 창에서 복제 프로세스가 성공했는지 확인합니다.
+

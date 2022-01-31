@@ -1,0 +1,18 @@
+---
+permalink: installation/concept_install_snap_creator_agent.html 
+sidebar: sidebar 
+keywords: installing, install, snap, creator, agent 
+summary: Windows 및 UNIX 호스트에 Snap Creator Agent를 설치할 수 있습니다. 
+---
+= Snap Creator 에이전트 설치
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows 및 UNIX 호스트에 Snap Creator Agent를 설치할 수 있습니다.
+
+
+IMPORTANT: 단일 호스트에 여러 에이전트를 설치하고 실행할 수 있지만 가장 좋은 방법은 호스트당 단일 에이전트를 사용하는 것입니다.
+
+IBM Domino 플러그인을 사용하려는 경우 플러그인은 Snap Creator Agent를 Domino 데이터 폴더 이외의 위치에 설치해야 합니다.

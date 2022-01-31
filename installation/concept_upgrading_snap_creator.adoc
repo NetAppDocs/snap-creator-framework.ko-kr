@@ -1,0 +1,27 @@
+---
+permalink: installation/concept_upgrading_snap_creator.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, snap, creator 
+summary: 지원되는 다양한 버전에서 Snap Creator의 최신 버전으로 업그레이드할 수 있습니다. 
+---
+= Snap Creator 업그레이드 중
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+지원되는 다양한 버전에서 Snap Creator의 최신 버전으로 업그레이드할 수 있습니다.
+
+
+NOTE: 커뮤니티 사이트에 게시된 릴리즈를 업그레이드할 수 있는지 여부에 대해 궁금한 점이 있으면 NetApp 커뮤니티 포럼 에 일반 질문을 제출할 수 있습니다. NetApp 커뮤니티 포럼 온라인 사이트: https://communities.netapp.com/community/products_and_solutions/databases_and_enterprise_apps/snapcreator[]
+
+Snap Creator의 최신 버전으로 업그레이드하기 전에 현재 설치된 Snap Creator 버전에 대한 작업 모니터 크기를 확인하십시오. Snap Creator를 업그레이드할 때 작업 모니터 데이터베이스의 데이터 손실을 방지하려면 작업 모니터 크기를 이전 설정과 같거나 더 크게 설정해야 합니다.
+
+또한 Snap Creator를 업그레이드할 때는 동일한 운영 체제 환경을 사용하는 호스트에서 업그레이드를 수행해야 합니다. 예를 들어 Windows 환경에서 업그레이드하는 경우 백업된 데이터를 복사할 때 UNIX 기반 시스템이 아닌 Windows 환경으로 다시 복사해야 합니다.
+
+
+IMPORTANT: Snap Creator에는 다운그레이드(되돌리기) 옵션이 없습니다. 업그레이드 프로세스 중에 여러 파일을 백업합니다. 이전 버전의 Snap Creator로 되돌릴 필요가 없을 때까지 백업 파일을 유지하는 것이 중요합니다.
+
+* 관련 정보 *
+
+xref:task_checking_job_monitor_size.adoc[작업 모니터 크기를 확인하는 중입니다]

@@ -1,0 +1,47 @@
+---
+permalink: administration/reference_ca_signed_ssl_certificate.html 
+sidebar: sidebar 
+keywords: ca-signed, ssl, certificate, snap, creator, framework 
+summary: Snap Creator Framework에는 CA 서명 SSL 인증서가 필요합니다 
+---
+= Snap Creator Framework에는 CA 서명 SSL 인증서가 필요합니다
+:icons: font
+:imagesdir: ../media/
+
+
+* * 문제 *
++
+Snap Creator Framework를 사용하려면 CA(인증 기관) 서명 SSL 인증서가 필요합니다.
+
+* * 원인 *
++
+서버의 X.509 인증서에 알려진 공개 인증 기관의 서명이 없습니다.
+
+* * 시정 조치 *
++
+Snap Creator Framework는 타사 인증서 설치를 지원합니다.
+
++
+.. snapcreator.properties 및 agent.properties 파일에서 다음 매개 변수 값을 업데이트합니다.
++
+snapcreator.properties 파일:
+
++
+SNAPCREATOR_keystore_pass입니다
+
++
+SNAPCREATOR_keystore_path
+
++
+agent.properties 파일:
+
++
+keystore_file을 선택합니다
+
++
+keystore_pass입니다
+
+.. 서버와 에이전트 서비스를 다시 시작합니다.
+
+
+

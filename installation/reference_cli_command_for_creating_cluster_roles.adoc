@@ -1,0 +1,591 @@
+---
+permalink: installation/reference_cli_command_for_creating_cluster_roles.html 
+sidebar: sidebar 
+keywords: cli, commands, creating, cluster, roles, role create 
+summary: 다음 표에는 새 클러스터 사용자에 대한 역할을 생성하는 데 필요한 명령이 나와 있습니다. 
+---
+= 클러스터 역할을 생성하는 CLI 명령입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+다음 표에는 새 클러스터 사용자에 대한 역할을 생성하는 데 필요한 명령이 나와 있습니다.
+
+|===
+| 명령 디렉토리 이름입니다 | 실행할 명령입니다 
+
+
+ a| 
+클러스터 ID가 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "cluster identity show" - vserver clus3240rre
+
+
+
+ a| 
+이벤트
+ a| 
+role create - role CRBAC_New - cmddirname "event" - vserver clus3240rre
+
+
+
+ a| 
+이벤트 구성
+ a| 
+role create - role CRBAC_New - cmddirname "event config" - vserver clus3240rre
+
+
+
+ a| 
+이벤트 대상입니다
+ a| 
+role create - role CRBAC_New - cmddirname "event destination" - vserver clus3240rre
+
+
+
+ a| 
+이벤트 로그
+ a| 
+role create - role CRBAC_New - cmddirname "이벤트 로그" - vserver clus3240rre
+
+
+
+ a| 
+이벤트 메일 기록
+ a| 
+role create - role CRBAC_New - cmddirname "event mailhistory" - vserver clusclus3240rre
+
+
+
+ a| 
+이벤트 경로
+ a| 
+role create - role CRBAC_New - cmddirname "event route" - vserver clus3240rre
+
+
+
+ a| 
+이벤트 스내피
+ a| 
+role create - role CRBAC_New - cmddirname "event snmphidory" - vserver clusclus3240rre
+
+
+
+ a| 
+이벤트 상태입니다
+ a| 
+role create - role CRBAC_New - cmddirname "event status" - vserver clus3240rre
+
+
+
+ a| 
+LUN 설명입니다
+ a| 
+role create - role CRBAC_New - cmddirname "lun comment" - vserver clus3240rre
+
+
+
+ a| 
+LUN 생성
+ a| 
+role create - role CRBAC_New - cmddirname "lun create" - vserver clus3240rre
+
+
+
+ a| 
+LUN을 삭제합니다
+ a| 
+role create - role CRBAC_New - cmddirname "lun delete" - vserver clus3240rre
+
+
+
+ a| 
+LUN 형태
+ a| 
+role create - role CRBAC_New - cmddirname "LUN geometry" - vserver clus3240rre
+
+
+
+ a| 
+LUN igroup 추가
+ a| 
+role create - role CRBAC_New - cmddirname "lun igroup add" - vserver clus3240rre
+
+
+
+ a| 
+LUN igroup 작성
+ a| 
+role create - role CRBAC_New - cmddirname "lun igroup create" - vserver clus3240rre
+
+
+
+ a| 
+LUN igroup이 설정되었습니다
+ a| 
+role create - role CRBAC_New - cmddirname "lun igroup set" - vserver clus3240rre
+
+
+
+ a| 
+LUN igroup 표시
+ a| 
+role create - role CRBAC_New - cmddirname "lun igroup show" - vserver clus3240rre
+
+
+
+ a| 
+LUN 매핑
+ a| 
+role create - role CRBAC_New - cmddirname "LUN map" - vserver clus3240rre
+
+
+
+ a| 
+LUN 매핑이 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "lun mapping show" - vserver clus3240rre
+
+
+
+ a| 
+LUN 수정
+ a| 
+role create - role CRBAC_New - cmddirname "lun modify" - vserver clus3240rre
+
+
+
+ a| 
+LUN 이동
+ a| 
+role create - role CRBAC_New - cmddirname "lun move" - vserver clus3240rre
+
+
+
+ a| 
+LUN이 오프라인 상태입니다
+ a| 
+role create - role CRBAC_New - cmddirname "lun offline" - vserver clus3240rre
+
+
+
+ a| 
+LUN을 온라인 상태로 전환합니다
+ a| 
+role create - role CRBAC_New - cmddirname "lun online" - vserver clus3240rre
+
+
+
+ a| 
+LUN 크기 조정
+ a| 
+role create - role CRBAC_New - cmddirname "LUN resize" - vserver clus3240rre
+
+
+
+ a| 
+LUN 표시
+ a| 
+role create - role CRBAC_New - cmddirname "lun show" - vserver clus3240rre
+
+
+
+ a| 
+LUN 매핑을 해제합니다
+ a| 
+role create - role CRBAC_New - cmddirname "LUN unmap" - vserver clus3240rre
+
+
+
+ a| 
+네트워크
+ a| 
+role create - role CRBAC_New - cmddirname "network" - vserver clus3240rre
+
+
+
+ a| 
+네트워크 FCP 어댑터가 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "network fcp adapter show" - vserver clusclus3240rre
+
+
+
+ a| 
+네트워크 인터페이스가 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "network interface show" - vserver clus3240rre
+
+
+
+ a| 
+보안 로그인 역할이 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "security login role show" - vserver clusc3240rre
+
+
+
+ a| 
+보안 로그인 표시
+ a| 
+role create - role CRBAC_New - cmddirname "security login show" - vserver clusc3240rre
+
+
+
+ a| 
+SnapMirror를 참조하십시오
+ a| 
+role create - role CRBAC_New - cmddirname "SnapMirror" - vserver clus3240rre
+
+
+
+ a| 
+스토리지 애그리게이트
+ a| 
+role create - role CRBAC_New - cmddirname "storage aggregate" - vserver clus3240rre
+
+
+
+ a| 
+시스템 라이센스가 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "system license show" - vserver clusclus3240rre
+
+
+
+ a| 
+시스템 노드
+ a| 
+role create - role CRBAC_New - cmddirname "system node" - vserver clus3240rre
+
+
+
+ a| 
+시스템 노드 AutoSupport
+ a| 
+role create - role CRBAC_New - cmddirname "system node AutoSupport" - vserver clus3240rre
+
+
+
+ a| 
+시스템 노드 AutoSupport 호출
+ a| 
+role create -role CRBAC_New -cmddirname "system node AutoSupport invoke" -vserver clus3240rre
+
+
+
+ a| 
+시스템 노드 표시
+ a| 
+role create - role CRBAC_New - cmddirname "system node show" - vserver clus3240rre
+
+
+
+ a| 
+시스템 노드가 실행됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "system node run" - vserver clus3240rre
+
+
+
+ a| 
+시스템 서비스 NDMP
+ a| 
+role create - role CRBAC_New - cmddirname "system services NDMP" - vserver clus3240rre
+
+
+
+ a| 
+버전
+ a| 
+role create - role CRBAC_New - cmddirname "version" - vserver clus3240rre
+
+
+
+ a| 
+버전
+ a| 
+보안 로그인 역할 create-role bainew1-vserver SnapCreator-cmddirname "version"-access readonly
+
+
+
+ a| 
+SVM 엑스포트 정책 규칙 생성
+ a| 
+role create - role CRBAC_New - cmddirname "vserver export - policy rule create" - vserver clus3240rre
+
+
+
+ a| 
+vserver export-policy rule show를 참조하십시오
+ a| 
+role create - role CRBAC_New - cmddirname "vserver export - policy rule show" - vserver clusage 3240rre
+
+
+
+ a| 
+vserver export-policy show를 참조하십시오
+ a| 
+role create - role CRBAC_New - cmddirname "vserver export - policy show" - vserver clusc3240rre
+
+
+
+ a| 
+SVM FCP
+ a| 
+role create - role CRBAC_New - cmddirname "vserver FCP" - vserver Snapcreator - vserver clusclus3240rre
+
+
+
+ a| 
+SVM FCP 이니시에이터가 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "vserver FCP initiator show" - vserver clusc3240rre
+
+
+
+ a| 
+SVM FCP show
+ a| 
+role create - role CRBAC_New - cmddirname "vserver FCP show" - vserver clusc3240rre
+
+
+
+ a| 
+SVM FCP 상태
+ a| 
+role create - role CRBAC_New - cmddirname "vserver FCP status" - vserver clusclus3240rre
+
+
+
+ a| 
+SVM iSCSI 연결이 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI connection show" - vserver clusclus3240rre
+
+
+
+ a| 
+SVM iSCSI
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI" - vserver Snapcreator - vserver clusclus3240rre
+
+
+
+ a| 
+SVM iSCSI 인터페이스 accesslist add
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI interface accesslist add" - vserver clus3240rre
+
+
+
+ a| 
+SVM iSCSI 인터페이스 접근목록이 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI interface accesslist show" - vserver clusc3240rre
+
+
+
+ a| 
+SVM iSCSI 이름
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI notdename" - vserver clusclus3240rre
+
+
+
+ a| 
+SVM iSCSI 세션이 표시됩니다
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI session" show - vserver clusclus3240rre
+
+
+
+ a| 
+SVM iSCSI 표시
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iscsi show" - vserver clusclus3240rre
+
+
+
+ a| 
+SVM iSCSI 상태
+ a| 
+role create - role CRBAC_New - cmddirname "vserver iSCSI status" - vserver clusclus3240rre
+
+
+
+ a| 
+SVM NFS
+ a| 
+role create - role CRBAC_New - cmddirname "vserver nfs" - vserver Snapcreator - vserver clusclus3240rre
+
+
+
+ a| 
+SVM NFS 상태입니다
+ a| 
+role create - role CRBAC_New - cmddirname "vserver NFS status" - vserver clusclus3240rre
+
+
+
+ a| 
+SVM 옵션
+ a| 
+role create - role CRBAC_New - cmddirname "vserver options" - vserver clus3240rre
+
+
+
+ a| 
+SVM 서비스 UNIX 그룹 생성
+ a| 
+role create - role CRBAC_New - cmddirname "vserver services name - service unix-group create" - vserver clus3240rre
+
+
+
+ a| 
+SVM 서비스 UNIX - 사용자 생성
+ a| 
+role create - role CRBAC_New - cmddirname "vserver services name - service UNIX - user create" - vserver clus3240rre
+
+
+
+ a| 
+SVM 서비스 UNIX-GROUP SHOW
+ a| 
+role create - role CRBAC_New - cmddirname "vserver services name - service UNIX-group show" - vserver clus3240rre
+
+
+
+ a| 
+SVM 서비스 UNIX - user show
+ a| 
+role create - role CRBAC_New - cmddirname "vserver services name - service UNIX - user show" - vserver clus3240rre
+
+
+
+ a| 
+vserver show 를 참조하십시오
+ a| 
+role create - role CRBAC_New - cmddirname "vserver show" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 자동 크기 조정
+ a| 
+role create - role CRBAC_New - cmddirname "volume AutoSize" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 클론 생성
+ a| 
+role create - role CRBAC_New - cmddirname "volume clone create" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 생성
+ a| 
+role create - role CRBAC_New - cmddirname "volume create" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 제거
+ a| 
+role create - role CRBAC_New - cmddirname "volume destroy" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 효율성 꺼짐
+ a| 
+role create - role CRBAC_New - cmddirname "volume efficiency off" - vserver clusc3240rre
+
+
+
+ a| 
+볼륨 효율성 켜짐
+ a| 
+role create - role CRBAC_New - cmddirname "volume efficiency on" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 효율성 표시
+ a| 
+role create - role CRBAC_New - cmddirname "volume efficiency show" - vserver clusc3240rre
+
+
+
+ a| 
+볼륨 효율성 시작
+ a| 
+role create - role CRBAC_New - cmddirname "volume efficiency start" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 파일
+ a| 
+role create - role CRBAC_New - cmddirname "volume file" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 파일 클론 생성
+ a| 
+role create - role CRBAC_New - cmddirname "volume file clone create" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 파일 show-disk-usage 를 참조하십시오
+ a| 
+role create-role bainew1-vserver SnapCreator-cmddirname "volume file show-disk-usage"-access all
+
+
+
+ a| 
+볼륨 수정
+ a| 
+role create - role CRBAC_New - cmddirname "volume modify" - vserver clus3240rre
+
+
+
+ a| 
+볼륨이 오프라인 상태입니다
+ a| 
+role create - role CRBAC_New - cmddirname "volume offline" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 표시
+ a| 
+role create - role CRBAC_New - cmddirname "volume show" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 크기
+ a| 
+role create - role CRBAC_New - cmddirname "volume size" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 스냅샷 생성
+ a| 
+role create - role CRBAC_New - cmddirname "volume snapshot create" - vserver clus3240rre
+
+
+
+ a| 
+볼륨 마운트 해제
+ a| 
+role create - role CRBAC_New - cmddirname "volume unmount" - vserver clus3240rre
+
+|===

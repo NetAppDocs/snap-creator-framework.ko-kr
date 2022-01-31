@@ -1,0 +1,63 @@
+---
+permalink: domino-ops/concept_accessing_snap_creator_log_files.html 
+sidebar: sidebar 
+keywords: domino, ibm, viewing, job, status, logs, accessing, snap, creator, log, files 
+summary: Snap Creator 작업 모니터에서 작업의 상태를 볼 수 있습니다. 작업이 실행 중인 동안 콘솔 창 또는 작업에 대한 로그아웃 로그에서 작업 조치 로그를 볼 수 있습니다. 또한 다양한 특수 로그도 사용할 수 있습니다. 
+---
+= 작업 상태 및 로그 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 작업 모니터에서 작업의 상태를 볼 수 있습니다. 작업이 실행 중인 동안 콘솔 창 또는 작업에 대한 로그아웃 로그에서 작업 조치 로그를 볼 수 있습니다. 또한 다양한 특수 로그도 사용할 수 있습니다.
+
+GUI에서 다음 로그를 볼 수 있습니다.
+
+|===
+| 로그 | 설명 
+
+
+ a| 
+아웃
+ a| 
+작업에 대한 자세한 수준 정보를 제공합니다.
+
+
+
+ a| 
+디버그
+ a| 
+자세한 수준 정보와 디버깅에 유용한 정보를 제공합니다.
+
+
+
+ a| 
+GUI
+ a| 
+Snap Creator GUI 작업에 대한 자세한 내용은 에 나와 있습니다.
+
+
+
+ a| 
+Stderr
+ a| 
+표준 오류에 기록된 오류에 대한 정보를 제공합니다(보고서 창만 해당).
+
+
+
+ a| 
+오류
+ a| 
+모든 오류 정보를 제공합니다(보고서 창만 해당).
+
+|===
+작업 모니터 또는 보고서 창을 사용하지 않으려는 경우 텍스트 편집기에서 모든 로그를 볼 수 있습니다. 로그는 Snap Creator Server의 설치 디렉토리에 있습니다.
+
+* 관련 정보 *
+
+xref:task_using_the_snap_creator_job_monitor_to_review_logs.adoc[작업 모니터에서 작업 상태 및 로그 보기]
+
+xref:task_using_the_snap_creator_reports_option_to_view_logs.adoc[보고서 창에서 로그 보기]
+
+xref:task_creating_an_scdump_using_the_snap_creator_gui.adoc[scdump를 사용하여 압축된 형식으로 로그를 수집합니다]

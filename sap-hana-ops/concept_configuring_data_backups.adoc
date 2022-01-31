@@ -1,0 +1,19 @@
+---
+permalink: sap-hana-ops/concept_configuring_data_backups.html 
+sidebar: sidebar 
+keywords: configuring, configure, data, backups, back-ups 
+summary: 필수 구성 요소를 설치한 후 데이터 백업을 구성해야 합니다 
+---
+= 데이터 백업 구성
+:icons: font
+:imagesdir: ../media/
+
+
+필요한 소프트웨어 구성 요소를 설치한 후 다음 단계에 따라 구성을 완료합니다.
+
+. 전용 데이터베이스 사용자 및 SAP HANA 사용자 저장소를 구성합니다.
+. 모든 스토리지 컨트롤러에서 SnapVault 복제를 준비합니다.
+. 보조 스토리지 컨트롤러에 볼륨을 생성합니다.
+. 데이터베이스 볼륨의 SnapVault 관계를 초기화합니다.
+. Snap Creator를 구성합니다.
+

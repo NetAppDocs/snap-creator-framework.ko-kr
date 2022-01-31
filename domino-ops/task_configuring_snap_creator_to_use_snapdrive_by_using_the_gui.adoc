@@ -1,0 +1,86 @@
+---
+permalink: domino-ops/task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.html 
+sidebar: sidebar 
+keywords: domino, ibm, adding, supplemental, commands 
+summary: 구성 파일을 만든 후 구성에 추가 명령을 추가할 수 있습니다. Snap Creator Server 또는 Agent에서 명령을 실행할 수 있습니다. 
+---
+= 구성에 보조 명령 추가
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 파일을 만든 후 구성에 추가 명령을 추가할 수 있습니다. Snap Creator Server 또는 Agent에서 명령을 실행할 수 있습니다.
+
+Agent에서 추가 명령을 실행하려면 이미 Agent의 allowed_commands.config 파일에 명령을 추가했어야 합니다.
+
+기본적으로 보조 명령은 Agent에서 실행됩니다. 텍스트 서버에 명령 앞에 콜론(:)을 붙여 서버에서 추가 명령을 실행할 수 있습니다. 예를 들어 server:C:\myscript.bat가 있습니다. 서버에서 명령을 허용할 필요는 없습니다.
+
+Snap Creator GUI 또는 Snap Creator CLI를 사용하여 백업 및 복원 구성에 명령을 추가할 수 있습니다.
+
+
+NOTE: 이 가이드에서는 GUI를 사용하여 명령을 추가하는 방법을 보여 줍니다. CLI 사용 방법에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+. 프로파일 및 구성 창에서 구성 파일을 선택하고 * 명령 * 탭을 클릭합니다.
++
+다음 명령 유형을 사용할 수 있습니다.
+
++
+|===
+| 명령 유형입니다 | 설명 
+
+
+ a| 
+응용 프로그램 정지
+ a| 
+비플러그인만 사용할 수 있습니다. 이 명령 유형을 무시하십시오.
+
+
+
+ a| 
+응용 프로그램 정지 해제
+ a| 
+비플러그인만 사용할 수 있습니다. 이 명령 유형을 무시하십시오.
+
+
+
+ a| 
+사전 종료
+ a| 
+이 형식을 사용하여 심각한 오류 발생 후 Snap Creator에 수행할 작업을 알려주는 명령을 실행합니다.
+
+
+
+ a| 
+스냅샷 복사본 생성
+ a| 
+이 유형을 사용하여 자체 스냅샷 복사본 생성 명령을 실행할 수 있습니다.
+
+|===
++
+
+NOTE: 지원되는 명령의 일부만 GUI에서 사용할 수 있습니다. 앱, 아카이브, 마운트/마운트 해제 및 POST 명령에 대한 자세한 내용은 를 참조하십시오 link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+. Commands * 탭에서 사용할 명령 유형의 섹션으로 스크롤한 다음 * Add * 를 클릭합니다.
+. 텍스트 위에 * Add Command here * 를 입력하여 명령을 입력합니다.
++
+Windows용 SnapDrive를 사용하여 백업을 생성하려면 스냅샷 복사본 생성 명령 유형에 대한 섹션에 다음을 입력합니다.
+
++
+[listing]
+----
+"C:\Program Files\NetApp\SnapDrive\sdcli.exe" snap create -s %SNAME-%SNAP_TYPE_%SNAP_TIME -D F G H
+----
++
+여기서,
+
++
+** SnapDrive CLI의 기본 설치 경로는 "C:\Program Files\NetApp\SnapDrive\sdcli.exe"입니다.
+** %SNAME-%SNAP_TYPE_%SNAP_TIME은 스냅샷 복사본 이름이 구성 파일 이름, 스냅샷 정책(시간별, 일별 또는 월별) 및 스냅샷 복사본이 생성된 시간과 날짜를 기준으로 생성되도록 지정합니다.
+** D는 스위치이고 F G H는 백업할 데이터의 마운트 지점입니다. 팁: 서버에서 명령을 실행하려면 명령 앞에 텍스트 서버를 붙이고 콜론(:)을 추가합니다.
+
+
+. 입력한 내용이 만족스러우면 * Enter * 를 누릅니다.
+. 단계를 반복합니다 <<STEP_3F9C83DD05D84075AD0277213FD67C56,단계 #STEP_3F9C83DD05D84075AD0277213FD67C56>> 부터 까지 <<STEP_FBEDD7AE105F42138EB35315EA9FA7CC,STEP_FBEDD7AE105F42138EB35315EA9FA7CC>> 다른 명령을 추가합니다.
+. 구성 내용 창에서 * 저장 * 을 클릭하여 변경 사항을 저장합니다.
+

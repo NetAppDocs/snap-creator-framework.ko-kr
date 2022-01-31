@@ -1,0 +1,13 @@
+---
+permalink: administration/concept_managing_clones.html 
+sidebar: sidebar 
+keywords: managing, clones, creating, backup, deleting, unmounting 
+summary: 백업 복사본을 생성하고, 백업 복사본 목록을 보고, 더 이상 필요하지 않은 백업 복사본을 삭제할 수 있습니다. 
+---
+= 클론 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클론을 생성하거나(* Actions * 설정을 사용하거나 백업 복사본을 소스로 마운트하여) 클론을 삭제하거나 클론을 마운트 해제하는 방법으로 클론을 관리할 수 있습니다.

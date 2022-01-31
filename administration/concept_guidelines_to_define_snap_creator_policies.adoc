@@ -1,0 +1,38 @@
+---
+permalink: administration/concept_guidelines_to_define_snap_creator_policies.html 
+sidebar: sidebar 
+keywords: snap, creator, policies, guidelines, retendtion, snapshot 
+summary: Snap Creator 정책은 운영 스토리지의 Snapshot 복사본 및 2차 스토리지의 SnapVault 및 SnapMirror 복사본에 적용되는 사용자 정의 스냅샷 복사본 보존 정책입니다. 정책을 사용하여 유지할 스냅샷 복사본의 수와 스냅샷 복사본 기간을 정의할 수 있습니다. 
+---
+= Snap Creator 정책을 정의하는 지침
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 정책은 운영 스토리지의 Snapshot 복사본 및 2차 스토리지의 SnapVault 및 SnapMirror 복사본에 적용되는 사용자 정의 스냅샷 복사본 보존 정책입니다. 정책을 사용하여 유지할 스냅샷 복사본의 수와 스냅샷 복사본 기간을 정의할 수 있습니다.
+
+Snapshot Retention Count * 필드에서 하나 이상의 정책을 정의해야 합니다. SnapVault의 경우 동일한 정책을 다른 SnapVault 보존 기간과 연결할 수 있습니다. 예를 들어, 일별 스냅샷 복사본을 생성하여 운영 스토리지에서 7일 동안, 보조 스토리지에서 1개월 동안 유지하려면 다음 정책 옵션 및 설정을 사용해야 합니다.
+
+* * 스냅샷 보존 수 *: 매일: 7
+* * SnapVault 보존 카운트 *: 매일: 28
+
+
+스냅샷 복사본이 삭제된 후 최소 일 수를 지정할 수도 있습니다. 앞의 예제에 따라 다음 옵션과 설정을 사용해야 합니다.
+
+* * 스냅샷 보존 기간 *:7
+* * SnapVault 보존 기간 *:28
+
+
+또한 구성 파일에 다음 매개 변수를 설정하여 스냅샷 복사본 삭제를 지정된 기간 단위로 지정할 수 있습니다.
+
+NTAP_snapshot_delete_by_age_only=primary|secondary|both
+
+
+NOTE: 이 매개변수는 Snap Creator GUI를 통해 사용할 수 없습니다. 스냅샷 복사본을 설정하는 데 사용되는 구성 파일 매개 변수에 대한 자세한 내용은 관련 참조 자료를 참조하십시오.
+
+Snap Creator는 한 번에 하나의 정책만 실행할 수 있습니다. 최대 연령 값은 모든 정책에 적용되는 글로벌 매개 변수입니다. 주별 추가 정책을 구성하려면 정책을 정의한 다음 스냅 생성자 변수 %SNAP_TYPE을 매주 로 설정한 상태에서 cron이나 작업 관리자를 사용하여 스냅 생성기에서 일주일에 한 번 정책을 호출합니다.
+
+* 관련 정보 *
+
+xref:reference_parameters_to_set_up_a_snapshot_copy.adoc[스냅샷 복사본 설정을 위한 매개 변수]

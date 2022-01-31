@@ -1,0 +1,72 @@
+---
+permalink: domino-ops/reference_storage_layout_requirements.html 
+sidebar: sidebar 
+keywords: domino, ibm, storage, layout, requirements, 
+summary: 일반적인 IBM Domino 환경에는 Domino 데이터, Domino 트랜잭션 로그 및 플러그인 changeinfo 디렉토리용으로 각각 하나씩 최소 3개의 Domino 볼륨이 있습니다. 또한 대부분의 사이트에는 Domino DAOS 및 뷰 재구축을 위한 볼륨도 있습니다. 
+---
+= 스토리지 레이아웃 요구 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+일반적인 IBM Domino 환경에는 Domino 데이터, Domino 트랜잭션 로그 및 플러그인 changeinfo 디렉토리용으로 각각 하나씩 최소 3개의 Domino 볼륨이 있습니다. 또한 대부분의 사이트에는 Domino DAOS 및 뷰 재구축을 위한 볼륨도 있습니다.
+
+IBM Domino 플러그인은 백업 작업 중에 기록된 변경 사항 및 최신 복원 작업에 사용되는 트랜잭션 로그의 복사본에 대해 changeinfo 디렉토리를 사용합니다. 실수로 정보를 덮어쓰는 일이 없도록 별도의 볼륨에 changeinfo 디렉토리를 저장하는 것이 가장 좋습니다.
+
+Domino DAOS(설정된 경우)와 뷰 재구축에 각각 다른 볼륨을 사용하는 것이 유용할 수 있습니다. Domino가 뷰를 재생성할 때(예: 인덱스가 삭제된 뷰를 열거나 updall--R을 실행하는 경우), 빠른 뷰 재구축을 위해 데이터를 정렬하기 위해 임시 파일을 생성할 수 있습니다.
+
+기본적으로 이러한 임시 파일은 시스템의 임시 폴더 또는 Domino 데이터 폴더에 있습니다. IBM은 디스크 I/O를 배포하고 보기를 재구축할 충분한 공간을 확보하기 위해 임시 파일의 위치를 다른 드라이브로 변경할 것을 권장합니다. 보기 재생성에 사용되는 임시 폴더를 변경하려면 View_Rebuild_Dir 설정을 notes.ini 파일에 추가합니다.
+
+다음 표에는 기본 볼륨 레이아웃이 나와 있습니다.
+
+|===
+| 볼륨 | 목차 | 참고 
+
+
+ a| 
+볼륨 1
+ a| 
+Domino 데이터
+ a| 
+FC, SAS 또는 SSD 드라이브가 선호됩니다.
+
+
+
+ a| 
+볼륨 2
+ a| 
+Domino 트랜잭션 로그
+ a| 
+FC, SAS 또는 SSD 드라이브가 선호됩니다.
+
+
+
+ a| 
+볼륨 3
+ a| 
+변경 정보
+ a| 
+백업 작업 중에 기록된 변경 사항과 최신 복원 작업에 사용할 트랜잭션 로그의 복사본을 저장합니다.
+
+
+
+ a| 
+볼륨 4
+ a| 
+재생성 보기
+ a| 
+선택 사항. 인덱스 업데이트 중에 생성된 임시 파일을 저장합니다. RAM 디스크를 사용할 수 있습니다. View_Rebuild_Dir 설정을 notes.ini 파일에 추가합니다.
+
+
+
+ a| 
+볼륨 5
+ a| 
+DAOS 리포지토리
+ a| 
+선택 사항. DAOS의 .DLO 파일을 포함합니다. I/O 요구사항이 낮아 SATA 드라이브에 적합합니다.
+
+|===
+
+NOTE: 가상 환경에서는 게스트 마운트 디스크를 사용하는 것이 좋습니다.

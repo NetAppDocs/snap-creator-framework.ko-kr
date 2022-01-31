@@ -1,0 +1,220 @@
+---
+permalink: administration/reference_snap_creator_gui_error_messages.html 
+sidebar: sidebar 
+keywords: snap, creator, gui, error, message, gui 
+summary: 다음 표에는 Snap Creator GUI 오류 메시지가 나와 있습니다. 
+---
+= Snap Creator GUI 오류 메시지
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+다음 표에는 Snap Creator GUI 오류 메시지가 나와 있습니다.
+
+|===
+| 오류 코드 | 설명/해상도 
+
+
+ a| 
+GUI-00001
+ a| 
+구성 파일의 암호화된 암호가 올바른지 확인합니다.
+
+
+
+ a| 
+GUI-00002
+ a| 
+올바른 Snap Creator 실행 파일을 사용하고 있는지 확인하십시오. /etc/snapcreatorgui.conf가 올바른지 확인합니다.
+
+
+
+ a| 
+GUI-00003
+ a| 
+로그 및 해당 프로파일 폴더가 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00004
+ a| 
+Snap Creator home/logs/profilename이 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00005
+ a| 
+해당 프로파일과 구성이 configs 디렉토리에 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00006)을 참조하십시오
+ a| 
+snapcreatorgui.conf가 손실되면 snapcreator 프로필 설정을 실행해 보십시오.
+
+
+
+ a| 
+GUI-00007
+ a| 
+구성 이름이 바뀌거나 삭제되었는지 확인합니다.
+
+
+
+ a| 
+GUI-00008
+ a| 
+사용자 이름과 암호를 확인하고 snapcreator profile setup 명령을 실행했는지 확인합니다.
+
+
+
+ a| 
+GUI-00009
+ a| 
+파일 또는 폴더에 대한 권한이 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00010
+ a| 
+파일 또는 폴더에 대한 권한이 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00011
+ a| 
+다른 프로파일을 선택하거나 기존 프로파일을 삭제합니다.
+
+
+
+ a| 
+GUI-00012
+ a| 
+configs 디렉토리가 있는지, snapcreator profile setup 명령을 실행했는지 확인합니다.
+
+
+
+ a| 
+GUI-00013
+ a| 
+자세한 내용은 로그를 확인하십시오.
+
+
+
+ a| 
+GUI-00014
+ a| 
+구성을 닫고 다시 엽니다.
+
+
+
+ a| 
+GUI-00015
+ a| 
+파일에 대한 사용 권한과 사용 권한이 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00017
+ a| 
+vCenter가 올바르고 유효한 데이터 센터가 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00019
+ a| 
+검색 중에 데이터 저장소가 삭제되었을 수 있으므로 다시 시도하십시오.
+
+
+
+ a| 
+GUI-00020
+ a| 
+검색 중에 데이터 저장소가 삭제되었을 수 있으므로 다시 시도하십시오.
+
+
+
+ a| 
+GUI-00021
+ a| 
+다시 시도하고 vCenter가 올바른지 확인합니다.
+
+
+
+ a| 
+GUI-00022
+ a| 
+vCenter에 데이터 저장소를 추가합니다.
+
+
+
+ a| 
+GUI-00023
+ a| 
+다시 시도하십시오. vCenter를 확인하십시오.
+
+
+
+ a| 
+GUI-00024
+ a| 
+사용 중인 vCloud Director 버전은 지원되지 않습니다.
+
+
+
+ a| 
+GUI-00025
+ a| 
+올바른 자격 증명을 입력하고 다시 시도하십시오.
+
+
+
+ a| 
+GUI-00026
+ a| 
+vCD에 대한 조직을 찾을 수 없습니다. 조직을 생성하고 다시 시도하십시오.
+
+
+
+ a| 
+GUI-00027
+ a| 
+vCenter 자격 증명을 확인합니다.
+
+
+
+ a| 
+GUI-00028
+ a| 
+컨트롤러 세부 정보/ntap_users를 확인합니다.
+
+
+
+ a| 
+GUI-00029
+ a| 
+vCloud Director URL을 확인합니다.
+
+
+
+ a| 
+GUI-00030
+ a| 
+조직에 대한 VDC가 있는지 확인합니다.
+
+
+
+ a| 
+GUI-00031
+ a| 
+VDC에 대한 vApp이 있는지 확인한다.
+
+|===

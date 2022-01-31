@@ -1,0 +1,21 @@
+---
+permalink: sap-hana-ops/task_modifying_configuration_for_database_integrity_checks.html 
+sidebar: sidebar 
+keywords: modifying, modify, configuration, database, integrity, checks, sap, hana 
+summary: 데이터베이스 무결성 검사에 대해 구성된 매개 변수를 수정할 수 있습니다. 이후의 예약 또는 온디맨드 무결성 검사 작업에는 업데이트된 정보가 반영됩니다. 
+---
+= 데이터베이스 무결성 검사를 위한 구성 수정
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터베이스 무결성 검사에 대해 구성된 매개 변수를 수정할 수 있습니다. 이후의 예약 또는 온디맨드 무결성 검사 작업에는 업데이트된 정보가 반영됩니다.
+
+. SAP HANA 프로필을 클릭합니다.
+. 수정할 구성을 선택하고 * HANA 무결성 검사 설정 * 을 클릭합니다.
++
+image::../media/modifying_database_integrity_check_configuration.gif[데이터베이스 무결성 검사 구성 수정]
+
+. 정보를 편집하고 * 저장 * 을 클릭합니다.
+

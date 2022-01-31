@@ -1,0 +1,24 @@
+---
+permalink: administration/task_viewing_a_list_of_backup_copies_of_a_configuration_file.html 
+sidebar: sidebar 
+keywords: backup, copy, ontap, volume, configuration, file, data 
+summary: 구성 파일에 정의된 ONTAP 볼륨의 백업 복사본 목록을 볼 수 있습니다. 또한 사용 가능한 백업에 대한 세부 정보를 얻고 요구 사항에 따라 특정 백업의 이름을 바꿀 수도 있습니다. 
+---
+= 구성 파일의 백업 복사본 목록 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 파일에 정의된 ONTAP 볼륨의 백업 복사본 목록을 볼 수 있습니다. 또한 사용 가능한 백업에 대한 세부 정보를 얻고 요구 사항에 따라 특정 백업의 이름을 바꿀 수도 있습니다.
+
+. Snap Creator GUI의 기본 메뉴에서 * Data * > * Backups * 를 선택합니다.
+. 백업 탭의 프로파일 및 구성 창에서 프로파일을 확장한 다음 구성 파일을 선택합니다.
++
+백업 탭에는 구성 파일에 정의된 ONTAP 볼륨의 모든 백업 복제본 목록이 표시됩니다.
+
++
+
+NOTE: Snap Creator 4.3 또는 이전 릴리즈에서는 복사본의 이름이 변경되더라도 보존 기간을 기준으로 스냅샷 복사본을 삭제합니다. 스냅샷 복사본을 무제한 유지하기 위해 Snap Creator Framework에서는 Snap Creator Framework GUI의 "데이터"->백업" 탭 아래에 "무제한 보존" 버튼이 제공됩니다. 무제한 유지할 스냅샷 복사본을 선택하고 "'무제한 보존'' 버튼을 클릭할 수 있습니다. 선택한 스냅샷 복사본의 이름이 <snapshot_name>에서 <snapshot_name_unlimited>로 변경됩니다.
+
+

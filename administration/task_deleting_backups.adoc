@@ -1,0 +1,23 @@
+---
+permalink: administration/task_deleting_backups.html 
+sidebar: sidebar 
+keywords: delete, backup, copy, configuration, file, delete, snap, creator, gui, data 
+summary: 구성 파일의 백업 복사본을 삭제할 수 있습니다. 
+---
+= 백업을 삭제하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 파일의 백업 복사본을 삭제할 수 있습니다.
+
+. Snap Creator 그래픽 사용자 인터페이스(GUI)의 기본 메뉴에서 * Data * > * Backups * 를 선택합니다
+. 백업 탭의 프로파일 및 구성 창에서 프로파일을 확장하고 구성 파일을 선택합니다.
+. 삭제할 백업을 선택하고 * 삭제 * 를 클릭합니다.
++
+
+NOTE: 구성 파일에 여러 Data ONTAP 볼륨이 포함되어 있는 경우 각 Data ONTAP 볼륨에서 삭제할 스냅샷 복사본을 선택해야 합니다.
+
+. 확인 창에서 * 예 * 를 클릭합니다.
+

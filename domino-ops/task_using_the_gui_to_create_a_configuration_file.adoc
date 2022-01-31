@@ -1,0 +1,325 @@
+---
+permalink: domino-ops/task_using_the_gui_to_create_a_configuration_file.html 
+sidebar: sidebar 
+keywords: domino, ibm,creating, create, configuraiton, file 
+summary: IBM Domino 데이터베이스를 백업하려면 먼저 구성 파일을 생성해야 합니다. 구성 파일은 Snap Creator 백업 및 복원 작업에 대한 입력 파일입니다. 
+---
+= 구성 파일 생성
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IBM Domino 데이터베이스를 백업하려면 먼저 구성 파일을 생성해야 합니다. 구성 파일은 Snap Creator 백업 및 복원 작업에 대한 입력 파일입니다.
+
+구성 및 프로파일 이름에는 영숫자 및 밑줄 문자만 사용할 수 있습니다. 이름은 숫자로 시작할 수 없습니다.
+
+
+TIP: 많은 사이트에서는 프로필 전체 또는 사이트 전체의 글로벌 구성 파일을 사용하여 스토리지 시스템 또는 VMware 자격 증명 정보를 백업 및 복구 구성에 적용합니다. 글로벌 구성 파일을 만드는 방법에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+. 프로파일 및 구성 창에서 * 프로파일 추가 * 를 클릭합니다.
+. 새 프로파일 대화 상자에서 프로파일 이름을 입력한 다음 * 확인 * 을 클릭합니다.
++
+새 프로파일을 만들면 Snap Creator Framework 구성 마법사가 자동으로 시작됩니다. 기존 프로파일에 새 구성을 추가하려면 프로파일을 마우스 오른쪽 단추로 클릭한 다음 * 새 구성 * 을 선택합니다.
+
++
+구성 마법사 전체에서 다음 페이지로 이동하려면 * 다음 * 을 클릭하고 이전 페이지로 돌아가려면 * 뒤로 * 를 클릭합니다.
+
+. 구성 페이지에서 구성 이름을 입력한 다음 암호 암호화를 사용할지 여부를 지정합니다.
++
+기본적으로 암호 암호화는 구성 파일에 암호가 일반 텍스트로 표시되지 않도록 하기 위해 사용됩니다.
+
++
+
+TIP: 마법사의 필드 위로 마우스를 가져가면 도구 설명이 표시됩니다.
+
+. 플러그인 유형 페이지에서 * 응용 프로그램 플러그인 * 을 선택합니다.
+. 애플리케이션 플러그인 페이지에서 * IBM Domino * 를 선택합니다.
+. 플러그인 매개 변수 페이지에서 IBM Domino 백업 구성 세부 정보를 지정합니다.
++
+
+NOTE: 다음 표의 예는 UNIX 환경을 위한 것입니다. 표 다음에 나오는 스크린샷에서 Windows 설정 예제를 볼 수 있습니다.
+
++
+|===
+| GUI 매개 변수입니다 | CLI 매개 변수입니다 | 설명 
+
+
+ a| 
+Domino 데이터 디렉토리
+ a| 
+Domino_data_path
+ a| 
+Domino 데이터 디렉토리의 경로입니다. 예: /Domino/data.
+
+
+
+ a| 
+notes.ini 경로
+ a| 
+Domino_INI_PATH입니다
+ a| 
+notes.ini 파일의 경로입니다. 예: /Domino/data/notes.in
+
+
+
+ a| 
+정보 디렉터리 변경
+ a| 
+Domino_change_Info_path
+ a| 
+changeinfo 파일의 경로입니다. 예: /changeinfo. * 중요: * Domino 데이터 볼륨 이외의 볼륨에 changeinfo 파일을 저장해야 합니다.
+
+
+
+ a| 
+백업 유형
+ a| 
+Domino_database_type입니다
+ a| 
+백업할 데이터베이스 파일입니다. GUI 드롭다운에서 값을 선택하거나 CLI 명령에서 해당 번호를 지정합니다.
+
+** Everything(권장)(CLI=0)
+** *.box 파일(CLI=1)
+** *.nsf, *.nsg 및 *.nsh 파일(CLI=2)
+** *.NTF 파일(CLI=3)
+
+
+
+
+ a| 
+IBM Domino 설치 디렉토리
+ a| 
+로터스
+ a| 
+Domino 바이너리 파일이 설치된 디렉토리의 경로입니다. 예를 들어 Linux의 경우 /opt/ibm/domino(기본 설치 경로 가정) Windows에서 Domino 공유 개체 디렉토리의 상위 디렉토리입니다. * 참고: * 이것은 IBM Notes(이전의 Lotus Notes)로 가는 경로가 아닙니다.
+
+
+
+ a| 
+Domino 공유 객체의 경로입니다
+ a| 
+Notes_ExecDirectory를 참조하십시오
+ a| 
+Domino 공유 개체 파일(.so 또는 .dll)이 포함된 경로입니다. 예: /opt/ibm/domino/notes/latest/linux.
+
+
+
+ a| 
+데이터 복원 디렉터리
+ a| 
+Domino_restore_data_path
+ a| 
+볼륨 복구의 경우(백업을 사용한 위치와 동일한 위치로 복구하는 것으로 가정) Domino 데이터 디렉토리 경로입니다. 단일 파일 복구(NFS만 해당)의 경우 Domino 데이터 디렉토리와 동일한 볼륨의 위치입니다. 예를 들어 /Domino/data/restore가 있습니다.
+
+
+
+ a| 
+Domino 데이터 디렉토리 검증
+ a| 
+Domino_data_path를 확인하십시오
+ a| 
+Domino 환경에 여러 마운트 지점이 있는 경우 일부 마운트 지점은 NetApp 스토리지에 있지만 다른 마운트 지점은 NetApp 스토리지에 없을 수 있습니다. GUI 드롭다운에서 값을 선택하거나 CLI 명령에서 해당 값을 지정합니다.
+
+** 예. Domino 데이터 디렉토리 경로의 파일만 백업합니다.
+** 아니요 는 디스크의 위치에 관계없이 Domino 환경의 모든 파일을 백업합니다.
+
+
+|===
++
+다음 예제에서는 Windows 환경에서 필드를 작성하는 방법을 보여 줍니다.
+
++
+image::../media/scfs_domino_param_filled_in_windows.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+. 에이전트 구성 페이지에서 Snap Creator Agent 연결 정보를 지정합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+IP/DNS
+ a| 
+Snap Creator Agent 호스트의 IP 주소 또는 DNS 호스트 이름을 입력합니다.
+
+
+
+ a| 
+포트
+ a| 
+Snap Creator Agent(9090)의 기본 포트를 사용하지 않는 경우 포트 번호를 입력합니다.
+
+
+
+ a| 
+시간 초과(초)
+ a| 
+기본값을 그대로 둡니다.
+
+|===
+. 입력한 내용에 만족하면 * 에이전트 연결 테스트 * 를 클릭하여 Agent와의 연결을 확인합니다.
++
+
+NOTE: Agent가 응답하지 않는 경우 Agent 세부 정보를 확인하고 호스트 이름 확인이 올바르게 작동하는지 확인합니다.
+
+. 스토리지 연결 설정 페이지에서 운영 스토리지 시스템의 SVM(Storage Virtual Machine, 이전의 Vserver)에 대한 연결 정보를 지정합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+운송
+ a| 
+SVM과 통신할 전송 프로토콜(HTTP 또는 HTTPS)을 선택합니다.
+
+
+
+ a| 
+컨트롤러/Vserver 포트
+ a| 
+SVM에 기본 포트(HTTP의 경우 80, HTTPS의 경우 443)를 사용하지 않는 경우 포트 번호를 입력합니다.
+
+|===
++
+* 참고: * OnCommand 프록시 사용 방법에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+. 컨트롤러/Vserver 자격 증명 페이지에서 운영 스토리지 시스템의 SVM에 대한 자격 증명을 지정합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+컨트롤러/Vserver IP 또는 이름
+ a| 
+SVM 호스트의 IP 주소 또는 DNS 호스트 이름을 입력합니다.
+
+
+
+ a| 
+컨트롤러/Vserver 사용자
+ a| 
+SVM 호스트의 사용자 이름을 입력합니다.
+
+
+
+ a| 
+컨트롤러/Vserver 암호
+ a| 
+SVM 호스트의 암호를 입력합니다.
+
+|===
++
+* 중요: * 스냅샷 복사본을 SnapMirro 또는 SnapVault 대상에 복제할 계획이라면 이 단계에서 입력하는 SVM의 이름은 SnapMirror 또는 SnapVault 관계를 생성할 때 사용한 SVM의 이름과 정확히 일치해야 합니다. 관계를 만들 때 정규화된 도메인 이름을 지정한 경우, 사용자가 제공하는 정보로 SVM을 찾을 수 있는지 여부와 관계없이 이 단계에서 정규화된 도메인 이름을 지정해야 합니다. 사례가 매우 중요합니다.
+
++
+SnapMirror show 명령을 사용하여 운영 스토리지 시스템에서 SVM의 이름을 확인할 수 있습니다.SnapMirror show-destination-path destination_SVM: destination_volume 여기서 destination_SVM_name은 대상 시스템의 SVM 이름이고 destination_volume은 볼륨입니다. SnapMirro 및 SnapVault 관계 만들기에 대한 자세한 내용은 을 참조하십시오 xref:concept_snapmirror_and_snapvault_setup.adoc[SnapMirror 및 SnapVault 설정].
+
++
+Next * 를 클릭하면 Controller/Vserver Volumes 창이 표시됩니다.
+
+. 컨트롤러/Vserver 볼륨 창에서 왼쪽 창의 사용 가능한 볼륨 목록에서 오른쪽 창에 백업할 볼륨 목록으로 끌어다 놓아 백업할 볼륨을 지정한 다음 * Save * 를 클릭합니다.
++
+지정된 볼륨이 컨트롤러/Vserver 자격 증명 페이지에 표시됩니다.
+
++
+
+IMPORTANT: changeinfo 디렉토리를 백업하려는 경우 에 설명된 대로 디렉토리를 포함하는 볼륨을 메타데이터 볼륨으로 구성해야 합니다 xref:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc[changeinfo 디렉토리를 백업하는 중입니다]. 이 옵션은 IBM Domino 플러그인에 데이터베이스 파일의 스냅샷 복사본을 생성하는 _after_changeinfo 볼륨의 스냅샷 복사본을 생성하도록 지시합니다.
+
+. 컨트롤러/Vserver 자격 증명 페이지에서 * 추가 * 를 클릭하여 다른 운영 스토리지 시스템에 백업할 SVM 세부 정보와 볼륨을 지정합니다.
+. 스냅샷 세부 정보 페이지에서 스냅샷 구성 정보를 지정합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+스냅샷 복사본 이름
+ a| 
+스냅샷 복사본의 이름을 입력합니다. * 팁: * 구성 파일 전체에서 스냅샷 복사본 이름을 다시 사용하려면 * 중복 스냅샷 복사본 이름 허용 * 을 클릭합니다.
+
+
+
+ a| 
+스냅샷 복사본 레이블
+ a| 
+스냅샷 복사본을 설명하는 텍스트를 입력합니다.
+
+
+
+ a| 
+정책 유형
+ a| 
+정책 사용 * 을 클릭한 다음 이 구성에 사용할 수 있도록 설정할 기본 제공 백업 정책을 선택합니다. 정책을 선택한 후 * Retention * 셀을 클릭하여 해당 정책 유형의 Snapshot 복사본 수를 지정합니다. * 참고: * 정책 개체 사용 방법에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+
+
+ a| 
+스냅샷 복사본 삭제를 방지합니다
+ a| 
+유지할 복사본 수를 초과하는 스냅샷 복사본을 Snap Creator에서 자동으로 삭제하지 않으려는 경우에만 예를 지정하십시오. * 참고: * 예를 지정하면 볼륨당 지원되는 스냅샷 복사본 수를 초과할 수 있습니다.
+
+
+
+ a| 
+정책 보존 기간
+ a| 
+유지할 복사본 수를 초과하는 스냅샷 복사본을 유지할 일 수를 지정합니다. 정책 유형(예: daily:15)을 입력하여 정책 유형별로 보존 기간을 지정할 수 있습니다.
+
+
+
+ a| 
+명명 규칙
+ a| 
+기본값을 그대로 둡니다.
+
+|===
++
+다음 예에 지정된 구성은 매일 백업을 수행하고 4개의 스냅샷 복사본을 유지합니다.
+
++
+image::../media/scfw_domino_snapshot_details_pane.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+. 하나 이상의 데이터베이스가 일관성 없거나 손상된 상태에 있더라도 백업 작업을 강제로 진행하려면 스냅샷 세부 정보 계속 페이지에서 * 응용 프로그램 오류 무시 * 를 예 로 설정합니다.
++
+나머지 필드는 무시해야 합니다.
+
++
+
+TIP: Domino 환경은 수백 또는 수천 개의 데이터베이스로 구성될 수 있습니다. 단일 데이터베이스가 일관되지 않거나 손상된 상태라도 백업이 실패합니다. 응용 프로그램 오류 무시 * 를 활성화하면 백업을 계속할 수 있습니다.
+
+. 데이터 보호 페이지에서 보조 스토리지에 대한 선택적 스냅샷 복사본 복제를 수행할지 여부를 지정합니다.
++
+.. SnapMirror * 를 클릭하여 스냅샷 복사본을 미러링합니다.
++
+미러링된 스냅샷 복사본에 대한 정책은 기본 스냅샷 복사본에 대한 정책과 동일합니다.
+
+.. SnapVault * 를 클릭하여 스냅샷 복사본을 아카이브합니다.
+.. 아카이빙된 스냅샷 복사본에 대한 정책을 지정합니다.
+.. 지침은 다음 단계에 있습니다<<STEP_81795CF9D6294AC891BC3D0CE4827CA3,13>>.
+.. SnapVault 대기 시간 * 에서 Snap Creator가 SnapVault 작업이 완료될 때까지 대기하는 시간(분)을 입력합니다.
+.. 2차 스토리지로 복제를 수행하기 전에 에서 SnapMirror 및 SnapVault 관계를 설정해야 합니다. 자세한 내용은 을 참조하십시오 xref:concept_snapmirror_and_snapvault_setup.adoc[SnapMirror 및 SnapVault 설정].
+
+
+. 데이터 보호 볼륨 페이지에서 * 추가 * 를 클릭한 다음 운영 스토리지 시스템의 SVM을 선택합니다.
++
+Next * 를 클릭하면 Data Protection Volume Selection(데이터 보호 볼륨 선택) 창이 표시됩니다.
+
+. 데이터 보호 볼륨 선택 창에서 왼쪽 창의 사용 가능한 볼륨 목록에서 오른쪽 창의 SnapMirror 및/또는 SnapVault 영역에 있는 볼륨 목록으로 끌어 놓아 복제할 소스 볼륨을 지정한 다음 * 저장 * 을 클릭합니다.
++
+지정된 볼륨이 Data Protection Volumes(데이터 보호 볼륨) 페이지에 표시됩니다.
+
+. 다른 운영 스토리지 시스템에 복제할 SVM 세부 정보 및 볼륨을 지정하려면 데이터 보호 볼륨 페이지에서 * 추가 * 를 클릭합니다.
+. 데이터 보호 관계 페이지에서 SnapMirror 및/또는 SnapVault 대상 시스템의 SVM에 대한 자격 증명을 지정합니다.
+. 스냅샷 복사본과 SnapMirror/SnapVault 업데이트에 Data ONTAP API 대신 NetAppOnCommand Unified Manager API를 사용하려면 DFM/OnCommand Settings 페이지에서 필드를 완료하십시오.
++
+.. Unified Manager 경고를 받으려면 * Operations Manager 콘솔 경고 * 를 클릭하고 Unified Manager 가상 머신에 필요한 연결 정보를 입력합니다.
+.. 7-Mode SnapVault 복제에 NetApp 관리 콘솔 데이터 보호 기능을 사용하는 경우 * NetApp 관리 콘솔 데이터 보호 기능 * 을 클릭하고 Unified Manager 가상 시스템에 필요한 연결 정보를 입력합니다.
+
+
+. 요약을 검토하고 * Finish * 를 클릭합니다.
+
+
+Snap Creator는 프로파일 및 구성 창의 지정된 프로파일 아래에 구성 파일을 나열합니다. 구성 파일을 선택하고 구성 내용 창에서 해당 탭을 클릭하여 구성을 편집할 수 있습니다. 오른쪽 클릭 메뉴에서 * Rename * 을 클릭하여 설정 이름을 바꿀 수 있습니다. 오른쪽 클릭 메뉴에서 * Delete * 를 클릭하여 구성을 삭제할 수 있습니다.

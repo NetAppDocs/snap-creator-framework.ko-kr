@@ -1,0 +1,23 @@
+---
+permalink: domino-ops/concept_single_file_restore_in_fc_iscsi_environments.html 
+sidebar: sidebar 
+keywords: domino, ibm, performing, single-file, restore, single, file, san 
+summary: SAN 환경에서 단일 파일 복원의 경우 SnapDrive를 사용하여 Snap Creator 에이전트 호스트에 스냅샷 복사본을 마운트할 수 있습니다. 
+---
+= SAN 환경에서 단일 파일 복원 수행
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAN 환경에서 단일 파일 복원의 경우 SnapDrive를 사용하여 Snap Creator 에이전트 호스트에 스냅샷 복사본을 마운트할 수 있습니다. 그런 다음 복원할 파일을 데이터 복원 디렉터리로 복사하고 Snap Creator 사용자 지정 작업을 사용하여 복원 처리를 완료할 수 있습니다.
+
+* 관련 정보 *
+
+xref:task_using_snapdrive_for_windows_to_mount_snapshot_copy.adoc[SnapDrive를 사용하여 스냅샷 복사본 마운트]
+
+xref:task_copying_files_to_restore_location.adoc[데이터 복원 디렉터리에 파일을 복사하는 중입니다]
+
+xref:task_running_snap_creator_by_using_the_custom_action.adoc[Snap Creator 사용자 지정 작업을 사용하여 복원 처리 완료]
+
+xref:task_disconnecting_snapshot_copy.adoc[스냅샷 복사본의 연결을 끊는 중입니다]

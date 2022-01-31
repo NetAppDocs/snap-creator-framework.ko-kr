@@ -1,0 +1,56 @@
+---
+permalink: installation/task_upgrading_snap_creator_agent_4_1_x_on_unix.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, snap, creator, agent, 4.1.x, unix, unix-based 
+summary: UNIX 기반 시스템의 Snap Creator Agent 4.1.x에서 업그레이드할 수 있습니다. 
+---
+= UNIX 기반 시스템에서 Snap Creator Agent 4.1.x 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX 기반 시스템의 Snap Creator Agent 4.1.x에서 업그레이드할 수 있습니다.
+
+* Snap Creator Agent 디렉토리를 백업하기 전에 Snap Creator Agent를 중지하여 백업 데이터가 완료되었는지 확인합니다.
++
+예를 들어 다음 명령을 입력합니다.
+
++
+[listing]
+----
+/install_path/scAgent4.1.0/bin/scAgent stop
+----
+* Snap Creator Agent 디렉토리(/install_path/scAgent4.1.x) 내에서 다음 디렉토리와 모든 관련 하위 디렉토리 및 파일을 백업했습니다.
++
+** 허용되는_command.config 및 agent.properties 파일이 포함된 Snap Creator Agent 속성(../etc
+** 로그(../로그)
+** 플러그인(../플러그인) * 참고: * 생성한 Snap Creator 4.1.x 백업 복사본은 삭제하지 마십시오.
+
+
+
+
+다음 단계에서 제공되는 경로는 기본 설치 경로를 나타냅니다. 기본값이 사용되지 않은 경우 경로 정보가 설치 경로와 다를 수 있습니다.
+
+. Snap Creator Agent를 아직 중지하지 않은 경우 중지합니다.
++
+자세한 내용은 이 항목 앞부분의 세부 정보를 참조하십시오.
+
+. 최신 Snap Creator Agent를 설치하되 Snap Creator Agent는 시작하지 마십시오.
++
+자세한 내용은 UNIX에서 Snap Creator Agent 설치에 대한 정보를 참조하십시오.
+
+. 백업된 Snap Creator 4.1.x 로그 디렉토리를 /install_path/scAgent4.1.x/logs의 최신 위치로 복사합니다.
+. 백업된 Snap Creator 4.1.x 플러그인 디렉토리를 /install_path/scAgent4.1.x/plugins의 최신 위치에 복사합니다.
+. 백업된 Snap Creator 4.1.x 에이전트 속성 디렉토리를 /install_path/scAgent4.1.x/etc의 최신 위치로 복사합니다.
+. 다음 명령을 입력하여 Snap Creator Agent를 시작합니다.
++
+[listing]
+----
+/install_path/scAgent4.1.x/bin/scAgent start
+----
++
+
+NOTE: allowed_commands.config 또는 agent.properties 파일을 변경한 경우, 변경 사항이 있을 때 Snap Creator Agent를 다시 시작해야 합니다.
+
+

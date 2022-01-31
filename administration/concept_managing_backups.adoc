@@ -1,0 +1,19 @@
+---
+permalink: administration/concept_managing_backups.html 
+sidebar: sidebar 
+keywords: managing, backups, backup, copies, 
+summary: 백업 복사본을 생성하고, 백업 복사본 목록을 보고, 더 이상 필요하지 않은 백업 복사본을 삭제할 수 있습니다. 
+---
+= 백업 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+백업 복사본을 생성하고, 백업 복사본 목록을 보고, 더 이상 필요하지 않은 백업 복사본을 삭제할 수 있습니다.
+
+또한 백업 작업을 자동화할 수 있습니다. 자세한 내용은 예약된 작업 만들기에 대한 자세한 내용은 관련 작업 을 참조하십시오.
+
+* 관련 정보 *
+
+xref:task_creating_scheduled_jobs_using_sc_gui.adoc[예약된 작업을 생성하는 중입니다]

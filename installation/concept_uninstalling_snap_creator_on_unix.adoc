@@ -1,0 +1,13 @@
+---
+permalink: installation/concept_uninstalling_snap_creator_on_unix.html 
+sidebar: sidebar 
+keywords: uninstalling, uninstall, snap, creator, unix 
+summary: UNIX에서 Snap Creator를 제거할 때는 먼저 Snap Creator Agent를 제거한 다음 Snap Creator Server를 제거합니다. 
+---
+= UNIX에서 Snap Creator 제거
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX에서 Snap Creator를 제거할 때는 먼저 Snap Creator Agent를 제거한 다음 Snap Creator Server를 제거합니다.

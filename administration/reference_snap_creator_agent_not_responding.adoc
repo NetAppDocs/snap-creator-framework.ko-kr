@@ -1,0 +1,29 @@
+---
+permalink: administration/reference_snap_creator_agent_not_responding.html 
+sidebar: sidebar 
+keywords: snap, creator, agent, responding, corrective, action 
+summary: Snap Creator 에이전트가 응답하지 않습니다. 
+---
+= Snap Creator Agent가 응답하지 않습니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 에이전트가 응답하지 않습니다.
+
+* * 문제 *
++
+Snap Creator 에이전트가 응답하지 않습니다.
+
+* * 시정 조치 *
++
+다음을 확인합니다.
+
++
+** Snap Creator 에이전트가 실행되고 있습니다.
+** 선택한 포트가 이미 사용 중이 아닙니다.
+** Agent 포트의 통신은 방화벽을 통해 허용됩니다.
+
+
+

@@ -1,0 +1,35 @@
+---
+permalink: domino-ops/concept_adding_commands_to_the_backup_and_restore_configuration.html 
+sidebar: sidebar 
+keywords: domino, ibm, adding, commands, backup, restore, configuration, supplemental, 
+summary: 네이티브 Snap Creator 명령 대신 SnapDrive 명령을 사용하여 운영 체제 레벨에서 파일 시스템의 정합성을 보장할 수 있습니다. 
+---
+= 백업 및 복원 구성에 명령 추가
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+경우에 따라 백업 또는 복원 작업에서 Snap Creator에서 사용할 수 없는 명령을 실행해야 할 수도 있습니다. 예를 들어 FC 또는 iSCSI를 사용하는 윈도우 호스트에서 네이티브 Snap Creator 명령 대신 SnapDrive 명령을 사용하여 OS 레벨에서 파일 시스템의 정합성을 보장할 수 있습니다.
+
+
+
+== 추가 명령을 실행할 위치
+
+기본적으로 보조 명령은 Snap Creator Agent에서 실행됩니다. 텍스트 서버에 명령 앞에 콜론(:)을 붙여 서버에서 추가 명령을 실행할 수 있습니다. 예를 들어 server:C:\myscript.bat가 있습니다.
+
+Agent에서 추가 명령을 실행하려면 Agent의 allowed_commands.config 파일에 명령을 포함하여 명령을 실행하도록 명시적으로 허용해야 합니다. 서버에서 추가 명령을 허용할 필요는 없습니다.
+
+
+
+== 추가 명령을 추가할 위치
+
+Snap Creator GUI 또는 Snap Creator CLI를 사용하여 백업 및 복원 구성에 명령을 추가할 수 있습니다.
+
+
+NOTE: 이 가이드에서는 GUI를 사용하여 명령을 추가하는 방법을 보여 줍니다. CLI 사용 방법에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+* 관련 정보 *
+
+link:concept_allowing_additional_commands_through_the_snap_creator_agent.adoc["Snap Creator Agent에서 추가 명령 허용"]
+

@@ -1,0 +1,111 @@
+---
+permalink: administration/reference_parameters_to_set_up_snapvault.html 
+sidebar: sidebar 
+keywords: parameter, snapvault, update, volume, relationship 
+summary: SnapVault를 설정하려면 몇 가지 매개 변수가 필요합니다. 
+---
+= SnapVault를 설정하는 매개 변수입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapVault를 설정하려면 몇 가지 매개 변수가 필요합니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+NTAP_SnapVault_update
+ a| 
+(Y
+| 해당 없음) 
+
+
+ a| 
+SnapVault 업데이트 기능을 켜거나 끌 수 있습니다.
+ a| 
+SnapVault_volumes
+ a| 
+
+
+
+ a| 
+에는 SnapVault 업데이트를 수행할 소스 스토리지 시스템 및 볼륨이 나와 있습니다(예: 컨트롤러1: vol1, vol2, vol3; 컨트롤러 2: vol1; 컨트롤러 3: vol2, vol3). * 참고: *
+
+* SnapVault 및 SnapMirror 업데이트가 작동하려면 관계가 존재해야 합니다.
++
+Snap Creator는 관계를 생성하지 않습니다.
+
+* SnapMirror 또는 SnapVault 관계의 호스트 이름은 볼륨, SnapMirror_볼륨 및 SnapVault_볼륨 옵션에 지정된 것과 같아야 합니다. 또한 Snap Creator가 실행되는 호스트에서 호스트 이름을 확인할 수 있어야 합니다.
+* vSphere 또는 vCloud의 경우 이 값을 auto:detect로 설정해야 합니다.
+* 호스트 이름은 FQDN이 아니라 짧은 호스트 이름(스토리지 컨트롤러 명령 프롬프트에 나타나는 이름)이어야 합니다.
+
+ a| 
+SnapVault_qtree_include
+ a| 
+
+
+
+ a| 
+에는 SnapVault 업데이트에 소스 스토리지 시스템과 qtree 경로가 나와 있습니다. 이 옵션이 없으면 관계가 존재하는 경우 SnapVault에서 볼륨의 모든 qtree를 저장합니다. 다음 예에 나열된 qtree는 SnapVault에 의해 저장되며 나머지는 SnapVault에 의해 무시됩니다. 컨트롤러1:/vol/qtree/qtree1,/vol/volume/qtree2; controller2:/vol/volume/qtree1.
+ a| 
+NTAP_SnapVault_보존
+ a| 
+
+
+
+ a| 
+특정 정책에 대해 유지할 SnapVault 보조 데이터의 스냅샷 복사본 수 결정(예: 매일: 21, 매주: 12, 매월: 3)
+ a| 
+NTAP_SnapVault_retention_age
+ a| 
+
+
+
+ a| 
+SnapVault 스냅샷 복사본의 보존 기간(일)을 정의할 수 있습니다. 구성한 경우, SnapVault 스냅샷 복사본은 NTAP_SnapVault_보존 에 정의된 수를 초과하고 보존 기간(일)보다 오래된 경우에만 삭제됩니다.
+ a| 
+NTAP_SnapVault_Snapshot
+ a| 
+(Y
+
+
+
+| 해당 없음)  a| 
+스토리지 컨트롤러 SnapVault 스케줄러와 호환되는 스냅샷 복사본인 SnapVault 스냅샷 복사본을 사용할 수 있습니다. 이 옵션을 사용하면 스냅샷 복사본 삭제가 Snap Creator가 아닌 스토리지 컨트롤러에서 처리됩니다. 또한 스냅샷 복사본의 이름은 SV_<policy>.<#> 입니다. 정책 이름은 NTAP_snapshot_retentions 매개 변수에서 제공되며 보존 세트는 스토리지 컨트롤러 SnapVault 일정에도 적용됩니다.
+ a| 
+NTAP_SnapVault_참고
+
+
+
+ a| 
+(Y
+| 해당 없음)  a| 
+NTAP_SnapVault_보존 을 재정의하고 스냅샷 복사본이 삭제되지 않도록 합니다. 이 기능을 켜두면 볼륨이 가득 찰 수 있습니다.
+
+
+
+ a| 
+NTAP_SnapVault_restore_wait 를 클릭합니다
+ a| 
+(Y
+| 해당 없음) 
+
+
+ a| 
+SnapVault 복원의 경우 Snap Creator가 작업이 완료될 때까지 대기하도록 강제 적용됩니다. 이 방법은 SnapVault 복원이 완료된 후 Snap Creator에서 운영 스토리지에 생성된 복원 스냅샷 복사본을 더 이상 필요하지 않음을 사용자에게 프롬프트하기 때문에 권장됩니다.
+ a| 
+NTAP_SnapVault_WAIT
+ a| 
+
+
+
+ a| 
+SnapVault 보조 이미지에 스냅샷 복사본을 생성하기 전에 SnapVault 업데이트 프로세스가 완료될 때까지 대기 시간(분)입니다.
+ a| 
+NTAP_SnapVault_MAX_TRANSFER
+ a| 
+
+|===

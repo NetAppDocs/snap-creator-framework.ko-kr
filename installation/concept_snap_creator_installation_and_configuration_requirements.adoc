@@ -1,0 +1,121 @@
+---
+permalink: installation/concept_snap_creator_installation_and_configuration_requirements.html 
+sidebar: sidebar 
+keywords: snap, creator, install, installation, configuration, requirements 
+summary: Snap Creator 프레임워크를 설치하기 전에 라이센스, 소프트웨어 및 하드웨어에 대한 특정 설치 및 구성 요구사항을 알고 있어야 합니다. 
+---
+= Snap Creator 설치 및 구성 요구사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 프레임워크를 설치하기 전에 라이센스, 소프트웨어 및 하드웨어에 대한 특정 설치 및 구성 요구사항을 알고 있어야 합니다.
+
+
+
+== 라이센스 요구 사항
+
+Snap Creator에 라이센스가 필요하지 않더라도 Snap Creator를 사용하는 동안 수행하려는 작업에 따라 다음 라이센스가 필요할 수 있습니다.
+
+* FlexClone(볼륨 클로닝용)
+* Active IQ Unified Manager 코어 패키지(NetApp 관리 콘솔 데이터 보호 기능 및 운영 관리자 콘솔용)
+* 오픈 시스템 SnapVault(OSSV 동작용)
+* SnapDrive(SnapDrive 작업)
+* SnapMirror(SnapMirror 작업)
+* SnapRestore(복원용)
+* SnapVault(SnapVault 작업)
+
+
+에서 온라인으로 제공되는 상호 운용성 매트릭스 를 참조하십시오 http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]지원되는 소프트웨어에 대한 자세한 내용은 를 참조하십시오.
+
+
+
+== 소프트웨어 정보
+
+환경에 따라 다음 소프트웨어가 필요할 수 있습니다.
+
+* Java(필수)
++
+
+NOTE: Snap Creator Framework 4.3.3은 OpenJDK 및 Oracle Java 1.8 업데이트 72 이상만 지원합니다.
+
+* Data ONTAP(필수)
+* Microsoft .NET Framework
+* 운영 체제:
++
+
+NOTE: 현재 미국 기반 운영 체제만 지원됩니다.
+
++
+** UNIX 플랫폼:
++
+
+NOTE: Snap Creator는 모든 UNIX 플랫폼에 대해 Bash Shell만 지원합니다.
+
++
+*** AIX
+*** HP-UX를 참조하십시오
+*** 리눅스
+*** Solaris
+
+
+** Microsoft Windows
+
+
+* 웹 브라우저:
++
+** Internet Explorer 를 참조하십시오
+** 파이어폭스
+
+
+
+
+에서 온라인으로 제공되는 상호 운용성 매트릭스 를 참조하십시오 http://mysupport.netapp.com/matrix["mysupport.netapp.com/matrix"]지원되는 소프트웨어에 대한 자세한 내용은 를 참조하십시오.
+
+
+
+== 하드웨어 요구 사항
+
+Snap Creator 하드웨어 요구사항은 다음과 같습니다.
+
+* Snap Creator 서버 요구사항:
++
+|===
+| 하드웨어 구성 요소 | 최소 | 권장 
+
+
+ a| 
+프로세서
+ a| 
+코어 1개
+ a| 
+4코어, 2GHz 이상
+
+
+
+ a| 
+메모리(Snap Creator 및 운영 체제용)
+ a| 
+2GB RAM
+ a| 
+4GB RAM
+
+
+
+ a| 
+디스크 공간
+ a| 
+5GB
+ a| 
+50GB 이상(저장할 로그 수에 따라 다름)
+
+|===
+* Snap Creator 에이전트 요구사항:
++
+플러그인을 배포하지 않았거나 사전 패키지된 플러그인을 사용할 경우 최소 256MB 메모리가 필요합니다.
+
++
+사전 패키지형 플러그인에는 추가 메모리 요구 사항이 필요하지 않습니다. 다른 플러그인에는 추가 요구 사항이 있을 수 있습니다.
+
+

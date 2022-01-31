@@ -1,0 +1,29 @@
+---
+permalink: administration/reference_snap_creator_configuration_file_variables.html 
+sidebar: sidebar 
+keywords: variable, parameter, snap, creator, configuration, file, snapshot 
+summary: Snap Creator 구성 파일 내에서 변수, 매개 변수 및 명령을 정의할 수 있습니다. 
+---
+= Snap Creator 구성 파일 변수, 매개 변수 및 명령
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 구성 파일 내에서 변수, 매개 변수 및 명령을 정의할 수 있습니다.
+
+Snap Creator 구성 파일은 동적이며, 이는 구성 파일 내에서 변수를 생성하고 설정할 수 있음을 의미합니다.
+
+예를 들어, ONTAPI 대신 SnapDrive for Windows를 사용하여 스냅샷 복사본을 생성하는 경우 스냅샷 복사본 이름은 고유해야 하므로 동적 변수를 설정해야 합니다. Windows용 SnapDrive 구성의 예:
+
+NTAP_snapshot_create_CMD1="c:/Program Files/NetApp/SnapDrive/sdcli.exe" snap create -m fx1b4-s %SNAME-%SNAP_TYPE_%SNAP_TIME-D E:
+
+또는
+
+NTAP_snapshot_create_CMD1="c:/Program Files/NetApp/SnapDrive/sdcli.exe" snap create -m fx1b4-s %SNAME-%SNAME_TYPE_Recent-D E:
+
+스냅샷 복사본 삭제를 위해 Data ONTAP 대신 Windows용 SnapDrive를 사용하는 경우 NTAP_snapshot_delete_CMD매개변수 를 사용할 수 있습니다. Windows용 SnapDrive 명령에서 스냅샷 복사본의 이름 대신 %SNAPNAME 매개 변수를 사용해야 합니다.
+
+다음은 Windows용 SnapDrive 구성의 예입니다.
+
+NTAP_snapshot_delete_CMD01="C:\Program Files\NetApp\SnapDrive\sdcli" snap delete -s %SNAPNAME-D i:

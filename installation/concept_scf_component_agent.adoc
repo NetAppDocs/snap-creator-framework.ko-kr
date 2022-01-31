@@ -1,0 +1,17 @@
+---
+permalink: installation/concept_scf_component_agent.html 
+sidebar: sidebar 
+keywords: snap, creator, agent 
+summary: Snap Creator Agent는 일반적으로 애플리케이션이나 데이터베이스가 설치된 동일한 호스트에 설치됩니다. Agent는 플러그인이 있는 위치입니다. 때때로 Snap Creator 내에서 Agent가 scAgent로 짧아집니다. 
+---
+= Snap Creator 에이전트
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Agent는 일반적으로 애플리케이션이나 데이터베이스가 설치된 동일한 호스트에 설치됩니다. Agent는 플러그인이 있는 위치입니다. 때때로 Snap Creator 내에서 Agent가 scAgent로 짧아집니다.
+
+Agent는 Snap Creator Server에서 애플리케이션 정지 및 정지 해제 명령뿐만 아니라 다른 사전/POST 명령을 수락합니다. 플러그인을 사용할 때는 Snap Creator 에이전트가 필요합니다.
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2854418["Snap Creator Framework 4.3.3 관리 가이드"]

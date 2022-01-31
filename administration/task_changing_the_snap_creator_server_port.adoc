@@ -1,0 +1,41 @@
+---
+permalink: administration/task_changing_the_snap_creator_server_port.html 
+sidebar: sidebar 
+keywords: snap, creator, server, snapcreator, properties, file, restart, server, installation, unix 
+summary: Snap Creator Server가 사용하는 포트를 변경하려면 snapcreator.properties 파일을 편집하고 서버를 다시 시작하십시오. 
+---
+= 설치 후 Snap Creator Server 포트 변경
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Server가 사용하는 포트를 변경하려면 snapcreator.properties 파일을 편집하고 서버를 다시 시작하십시오.
+
+Snap Creator Server 포트를 변경하는 절차는 Windows 및 UNIX에서 동일합니다. 다음 절차에서는 UNIX 환경의 예를 사용합니다.
+
+. Snap Creator Server가 실행 중인 시스템에 로그인하고 설치 디렉토리 내의 etc 하위 디렉토리로 이동합니다.
++
+[listing]
+----
+cd /install_path/scServer4.3.0/engine/etc
+----
+. 텍스트 편집기를 사용하여 snapcreator.properties 파일을 엽니다.
+. 다음 매개 변수의 포트 값(기본값: 8443)을 새 포트로 변경합니다.
++
+[listing]
+----
+...
+SNAPCREATOR_STARTUP_PORT=8443
+...
+SNAPCREATOR_STORAGE_URL=https\://localhost\:8443/services/v1/StorageService
+...
+----
+. snapcreator.properties 파일을 저장하고 닫습니다.
+. Snap Creator Server를 다시 시작합니다.
++
+[listing]
+----
+/install_path/scServer4.3.0/bin/scServer restart
+----
+

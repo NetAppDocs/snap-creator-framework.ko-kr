@@ -1,0 +1,56 @@
+---
+permalink: administration/reference_parameters_to_set_up_operations_manager_console.html 
+sidebar: sidebar 
+keywords: parameter, required, operation, manager, host, user, pwd, port 
+summary: Operations Manager 콘솔을 설정하려면 여러 매개 변수가 필요합니다. 
+---
+= Operations Manager 콘솔을 설정하는 매개 변수입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Operations Manager 콘솔을 설정하려면 여러 매개 변수가 필요합니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+OM_HOST
+ a| 
+ a| 
+Operations Manager 콘솔 호스트의 이름 또는 IP 주소입니다.
+
+
+
+ a| 
+OM_USER입니다
+ a| 
+ a| 
+이벤트를 생성할 권한이 있는 Operations Manager 콘솔 사용자의 사용자 이름입니다.
+
+
+
+ a| 
+OM_PWD
+ a| 
+ a| 
+Operations Manager 콘솔 사용자의 암호입니다. * 참고: * 암호는 최소 2자 이상이어야 합니다.
+
+
+
+ a| 
+OM_PORT
+ a| 
+ a| 
+Operations Manager 콘솔과의 통신에 사용할 포트; 8088은 기본 HTTP 포트이고 8488은 Operations Manager 콘솔에서 사용하는 기본 HTTPS 포트입니다.
+
+
+
+ a| 
+OM_EVENT_GENERATE
+ a| 
+(Y
+| 해당 없음) 
+|===

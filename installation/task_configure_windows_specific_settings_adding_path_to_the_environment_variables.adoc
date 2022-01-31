@@ -1,0 +1,28 @@
+---
+permalink: installation/task_configure_windows_specific_settings_adding_path_to_the_environment_variables.html 
+sidebar: sidebar 
+keywords: configuring, configure, windows, settings, adding, add, path, environment, variables 
+summary: Windows에 Snap Creator Agent를 설치하려면 Domino 바이너리 파일의 경로를 Windows 환경 변수에 추가해야 합니다. 
+---
+= Windows 관련 설정 구성: 환경 변수에 경로 추가
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows에 Snap Creator Agent를 설치하려면 Domino 바이너리 파일의 경로를 Windows 환경 변수에 추가해야 합니다.
+
+. Windows OS의 고급 설정(예: * 내 컴퓨터 * > * 속성 * > * 고급 * > * 환경 변수 *)에 액세스하고 경로 변수에 Domino 경로를 추가합니다.
++
+
+NOTE: 시스템 변수 수정에 대한 자세한 내용은 Windows 운영 체제 설명서를 참조하십시오.
+
+
+
+Snap Creator Agent를 설치한 후 환경 변수에 Domino 경로를 추가하는 경우 Snap Creator Agent 서비스를 다시 시작해야 합니다. 예를 들어, Snap Creator Agent가 설치된 호스트에서 명령 프롬프트를 열고 다음 명령을 입력합니다.
+
+[listing]
+----
+sc stop SnapCreatorAgentService
+sc start SnapCreatorAgentService
+----

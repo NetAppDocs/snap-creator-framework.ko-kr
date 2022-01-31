@@ -1,0 +1,22 @@
+---
+permalink: administration/concept_benefits_of_using_snap_creator.html 
+sidebar: sidebar 
+keywords: benefits, using, snap, creator, framework, hypervisors, applications, databsases, microsoft, sql, ibm, db2, maxdb, sap, hana, imt, oracle 
+summary: Snap Creator 프레임워크는 간단하고 유연한 소프트웨어 프레임워크를 제공하여 다양한 스토리지 요구사항을 충족합니다. 
+---
+= Snap Creator의 이점
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 프레임워크는 간단하고 유연한 소프트웨어 프레임워크를 제공하여 다양한 스토리지 요구사항을 충족합니다.
+
+Snap Creator는 다음 컨텍스트에서 다양한 스토리지 요구 사항을 해결하는 데 사용됩니다.
+
+* 여러 운영 체제, 하이퍼바이저, 애플리케이션 및 데이터베이스가 있는 환경을 관리하기 위한 단일 인터페이스
+* SnapManager 오퍼링이 없는 애플리케이션 또는 데이터베이스의 백업, 복구 및 클론 복제: IBM DB2, MaxDB 또는 SAP HANA 등
+* Microsoft Exchange Server용 SnapManager 및 Microsoft SQL Server용 SnapManager가 사용자 환경에 설정되어 있는지 여부를 중앙에서 모니터링하고 있습니다.
+* SnapManager 오퍼링이 있는 애플리케이션 또는 데이터베이스(예: Oracle)를 사용하지만 호스트 환경이 IMT(상호 운용성 매트릭스) 또는 유사한 요구사항을 충족하지 않는 경우
+* 스토리지 조치에 대한 맞춤형 스크립트를 대체하여 스냅샷 복사본을 생성하고, SnapVault 업데이트 또는 SnapMirror 업데이트, 클론 볼륨 또는 LUN을 수행하고, Snap Creator 워크플로우를 통해 어디에서나 사용자 지정 스크립트를 호출할 수 있는 일관된 방법을 제공합니다.
+

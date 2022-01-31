@@ -1,0 +1,104 @@
+---
+permalink: administration/task_creating_policies.html 
+sidebar: sidebar 
+keywords: create, retention, policy, snap, creator, gui, guideline, policy, management 
+summary: Snap Creator GUI를 통해 보존 횟수가 다른 여러 스냅샷 정책을 구성하여 새로운 보존 정책을 생성할 수 있습니다. 
+---
+= 정책 생성 중
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 통해 보존 횟수가 다른 여러 스냅샷 정책을 구성하여 새로운 보존 정책을 생성할 수 있습니다.
+
+Snap Creator 정책을 정의하는 지침을 이해해야 합니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 정책 * > * 정책 관리 * 를 선택합니다.
+. Policy Manager * 탭에서 * Create * 를 클릭합니다.
+. 세부 정보를 입력한 다음 * 저장 * 을 클릭합니다.
++
+image::../media/create_new_policy.gif[새 정책을 생성합니다]
+
++
+|===
+| 필드에 입력합니다 | 설명 
+
+
+ a| 
+정책 이름
+ a| 
+정책 이름을 지정합니다.
+
+
+
+ a| 
+백업 유형
+ a| 
+(선택 사항) 백업 유형을 선택합니다.
+
+
+
+ a| 
+정책 유형
+ a| 
+정책 유형을 선택합니다.
+
+** * 로컬 *
++
+운영 스토리지에서 스냅샷 복사본을 사용합니다. SnapMirror 또는 SnapVault 관계가 없는 경우 이 유형을 선택합니다.
+
+** SnapVault
++
+운영 스토리지에 스냅샷 복사본을 생성하고 SnapVault 업데이트를 수행합니다. 구성에 있는 모든 볼륨에 대해 SnapVault 업데이트를 활성화해야 합니다.
+
+** SnapMirror를 참조하십시오
++
+운영 스토리지에 스냅샷 복사본을 생성하고 SnapMirror 업데이트를 수행합니다. 구성의 모든 볼륨에 대해 SnapMirror 업데이트를 사용하도록 설정해야 합니다.
+
+
+
+
+
+ a| 
+정책 일정
+ a| 
+(선택 사항) 사용할 정책 스케줄을 선택합니다. 정책 일정을 지정하지 않으면 이러한 작업이 자동으로 실행되지 않습니다.
+
+
+
+ a| 
+스냅샷 보존 수입니다
+ a| 
+보존할 백업 수를 입력합니다.
+
+
+
+ a| 
+스냅샷 보존 기간
+ a| 
+백업을 삭제하기 전에 보존해야 하는 최소 기간을 입력합니다.
+
+
+
+ a| 
+SnapVault 보존 수입니다
+ a| 
+정책 유형으로 SnapVault를 선택한 경우 SnapVault의 보존 개수를 입력합니다.
+
+
+
+ a| 
+SnapVault 보존 기간
+ a| 
+정책 유형으로 SnapVault를 선택한 경우 SnapVault의 보존 기간을 입력합니다.
+
+
+
+ a| 
+파라미터 추가/덮어쓰기
+ a| 
+특정 매개 변수를 정책에 대해 재정의할 수 있습니다. 필요한 경우 이 확인란을 선택한 다음 재정의할 매개 변수를 추가합니다.
+
+|===
+

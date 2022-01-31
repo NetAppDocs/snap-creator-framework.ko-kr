@@ -1,0 +1,25 @@
+---
+permalink: sap-hana-ops/concept_reviewing_available_backups_in_sap_hana_studio.html 
+sidebar: sidebar 
+keywords: reviewing, review, available, backups, sap, hana, studio 
+summary: SAP HANA Studio에서 스토리지 스냅샷 백업 목록을 볼 수 있습니다. 
+---
+= SAP HANA Studio에서 사용 가능한 백업 검토
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAP HANA Studio에서 스토리지 스냅샷 백업 목록을 볼 수 있습니다.
+
+다음 그림에 강조 표시된 백업은 ""Backup-ANA_HOURLY_20140320103943"이라는 스냅샷 복사본을 보여 줍니다. 이 백업에는 SAP HANA 시스템의 세 데이터 볼륨 모두에 대한 스냅샷 복사본이 포함됩니다. 보조 스토리지에서도 백업을 사용할 수 있습니다.
+
+image::../media/sap_hana_backup_list_scfw_gui.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+스냅샷 복사본 이름은 Snap Creator가 SAP HANA 백업 카탈로그에 스토리지 스냅샷 복사본을 등록할 때 Snap Creator에서 백업 ID로 사용됩니다. SAP HANA Studio 내에서 스토리지 스냅샷 백업이 백업 카탈로그에 표시됩니다. 외부 백업 ID(EBID)의 값은 다음 그림과 같이 스냅샷 복사본 이름과 같습니다.
+
+image::../media/sap_hana_backup_catalog.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+백업이 실행될 때마다 Snap Creator는 서로 다른 스케줄(시간별, 일별 등)에 정의된 보존 정책을 기반으로 운영 스토리지와 보조 스토리지에서 스냅샷 백업을 삭제합니다.
+
+백업이 운영 또는 2차 스토리지에 없는 경우 Snap Creator는 SAP HANA 백업 카탈로그 내의 백업도 삭제합니다. SAP HANA 백업 카탈로그에는 항상 운영 스토리지 및/또는 보조 스토리지에서 사용할 수 있는 전체 백업 목록이 표시됩니다.

@@ -1,0 +1,21 @@
+---
+permalink: domino-ops/concept_ibm_domino_plug_in_overview.html 
+sidebar: sidebar 
+keywords: domino, ibm, plug-in, overview 
+summary: Snap Creator Framework용 IBM Domino 플러그인은 NetApp 스토리지의 Domino 데이터베이스를 위한 완벽한 백업 및 복구 솔루션을 제공합니다. IBM Domino 플러그인을 사용하면 데이터베이스 서버를 오프라인으로 전환하지 않고도 데이터베이스를 효율적으로 백업하고 필요에 따라 복원할 수 있습니다. 이 플러그인은 IBM 제공 API를 사용하여 애플리케이션 정합성을 보장합니다. 
+---
+= IBM Domino 플러그인 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Framework용 IBM Domino 플러그인은 NetApp 스토리지의 Domino 데이터베이스를 위한 완벽한 백업 및 복구 솔루션을 제공합니다. IBM Domino 플러그인을 사용하면 데이터베이스 서버를 오프라인으로 전환하지 않고도 데이터베이스를 효율적으로 백업하고 필요에 따라 복원할 수 있습니다. 이 플러그인은 IBM 제공 API를 사용하여 애플리케이션 정합성을 보장합니다.
+
+Snap Creator 프레임워크에 긴밀하게 통합된 NetApp의 주요 데이터 보호 기술을 사용하면 IBM Domino 플러그인을 사용하여 다음을 수행할 수 있습니다.
+
+* 운영 스토리지에서 애플리케이션 정합성이 보장된 Snapshot 복사본 생성
+* 재해 복구 및 아카이빙을 위해 스냅샷 복사본을 2차 스토리지로 복제
+
+
+통합 기술에는 Snapshot, SnapMirror 및 SnapVault이 포함됩니다.

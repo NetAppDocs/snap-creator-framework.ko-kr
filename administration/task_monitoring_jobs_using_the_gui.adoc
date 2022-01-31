@@ -1,0 +1,20 @@
+---
+permalink: administration/task_monitoring_jobs_using_the_gui.html 
+sidebar: sidebar 
+keywords: monitor, job, snap, creator, gui 
+summary: Snap Creator GUI를 사용하여 Snap Creator가 수행하는 작업의 상태를 모니터링할 수 있습니다. 
+---
+= 작업 모니터링
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 Snap Creator가 수행하는 작업의 상태를 모니터링할 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * Management * > * Job Monitor * 를 선택합니다.
++
+실행 중인 작업 목록이 표시됩니다.
+
+. 실행 중인 작업을 중지하려면 작업을 선택하고 * 취소 * 를 클릭합니다.
+

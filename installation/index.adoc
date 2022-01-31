@@ -1,0 +1,13 @@
+---
+permalink: installation/index.html 
+sidebar: sidebar 
+keywords: install, setup, set, up, Snap, reference_snap_creator_framework_error_messages 
+summary: 에서는 Snap Creator 설치 및 설정 방법을 설명합니다. 
+---
+= 설치 가이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="Lead"]
+이 가이드에서는 Snap Creator 4.3.3을 설치 및 설정하는 방법을 설명합니다.

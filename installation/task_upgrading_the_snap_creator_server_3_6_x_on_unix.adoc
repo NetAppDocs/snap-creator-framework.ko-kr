@@ -1,0 +1,74 @@
+---
+permalink: installation/task_upgrading_the_snap_creator_server_3_6_x_on_unix.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, snap, creator, server, 3.6.x, unix, unix-based 
+summary: UNIX 기반 시스템의 Snap Creator Server 3.6.x에서 직접 업그레이드할 수 있습니다. 
+---
+= UNIX 기반 시스템에서 Snap Creator Server 3.6.x 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX 기반 시스템의 Snap Creator Server 3.6.x에서 직접 업그레이드할 수 있습니다.
+
+* Snap Creator에 특수 문자가 포함된 사용자 이름이 있는 경우 업그레이드를 수행하기 전에 알파벳 문자(a-z, A-Z)만 사용하여 사용자 이름을 변경해야 합니다.
+* Snap Creator 디렉토리를 백업하기 전에 Snap Creator 프로세스를 중지하여 백업 데이터가 완료되었는지 확인합니다.
++
+예를 들어, 다음 명령을 입력합니다.
+
++
+[listing]
+----
+/install_path/scServer3.6.x/bin/scServer stop
+/install_path/scAgent3.6.x/bin/scAgent stop
+----
+* Snap Creator 3.6.x 서버 디렉토리(/install_path/scServer3.6.x) 내에서 다음 디렉토리와 모든 관련 하위 디렉토리 및 파일을 백업했습니다.
++
+** Snap Creator 데이터베이스(../GUI/snapcreator)
+** 프로필 및 구성 파일(../configs)
+** 로그(../로그) * 참고: * 생성한 Snap Creator 3.6.x 백업 복사본은 삭제하지 마십시오.
+
+
+
+
+다음 단계에서 제공되는 경로는 기본 설치 경로를 나타냅니다. 아래 명령의 경로는 설치 경로와 다를 수 있습니다.
+
+업그레이드 프로세스가 완료된 후 다음 문제를 고려하십시오.
+
+* 업그레이드된 Snap Creator 데이터베이스에 ""진행 중""으로 표시된 일부 작업이 포함되어 있는 경우 업그레이드 프로세스가 완료된 후에도 상태는 동일하게 유지됩니다.
+* 최신 Snap Creator의 기본 관리자는 Snap Creator 3.6.x의 관리자여야 합니다 3.6.x 사용자가 관리자가 아닌 경우 업그레이드 시 3.6.x 사용자에게 운영자 역할이 할당됩니다.
++
+.. Snap Creator 프로세스를 아직 중지하지 않은 경우 중지하십시오.
++
+프로세스 중지에 대한 자세한 내용은 이 항목 앞부분의 세부 정보를 참조하십시오.
+
+.. 최신 Snap Creator를 설치하되 Snap Creator Server 서비스는 시작하지 마십시오.
++
+자세한 내용은 UNIX에서 Snap Creator Server를 설치하는 방법을 참조하십시오.
+
+.. 백업된 Snap Creator 3.6.x 데이터베이스 디렉토리를 최신 데이터베이스 위치(/install_path/scServer4.1.x/engine/snapcreator)로 복사합니다.
+.. 백업된 Snap Creator 3.6.x 프로필 및 구성 폴더를 최신 위치(/install_path/scServer4.1.x/engine/configs)로 복사합니다.
+.. 백업된 Snap Creator 3.6.x 로그 폴더를 최신 위치(/install_path/scServer4.1.x/engine/logs)로 복사합니다.
+.. Snap Creator 설치 경로에서 디렉토리를 엔진 하위 디렉토리로 변경하십시오(/install_path/scServer4.1.x/engine).
+.. 다음 명령을 입력하여 Snap Creator를 업그레이드합니다. java-jar snapcreator.jar -upgrade
+
+
+
+
+업그레이드 프로세스가 완료되면 다음 명령을 입력하여 Snap Creator Server 서비스를 시작합니다.
+
+/INSTALL_PATH/scServer4.1.x/bin/scServer 시작
+
+또한 Snap Creator 3.6.x 설치 디렉토리를 삭제합니다.
+
+
+IMPORTANT: 이전 버전으로 되돌릴 필요가 없을 때까지 백업 복사본을 삭제하지 마십시오.
+
+또한 지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다 (https://IP_address:gui_port)[].
+
+HTTPS를 사용하여 연결해야 합니다. 그렇지 않으면 연결이 자동으로 HTTPS 연결로 리디렉션되지 않고 GUI가 작동하지 않습니다.
+
+* 관련 정보 *
+
+xref:task_installing_the_snap_creator_server_on_unix.adoc[UNIX 기반 시스템에 Snap Creator Server 설치]

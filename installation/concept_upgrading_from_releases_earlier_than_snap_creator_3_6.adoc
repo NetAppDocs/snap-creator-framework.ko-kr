@@ -1,0 +1,19 @@
+---
+permalink: installation/concept_upgrading_from_releases_earlier_than_snap_creator_3_6.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, releases, earlier, before, snap, creator, 3.6 
+summary: Snap Creator 3.6 이전의 릴리즈에서 업그레이드하는 경우, 먼저 한 번에 한 가지 버전의 Snap Creator 3.6으로 업그레이드해야 합니다. 
+---
+= Snap Creator 3.6 이전의 릴리즈에서 업그레이드 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 3.6 이전의 릴리즈에서 업그레이드하는 경우, 먼저 한 번에 한 가지 버전의 Snap Creator 3.6으로 업그레이드해야 합니다.
+
+예를 들어, Snap Creator 3.5.x에서 업그레이드하려면 먼저 3.5.x에서 3.6으로 업그레이드해야 합니다. Snap Creator 3.6을 실행한 후 최신 버전으로 업그레이드를 완료할 수 있습니다. 이 업그레이드 프로세스 중에 Snap Creator Server를 업그레이드하는 동시에 Snap Creator Agent를 설치할 수 있습니다.
+
+* 관련 정보 *
+
+xref:task_upgrading_the_snap_creator_server_3_6_x_on_windows.adoc[Windows에서 Snap Creator Server 3.6.x 업그레이드]

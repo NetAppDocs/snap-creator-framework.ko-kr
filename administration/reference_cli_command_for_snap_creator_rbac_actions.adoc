@@ -1,0 +1,387 @@
+---
+permalink: administration/reference_cli_command_for_snap_creator_rbac_actions.html 
+sidebar: sidebar 
+keywords: snap, creator, rbac, cli, command, user, access 
+summary: CLI 명령을 사용하여 Snap Creator RBAC 작업을 수행할 수 있습니다. 
+---
+= Snap Creator 사용자 액세스를 관리하는 데 사용되는 명령입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CLI 명령을 사용하여 Snap Creator RBAC 작업을 수행할 수 있습니다.
+
+다음 표에는 Snap Creator GUI 기반 RBAC 동작에 해당하는 명령줄 작업이 나와 있습니다.
+
+|===
+| RBAC 영역 | 조치 | 명령 및 관련 매개 변수 
+
+
+ a| 
+사용자
+ a| 
+새 사용자를 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userAdd
+--username user_name
+--userPwd user_passwd
+--verbose
+----
+
+
+ a| 
+사용자를 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userDelete
+--username user_name
+--verbose
+---- a| 
+모든 사용자를 나열합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userList
+--verbose
+---- a| 
+역할에 할당된 모든 사용자를 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action userListAssigned
+--roleName role_name
+--verbose
+----
+
+
+ a| 
+프로파일이 할당된 모든 사용자를 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action userListForProfile
+--verbose
+---- a| 
+역할
+
+
+
+ a| 
+새 역할을 만듭니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleAdd
+--roleName role_name
+--roleDesc role_description
+--verbose
+---- a| 
+역할을 삭제합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleDelete
+--roleName role_name
+--verbose
+---- a| 
+사용자에게 역할을 할당합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleAssign
+--userName user_name
+--roleName role_name
+--verbose
+----
+
+
+ a| 
+사용자의 역할 할당을 취소합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleUnassign
+--userName user_name
+--roleName role_name
+--verbose
+---- a| 
+사용자에게 할당된 모든 역할을 나열합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action roleListAssigned
+--userName user_name
+--verbose
+---- a| 
+권한
+ a| 
+새 권한을 만듭니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permAdd
+--permName permission_name
+--permDesc permission_description
+--verbose
+---- a| 
+권한을 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permDelete
+--permName permission_name
+--verbose
+----
+
+
+ a| 
+사용자에게 권한을 할당합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permAssign
+--permName permission_name
+--roleName role_name
+--verbose
+---- a| 
+사용자의 권한 할당을 취소합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permUnaspermission_namesign
+--permName
+--roleName role_name
+--verbose
+---- a| 
+모든 권한을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permList
+--verbose
+----
+
+
+ a| 
+역할에 할당된 모든 권한을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action permListAssigned
+--roleName role_name
+--verbose
+---- a| 
+운영
+
+
+
+ a| 
+사용 권한에 작업을 할당합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opAssign
+--opName operation_name
+--permName permission_name
+--verbose
+---- a| 
+사용 권한에서 작업 할당을 취소합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opUnassign
+--opName operation_name
+--permName permission_name
+--verbose
+---- a| 
+모든 작업을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opList
+--verbose
+----
+
+
+ a| 
+권한에 할당된 모든 작업을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action opListAssigned
+--permName permission_name
+--verbose
+---- a| 
+프로파일
+
+
+
+ a| 
+사용자에게 프로필을 할당합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileAssign
+--userName user_name
+--verbose
+---- a| 
+사용자의 프로필 할당을 취소합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileUnassign
+--userName user_name
+--verbose
+---- a| 
+사용자에게 할당된 모든 프로파일을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action profileListForUser
+--userName user_name
+--verbose
+----
+|===

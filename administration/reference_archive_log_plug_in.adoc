@@ -1,0 +1,67 @@
+---
+permalink: administration/reference_archive_log_plug_in.html 
+sidebar: sidebar 
+keywords: archive, log, plug-in, snap, creator, archive 
+summary: 아카이브 로그 플러그인은 Snap Creator Archive 로그와 함께 작동하며 모든 애플리케이션 또는 데이터베이스의 로그는 지원하지 않습니다. 
+---
+= 아카이브 로그 플러그인
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+아카이브 로그 플러그인은 Snap Creator Archive 로그와 함께 작동하며 모든 애플리케이션 또는 데이터베이스의 로그는 지원하지 않습니다.
+
+다음 표에는 아카이브 로그 플러그인 매개 변수가 나열되어 있고, 해당 설정에 대한 설명이 나와 있습니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+archive_log_enable입니다
+ a| 
+(Y
+| 해당 없음 
+
+
+| 정책: 연령)  a| 
+아카이브 로그 관리를 활성화합니다(이전 아카이브 로그 삭제).
+ a| 
+archive_log_retention 을 선택합니다
+
+
+
+ a| 
+일 수
+ a| 
+아카이브 로그가 유지되는 일 수를 지정합니다. 이 설정은 ntap_snapshot_retentions보다 크거나 같아야 합니다.
+ a| 
+archive_log_DIR입니다
+
+
+
+ a| 
+change_info_directory/logs
+ a| 
+아카이브 로그를 포함하는 디렉토리의 경로를 지정합니다.
+ a| 
+archive_log_EXT
+
+
+
+ a| 
+file_extension을 선택합니다
+ a| 
+아카이브 로그의 파일 확장명을 지정합니다. 예를 들어 아카이브 로그가 10192091019.log인 경우 이 매개 변수 설정을 로그로 지정합니다.
+ a| 
+archive_log_recursive_search를 선택합니다
+
+
+
+ a| 
+(Y
+| 해당 없음)  a| 
+하위 디렉터리 내의 아카이브 로그 관리를 활성화합니다. 아카이브 로그가 하위 디렉터리 아래에 있는 경우 이 매개 변수를 사용해야 합니다.
+
+|===

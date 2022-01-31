@@ -1,0 +1,17 @@
+---
+permalink: sap-hana-ops/concept_resuming_a_snapvault_relationship_after_a_restore.html 
+sidebar: sidebar 
+keywords: resuming, resume, restart, snapvault, relationship, after, restore 
+summary: 최신 스냅샷 백업을 사용하여 완료되지 않은 복원은 운영 스토리지 시스템에서 SnapVault 관계를 삭제합니다. 
+---
+= 복원 후 SnapVault 관계를 다시 시작합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+최신 스냅샷 백업을 사용하여 완료되지 않은 복원은 운영 스토리지 시스템에서 SnapVault 관계를 삭제합니다.
+
+복원 및 복구 프로세스가 완료되면 SnapVault 관계를 다시 시작해야 스냅 생성기를 사용하여 백업을 다시 실행할 수 있습니다. 그렇지 않으면 기본 스토리지 시스템에서 더 이상 SnapVault 관계를 찾을 수 없기 때문에 Snap Creator에서 오류 메시지를 표시합니다.
+
+소스 볼륨과 타겟 볼륨 사이에 여전히 공통 스냅샷 복사본이 있는 경우 델타 전송을 기반으로 데이터 전송이 필요합니다.

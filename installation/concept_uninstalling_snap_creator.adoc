@@ -1,0 +1,13 @@
+---
+permalink: installation/concept_uninstalling_snap_creator.html 
+sidebar: sidebar 
+keywords: unstalling, snap, creator 
+summary: Windows 및 UNIX 시스템에서 Snap Creator를 제거할 수 있습니다. 
+---
+= Snap Creator 제거 중
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows 및 UNIX 시스템에서 Snap Creator를 제거할 수 있습니다.

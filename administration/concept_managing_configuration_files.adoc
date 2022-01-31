@@ -1,0 +1,15 @@
+---
+permalink: administration/concept_managing_configuration_files.html 
+sidebar: sidebar 
+keywords: create, copy, download, list, delete, configuration, managing, files 
+summary: 구성 파일을 생성, 복사, 다운로드, 나열 및 삭제할 수 있습니다. 
+---
+= 구성 파일 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 파일을 생성, 복사, 다운로드, 나열 및 삭제할 수 있습니다.
+
+구성 파일은 Snap Creator의 중심이며 지원되는 플러그인 실행, 필수 변수 지정, 스냅샷 복사본에 캡처된 볼륨 정의 등 Snap Creator의 동작에 영향을 미치는 매개 변수로 구성됩니다.

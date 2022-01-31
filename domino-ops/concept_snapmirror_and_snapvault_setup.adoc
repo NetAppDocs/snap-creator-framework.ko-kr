@@ -1,0 +1,18 @@
+---
+permalink: domino-ops/concept_snapmirror_and_snapvault_setup.html 
+sidebar: sidebar 
+keywords: domino, ibm, snapmirror, snapvault, setup 
+summary: SnapMirror는 재해 복구 기술로, 지리적으로 원격 사이트의 운영 스토리지에서 2차 스토리지로 페일오버하도록 설계되었습니다. SnapVault는 표준 규정 준수 및 기타 거버넌스 관련 목적을 위해 D2D Snapshot 복사본 복제를 위해 설계된 아카이빙 기술입니다. 
+---
+= SnapMirror 및 SnapVault 설정
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror는 재해 복구 기술로, 지리적으로 원격 사이트의 운영 스토리지에서 2차 스토리지로 페일오버하도록 설계되었습니다. SnapVault는 표준 규정 준수 및 기타 거버넌스 관련 목적을 위해 D2D Snapshot 복사본 복제를 위해 설계된 아카이빙 기술입니다.
+
+Snap Creator를 이러한 제품과 함께 사용하려면 먼저 소스 볼륨과 타겟 볼륨 간의 데이터 보호 관계를 구성한 다음 관계를 초기화해야 합니다.
+
+
+NOTE: 이 섹션의 절차에서는 clustered Data ONTAP에서 복제 관계를 설정하는 방법에 대해 설명합니다. 7-Mode에서 작동하는 Data ONTAP에서 이러한 관계를 설정하는 방법에 대한 자세한 내용은 에서 확인할 수 있습니다.

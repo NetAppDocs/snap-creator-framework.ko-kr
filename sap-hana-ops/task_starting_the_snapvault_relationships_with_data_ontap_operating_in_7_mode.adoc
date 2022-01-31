@@ -1,0 +1,39 @@
+---
+permalink: sap-hana-ops/task_starting_the_snapvault_relationships_with_data_ontap_operating_in_7_mode.html 
+sidebar: sidebar 
+keywords: sap, hana, starting, snapvault, relationship, data, ontap, operating, 7-mode 
+summary: 2차 스토리지 시스템에서 실행되는 명령을 사용하여 SnapVault 관계를 시작할 수 있습니다. 
+---
+= 7-Mode에서 운영되는 Data ONTAP와 SnapVault 관계를 시작합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+2차 스토리지 시스템에서 실행되는 명령을 사용하여 SnapVault 관계를 시작할 수 있습니다.
+
+. 7-Mode에서 운영되는 Data ONTAP를 실행하는 스토리지 시스템의 경우 다음 명령을 실행하여 SnapVault 관계를 시작합니다.
++
+[listing]
+----
+hana2b> snapvault start -S hana1a:/vol/data_00001/mnt00001 /vol/backup_data_00001/mnt00001
+Snapvault configuration for the qtree has been set.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+hana2b>
+hana2b> snapvault start -S hana1a:/vol/data_00003/mnt00003 /vol/backup_data_00003/mnt00003
+Snapvault configuration for the qtree has been set.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+hana2b>
+hana2b> snapvault start -S hana1b:/vol/data_00002/mnt00002 /vol/backup_data_00002/mnt00002
+Snapvault configuration for the qtree has been set.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+hana2b>
+----
++
+
+NOTE: 복제 트래픽에 전용 네트워크를 사용하는 것이 좋습니다. 이 경우 운영 스토리지 컨트롤러에서 이 인터페이스의 호스트 이름을 구성합니다. 호스트 이름은 hana1b 및 hana1a 대신 hana1a-rep 및 hana1b-rep가 될 수 있습니다.
+
+

@@ -1,0 +1,19 @@
+---
+permalink: domino-ops/concept_preparing_for_ibm_domino_backup_and_restore_operations.html 
+sidebar: sidebar 
+keywords: domino, ibm, preparing, prepare, ibm, domino, backup, restore 
+summary: IBM Domino 플러그인을 구축하기 전에 스토리지 시스템과 호스트가 최소한의 리소스 요구 사항을 충족하는지 확인하십시오. 또한 데이터베이스의 스토리지 시스템 레이아웃을 구성하고 SnapMirror 및 SnapVault 관계를 선택적으로 설정해야 합니다. 
+---
+= IBM Domino 백업 및 복구 준비
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IBM Domino 플러그인을 구축하기 전에 스토리지 시스템과 호스트가 최소한의 리소스 요구 사항을 충족하는지 확인하십시오. 또한 데이터베이스의 스토리지 시스템 레이아웃을 구성하고 SnapMirror 및 SnapVault 관계를 선택적으로 설정해야 합니다.
+
+Snap Creator Server 및 Agent 설치 요구 사항은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395424["Snap Creator Framework 4.1.2 설치 가이드"]. 특히 에이전트 호스트의 IBM Domino 사전 설치 요구 사항에 주의를 기울이십시오.
+
+* UNIX 호스트에서는 IBM Domino 공유 객체 파일에 대한 심볼 링크를 생성해야 합니다.
+* Windows 호스트에서는 경로 환경 변수에 IBM Domino 설치 경로를 추가해야 합니다.
+

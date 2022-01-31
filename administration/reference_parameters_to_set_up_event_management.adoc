@@ -1,0 +1,62 @@
+---
+permalink: administration/reference_parameters_to_set_up_event_management.html 
+sidebar: sidebar 
+keywords: parameter, management, snap, creator, server, event, ntap, asup, error, failure, msg, sendtrap 
+summary: Snap Creator Server에 대한 이벤트 관리를 설정하려면 몇 가지 매개 변수가 필요합니다. 
+---
+= 이벤트 관리 설정을 위한 매개 변수입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Server에 대한 이벤트 관리를 설정하려면 몇 가지 매개 변수가 필요합니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+NTAP_ASUP_ERROR_ENABLE을 선택합니다
+ a| 
+"Y" 또는 "N"
+ a| 
+EnablesSnap Creator 오류 메시지를 사용하여 스토리지 컨트롤러에 AutoSupport 메시지를 로깅할 수도 있습니다. 백업이 시작된 후 백업이 완료되면 Snap Creator에서 항상 info AutoSupport 메시지를 생성합니다.
+
+
+
+ a| 
+실패_MSG
+ a| 
+ a| 
+Snap Creator 장애 시 정의된 장애 메시지를 기록합니다. SENDTRAP가 정의된 경우 이 실패 메시지를 SENDTRAP로 보낼 수도 있습니다.
+
+
+
+ a| 
+SENDTRAP
+ a| 
+ a| 
+는 모니터링 소프트웨어 또는 e-메일과 상호 작용하여 Snap Creator에서 생성된 경고를 자체 모니터링 인프라에 전달할 수 있도록 합니다. %MSG 변수는 Snap Creator에서 보낸 메시지입니다. 다음은 UNIX 시스템에서 이메일을 보낼 수 있는 방법의 예입니다. SENDTRAP=/usr/bin/mailx -s %MSG myaddress@mydomain.com </dev/null
+
+Windows 시스템에서 이메일을 보내려면 명령 앞에 cmd.exe /c를 추가해야 합니다. 예를 들어, SENDTRAP=cmd.exe /c echo%who
+
+
+
+ a| 
+성공_트랩
+ a| 
+ a| 
+는 모니터링 소프트웨어 또는 e-메일과 상호 작용하여 Snap Creator에서 생성된 성공 메시지를 자체 모니터링 인프라에 전달할 수 있도록 합니다. %SUCCESS_MSG 변수는 Snap Creator의 성공 메시지입니다. 다음은 UNIX 시스템에서 e-메일을 보내는 방법의 예입니다. SUCCESS_TRAP=/usr/bin/mailx -s %SUCCESS_MSG myaddress@mydomain.com </dev/null
+
+Windows 시스템에서 이메일을 보내려면 명령 앞에 cmd.exe /c를 추가해야 합니다. 예: success_trap=cmd.exe /c echo%Hello
+
+
+
+ a| 
+성공_MSG
+ a| 
+ a| 
+Snap Creator 백업이 성공한 후 이 설정은 정의된 메시지를 기록합니다. SUCCESS_TRAP가 정의된 경우 SUCCESS_TRAP, SENDTRAP로 메시지를 전송한다.
+
+|===

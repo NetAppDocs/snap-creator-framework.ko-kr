@@ -1,0 +1,49 @@
+---
+permalink: installation/task_creating_symbolic_links_for_domino_plug_in_on_linux_and_solaris_hosts.html 
+sidebar: sidebar 
+keywords: creating, create, symbolic, links, domino, plug-in, linux, solaris, hosts 
+summary: Linux 및 Solaris 호스트에서 Domino 플러그인에 대한 심볼 링크를 생성하려면 이 절차를 수행해야 합니다. 
+---
+= Linux 및 Solaris 호스트에서 Domino 플러그인의 심볼 링크 생성
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux 및 Solaris 호스트에서 Domino 플러그인에 대한 심볼 링크를 생성하려면 이 절차를 수행해야 합니다.
+
+이 문서에서 직접 명령을 복사하여 붙여넣으면 안 됩니다. 줄 바꿈 및 하드 리턴으로 인해 잘못 전송된 문자 등의 오류가 발생할 수 있습니다. 명령을 복사하여 텍스트 편집기에 붙여넣고 명령을 확인한 다음 CLI 콘솔에 입력합니다.
+
+
+NOTE: 다음 단계에서 제공된 경로는 32비트 시스템을 나타냅니다. 64비트 시스템은 /usr/lib 대신 /usr/lib64에 대한 simlinks를 만들어야 합니다.
+
+. 다음 파일에 대한 /usr/lib 링크를 추가합니다.
++
+** libxmlproc.so
+** libndgts.so를 사용합니다
+** libnotes.so
+** libgsk8iccs.so(Domino 9.0 이상에만 해당) 심볼 링크를 만드는 일반적인 방법은 ln 명령을 사용하는 것입니다.
+
+
++
+ln -s /path /to /source_file /usr/lib/linked_file
+
++
++위치:
+
++
+** -s는 운영 체제에 심볼 링크를 생성하도록 지시합니다.
+** /path /to /source_file 은 파일 이름을 포함하여 Domino 라이브러리 파일 중 하나에 대한 경로입니다.
+** linked_file 은 링크되는 파일의 이름입니다.
++
+[listing]
+----
+ln -s /opt/ibm/domino/notes/latest/linux/libxmlproc.so /usr/lib/libxmlproc.so
+ln -s /opt/ibm/domino/notes/latest/linux/libndgts.so /usr/lib/libndgts.so
+ln -s /opt/ibm/domino/notes/latest/linux/libnotes.so /usr/lib/libnotes.so
+ln -s /opt/ibm/domino/notes/latest/linux/libgsk8iccs.so /usr/lib/libgsk8iccs.so
+----
+
+
+. 1단계에 나열된 파일의 경로를 확인합니다.
+

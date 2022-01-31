@@ -1,0 +1,521 @@
+---
+permalink: installation/reference_cli_commands_for_creating_svm_roles.html 
+sidebar: sidebar 
+keywords: cli, commands, creating, svm, roles, role create 
+summary: 다음 표에는 새 SVM 사용자의 역할을 생성하는 데 필요한 명령이 나와 있습니다. 
+---
+= SVM 역할을 생성하는 CLI 명령입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+다음 표에는 새 SVM 사용자의 역할을 생성하는 데 필요한 명령이 나와 있습니다.
+
+|===
+| 명령 디렉토리 이름입니다 | 실행할 명령입니다 
+
+
+ a| 
+추가 사용자
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "adduser" - SVM Snapcreator
+
+
+
+ a| 
+event generate-autosupport-log입니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "event generate-autosupport-log" - vserver Snapcreator
+
+
+
+ a| 
+LUN 설명입니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "lun comment" - vserver Snapcreator
+
+
+
+ a| 
+LUN 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN create" - vserver Snapcreator
+
+
+
+ a| 
+LUN을 삭제합니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN delete" - SVM Snapcreator
+
+
+
+ a| 
+LUN 형태
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN geometry" - SVM Snapcreator
+
+
+
+ a| 
+LUN igroup 추가
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "lun igroup add" - vserver Snapcreator
+
+
+
+ a| 
+LUN igroup 작성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "lun igroup create" - vserver Snapcreator
+
+
+
+ a| 
+LUN igroup이 설정되었습니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN igroup set" - SVM Snapcreator
+
+
+
+ a| 
+LUN igroup 표시
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "lun igroup show" - vserver Snapcreator
+
+
+
+ a| 
+LUN 매핑
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN map" - SVM Snapcreator
+
+
+
+ a| 
+LUN 매핑이 표시됩니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "lun mapping show" - vserver Snapcreator
+
+
+
+ a| 
+LUN 수정
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN modify" - SVM Snapcreator
+
+
+
+ a| 
+LUN 이동
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "LUN move" - SVM Snapcreator
+
+
+
+ a| 
+LUN이 오프라인 상태입니다
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "LUN offline" - SVM Snapcreator
+
+
+
+ a| 
+LUN을 온라인 상태로 전환합니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN online" - SVM Snapcreator
+
+
+
+ a| 
+LUN 크기 조정
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "LUN 크기 조정" - SVM Snapcreator
+
+
+
+ a| 
+LUN 표시
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "lun show" - vserver Snapcreator
+
+
+
+ a| 
+LUN 매핑을 해제합니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "LUN unmap" - SVM Snapcreator
+
+
+
+ a| 
+네트워크
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "network" - SVM SnapCreator
+
+
+
+ a| 
+네트워크 연결
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "network connections" - vserver SnapCreator
+
+
+
+ a| 
+네트워크 연결이 활성 상태입니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "network connections active" - vserver SnapCreator
+
+
+
+ a| 
+네트워크 연결 수신 대기 표시
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "network connections Listening show" - vserver SnapCreator
+
+
+
+ a| 
+네트워크 인터페이스
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "network interface" - vserver SnapCreator
+
+
+
+ a| 
+네트워크 라우팅 - 그룹
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "network routing-groups" - SVM SnapCreator
+
+
+
+ a| 
+복구 - 파일
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "restore-file" - vserver Snapcreator
+
+
+
+ a| 
+SnapMirror를 참조하십시오
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "SnapMirror" - SVM SnapCreator
+
+
+
+ a| 
+버전
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "version" - SVM Snapcreator
+
+
+
+ a| 
+볼륨
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "volume"
+
+
+
+ a| 
+볼륨 자동 크기 조정
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume AutoSize" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 클론
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume clone" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 클론 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume clone create" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume create" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 제거
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume destroy" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 효율성 꺼짐
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume Efficiency off" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 효율성 켜짐
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume Efficiency on" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 효율성 시작
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume Efficiency start" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 효율성 표시
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume Efficiency show" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 파일
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "볼륨 파일" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 파일 클론
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume file clone" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 파일 클론 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume file clone create" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 수정
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume modify" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 마운트
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume mount" - vserver Snapcreator
+
+
+
+ a| 
+볼륨이 오프라인 상태입니다
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "volume offline" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 표시
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume show" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 크기
+ a| 
+역할 생성 - 역할 VSERVERRBACROLE_New - cmddirname "볼륨 크기" - SVM Snapcreator
+
+
+
+ a| 
+볼륨 스냅샷 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume snapshot create" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 스냅숏 삭제
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume snapshot delete" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 스냅샷 복원
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume snapshot restore" - vserver Snapcreator
+
+
+
+ a| 
+볼륨 마운트 해제
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "volume unmount" - vserver Snapcreator
+
+
+
+ a| 
+vserver export-policy rule show를 참조하십시오
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver export - policy rule show" - vserver Snapcreator
+
+
+
+ a| 
+vserver export-policy show를 참조하십시오
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver export-policy show" - vserver Snapcreator
+
+
+
+ a| 
+SVM FCP
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver FCP" - SVM Snapcreator
+
+
+
+ a| 
+SVM FCP 이니시에이터가 표시됩니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver FCP initiator show" - vserver Snapcreator
+
+
+
+ a| 
+SVM FCP show
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver FCP show" - SVM Snapcreator
+
+
+
+ a| 
+SVM FCP 상태
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver FCP status" - vserver Snapcreator
+
+
+
+ a| 
+SVM iSCSI
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI" - SVM Snapcreator
+
+
+
+ a| 
+SVM iSCSI 연결이 표시됩니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI connection show" - vserver Snapcreator
+
+
+
+ a| 
+SVM iSCSI 인터페이스 accesslist add
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI interface accesslist add" - vserver Snapcreator
+
+
+
+ a| 
+SVM iSCSI 인터페이스 접근목록이 표시됩니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI interface accesslist show" - vserver Snapcreator
+
+
+
+ a| 
+SVM iSCSI iSNS 쿼리
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI iSNS query" - vserver Snapcreator
+
+
+
+ a| 
+SVM iSCSI 이름
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI nodename" - SVM Snapcreator
+
+
+
+ a| 
+SVM iSCSI 세션이 표시됩니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI session show" - vserver Snapcreator
+
+
+
+ a| 
+SVM iSCSI 표시
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI show" - SVM Snapcreator
+
+
+
+ a| 
+SVM iSCSI 상태
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver iSCSI status" - vserver Snapcreator
+
+
+
+ a| 
+SVM NFS
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver NFS" - SVM Snapcreator
+
+
+
+ a| 
+SVM NFS 상태입니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver NFS status" - vserver Snapcreator
+
+
+
+ a| 
+SVM 서비스 DNS 호스트가 표시됩니다
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver services name - service DNS hosts show" - vserver SnapCreator
+
+
+
+ a| 
+SVM 서비스 UNIX 그룹 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver services name - service unix-group create" - vserver Snapcreator
+
+
+
+ a| 
+SVM 서비스 UNIX-GROUP SHOW
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver services name - service unix-group show" - vserver Snapcreator
+
+
+
+ a| 
+SVM 서비스 UNIX - 사용자 생성
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver services name - service UNIX - user create" - vserver Snapcreator
+
+
+
+ a| 
+SVM 서비스 UNIX - user show
+ a| 
+role create - role VSERVERRBACROLE_New - cmddirname "vserver services name - service UNIX - user show" - vserver Snapcreator
+
+|===

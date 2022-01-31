@@ -1,0 +1,13 @@
+---
+permalink: administration/index.html 
+sidebar: sidebar 
+keywords: administration, guide, snap, creator, server, agent, profiles, policies, schedule, jobs, backup, recovery 
+summary: 사용자 액세스 및 프로필, 정책, 스케줄 작업, 백업 및 복구 작업을 비롯하여 Snap Creator Server 및 Agent를 관리하기 위한 핫 데이터를 설명합니다 
+---
+= 관리 가이드 를 참조하십시오
+:icons: font
+:imagesdir: ../media/
+
+
+[role="Lead"]
+이 가이드에서는 사용자 액세스 및 프로필, 정책, 일정 작업, 백업 및 복구 작업을 비롯하여 Snap Creator Server 및 Agent for Snap Creator 4.3.3을 관리하는 방법에 대해 설명합니다.

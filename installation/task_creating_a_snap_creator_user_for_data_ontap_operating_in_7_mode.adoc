@@ -1,0 +1,66 @@
+---
+permalink: installation/task_creating_a_snap_creator_user_for_data_ontap_operating_in_7_mode.html 
+sidebar: sidebar 
+keywords: creating, create, snap, creator, user, ontap, 7-mode 
+summary: Snap Creator는 Data ONTAP API를 사용하여 스토리지 시스템과 통신합니다. 사용자 계정에 Snap Creator에만 대한 액세스 권한이 부여되도록 각 스토리지 컨트롤러에서 새 역할, 그룹 및 사용자를 생성합니다. 역할이 그룹에 할당되고 그룹에 사용자가 포함됩니다. 이 옵션은 액세스를 제어하고 Snap Creator 계정의 범위를 제한합니다. 
+---
+= 7-Mode에서 작동하는 Data ONTAP용 Snap Creator 사용자 생성
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator는 Data ONTAP API를 사용하여 스토리지 시스템과 통신합니다. 사용자 계정에 Snap Creator에만 대한 액세스 권한이 부여되도록 각 스토리지 컨트롤러에서 새 역할, 그룹 및 사용자를 생성합니다. 역할이 그룹에 할당되고 그룹에 사용자가 포함됩니다. 이 옵션은 액세스를 제어하고 Snap Creator 계정의 범위를 제한합니다.
+
+이 절차는 Snap Creator가 설치된 각 스토리지 컨트롤러에 대해 한 번 수행해야 합니다.
+
+Data ONTAP CLI(SSH, 콘솔 연결 또는 텔넷)를 사용하여 7-Mode에서 작동하는 Data ONTAP에 대한 Snap Creator 사용자를 생성하려면 다음 단계를 완료하십시오.
+
+
+NOTE: 이 문서에서 직접 명령을 복사하여 붙여넣으면 안 됩니다. 줄 바꿈 및 하드 리턴으로 인해 문자가 잘못 전송되어 오류가 발생할 수 있습니다. 이 절차의 명령을 복사하여 텍스트 편집기에 붙여 넣고 명령을 확인한 다음 CLI에 입력합니다.
+
+. 다음 명령을 실행하여 스토리지 시스템에서 Snap Creator에 필요한 권한을 정의하는 역할을 생성합니다.
++
+[listing]
+----
+useradmin role add rolename -a login-\*,api-snapshot-\*,api-system-\*,
+api-ems-\*,api-snapvault-\*,api-snapmirror-\*,api-volume-\*,
+api-lun-\*,api-cg-\*,api-nfs-\*,api-file-\*,api-license-\*,
+api-net-\*api-clone-\*, api-options-get, api-wafl-sync
+----
++
+
+NOTE: 이 단계에 표시된 명령에는 Snap Creator에서 사용하는 모든 API 역할이 포함되어 있습니다. 그러나 필요한 역할만 포함하여 사용자 액세스를 제한할 수 있습니다(예: SnapMirror를 사용하지 않을 경우 API-SnapMirror- * 가 필요하지 않음).
+
++
+[listing]
+----
+useradmin role add sc_role -a login-*,api-snapshot-*,api-system-*,api-ems-*,api-snapvault-*,api-snapmirror-*,api-volume-*,
+api-lun-*,api-cg-*,api-nfs-*,api-file-*,api-license-*, api-net-*, api-clone-*, api-options-get, api-wafl-sync
+----
+. 스토리지 시스템에 새 그룹을 생성하고 다음 명령을 실행하여 새로 생성된 역할을 그룹에 할당합니다.
++
+[listing]
+----
+useradmin group add groupname -r rolename
+----
++
+[listing]
+----
+useradmin group add snap_creator_group -r snap_creator_role
+----
+. 다음 명령을 실행하여 사용자 계정을 만듭니다.
++
+[listing]
+----
+useradmin user add username -g groupname
+----
++
+[listing]
+----
+useradmin user add snap_creator_user -g snap_creator_group
+----
+. 계정의 암호를 입력합니다.
+
+
+Snap Creator에 대한 구성 파일을 생성할 때 이 제한된 계정을 사용하십시오.

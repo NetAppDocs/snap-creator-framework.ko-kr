@@ -1,0 +1,26 @@
+---
+permalink: sap-hana-ops/task_performing_database_integrity_checks_with_snap_creator_gui.html 
+sidebar: sidebar 
+keywords: sap, hana, peforming, database, integrity, checks, snap, creator, gui, graphical, user, interface 
+summary: 'Snap Creator 그래픽 사용자 인터페이스(GUI)에서 데이터베이스 무결성 검사를 수행할 수 있습니다.' 
+---
+= Snap Creator GUI에서 데이터베이스 무결성 검사 수행
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 그래픽 사용자 인터페이스(GUI)에서 데이터베이스 무결성 검사를 수행할 수 있습니다.
+
+HANA 무결성 검사 설정 탭에서 DB 무결성 검사 매개 변수를 활성화해야 합니다.
+
+. HANA_database_integrity_check 구성을 선택합니다.
+. Actions * > * Integrity Check * 를 선택합니다.
++
+image::../media/performing_file_based_backup_with_gui.gif[GUI를 사용하여 파일 기반 백업 수행]
+
+. 정책 옵션을 * 없음 * 으로 설정하고 * 확인 * 을 클릭합니다.
++
+image::../media/performing_file_based_backup_with_gui_2.gif[GUI를 사용하여 파일 기반 백업 수행]
+
+

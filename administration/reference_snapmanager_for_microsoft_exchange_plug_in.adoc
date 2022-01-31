@@ -1,0 +1,63 @@
+---
+permalink: administration/reference_snapmanager_for_microsoft_exchange_plug_in.html 
+sidebar: sidebar 
+keywords: snapmanager, microsoft, exchange, plug-in, centralize, backup, operation 
+summary: SnapManager for Microsoft Exchange 플러그인은 Snap Creator를 통해 Microsoft Exchange Server의 백업 작업을 중앙 집중화하는 데 사용됩니다. 이 플러그인을 사용하면 Snap Creator를 통해 수만 또는 수백 개의 Exchange Server용 SnapManager를 구성하여 단일 인터페이스에서 모든 SnapManager for Exchange 백업 작업 및 상태를 확인할 수 있습니다. 
+---
+= Microsoft Exchange 플러그인용 SnapManager
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager for Microsoft Exchange 플러그인은 Snap Creator를 통해 Microsoft Exchange Server의 백업 작업을 중앙 집중화하는 데 사용됩니다. 이 플러그인을 사용하면 Snap Creator를 통해 수만 또는 수백 개의 Exchange Server용 SnapManager를 구성하여 단일 인터페이스에서 모든 SnapManager for Exchange 백업 작업 및 상태를 확인할 수 있습니다.
+
+다른 플러그인과 달리 SnapManager 플러그인(Microsoft SQL Server용 SnapManager 및 Microsoft Exchange용 SnapManager)은 PowerShell을 사용하여 기존 SnapManager 설치와 통신합니다. SnapManager 플러그인을 사용하려면 SnapManager 제품이 이미 설치 및 작동해야 합니다. SnapManager 플러그인은 새로운 백업 Powershell cmdlet을 사용하여 SnapManager를 통해 백업을 생성합니다. 모든 클론 생성 및 복원 작업은 SnapManager 인터페이스를 통해 계속 진행되어야 합니다.
+
+
+NOTE: 지원 또는 호환성 매트릭스를 보는 방법에 대한 최신 정보는 상호 운용성 매트릭스 를 참조하십시오.
+
+Microsoft Exchange용 SnapManager 플러그인을 사용하려면 Snap Creator 에이전트를 SnapManager for Microsoft Exchange와 동일한 호스트에 설치해야 합니다. SC_AGENT_TIMEOUT 값을 900 이상으로 설정해야 합니다.
+
+다음 표에는 Microsoft Exchange 플러그인 매개 변수에 대한 SnapManager와 해당 설정이 나와 있으며 에 대한 설명이 나와 있습니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+SME_PS_CONF
+ a| 
+예: "C:\Program Files\NetApp\SnapManager for Exchange\smeShell.psc1"
+ a| 
+Microsoft Exchange용 SnapManager에 대한 PowerShell 구성 파일의 경로를 지정합니다.
+
+
+
+ a| 
+SME_BACKUP_OPTIONS
+ a| 
+예: '서버' EX2K10-DAG01' - GenericNaming - ManagementGroup's tandard' - NoTruncateLogs$False - RetainBackups 8 - StorageGroup'dag01_DB01' - BackupCopyRemoteCCRNode$False'
+ a| 
+Microsoft Exchange용 SnapManager 백업 옵션을 지정합니다. Snap Creator는 새 백업에 PowerShell cmdlet을 사용합니다.
+
+
+
+ a| 
+SME_SERVER_NAME입니다
+ a| 
+예: 'EX2K10-DAG01'
+ a| 
+Microsoft Exchange Server 이름에 대한 SnapManager을 지정합니다.
+
+
+
+ a| 
+SME_32비트
+ a| 
+(Y
+| 해당 없음) 
+|===
+* 관련 정보 *
+
+http://mysupport.netapp.com/matrix["상호 운용성 매트릭스 툴: mysupport.netapp.com/matrix"]

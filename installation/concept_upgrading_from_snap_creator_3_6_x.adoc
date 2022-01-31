@@ -1,0 +1,13 @@
+---
+permalink: installation/concept_upgrading_from_snap_creator_3_6_x.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, snap, creator, 3.6 
+summary: Snap Creator 3.6.x에서 업그레이드하면 데이터베이스 스키마가 업그레이드되고 모든 구성 파일 암호가 최신 Snap Creator와의 호환성을 위해 업데이트됩니다. 
+---
+= Snap Creator 3.6.x에서 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 3.6.x에서 업그레이드하면 데이터베이스 스키마가 업그레이드되고 모든 구성 파일 암호가 최신 Snap Creator와의 호환성을 위해 업데이트됩니다.

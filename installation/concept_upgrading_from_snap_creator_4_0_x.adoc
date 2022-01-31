@@ -1,0 +1,13 @@
+---
+permalink: installation/concept_upgrading_from_snap_creator_4_0_x.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, snap, creator, 4.0.x 
+summary: Snap Creator 4.0.x에서 업그레이드하면 데이터베이스 스키마가 업그레이드됩니다. 
+---
+= Snap Creator 4.0.x에서 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 4.0.x에서 업그레이드하면 데이터베이스 스키마가 업그레이드됩니다.

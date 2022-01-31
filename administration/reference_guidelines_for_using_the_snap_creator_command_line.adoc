@@ -1,0 +1,71 @@
+---
+permalink: administration/reference_guidelines_for_using_the_snap_creator_command_line.html 
+sidebar: sidebar 
+keywords: snap, creator, command-line, functionality, gui, cli, backup, lun 
+summary: 'Snap Creator는 그래픽 사용자 인터페이스(GUI)를 사용하지 않고 다양한 작업을 수행할 수 있는 명령줄 기능을 제공합니다. 예를 들어, 백업을 만들고, 볼륨 또는 LUN을 clonea로 생성한 다음, CLI(Command-Line Interface)에서 구성 파일을 가져올 수 있습니다.' 
+---
+= Snap Creator 명령줄 인터페이스 사용 지침
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator는 그래픽 사용자 인터페이스(GUI)를 사용하지 않고 다양한 작업을 수행할 수 있는 명령줄 기능을 제공합니다. 예를 들어, 백업을 만들고, 볼륨 또는 LUN을 clonea로 생성한 다음, CLI(Command-Line Interface)에서 구성 파일을 가져올 수 있습니다.
+
+모든 명령 및 관련 매개 변수의 전체 목록을 보려면 명령 프롬프트에서 /install_path /scServer/snapcreator 인수 없이 Snap Creator를 실행해야 합니다
+
+[listing]
+----
+[root@lyon scServer4.3.0]# ./snapcreator
+Usage: ./snapcreator --server <IP> --port <Port> --user <User> --passwd <Passwd> --profile <Profile> --config <Config> --action <Action> --policy <Policy> <Optional Arguments>
+
+Connection Information
+  --server <IP|Hostname>     The IP address or hostname of the Snap Creator server
+  --port <number>            The port number of the Snap Creator server
+  --user <user>              The username used for Snap Creator server authentication
+  --passwd <password>        The password used for Snap Creator server authentication
+
+Configuration Information
+  --profile <Profile>        The profile you want to run
+                             Profiles are dir's located under configs dir
+                             Uses default config, unless --config is specified
+  list                       Displays all configurations known to Snap Creator
+
+ Workflow Actions
+  --action <Action>          The action you want Snap Creator to perform
+  backup                     Takes a backup using NetApp storage technology
+  ossv                       Uses OSSV to perform the backup, no primary backup is taken
+  cloneLun                   In addition to backup will clones lun(s)
+                             using lun clone
+  cloneVol                   In addition to backup will clones volume
+                             using vol clone
+  cloneDel                   Deletes vol clones outside of normal workflow
+  clone                      Performs a plug-in driven clone operation
+
+  restore                    Enters an interactive restore menu for a given
+                             Snap Creator policy, you can choose a file or volume restore
+
+  backupDel                  Enters an interactive backup delete menu for a given
+                             Snap Creator policy
+  backupList                 Lists all backups under Snap Creator control
+  volumeList                 Lists all volumes under Snap Creator control
+  cloneList                  Lists all volume clones under Snap Creator control
+  dpstatus                   Shows the snapvault/snapmirror status
+  pmsetup                    Creates a Protection Manager DataSet for given config
+  arch                       Does not take backup, only performs
+                             archive log management
+  quiesce                    Does not take backup, only performs
+                             quiesce for given application defined in APP_NAME
+  unquiesce                  Does not take backup, only performs
+                             unquiesce for given application defined in APP_NAME
+  discover                   Does not take backup, only performs
+                             discover for given application defined in APP_NAME
+  mount                      Clone an existing backup and provide optional mount commands
+  umount                     Clone an existing backup and provide optional umount commands
+  scdump                     Dumps logs, configs, and support information for a given profile
+                             in a zip file called scdump located under Snap Creator root directory
+  custom                     A plug-in may define a custom action
+  dispatch                   Executes any Snap Creator workflow that exists
+  ...
+----
+Snap Creator CLI를 사용할 때 잘못된 사용자 이름 또는 암호가 제공된 경우 403 사용 금지----- 오류 메시지가 표시됩니다. 사용자 이름과 암호가 올바르지 않습니다

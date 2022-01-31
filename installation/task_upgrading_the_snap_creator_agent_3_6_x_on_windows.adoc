@@ -1,0 +1,120 @@
+---
+permalink: installation/task_upgrading_the_snap_creator_agent_3_6_x_on_windows.html 
+sidebar: sidebar 
+keywords: upgrading, upgrade, snap, creator, agent, 3.6.x, windows 
+summary: Windows의 Snap Creator Agent 3.6.x에서 직접 업그레이드할 수 있습니다. 
+---
+= Windows에서 Snap Creator Agent 3.6.x 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows의 Snap Creator Agent 3.6.x에서 직접 업그레이드할 수 있습니다.
+
+* Snap Creator Agent 디렉토리를 백업하기 전에 Snap Creator Agent 서비스('s napcreatoragentservice')를 중지하여 백업된 데이터가 완료되었는지 확인합니다.
++
+예를 들어 서비스 스냅인을 사용하여 서비스를 중지할 수 있습니다.
+
++
+.. 시작 * > * 실행 * 을 선택하고 'services.msc'를 입력합니다.
+.. Snap Creator Agent 서비스를 찾아 선택한 다음 서비스를 중지합니다. 또는 명령 프롬프트를 열고 다음 명령을 입력할 수 있습니다.
+
+
++
+[listing]
+----
+sc stop snapcreatoragentservice
+----
+* Snap Creator Agent 디렉토리(C:\Program Files\NetApp\NetApp_Snap_Creator_Framework\scAgent3.6.x) 내에 다음 디렉토리 및 모든 관련 하위 디렉토리와 파일을 백업했습니다.
++
+** agent.conf 파일(...\config\agent.conf)
++
+
+NOTE: 동일한 시스템에 Snap Creator Server가 설치되어 있는 경우, Snap Creator Server 3.6.x를 업그레이드할 때 이 파일을 이미 백업했을 수 있습니다
+
+** 로그 디렉토리(활성화된 경우)(..\logs)
+** 플러그인 디렉토리(...\plugins)
+
+
+
+
+4.1 이전 버전의 Snap Creator Agent에서는 agent.conf라는 파일을 사용하여 Snap Creator Agent에서 실행될 수 있는 Snap Creator 외부의 명령을 나열했습니다. 4.1에서는 Allowed_commands.config 파일이 사용됩니다.
+
+마찬가지로, Snap Creator Agent가 통신할 수 있는 agent.conf 파일이 나열된 호스트입니다. 기본적으로 Snap Creator Agent는 모든 Snap Creator Server와 통신을 허용했습니다. 그러나 이전 버전의 Snap Creator에서 이 기능을 사용하도록 선택한 경우 agent.properties 파일의 authorized_hosts 매개 변수가 이 기능을 대체합니다.
+
+
+NOTE: 이러한 매개변수를 사용하지 않은 경우 새 에이전트를 간단히 설치하는 것이 좋습니다.
+
+다음 단계에서 제공되는 경로는 Windows의 기본 설치 경로를 나타냅니다. 기본값이 사용되지 않은 경우 경로 정보가 설치 경로와 다를 수 있습니다.
+
+. Snap Creator 에이전트 서비스를 아직 중지하지 않은 경우 중지하십시오.
++
+서비스 중단에 대한 자세한 내용은 이 항목 앞부분의 세부 정보를 참조하십시오.
+
+. Start * > * Programs * > * Snap Creator * > * Uninstall NetApp Snap Creator Framework * 를 선택하여 Snap Creator(Windows용)를 제거합니다.
++
+자세한 내용은 Windows에서 Snap Creator 제거에 대한 정보를 참조하십시오.
+
+. 최신 Snap Creator 에이전트를 설치합니다.
++
+자세한 내용은 Snap Creator Agent를 Windows에 설치하는 방법을 참조하십시오.
+
+. 텍스트 편집기에서 agent.conf 파일의 백업된 복사본을 엽니다.
++
+다음은 agent.conf의 예입니다.
+
++
+[listing]
+----
+host: scServer@Tampico
+command: sdcli.exe
+----
+. 새 allowed_commands.config 파일(C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x\etc\allowed_commands.config)을 텍스트 편집기에서 열고 agent.conf의 명령줄을 allowed_commands.config 파일로 복사합니다. 그러나 최신 Snap Creator의 향상된 보안으로 인해 명령이 완전히 정규화되었는지 확인합니다.
++
+앞의 예제에서 allowed_commands.config 파일에는 다음 사항이 포함되어 있어야 합니다.
+
++
+[listing]
+----
+command: "C:\Program Files\NetApp\SnapDrive\sdcli.exe"
+----
++
+
+NOTE: "[.code] "'Program Files''' 사이의 공백 때문에 명령을 캡슐화하려면 따옴표를 포함해야 합니다. 명령에 공백이 없으면 따옴표가 필요하지 않습니다.
+
++
+각 명령을 별도의 줄에 추가하여 필요에 따라 명령을 추가할 수 있습니다.
+
+. 파일을 저장하고 닫습니다.
+. 텍스트 편집기에서 agent.properties 파일(C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x\etc\agent.properties)을 열고 authorized_hosts= * 의 기본 항목을 변경하여 agent.conf 파일의 호스트 설정을 반영합니다.
++
+앞의 예제에서 authorized_hosts 매개 변수는 다음을 포함해야 합니다.
+
++
+[listing]
+----
+AUTHORIZED_HOSTS=Tampico
+----
++
+필요에 따라 호스트를 추가할 수 있습니다. 호스트 이름을 구분하려면 쉼표를 사용하십시오. 호스트 이름과 IP 주소가 모두 지원됩니다.
+
++
+[listing]
+----
+AUTHORIZED_HOSTS=Tampico, 10.10.10.192, Fuji01
+----
+. 파일을 저장하고 닫습니다.
+. 다음 중 하나를 수행하여 Snap Creator Agent 서비스를 시작합니다.
++
+** 서비스 스냅인을 사용하여 서비스를 시작합니다.
+** 명령 프롬프트에서 sc start snapcreatoragentservice 명령을 입력합니다
+
+
+
+
+* 관련 정보 *
+
+xref:task_installing_snap_creator_agent_on_windows.adoc[Windows에 Snap Creator Agent 설치]
+
+xref:task_uninstalling_snap_creator_on_windows.adoc[Windows에서 Snap Creator를 제거합니다]

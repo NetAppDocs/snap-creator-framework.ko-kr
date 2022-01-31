@@ -1,0 +1,28 @@
+---
+permalink: administration/task_deleting_configuration_files.html 
+sidebar: sidebar 
+keywords: delete, configuration, file, profile, management 
+summary: 프로필에서 구성 파일을 삭제할 수 있습니다. 
+---
+= 프로파일에서 구성 파일을 삭제하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+프로필에서 구성 파일을 삭제할 수 있습니다.
+
+
+IMPORTANT: 구성 파일을 삭제하면 구성과 관련된 스케줄도 프로세스의 일부로 제거됩니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 관리 * > * 구성 * 을 선택합니다.
+. 프로파일 및 구성 창에서 프로파일의 내용을 확장합니다.
++
+프로파일에 할당된 구성 파일이 프로파일 이름 아래에 나열됩니다.
+
+. 구성 파일을 오른쪽 클릭하고 * 삭제 * 를 선택합니다.
+. 확인 창에서 * 예 * 를 클릭합니다.
++
+구성 파일이 프로파일 이름 아래의 목록에서 제거되고 Snap Creator Server에서 영구적으로 삭제됩니다.
+
+

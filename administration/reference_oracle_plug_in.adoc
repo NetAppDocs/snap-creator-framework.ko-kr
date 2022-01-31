@@ -1,0 +1,127 @@
+---
+permalink: administration/reference_oracle_plug_in.html 
+sidebar: sidebar 
+keywords: oracle, plug-in, sql, plus, database, quiesce, unquiesce, oracle, database 
+summary: Oracle 플러그인은 SQL * Plus를 사용하여 데이터베이스와 통신하고 백업을 위해 Oracle 데이터베이스를 중지 및 일시 중지합니다. 
+---
+= Oracle 플러그인
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Oracle 플러그인은 SQL * Plus를 사용하여 데이터베이스와 통신하고 백업을 위해 Oracle 데이터베이스를 중지 및 일시 중지합니다.
+
+Snap Creator Oracle 플러그인은 Oracle 자동 스토리지 관리(오프라인 또는 온라인 백업) 및 RAC(Real Application Clusters) 데이터베이스 구성의 온라인 백업을 지원합니다. 상호 운용성 매트릭스에는 지원 및 호환성에 대한 최신 정보가 포함되어 있습니다.
+
+UNIX 또는 Linux 플랫폼에서 Oracle 플러그인과 C Shell(CSH)을 사용하려면 다음 조건이 충족되어야 합니다.
+
+* Snap Creator Agent는 루트 사용자 대신 Oracle 사용자로 시작해야 합니다.
+* Oracle 사용자는 플러그인 기반 SQL * Plus 명령이 작동하도록 적절한 환경 변수(ORACLE_HOME 및 ORACLE_SID)를 설정해야 합니다.
++
+이 작업은 ~/.cshrc와 같은 셸 시작 파일을 사용하여 수행할 수 있습니다.
+
+
+
+다음 표에는 Oracle 플러그인 매개 변수가 나열되어 있고, 해당 설정이 제공되며, 에 대해 설명합니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+APP_NAME입니다
+ a| 
+오라클
+ a| 
+응용 프로그램 이름입니다
+
+
+
+ a| 
+oracle_databases
+ a| 
+db_name:user_name입니다
+ a| 
+Oracle 데이터베이스 및 사용자 이름 목록 여러 데이터베이스 및 사용자 이름은 세미콜론으로 구분된 목록(예: dB1:user1; DB2:user2)으로 지정할 수 있습니다.
+
+
+
+ a| 
+SQLPlus_CMD
+ a| 
+ a| 
+sqlplus 명령의 경로입니다
+
+
+
+ a| 
+cntl_file_backup_DIR입니다
+ a| 
+ a| 
+사용자가 백업 제어를 저장해야 하는 디렉토리의 경로입니다. FilesOracle 사용자는 이 디렉토리에 대한 적절한 권한을 가지고 있어야 합니다.
+
+
+
+ a| 
+오아_온도
+ a| 
+ a| 
+임시 파일을 저장할 디렉토리 경로(예: /tmp). Oracle 사용자는 이 디렉토리에 대한 적절한 권한을 가지고 있어야 합니다.
+
+
+
+ a| 
+archive_log_only(보관 로그 전용)
+ a| 
+(Y
+| 해당 없음 
+
+
+| 정책:<Y | n>)  a| 
+Oracle 플러그인에서 스위치 로그 작업만 수행하도록 알림 이 설정은 아카이브 로그 백업을 데이터 백업과 별도로 처리하는 경우에 유용합니다.
+
+
+
+ a| 
+ORACLE_HOME
+ a| 
+ a| 
+Oracle 홈 디렉토리의 경로입니다
+
+
+
+ a| 
+ORACLE_HOME_SID
+ a| 
+ a| 
+지정된 SID(시스템 식별자)에 대한 Oracle 홈 디렉토리 경로 여러 데이터베이스를 백업할 때 둘 이상의 Oracle 홈 디렉토리를 지정하는 것이 중요합니다.
+
+
+
+ a| 
+oracle_export_parameters
+ a| 
+(Y
+| 해당 없음) 
+
+
+ a| 
+ORACLE_HOME 및 ORACLE_SID 환경 매개 변수는 export 명령을 사용하여 내보냅니다. 이는 UNIX 또는 Linux 기반 환경에서만 적용됩니다.
+ a| 
+ORACLE_BACKUPMODE를 참조하십시오
+ a| 
+
+
+
+ a| 
+Snap Creator 정책을 사용하여 오프라인 또는 온라인 백업을 구성하는 옵션입니다. 기본 옵션은 온라인입니다. ORACLE_BACKUPMODE=HOURLY: 온라인, 일별: 오프라인
+ a| 
+ORACLE_SHUTDOWNABORT
+ a| 
+(Y
+
+|===
+* 관련 정보 *
+
+http://mysupport.netapp.com/matrix["상호 운용성 매트릭스 툴: mysupport.netapp.com/matrix"]

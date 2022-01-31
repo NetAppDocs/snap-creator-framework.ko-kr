@@ -1,0 +1,659 @@
+---
+settings:
+  name: Snap Creator Framework
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: 홈
+    url: "/index.html"
+  - title: 릴리스 정보
+    url: "/releasenotes.html"
+  - title: 설치
+    url: "/installation/index.html"
+    entries:
+    - title: Snap Creator 프레임워크의 기능
+      url: "/installation/concept_what_snap_creator_does.html"
+      entries:
+      - title: Snap Creator 아키텍처
+        url: "/installation/concept_snap_creator_architecture.html"
+        entries:
+        - title: Snap Creator 서버
+          url: "/installation/concept_scf_component_server.html"
+        - title: Snap Creator 에이전트
+          url: "/installation/concept_scf_component_agent.html"
+        - title: 애플리케이션 통합을 위한 플러그인
+          url: "/installation/concept_plug_ins_for_application_integration.html"
+    - title: Snap Creator의 사전 설치 요구사항
+      url: "/installation/concept_preinstallation_requirements_for_snap_creator.html"
+      entries:
+      - title: Snap Creator 설치 및 구성 요구사항
+        url: "/installation/concept_snap_creator_installation_and_configuration_requirements.html"
+      - title: Snap Creator 소프트웨어 다운로드
+        url: "/installation/task_downloading_the_snap_creator_software.html"
+      - title: Data ONTAP용 Snap Creator 사용자 생성
+        url: "/installation/concept_creating_a_snap_creator_user_for_data_ontap.html"
+        entries:
+        - title: 7-Mode에서 작동하는 Data ONTAP용 Snap Creator 사용자 생성
+          url: "/installation/task_creating_a_snap_creator_user_for_data_ontap_operating_in_7_mode.html"
+        - title: Clustered Data ONTAP용 Snap Creator 사용자 생성
+          url: "/installation/task_creating_a_snap_creator_user_for_clustered_ontap.html"
+      - title: Snap Creator 호스트에 Java 설치
+        url: "/installation/task_installing_java_on_snap_creator_hosts.html"
+      - title: Snap Creator Server 및 Agent 호스트에서 시간을 동기화하는 중입니다
+        url: "/installation/concept_set_up_the_hosts_to_be_in_sync_with_the_same_ntp_server.html"
+      - title: Domino 플러그인의 설정 구성
+        url: "/installation/concept_configuring_settings_for_the_domino_plug_in.html"
+        entries:
+        - title: 'Windows 관련 설정 구성: 환경 변수에 경로 추가'
+          url: "/installation/task_configure_windows_specific_settings_adding_path_to_the_environment_variables.html"
+        - title: 'UNIX 관련 설정 구성: 심볼 링크 생성'
+          url: "/installation/concept_configuring_unix_specific_settings_creating_symbolic_links.html"
+          entries:
+          - title: Linux 및 Solaris 호스트에서 Domino 플러그인의 심볼 링크 생성
+            url: "/installation/task_creating_symbolic_links_for_domino_plug_in_on_linux_and_solaris_hosts.html"
+          - title: AIX 호스트에서 Domino 플러그인에 대한 심볼 링크 생성
+            url: "/installation/task_creating_symbolic_links_for_domino_plug_in_on_aix_hosts.html"
+    - title: Snap Creator 서버 설치
+      url: "/installation/concept_installing_the_snap_creator_server.html"
+      entries:
+      - title: Windows 호스트에 Snap Creator Server 설치
+        url: "/installation/task_installing_the_snap_creator_server_on_a_windows_host.html"
+        entries:
+        - title: 명령 프롬프트에서 서버 시작
+          url: "/installation/task_starting_the_server_from_a_command_prompt.html"
+      - title: UNIX 기반 시스템에 Snap Creator Server 설치
+        url: "/installation/task_installing_the_snap_creator_server_on_unix.html"
+    - title: Snap Creator 에이전트 설치
+      url: "/installation/concept_install_snap_creator_agent.html"
+      entries:
+      - title: Windows에 Snap Creator Agent 설치
+        url: "/installation/task_installing_snap_creator_agent_on_windows.html"
+        entries:
+        - title: 명령 프롬프트에서 Agent 시작
+          url: "/installation/task_starting_the_agent_from_a_command_prompt.html"
+      - title: UNIX 기반 시스템에 Snap Creator Agent 설치
+        url: "/installation/task_installing_the_snap_creator_agent_on_unix.html"
+      - title: 설치 후 Snap Creator Agent 포트 변경
+        url: "/installation/task_changing_the_snap_creator_agent_port_after_installation.html"
+    - title: Snap Creator 업그레이드 중
+      url: "/installation/concept_upgrading_snap_creator.html"
+      entries:
+      - title: 작업 모니터 크기를 확인하는 중입니다
+        url: "/installation/task_checking_job_monitor_size.html"
+      - title: Snap Creator 3.6 이전의 릴리즈에서 업그레이드 중입니다
+        url: "/installation/concept_upgrading_from_releases_earlier_than_snap_creator_3_6.html"
+      - title: Snap Creator 3.6.x에서 업그레이드
+        url: "/installation/concept_upgrading_from_snap_creator_3_6_x.html"
+        entries:
+        - title: Windows에서 Snap Creator Server 3.6.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_server_3_6_x_on_windows.html"
+        - title: UNIX 기반 시스템에서 Snap Creator Server 3.6.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_server_3_6_x_on_unix.html"
+        - title: Windows에서 Snap Creator Agent 3.6.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_agent_3_6_x_on_windows.html"
+        - title: UNIX에서 Snap Creator Agent 3.6.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_agent_3_6_x_on_unix.html"
+      - title: Snap Creator 4.0.x에서 업그레이드
+        url: "/installation/concept_upgrading_from_snap_creator_4_0_x.html"
+        entries:
+        - title: Windows에서 Snap Creator Server 4.0.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_server_4_0_x_on_windows.html"
+        - title: UNIX 기반 시스템에서 Snap Creator Server 4.0.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_server_4_0_x_on_unix.html"
+        - title: Windows에서 Snap Creator Agent 4.0.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_windows.html"
+        - title: UNIX에서 Snap Creator Agent 4.0.x 업그레이드
+          url: "/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html"
+      - title: Snap Creator 4.1.x에서 업그레이드
+        url: "/installation/concept_upgrading_from_snap_creator_4_1.html"
+        entries:
+        - title: Windows에서 Snap Creator Server 4.1.x 업그레이드
+          url: "/installation/task_upgrading_snap_creator_server_4_1_x_on_windows.html"
+        - title: UNIX 기반 시스템에서 Snap Creator Server 4.1.x 업그레이드
+          url: "/installation/task_upgrading_snap_creator_server_4_1_x_on_unix_based_systems.html"
+        - title: Windows에서 Snap Creator Agent 4.1.x 업그레이드
+          url: "/installation/task_upgrading_snap_creator_agent_4_1_x_on_windows.html"
+        - title: UNIX 기반 시스템에서 Snap Creator Agent 4.1.x 업그레이드
+          url: "/installation/task_upgrading_snap_creator_agent_4_1_x_on_unix.html"
+      - title: Snap Creator 4.3.x에서 업그레이드
+        url: "/installation/concept_upgrading_from_snap_creator_4_3_x.html"
+    - title: Snap Creator 제거 중
+      url: "/installation/concept_uninstalling_snap_creator.html"
+      entries:
+      - title: Windows에서 Snap Creator를 제거합니다
+        url: "/installation/task_uninstalling_snap_creator_on_windows.html"
+      - title: UNIX에서 Snap Creator 제거
+        url: "/installation/concept_uninstalling_snap_creator_on_unix.html"
+        entries:
+        - title: UNIX에서 Snap Creator Agent 제거
+          url: "/installation/task_uninstalling_snap_creator_agent_from_unix.html"
+        - title: UNIX에서 Snap Creator Server를 제거합니다
+          url: "/installation/task_uninstalling_snap_creator_server_on_unix.html"
+    - title: CLI 참조
+      url: "/installation/concept_cli_reference.html"
+      entries:
+      - title: Clustered Data ONTAP에서 Snap Creator 사용자에 대한 역할을 생성하는 CLI 명령입니다
+        url: "/installation/reference_cli_commands_for_creating_a_role_for_a_snap_creator_user_in_clustered_data_ontap.html"
+        entries:
+        - title: 클러스터 역할을 생성하는 CLI 명령입니다
+          url: "/installation/reference_cli_command_for_creating_cluster_roles.html"
+        - title: SVM 역할을 생성하는 CLI 명령입니다
+          url: "/installation/reference_cli_commands_for_creating_svm_roles.html"
+  - title: IBM ® Domino ® 플러그인 작업
+    url: "/domino-ops/index.html"
+    entries:
+    - title: IBM Domino 플러그인 개요
+      url: "/domino-ops/concept_ibm_domino_plug_in_overview.html"
+      entries:
+      - title: IBM Domino 플러그인 백업 작업 이해
+        url: "/domino-ops/concept_backup_operations_using_domino_plug_in.html"
+      - title: IBM Domino 플러그인 복구 작업 이해
+        url: "/domino-ops/concept_restore_operations_using_domino_plug_in.html"
+    - title: IBM Domino 백업 및 복구 워크플로우
+      url: "/domino-ops/concept_ibm_domino_backup_and_recovery_workflow.html"
+    - title: IBM Domino 백업 및 복구 준비
+      url: "/domino-ops/concept_preparing_for_ibm_domino_backup_and_restore_operations.html"
+      entries:
+      - title: 스토리지 레이아웃 요구 사항
+        url: "/domino-ops/reference_storage_layout_requirements.html"
+      - title: SnapMirror 및 SnapVault 설정
+        url: "/domino-ops/concept_snapmirror_and_snapvault_setup.html"
+        entries:
+        - title: SnapMirror 복제를 위한 스토리지 시스템 준비
+          url: "/domino-ops/task_preparing_storage_systems_for_snapmirror_replication.html"
+        - title: SnapVault 복제를 위한 스토리지 시스템 준비
+          url: "/domino-ops/task_preparing_storage_systems_for_snapvault_replication.html"
+    - title: 백업 및 복원 구성을 생성하는 중입니다
+      url: "/domino-ops/concept_creating_a_configuration_for_domino_using_the_gui.html"
+      entries:
+      - title: Snap Creator GUI에 로그인합니다
+        url: "/domino-ops/concept_general_configuration_file_information.html"
+      - title: 구성 파일 생성
+        url: "/domino-ops/task_using_the_gui_to_create_a_configuration_file.html"
+      - title: 백업 및 복원 구성에 명령 추가
+        url: "/domino-ops/concept_adding_commands_to_the_backup_and_restore_configuration.html"
+        entries:
+        - title: Snap Creator Agent에서 추가 명령 허용
+          url: "/domino-ops/concept_allowing_additional_commands_through_the_snap_creator_agent.html"
+        - title: 구성에 보조 명령 추가
+          url: "/domino-ops/task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.html"
+      - title: Domino 트랜잭션 로그의 아카이빙된 복제본을 정리하는 중입니다
+        url: "/domino-ops/task_setting_the_snap_creator_archive_log_management_settings.html"
+      - title: changeinfo 디렉토리를 백업하는 중입니다
+        url: "/domino-ops/concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.html"
+    - title: 데이터베이스 백업
+      url: "/domino-ops/concept_create_a_domino_backup_using_snap_creator.html"
+      entries:
+      - title: 필요 시 데이터베이스 백업
+        url: "/domino-ops/task_creating_a_domino_backup_using_the_snap_creator_gui.html"
+      - title: 백업 예약
+        url: "/domino-ops/task_scheduling_actions_using_the_snap_creator_gui.html"
+    - title: 데이터베이스를 복원하는 중입니다
+      url: "/domino-ops/concept_domino_database_restore_overview.html"
+      entries:
+      - title: 볼륨 복원 수행
+        url: "/domino-ops/task_performing_point_in_time_volume_restore.html"
+      - title: 단일 파일 복원 수행
+        url: "/domino-ops/task_performing_point_in_time_single_file_restore_with_nfs.html"
+      - title: SAN 환경에서 단일 파일 복원 수행
+        url: "/domino-ops/concept_single_file_restore_in_fc_iscsi_environments.html"
+        entries:
+        - title: SnapDrive를 사용하여 스냅샷 복사본 마운트
+          url: "/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html"
+        - title: 데이터 복원 디렉터리에 파일을 복사하는 중입니다
+          url: "/domino-ops/task_copying_files_to_restore_location.html"
+        - title: Snap Creator 사용자 지정 작업을 사용하여 복원 처리 완료
+          url: "/domino-ops/task_running_snap_creator_by_using_the_custom_action.html"
+        - title: 스냅샷 복사본의 연결을 끊는 중입니다
+          url: "/domino-ops/task_disconnecting_snapshot_copy.html"
+    - title: 작업 상태 및 로그 보기
+      url: "/domino-ops/concept_accessing_snap_creator_log_files.html"
+      entries:
+      - title: 작업 모니터에서 작업 상태 및 로그 보기
+        url: "/domino-ops/task_using_the_snap_creator_job_monitor_to_review_logs.html"
+      - title: 보고서 창에서 로그 보기
+        url: "/domino-ops/task_using_the_snap_creator_reports_option_to_view_logs.html"
+      - title: scdump를 사용하여 압축된 형식으로 로그를 수집합니다
+        url: "/domino-ops/task_creating_an_scdump_using_the_snap_creator_gui.html"
+    - title: Domino 플러그인별 오류 문제 해결
+      url: "/domino-ops/reference_domino_plug_in_specific_errors.html"
+    - title: 다음 단계로 넘어갑니다
+      url: "/domino-ops/reference_references.html"
+  - title: SAP HANA ® 플러그인 운영
+    url: "/sap-hana-ops/index.html"
+    entries:
+    - title: SAP HANA 백업 및 복원 솔루션 개요
+      url: "/sap-hana-ops/concept_sap_hana_backup_and_restore_solution_overview.html"
+      entries:
+      - title: SAP HANA 시스템 백업을 위한 고려 사항
+        url: "/sap-hana-ops/concept_considerations_for_backing_up_sap_hana_systems.html"
+      - title: 제공하는 데 이 때 넷엡솔루션이 사용됩니다
+        url: "/sap-hana-ops/concept_the_netapp_solution.html"
+      - title: 백업 솔루션 구성 요소
+        url: "/sap-hana-ops/concept_backup_solution_components.html"
+      - title: SAP HANA 플러그인 개요
+        url: "/sap-hana-ops/concept_sap_hana_plug_in_overview.html"
+      - title: 요구 사항
+        url: "/sap-hana-ops/concept_requirements.html"
+    - title: 필수 소프트웨어 구성 요소 설치 및 구성
+      url: "/sap-hana-ops/task_installing_and_configuring_required_software_components.html"
+      entries:
+      - title: 이 가이드에서 가정을 설정합니다
+        url: "/sap-hana-ops/concept_setup_assumptions_in_this_guide.html"
+      - title: clustered Data ONTAP과 함께 사용되는 설정
+        url: "/sap-hana-ops/concept_setup_used_with_clustered_data_ontap.html"
+    - title: 데이터 백업 구성
+      url: "/sap-hana-ops/concept_configuring_data_backups.html"
+      entries:
+      - title: 백업 사용자 및 hdbuserstore 구성
+        url: "/sap-hana-ops/task_configuring_the_backup_user_and_hdbuserstore.html"
+      - title: SnapVault 관계 구성
+        url: "/sap-hana-ops/task_configuring_snapvault_relationships.html"
+      - title: SnapVault 관계 시작
+        url: "/sap-hana-ops/concept_starting_the_snapvault_relationships.html"
+        entries:
+        - title: 7-Mode에서 운영되는 Data ONTAP와 SnapVault 관계를 시작합니다
+          url: "/sap-hana-ops/task_starting_the_snapvault_relationships_with_data_ontap_operating_in_7_mode.html"
+        - title: Clustered Data ONTAP과 SnapVault 관계 시작
+          url: "/sap-hana-ops/task_starting_the_snapvault_relationships_with_clustered_data_ontap.html"
+      - title: Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업 구성
+        url: "/sap-hana-ops/task_configuring_the_snap_creator_framework_and_sap_hana_database_backup.html"
+    - title: SAN 환경을 위한 SAP HANA 구성
+      url: "/sap-hana-ops/task_configuring_sap_hana_for_san_environments.html"
+    - title: 로그 백업을 구성하는 중입니다
+      url: "/sap-hana-ops/task_configuring_log_backups.html"
+      entries:
+      - title: 로그 백업 관리
+        url: "/sap-hana-ops/concept_housekeeping_of_log_backups.html"
+      - title: 로그 백업의 정리 작업 수정
+        url: "/sap-hana-ops/task_modifying_the_housekeeping_of_log_backups.html"
+    - title: 데이터베이스 백업을 실행하는 중입니다
+      url: "/sap-hana-ops/concept_executing_database_backups.html"
+      entries:
+      - title: 데이터베이스 백업 개요
+        url: "/sap-hana-ops/task_overview_of_database_backups.html"
+      - title: Snap Creator GUI를 사용하여 데이터베이스 백업
+        url: "/sap-hana-ops/task_backing_up_the_database_with_the_snap_creator_gui.html"
+      - title: Snap Creator 명령줄을 사용하여 데이터베이스 백업
+        url: "/sap-hana-ops/task_backing_up_the_database_with_snap_creator_command_line.html"
+      - title: SAP HANA Studio에서 사용 가능한 백업 검토
+        url: "/sap-hana-ops/concept_reviewing_available_backups_in_sap_hana_studio.html"
+    - title: SAP HANA 파일 기반 백업 및 데이터베이스 무결성 검사
+      url: "/sap-hana-ops/concept_sap_hana_file_based_backup_and_database_integrity_checks.html"
+      entries:
+      - title: 파일 기반 백업에 대한 구성을 수정합니다
+        url: "/sap-hana-ops/task_modifying_configuration_for_file_based_backup.html"
+      - title: 데이터베이스 무결성 검사를 위한 구성 수정
+        url: "/sap-hana-ops/task_modifying_configuration_for_database_integrity_checks.html"
+      - title: 파일 기반 백업을 예약하는 중입니다
+        url: "/sap-hana-ops/task_scheduling_file_based_backup.html"
+      - title: 데이터베이스 무결성 검사를 예약하는 중입니다
+        url: "/sap-hana-ops/task_scheduling_database_integrity_checks.html"
+      - title: Snap Creator GUI에서 파일 기반 백업 수행
+        url: "/sap-hana-ops/task_performing_file_based_backup_from_the_snap_creator_gui.html"
+      - title: Snap Creator 명령줄에서 파일 기반 백업 수행
+        url: "/sap-hana-ops/task_performing_file_based_backup_from_snap_creator_command_line.html"
+      - title: Snap Creator GUI에서 데이터베이스 무결성 검사 수행
+        url: "/sap-hana-ops/task_performing_database_integrity_checks_with_snap_creator_gui.html"
+      - title: Snap Creator 명령줄에서 데이터베이스 무결성 검사 수행
+        url: "/sap-hana-ops/task_performing_database_integrity_checks_from_snap_creator_command_line.html"
+    - title: SAP HANA 데이터베이스 복원 및 복구
+      url: "/sap-hana-ops/task_restoring_and_recovering_sap_hana_databases.html"
+      entries:
+      - title: 운영 스토리지에서 데이터베이스 복원 및 복구
+        url: "/sap-hana-ops/task_restoring_and_recovering_databases_from_primary_storage.html"
+      - title: 보조 스토리지에서 데이터베이스 복원 및 복구
+        url: "/sap-hana-ops/task_restoring_and_recovering_database_from_secondary_storage.html"
+      - title: 복원 후 SnapVault 관계를 다시 시작합니다
+        url: "/sap-hana-ops/concept_resuming_a_snapvault_relationship_after_a_restore.html"
+        entries:
+        - title: 7-Mode에서 작동 중인 Data ONTAP와 SnapVault 관계 재시작
+          url: "/sap-hana-ops/task_resuming_a_snapvault_relationship_with_data_ontap_operating_in_7_mode.html"
+        - title: Clustered Data ONTAP과 SnapVault 관계 재개
+          url: "/sap-hana-ops/task_resuming_a_snapvault_relationship_with_clustered_data_ontap.html"
+      - title: 운영 스토리지 장애 후 데이터베이스 복구
+        url: "/sap-hana-ops/concept_restoring_databases_after_primary_storage_failure.html"
+        entries:
+        - title: 7-Mode에서 작동 중인 Data ONTAP에서 운영 스토리지 장애 발생 후 데이터베이스 복원
+          url: "/sap-hana-ops/task_restoring_databases_after_a_primary_storage_failure_with_data_ontap_operating_in_7_mode.html"
+        - title: Clustered Data ONTAP을 사용하여 운영 스토리지 장애 발생 후 데이터베이스 복원
+          url: "/sap-hana-ops/task_restoring_databases_after_a_primary_storage_failure_with_clustered_data_ontap.html"
+    - title: SAP HANA 플러그인 매개 변수
+      url: "/sap-hana-ops/reference_sap_hana_plug_in_parameters.html"
+    - title: 문제 해결
+      url: "/sap-hana-ops/reference_troubleshooting.html"
+    - title: 다음 단계로 넘어갑니다
+      url: "/sap-hana-ops/reference_where_to_go_next_sap_hana.html"
+  - title: 관리
+    url: "/administration/index.html"
+    entries:
+    - title: Snap Creator 프레임워크의 기능
+      url: "/administration/concept_what_snap_creator_does.html"
+      entries:
+      - title: Snap Creator의 이점
+        url: "/administration/concept_benefits_of_using_snap_creator.html"
+    - title: Snap Creator 아키텍처
+      url: "/administration/concept_snap_creator_architecture.html"
+      entries:
+      - title: Snap Creator 서버 개요
+        url: "/administration/concept_what_snap_creator_server_overview.html"
+      - title: Snap Creator 에이전트 개요
+        url: "/administration/concept_what_snap_creator_agent_is.html"
+      - title: 애플리케이션 통합을 위한 플러그인
+        url: "/administration/concept_scf_component_plug_ins_ag.html"
+    - title: Snap Creator 서버 관리
+      url: "/administration/concept_managing_snap_creator_server.html"
+      entries:
+      - title: Windows에서 Snap Creator Server 시작, 확인 및 중지
+        url: "/administration/task_starting_verifying_and_stopping_the_snap_creator_server_on_windows.html"
+      - title: UNIX에서 Snap Creator Server 시작, 확인 및 중지
+        url: "/administration/task_starting_verifying_and_stopping_the_snap_creator_server_on_unix.html"
+      - title: 설치 후 Snap Creator Server 포트 변경
+        url: "/administration/task_changing_the_snap_creator_server_port.html"
+      - title: Snap Creator Server 자격 증명 설정
+        url: "/administration/task_setting_snap_creator_server_credentials.html"
+    - title: Snap Creator 에이전트 관리
+      url: "/administration/concept_managing_snap_creator_agent.html"
+      entries:
+      - title: Windows에서 Snap Creator Agent 시작, 확인 및 중지
+        url: "/administration/task_starting_verifying_and_stopping_the_snap_creator_agent_on_windows.html"
+      - title: UNIX에서 Snap Creator Agent 시작, 확인 및 중지
+        url: "/administration/task_starting_verifying_and_stopping_the_snap_creator_agent_on_unix.html"
+      - title: 설치 후 Snap Creator Agent 포트 변경
+        url: "/administration/task_changing_the_snap_creator_agent_port_after_installation.html"
+      - title: Snap Creator 에이전트 보안
+        url: "/administration/concept_snap_creator_agent_security.html"
+        entries:
+        - title: Snap Creator 에이전트 보안 관리
+          url: "/administration/task_managing_snap_creator_agent_security.html"
+        - title: 기본 키 저장소 사용자 지정
+          url: "/administration/task_customizing_the_default_keystore.html"
+    - title: 백업 및 복구 워크플로우
+      url: "/administration/concept_backup_and_recovery_workflow_with_plug_ins.html"
+      entries:
+      - title: 프로파일 작성
+        url: "/administration/task_creating_profiles.html"
+      - title: 글로벌 구성 파일 생성 중
+        url: "/administration/task_creating_global_configuration_files.html"
+      - title: 구성 파일을 만드는 중입니다
+        url: "/administration/task_creating_configuration_files_using_sc_gui.html"
+      - title: 백업을 생성하는 중입니다
+        url: "/administration/task_creating_backups_using_the_snap_creator_gui.html"
+      - title: 작업 모니터링
+        url: "/administration/task_monitoring_jobs_using_the_gui.html"
+      - title: 모니터링 로그
+        url: "/administration/task_monitoring_logs_by_using_the_snap_creator_gui.html"
+      - title: 예약된 작업을 생성하는 중입니다
+        url: "/administration/task_creating_scheduled_jobs_using_sc_gui.html"
+      - title: 보존 정책 생성 중
+        url: "/administration/concept_creating_retention_policies.html"
+        entries:
+        - title: Snap Creator 정책을 정의하는 지침
+          url: "/administration/concept_guidelines_to_define_snap_creator_policies.html"
+        - title: 백업 유형을 생성하는 중입니다
+          url: "/administration/task_creating_backup_types.html"
+        - title: 정책 일정을 생성하는 중입니다
+          url: "/administration/task_creating_policy_schedules.html"
+        - title: 정책 생성 중
+          url: "/administration/task_creating_policies.html"
+        - title: 정책 할당
+          url: "/administration/task_assigning_policies.html"
+      - title: 클론 생성
+        url: "/administration/concept_creating_clones.html"
+        entries:
+        - title: 새 백업에서 클론 생성
+          url: "/administration/task_creating_clones_from_a_new_backup.html"
+        - title: 기존 백업에서 클론 생성
+          url: "/administration/task_creating_clones_using_a_mounted_backup.html"
+      - title: 복구 작업을 수행하는 중입니다
+        url: "/administration/concept_performing_restore_operations.html"
+        entries:
+        - title: 볼륨 복원 수행 중
+          url: "/administration/task_performing_volume_restore_using_the_gui.html"
+        - title: 단일 파일 복구 작업을 수행하는 중입니다
+          url: "/administration/task_performing_single_file_restore_using_the_gui.html"
+        - title: 애플리케이션 정의 복구 작업을 수행하는 중입니다
+          url: "/administration/task_performing_application_defined_restore_operations.html"
+    - title: 사용자 액세스 관리
+      url: "/administration/concept_managing_user_access.html"
+      entries:
+      - title: Snap Creator 사용자 생성
+        url: "/administration/task_creating_users.html"
+      - title: Snap Creator 사용자에게 프로파일 할당
+        url: "/administration/task_assigning_profiles_to_snap_creator_users.html"
+      - title: CLI를 사용하여 Snap Creator 사용자 및 할당된 프로필 목록 보기
+        url: "/administration/task_viewing_a_list_of_users_with_profiles_by_using_the_cli.html"
+      - title: Snap Creator 역할 생성
+        url: "/administration/task_creating_snap_creator_roles.html"
+      - title: Snap Creator 사용자에게 역할 할당
+        url: "/administration/task_assigning_roles_to_snap_creator_users.html"
+      - title: Snap Creator 사용자 및 할당된 역할 목록 보기
+        url: "/administration/task_viewing_a_list_of_snap_creator_users_by_using_the_gui.html"
+      - title: CLI를 사용하여 역할에 할당된 Snap Creator 사용자 보기
+        url: "/administration/task_viewing_user_names_assigned_to_a_role_by_using_the_cli.html"
+      - title: CLI를 사용하여 Snap Creator 권한 생성
+        url: "/administration/task_creating_snap_creator_permissions.html"
+      - title: Snap Creator 역할에 권한 할당
+        url: "/administration/task_assigning_permissions_to_snap_creator_roles.html"
+      - title: CLI를 사용하여 모든 Snap Creator 권한 목록 생성
+        url: "/administration/task_viewing_a_list_all_snap_creator_permissions_by_using_the_cli.html"
+      - title: 역할에 할당된 Snap Creator 권한 보기
+        url: "/administration/task_viewing_permissions_assigned_to_a_role_by_using_the_gui.html"
+    - title: 프로파일 관리
+      url: "/administration/concept_managing_profiles.html"
+      entries:
+      - title: 프로파일 작성
+        url: "/administration/task_creating_profiles.html"
+      - title: 프로파일 보기
+        url: "/administration/task_viewing_snap_creator_profiles.html"
+      - title: 프로파일을 삭제하는 중입니다
+        url: "/administration/task_deleting_snap_creator_profiles.html"
+    - title: 구성 파일 관리
+      url: "/administration/concept_managing_configuration_files.html"
+      entries:
+      - title: 구성 파일을 만드는 중입니다
+        url: "/administration/task_creating_configuration_files_using_sc_gui.html"
+      - title: 기존 구성 파일을 다운로드하여 새 구성 파일을 만듭니다
+        url: "/administration/task_creating_new_configuration_files_by_downloading_existing_configuration_files.html"
+      - title: 기존 구성 파일을 복사하여 새 구성 파일을 작성합니다
+        url: "/administration/task_creating_new_configuration_files_by_copying_existing_configuration_files_using_the_cli.html"
+      - title: 프로파일에 할당된 구성 파일 목록 보기
+        url: "/administration/task_viewing_assigned_configuration_files_for_a_profile.html"
+      - title: 프로파일에서 구성 파일을 삭제하는 중입니다
+        url: "/administration/task_deleting_configuration_files.html"
+    - title: 보존 정책 관리
+      url: "/administration/concept_managing_policies.html"
+      entries:
+      - title: 백업 유형을 생성하는 중입니다
+        url: "/administration/task_creating_backup_types.html"
+      - title: 정책 일정을 생성하는 중입니다
+        url: "/administration/task_creating_policy_schedules.html"
+      - title: 정책 생성 중
+        url: "/administration/task_creating_policies.html"
+      - title: 정책 할당
+        url: "/administration/task_assigning_policies.html"
+      - title: 보존 정책 보기
+        url: "/administration/task_viewing_policies.html"
+      - title: 보존 정책을 삭제하는 중입니다
+        url: "/administration/task_deleting_retention_policies.html"
+    - title: 백업 관리
+      url: "/administration/concept_managing_backups.html"
+      entries:
+      - title: 어떤 Snap Creator 정보를 백업해야 하는지
+        url: "/administration/reference_what_you_should_back_up.html"
+      - title: 백업을 생성하는 중입니다
+        url: "/administration/task_creating_backups_using_the_snap_creator_gui.html"
+      - title: 구성 파일의 백업 복사본 목록 보기
+        url: "/administration/task_viewing_a_list_of_backup_copies_of_a_configuration_file.html"
+      - title: 백업을 삭제하는 중입니다
+        url: "/administration/task_deleting_backups.html"
+    - title: 예약된 작업 관리
+      url: "/administration/concept_managing_scheduled_jobs.html"
+      entries:
+      - title: 예약된 작업을 생성하는 중입니다
+        url: "/administration/task_creating_scheduled_jobs_using_sc_gui.html"
+      - title: 예약된 작업 실행 중
+        url: "/administration/task_running_a_scheduled_job.html"
+      - title: 예약된 작업 목록 보기
+        url: "/administration/task_viewing_a_list_of_scheduled_jobs.html"
+      - title: 예약된 작업 편집
+        url: "/administration/task_editing_scheduled_jobs.html"
+      - title: 예약된 작업을 삭제하는 중입니다
+        url: "/administration/task_deleting_scheduled_jobs.html"
+    - title: 클론 관리
+      url: "/administration/concept_managing_clones.html"
+      entries:
+      - title: 새 백업에서 클론 생성
+        url: "/administration/task_creating_clones_from_a_new_backup.html"
+      - title: 기존 백업에서 클론 생성
+        url: "/administration/task_creating_clones_using_a_mounted_backup.html"
+      - title: 클론을 마운트 해제합니다
+        url: "/administration/task_deleting_clones.html"
+    - title: Snap Creator를 구성하는 데 필요한 플러그인 정보입니다
+      url: "/administration/reference_information_required_to_configure_snap_creator.html"
+      entries:
+      - title: 아카이브 로그 플러그인
+        url: "/administration/reference_archive_log_plug_in.html"
+      - title: Citrix XenServer 플러그인
+        url: "/administration/reference_citrix_xen_plug_in.html"
+      - title: DB2 플러그인
+        url: "/administration/reference_db2_plug_in.html"
+      - title: IBM Domino 플러그인
+        url: "/administration/reference_ibm_domino_plug_in.html"
+      - title: MaxDB 플러그인
+        url: "/administration/reference_maxdb_plug_in.html"
+      - title: MySQL 플러그인
+        url: "/administration/reference_mysql_plug_in_parameters_settings_and_descriptions.html"
+      - title: Oracle 플러그인
+        url: "/administration/reference_oracle_plug_in.html"
+      - title: Red Hat KVM 플러그인 지침
+        url: "/administration/reference_red_hat_kvm_plug_in.html"
+      - title: SAP HANA 플러그인
+        url: "/administration/reference_sap_hana_plug_in.html"
+      - title: Microsoft Exchange 플러그인용 SnapManager
+        url: "/administration/reference_snapmanager_for_microsoft_exchange_plug_in.html"
+      - title: Microsoft SQL Server용 SnapManager 플러그인
+        url: "/administration/reference_snapmanager_for_microsoft_sql_server_plug_in.html"
+      - title: Sybase ASE 플러그인
+        url: "/administration/reference_sybase_plug_in.html"
+      - title: VMware Vibe 플러그인
+        url: "/administration/reference_vmware_vibe_plug_in.html"
+        entries:
+        - title: VMware 플러그인을 사용한 vCloud vApp 백업 및 복구 작업에 대한 요구 사항
+          url: "/administration/concept_requirements_for_vcloud_vapp_backup_and_restore_operations_using_the_vmware_plug_in.html"
+        - title: VMware 플러그인을 사용하여 가상 머신 백업 및 복구
+          url: "/administration/concept_vm_backup_and_restore_using_vmware_plug_in.html"
+      - title: 플러그인 프레임워크를 사용하여 사용자 지정 플러그인을 만듭니다
+        url: "/administration/concept_using_the_plug_in_framework_to_create_custom_plug_ins.html"
+      - title: 하이퍼바이저 플러그인을 사용할 때 다중 레벨 애플리케이션 정지 작업을 위해 Snap Creator를 구성합니다
+        url: "/administration/task_configuring_snap_creator_for_multilevel_application_quiesce_operations.html"
+    - title: Snap Creator 문제 해결
+      url: "/administration/reference_troubleshooting_snap_creator_issues.html"
+      entries:
+      - title: 오류 메시지 유형 및 문제 해결 로그
+        url: "/administration/reference_logs.html"
+        entries:
+        - title: Snap Creator 덤프 수행
+          url: "/administration/task_running_a_snap_creator_dump.html"
+      - title: Snap Creator GUI 오류 문제 해결
+        url: "/administration/concept_troubleshooting_snap_creator_gui_errors.html"
+        entries:
+        - title: Snap Creator GUI에 연결할 수 없습니다
+          url: "/administration/reference_cannot_connect_to_the_gui.html"
+        - title: Snap Creator GUI를 시작하는 동안 오류가 발생했습니다
+          url: "/administration/reference_error_starting_the_gui.html"
+      - title: 네트워크 문제 해결
+        url: "/administration/reference_troubleshooting_network_issues.html"
+      - title: 보안 문제 해결
+        url: "/administration/concept_troubleshooting_security_issues.html"
+        entries:
+        - title: 전송 계층 보안의 암호화 결함
+          url: "/administration/reference_transport_layer_security_tls.html"
+        - title: 자체 서명된 SSL 인증서가 URL과 일치하지 않습니다
+          url: "/administration/reference_self_signed_ssl_certificate.html"
+        - title: Snap Creator Framework에는 CA 서명 SSL 인증서가 필요합니다
+          url: "/administration/reference_ca_signed_ssl_certificate.html"
+      - title: Snap Creator Server 또는 Snap Creator Agent 문제 해결
+        url: "/administration/concept_troubleshooting_snap_creator_server_or_agent_issues.html"
+        entries:
+        - title: Snap Creator Server 또는 Agent가 시작되지 않았습니다
+          url: "/administration/reference_snap_creator_server_or_agent_not_starting.html"
+        - title: Snap Creator Agent가 응답하지 않습니다
+          url: "/administration/reference_snap_creator_agent_not_responding.html"
+        - title: Snap Creator 암호 재설정
+          url: "/administration/reference_snap_creator_password_reset.html"
+      - title: CLI 명령 오류 문제 해결
+        url: "/administration/concept_troubleshooting_cli_command_errors.html"
+        entries:
+        - title: CLI 명령을 실행하면 403 사용 금지 오류가 발생합니다
+          url: "/administration/reference_cli_command_results_in_403_forbidden_error.html"
+        - title: CLI 명령을 실행하면 404를 찾을 수 없음 오류가 발생합니다
+          url: "/administration/reference_cli_command_results_in_404_not_found_error.html"
+        - title: CLI 명령을 사용하면 500에서 개체 오류를 찾을 수 없습니다
+          url: "/administration/reference_cli_command_results_in_500_cannot_locate_object_error.html"
+        - title: CLI 명령을 실행하면 500 연결 실패 오류가 발생합니다
+          url: "/administration/reference_cli_command_results_in_500_connect_failed_error.html"
+      - title: CLoneVol은 Aggregate가 존재하지 않음을 보고합니다
+        url: "/administration/reference_clonevol_reports_that_aggregate_does_not_exist.html"
+      - title: 오류 메시지
+        url: "/administration/reference_error_messages.html"
+        entries:
+        - title: Snap Creator 프레임워크 오류 메시지
+          url: "/administration/reference_snap_creator_framework_error_messages.html"
+        - title: Snap Creator 에이전트 오류 메시지
+          url: "/administration/reference_snap_creator_agent_error_messages.html"
+        - title: 리포지토리 오류 메시지
+          url: "/administration/reference_repository_error_messages.html"
+        - title: 스토리지 오류 메시지
+          url: "/administration/reference_storage_error_messages.html"
+        - title: Snap Creator GUI 오류 메시지
+          url: "/administration/reference_snap_creator_gui_error_messages.html"
+    - title: Snap Creator 구성 파일 변수, 매개 변수 및 명령
+      url: "/administration/reference_snap_creator_configuration_file_variables.html"
+      entries:
+      - title: Snap Creator 변수 및 매개 변수 설명
+        url: "/administration/reference_snap_creator_variable_and_parameter_descriptions.html"
+      - title: Snap Creator Agent 호스트 클라이언트 및 Snap Creator Server를 구성하기 위한 매개 변수입니다
+        url: "/administration/reference_parameters_used_to_configure_the_client_and_server.html"
+      - title: vFiler 유닛 및 인터페이스에 연결하는 매개 변수입니다
+        url: "/administration/reference_parameters_to_connect_to_vfiler_units_and_interface.html"
+      - title: 클론 생성 작업을 설정하는 매개 변수입니다
+        url: "/administration/reference_parameters_to_set_up_cloning.html"
+      - title: 이벤트 관리 설정을 위한 매개 변수입니다
+        url: "/administration/reference_parameters_to_set_up_event_management.html"
+      - title: Operations Manager 콘솔을 설정하는 매개 변수입니다
+        url: "/administration/reference_parameters_to_set_up_operations_manager_console.html"
+      - title: OSSV 설정 매개 변수
+        url: "/administration/reference_parameters_to_set_up_ossv.html"
+      - title: SnapMirror 설정을 위한 매개 변수입니다
+        url: "/administration/reference_parameters_to_set_up_snapmirror.html"
+      - title: 스냅샷 복사본 설정을 위한 매개 변수
+        url: "/administration/reference_parameters_to_set_up_a_snapshot_copy.html"
+      - title: SnapVault를 설정하는 매개 변수입니다
+        url: "/administration/reference_parameters_to_set_up_snapvault.html"
+      - title: NetApp Management Console 데이터 보호 기능을 설정하는 데 필요한 매개 변수입니다
+        url: "/administration/reference_parameters_to_set_up_netapp_management_console_data_protection_capability.html"
+      - title: 앱 명령
+        url: "/administration/reference_app_commands.html"
+      - title: 명령을 마운트 및 마운트 해제합니다
+        url: "/administration/reference_mount_and_unmount_commands.html"
+      - title: 사전 명령
+        url: "/administration/reference_pre_commands.html"
+      - title: POST 명령
+        url: "/administration/reference_post_commands.html"
+    - title: Snap Creator 용어
+      url: "/administration/reference_snap_creator_terminology.html"
+    - title: Snap Creator 명령줄 인터페이스 사용 지침
+      url: "/administration/reference_guidelines_for_using_the_snap_creator_command_line.html"
+      entries:
+      - title: Snap Creator CLI 명령으로 워크플로우 작업을 수행할 수 있습니다
+        url: "/administration/reference_snap_creator_cli_commands_for_workflow_actions.html"
+      - title: Snap Creator 사용자 액세스를 관리하는 데 사용되는 명령입니다
+        url: "/administration/reference_cli_command_for_snap_creator_rbac_actions.html"
+  - title: 법적 고지
+    url: "/reference_legal_notices.html"

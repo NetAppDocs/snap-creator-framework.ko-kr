@@ -1,0 +1,31 @@
+---
+permalink: administration/reference_transport_layer_security_tls.html 
+sidebar: sidebar 
+keywords: cryptographic, flaw, transport, layer, security, tls, protocol 
+summary: 전송 계층 보안의 암호화 결함 
+---
+= 전송 계층 보안의 암호화 결함
+:icons: font
+:imagesdir: ../media/
+
+
+* * 문제 *
++
+TLS 1.0에는 여러 가지 암호화 결함이 있습니다. 공격자는 이러한 결함을 악용하여 중간의 공격을 수행하거나 영향을 받는 서비스와 클라이언트 간의 통신을 해독할 수 있습니다.
+
+* * 원인 *
++
+원격 서비스는 TLS 1.0을 사용하여 암호화된 연결을 허용합니다.
+
+* * 시정 조치 *
++
+Snap Creator에는 TLS 1.0 프로토콜을 활성화 또는 비활성화하는 옵션이 있습니다.
+
++
+.. 이전 버전과의 호환성을 지원하려면 snapcreator.properties 및 agent.properties 파일에서 enable_security_protocol_tls_V1 매개 변수를 Y로 설정하십시오. enable_security_protocol_tls_V1 매개변수는 기본적으로 N으로 설정됩니다.
+
+
+
+
+
+NOTE: enable_security_protocol_tls_V1 매개 변수는 Snap Creator Framework 4.3.3 이전 릴리즈에서만 사용할 수 있습니다. Snap Creator 프레임워크 4.3.3이기 때문입니다. 릴리스는 Oracle Java 및 OpenJDK 1.8 이상만 지원하며, TLS 1.0에 대한 지원은 Snap Creator Framework에서 제거되었습니다.

@@ -1,0 +1,86 @@
+---
+permalink: domino-ops/task_creating_an_scdump_using_the_snap_creator_gui.html 
+sidebar: sidebar 
+keywords: domino, ibm, using scdump, gathering, logs, compressed, format 
+summary: Snap Creatorscdump 작업을 사용하여 압축된 파일 아카이브에 로그를 수집할 수 있습니다. 그런 다음 기술 지원 부서 또는 Snap Creator 전문가에게 검토를 위해 아카이브를 보낼 수 있습니다. 
+---
+= scdump를 사용하여 압축된 형식으로 로그를 수집합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creatorscdump 작업을 사용하여 압축된 파일 아카이브에 로그를 수집할 수 있습니다. 그런 다음 기술 지원 부서 또는 Snap Creator 전문가에게 검토를 위해 아카이브를 보낼 수 있습니다.
+
+백업 및 복원 구성 파일을 만들어야 합니다.
+
+scdump에는 다음 파일이 포함됩니다.
+
+|===
+| 파일 | 설명 
+
+
+ a| 
+scdump.txt
+ a| 
+Snap Creator 에이전트 버전 및 호스트 운영 체제, Data ONTAP 릴리즈 및 Domino 버전이 포함되어 있습니다.
+
+
+
+ a| 
+engine.log
+ a| 
+Snap Creator 워크플로우 엔진 작업에 대한 정보가 포함되어 있습니다.
+
+
+
+ a| 
+gui.log
+ a| 
+Snap Creator GUI 작업 및 메시지에 대한 정보를 제공합니다. 여러 개의 로그가 포함될 수 있습니다.
+
+
+
+ a| 
+sc_server.log
+ a| 
+Snap Creator Server 작업에 대한 자세한 내용은 에 나와 있습니다. 여러 개의 로그가 포함될 수 있습니다.
+
+
+
+ a| 
+로그아웃합니다
+ a| 
+작업에 대한 자세한 수준 정보를 포함합니다. 선택한 프로필의 모든 구성에 대한 출력 로그가 포함됩니다.
+
+
+
+ a| 
+디버그 로그
+ a| 
+디버깅에 유용한 정보 및 자세한 수준 정보를 포함합니다. 선택한 프로파일의 모든 설정에 대한 디버그 로그가 포함됩니다.
+
+
+
+ a| 
+오류 로그
+ a| 
+로그에 대한 오류 정보를 포함합니다. 선택한 프로파일의 모든 설정에 대한 오류 로그가 포함됩니다.
+
+
+
+ a| 
+구성 파일
+ a| 
+글로벌 구성 파일을 포함하여 선택한 프로파일의 모든 구성 파일이 포함됩니다.
+
+|===
+
+NOTE: 구성 파일이 scdump의 입력이지만 유틸리티는 상위 프로파일의 모든 설정에 대한 정보를 수집합니다.
+
+. 프로파일 및 구성 창에서 구성 파일을 선택하고 * 작업 * > * scdump * 를 클릭합니다.
++
+scdump는 로그 및 기타 파일을 압축된 파일 아카이브로 수집합니다.
+
+. 다운로드 대화 상자에서 * 열기 * 또는 * 저장 * 을 필요에 따라 클릭합니다.
+

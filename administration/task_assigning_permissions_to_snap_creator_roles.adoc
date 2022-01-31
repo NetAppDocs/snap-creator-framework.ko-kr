@@ -1,0 +1,22 @@
+---
+permalink: administration/task_assigning_permissions_to_snap_creator_roles.html 
+sidebar: sidebar 
+keywords: assign, permission, snap, creator, gui, role, gui, permission 
+summary: Snap Creator GUI를 사용하여 Snap Creator 역할에 권한을 할당할 수 있습니다. 
+---
+= Snap Creator 역할에 권한 할당
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 Snap Creator 역할에 권한을 할당할 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 사용자 및 역할 * > * 역할 관리 * 를 선택합니다.
+. 역할 관리 탭에서 원하는 역할을 선택한 다음 * 권한 할당 * 을 클릭합니다.
+. 왼쪽 열에서 오른쪽 열로 원하는 권한을 이동한 다음 * Save * (저장 *)를 클릭합니다.
++
+열 간에 사용 권한을 선택하고 끌거나 화살표를 클릭하여 열 간에 사용 권한을 이동할 수 있습니다.
+
+. 역할을 선택하고 역할 및 할당된 권한 창에서 할당된 권한을 확인하여 권한이 할당되었는지 확인합니다.
+

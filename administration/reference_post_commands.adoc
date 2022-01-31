@@ -1,0 +1,59 @@
+---
+permalink: administration/reference_post_commands.html 
+sidebar: sidebar 
+keywords: snap, creator, server, configuration, post, command, quiescecmde, cmd, ntap, app, post, transfer 
+summary: Snap Creator Server에는 몇 가지 구성 파일 POST 명령이 포함되어 있습니다. 
+---
+= POST 명령
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Server에는 몇 가지 구성 파일 POST 명령이 포함되어 있습니다.
+
+|===
+| 명령 | 설명 
+
+
+ a| 
+POST_APP_QUIESCECMD##
+ a| 
+이것은 응용 프로그램 후 백업 시작 명령이며, 여기서 ##은 01-99의 숫자입니다.
+
+
+
+ a| 
+POST_NTAP_CMD##
+ a| 
+post command입니다. 여기서 ##은 01-99의 숫자입니다. 이 작업은 모든 작업이 완료된 후에 실행됩니다.
+
+
+
+ a| 
+post_app_unquiesce_CMD##
+ a| 
+이 명령은 사후 응용 프로그램 백업 중지 명령이며, 여기서 ##은 01-99의 숫자입니다.
+
+
+
+ a| 
+POST_NTAP_DATA_TRANSFER_CMD##
+ a| 
+이 명령은 SnapVault 또는 SnapMirror 전송 후에 실행되는 사후 데이터 전송 명령입니다. 여기서 ##은 01-99의 숫자입니다.
+
+
+
+ a| 
+POST_RESTORE_CMD##
+ a| 
+이 명령은 대화형 복원을 완료한 후 실행할 수 있는 선택적 명령입니다. 복원 중인 응용 프로그램과 상호 작용할 수 있습니다. 복원이 완료되면 응용 프로그램을 시작할 수 있습니다. * 참고: * MySQL 플러그인에서는 지원되지 않습니다.
+
+
+
+ a| 
+POST_CLONE_CREATE_CMD##
+ a| 
+이것은 ONTAPI 클론 생성 작업이 발생한 후 실행할 수 있는 선택적 명령입니다. 여기서 ##은 01-99의 숫자입니다. 명령은 클론 파일 시스템 마운트 등의 작업을 수행하는 데 사용됩니다.
+
+|===

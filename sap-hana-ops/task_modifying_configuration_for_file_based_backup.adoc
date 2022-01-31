@@ -1,0 +1,21 @@
+---
+permalink: sap-hana-ops/task_modifying_configuration_for_file_based_backup.html 
+sidebar: sidebar 
+keywords: sap, hana, modifying, modify, change, changing, configuration, file-based, backup 
+summary: 파일 기반 백업에 대해 구성된 매개 변수를 수정할 수 있습니다. 이후의 예약된 파일 또는 주문형 파일 기반 백업 작업에는 업데이트된 정보가 반영됩니다. 
+---
+= 파일 기반 백업에 대한 구성을 수정합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+파일 기반 백업에 대해 구성된 매개 변수를 수정할 수 있습니다. 이후의 예약된 파일 또는 주문형 파일 기반 백업 작업에는 업데이트된 정보가 반영됩니다.
+
+. SAP HANA 프로필을 클릭합니다.
+. 수정할 구성을 선택하고 * HANA 파일 기반 백업 설정 * 을 클릭합니다.
++
+image::../media/modifying_file_based_backup_configuration.gif[파일 기반 백업 구성 수정]
+
+. 정보를 편집하고 * 저장 * 을 클릭합니다.
+

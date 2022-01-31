@@ -1,0 +1,26 @@
+---
+permalink: sap-hana-ops/task_overview_of_database_backups.html 
+sidebar: sidebar 
+keywords: snap, creator, backing, up, database, 
+summary: Snap Creator가 데이터베이스를 백업하는 경우 다음 단계가 실행됩니다. 
+---
+= 데이터베이스 백업 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator가 데이터베이스를 백업하는 경우 다음 단계가 실행됩니다.
+
+. 지속성 계층에서 일관된 이미지를 얻기 위해 글로벌 동기화 백업 세이브 포인트(SAP HANA 스냅샷 복사본)를 생성합니다.
+. 모든 데이터 볼륨에 대한 스토리지 스냅샷 복사본을 생성합니다.
++
+이 예에서는 두 스토리지 컨트롤러(hana1a 및 hana1b)로 배포되는 세 개의 데이터 볼륨이 있습니다.
+
+. SAP HANA 백업 카탈로그 내에 스토리지 스냅샷 백업을 등록합니다.
+. SAP HANA 스냅샷 복사본을 삭제합니다
+. 모든 데이터 볼륨에 대해 SnapVault 업데이트를 시작합니다.
+. SnapVault 상태를 확인하고 완료 또는 구성 가능한 시간 초과가 될 때까지 기다립니다.
+. 운영 스토리지 및 2차 스토리지에서 백업에 대해 정의된 보존 정책을 기반으로 SAP HANA 백업 카탈로그에서 스토리지 Snapshot 복사본을 삭제하고 백업을 삭제합니다.
+. 파일 시스템과 SAP HANA 백업 카탈로그 내에서 가장 오래된 데이터 백업보다 오래된 모든 로그 백업을 삭제합니다.
+

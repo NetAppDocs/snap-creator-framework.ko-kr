@@ -1,0 +1,71 @@
+---
+permalink: domino-ops/reference_references.html 
+sidebar: sidebar 
+keywords: domino, ibm, more, information, snap creator 
+summary: Snap Creator에 대한 자세한 내용은 NetApp Support 사이트 에서 릴리즈 관련 정보를 확인할 수 있습니다. 
+---
+= 다음 단계로 넘어갑니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator에 대한 자세한 내용은 NetApp Support 사이트 에서 릴리즈 관련 정보를 확인할 수 있습니다.
+
+* https://docs.netapp.com/us-en/snap-creator-framework/installation/index.html["Snap Creator Framework 4.3.3 설치 가이드"]
++
+에서는 Snap Creator Agent 및 Snap Creator Server를 설치하는 방법을 설명합니다. Snap Creator Agent 설치에는 IBM Domino 플러그인이 포함됩니다.
+
+* https://docs.netapp.com/us-en/snap-creator-framework/administration/index.html["Snap Creator Framework 4.3.3 관리 가이드"]
++
+설치가 완료된 후 Snap Creator 프레임워크를 관리하는 방법에 대한 설명은 에 나와 있습니다.
+
+* https://docs.netapp.com/us-en/snap-creator-framework/releasenotes.html["Snap Creator Framework 4.3 릴리즈 노트"]
++
+에서는 Snap Creator Framework 4.1.1의 새로운 기능, 중요 주의, 알려진 문제 및 제한 사항에 대해 설명합니다.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMP1506026["Windows용 SnapDrive 7.1 설치 안내서"]
++
+에서는 Windows용 SnapDrive를 설치하는 방법에 대해 설명합니다.
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-clus-peer/home.html["ONTAP 9 클러스터 피어링 익스프레스 가이드"]
++
+클러스터와 SVM(Storage Virtual Machine) 간의 피어 관계를 빠르게 구성하는 방법은 에 나와 있습니다.
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-cg/home.html["ONTAP 9 볼륨 재해 복구 준비 Express 가이드"]
++
+SnapMirror 복제를 위한 스토리지 시스템을 준비하는 방법에 대한 설명은 에 나와 있습니다.
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-sm-ic-fr/home.html["ONTAP 9 볼륨 재해 복구 익스프레스 가이드"]
++
+에서는 SnapMirror 복구를 위한 스토리지 시스템을 준비하는 방법을 설명합니다.
+
+* http://docs.netapp.com/ontap-9/topic/com.netapp.doc.exp-buvault/home.html["SnapVault Express를 사용한 ONTAP 9 볼륨 백업 가이드"]
++
+SnapVault 복제를 위한 스토리지 시스템을 준비하는 방법에 대한 설명은 에 나와 있습니다.
+
+* http://www.netapp.com/in/media/tr-3917.pdf["NetApp 기술 보고서 3917: NetApp의 Domino 모범 사례"]
++
+에서는 IBM Domino 플러그인의 Best Practice를 설명합니다.
+
+* http://www.netapp.com/us/media/tr-3588.pdf["기술 보고서 3588: Windows 2008용 Domino 8.5와 NetApp 스토리지 시스템 통합"]
++
+Windows 2008용 IBM Domino 8.5를 NetApp 스토리지 시스템과 통합하는 방법에 대해 설명합니다.
+
+* http://www.netapp.com/us/media/tr-3691.pdf["기술 보고서 3691: Linux용 IBM Domino 8.5를 NetApp 스토리지 시스템과 통합"]
++
+Linux용 IBM Domino 8.0.2 를 NetApp 스토리지 시스템과 통합하는 방법에 대해 설명합니다.
+
+* http://www.netapp.com/us/media/tr-3723.pdf["기술 보고서 3723: NFS를 사용하여 AIX 및 NetApp 환경에서 Domino 8.0.2 구축"]
++
+AIX용 IBM Domino 8.0.2 를 NetApp 스토리지 시스템과 통합하는 방법에 대해 설명합니다.
+
+* http://community.netapp.com/t5/Snap-Creator-Framework-Discussions/bd-p/snap-creator-framework-discussions["Snap Creator 프레임워크 토론"]
++
+Snap Creator 모범 사례를 공유하고, 질문하고, 아이디어를 교환하며, 리소스를 찾을 수 있습니다.
+
+* http://www.youtube.com/SnapCreatorTV["NetApp 비디오: SnapCreatorTV"]
++
+Snap Creator의 주요 기술을 보여주는 비디오를 볼 수 있습니다.
+
+

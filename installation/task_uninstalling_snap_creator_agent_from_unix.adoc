@@ -1,0 +1,42 @@
+---
+permalink: installation/task_uninstalling_snap_creator_agent_from_unix.html 
+sidebar: sidebar 
+keywords: uninstalling, uninstall, snap, creator, agent, unix 
+summary: Snap Creator Agent 설치 폴더를 삭제하여 UNIX에서 Snap Creator Agent를 제거할 수 있습니다. 
+---
+= UNIX에서 Snap Creator Agent 제거
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Agent 설치 폴더를 삭제하여 UNIX에서 Snap Creator Agent를 제거할 수 있습니다.
+
+Snap Creator Agent 디렉토리(/install_path/scAgent4.1.0) 내에서 다음 디렉토리 및 모든 관련 하위 디렉토리와 파일을 백업합니다.
+
+* 로그(../로그)
+* 플러그인(../플러그인)
+* 허용되는_command.config 및 agent.properties 파일이 포함된 Snap Creator Agent 속성(../etc
+
+
+Snap Creator Agent를 제거하려면 다음 단계를 수행하십시오.
+
+
+NOTE: 다음 단계에서 제공되는 경로는 일반 설치 경로를 나타냅니다. 이러한 명령의 경로를 수정하여 사용자 지정된 Snap Creator Agent 설치 경로를 반영할 수 있습니다.
+
+. 다음 스크립트를 사용하여 Snap Creator Agent를 중지합니다.
++
+[listing]
+----
+/install_path/scAgent4.1.0/bin/scAgent stop
+----
+. Snap Creator Agent 설치 폴더를 삭제합니다.
++
+예를 들어 Linux 시스템에서 다음 명령을 실행합니다.
+
++
+[listing]
+----
+rm -Rf /install_path/scAgent4.1.0
+----
+

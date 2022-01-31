@@ -1,0 +1,74 @@
+---
+permalink: installation/task_upgrading_snap_creator_agent_4_1_x_on_windows.html 
+sidebar: sidebar 
+keywords: upgrading, snap, creator, agent, 4.1.x, windows 
+summary: Windows의 Snap Creator Agent 4.1.x에서 업그레이드할 수 있습니다. 
+---
+= Windows에서 Snap Creator Agent 4.1.x 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows의 Snap Creator Agent 4.1.x에서 업그레이드할 수 있습니다.
+
+* Snap Creator Agent 디렉토리를 백업하기 전에 Snap Creator Agent 서비스('s napcreatoragentservice')를 중지하여 백업된 데이터가 완료되었는지 확인합니다.
++
+예를 들어 서비스 스냅인을 사용하여 서비스를 중지할 수 있습니다.
+
++
+.. 시작 * > * 실행 * 을 선택하고 'services.msc'를 입력합니다.
+.. Snap Creator Agent 서비스를 찾아 선택한 다음 서비스를 중지합니다. 또는 명령 프롬프트를 열고 다음 명령을 입력할 수 있습니다.
+
+
++
+[listing]
+----
+sc stop snapcreatoragentservice
+----
+* Snap Creator Agent 디렉토리(C:\Program Files\NetApp\NetApp_Snap_Creator_Framework\scAgent4.1.x) 내에 다음 디렉토리 및 모든 관련 하위 디렉토리와 파일을 백업했습니다.
++
+** 허용되는_command.config 및 agent.properties 파일이 포함된 Snap Creator Agent 속성(..\etc
+** 로그(..\logs)
+** 플러그인(..\plugins) * 참고: * 생성한 Snap Creator 4.1.x 백업 복사본은 삭제하지 마십시오.
+
+
+
+
+다음 단계에서 제공되는 경로는 Windows의 기본 설치 경로를 나타냅니다. 기본값이 사용되지 않은 경우 경로 정보가 설치 경로와 다를 수 있습니다.
+
+. Snap Creator 에이전트 서비스를 아직 중지하지 않은 경우 중지하십시오.
++
+서비스 중단에 대한 자세한 내용은 이 항목 앞부분의 세부 정보를 참조하십시오.
+
+. Start * > * Programs * > * Snap Creator * > * Uninstall NetApp Snap Creator Framework * 를 선택하여 Snap Creator(Windows용)를 제거합니다.
++
+자세한 내용은 Windows에서 Snap Creator 제거에 대한 정보를 참조하십시오.
+
+. 최신 Snap Creator 에이전트를 설치합니다.
++
+자세한 내용은 Snap Creator Agent를 Windows에 설치하는 방법을 참조하십시오.
+
+. 최신 Snap Creator Server를 설치할 때 Snap Creator Agent를 서비스로 시작하도록 선택한 경우 서비스를 중지합니다.
++
+서비스 중단에 대한 자세한 내용은 이 항목 앞부분의 세부 정보를 참조하십시오.
+
+. 백업된 Snap Creator 4.1.x 로그 디렉토리를 최신 위치(C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x\logs)로 복사합니다.
+. 백업된 Snap Creator 4.1.x 플러그인 디렉토리를 최신 위치(C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x\plugins)로 복사합니다.
+. 백업된 Snap Creator 4.1.x 에이전트 속성 디렉토리를 최신 위치(C:\Program Files\NetApp\Snap_Creator_Framework\scAgent4.1.x\ 등)로 복사합니다.
+. 다음 중 하나를 수행하여 Snap Creator Agent 서비스를 시작합니다.
++
+** 서비스 스냅인을 사용하여 서비스를 시작합니다.
+** 명령 프롬프트에 다음을 입력합니다.
++
+[listing]
+----
+sc start snapcreatoragentservice
+----
+
+
++
+
+NOTE: allowed_commands.config 또는 agent.properties 파일을 변경한 경우 변경 사항이 있을 때 Snap Creator Agent를 다시 시작해야 합니다.
+
+

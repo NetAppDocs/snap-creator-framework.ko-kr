@@ -1,0 +1,36 @@
+---
+permalink: administration/task_monitoring_logs_by_using_the_snap_creator_gui.html 
+sidebar: sidebar 
+keywords: profile, configuration, snap, creator, gui, monitor, log, out, debug, error, stderr, log 
+summary: Snap Creator GUI를 사용하여 모든 프로필 및 구성에 대한 로그를 볼 수 있습니다. 
+---
+= 모니터링 로그
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 모든 프로필 및 구성에 대한 로그를 볼 수 있습니다.
+
+Out, Debug, Error 및 stderr 로그를 볼 수 있어 작업 문제 해결에 도움이 됩니다. 이러한 문제 해결 로그에 대한 자세한 내용은 관련 참조 문서를 참조하십시오.
+
+. Snap Creator GUI 기본 메뉴에서 * Reports * > * Logs * 를 선택합니다.
++
+image::../media/reports_logs.gif[로그를 보고합니다]
+
+. 필요에 따라 프로파일, 구성 파일, 로그 유형 또는 특정 로그별로 로그를 선택합니다.
++
+image::../media/reports_logs_example.gif[보고서 로그 예]
+
++
+선택한 로그는 * 선택한 로그 다운로드 * 를 클릭하여 다운로드할 수도 있습니다. 다운로드한 로그 파일은 브라우저에서 다운로드를 위해 지정한 디렉터리(또는 폴더)에 저장됩니다.
+
++
+
+NOTE: out, debug, stderr 및 agent 로그는 구성 파일의 log_NUM 값에 의해 정의된 대로 유지되지만 오류 로그는 항상 추가됩니다.
+
+
+
+* 관련 정보 *
+
+xref:reference_logs.adoc[오류 메시지 유형 및 문제 해결 로그]

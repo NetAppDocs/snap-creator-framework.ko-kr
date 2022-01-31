@@ -1,0 +1,42 @@
+---
+permalink: administration/concept_using_the_plug_in_framework_to_create_custom_plug_ins.html 
+sidebar: sidebar 
+keywords: plug-in, framework, snap, creator, reuse, quiesce, unquiesce, discover, scdump, restore, restore, clone, describe, restore 
+summary: 플러그인 프레임워크를 사용하여 Snap Creator용 자체 플러그인을 만들거나 기존 플러그인을 다시 사용할 수 있습니다. 이 플러그인은 Snap Creator에서 특정 애플리케이션의 백업 및 복구를 처리하기 위한 단계를 제공합니다. 
+---
+= 플러그인 프레임워크를 사용하여 사용자 지정 플러그인을 만듭니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+플러그인 프레임워크를 사용하여 Snap Creator용 자체 플러그인을 만들거나 기존 플러그인을 다시 사용할 수 있습니다. 이 플러그인은 Snap Creator에서 특정 애플리케이션의 백업 및 복구를 처리하기 위한 단계를 제공합니다.
+
+플러그인 프레임워크에서는 다음 메서드를 정의합니다.
+
+* Quiesce - 지정된 응용 프로그램 플러그인에 대한 Quiesce를 처리하는 방법입니다
+* Unquiesce - 지정된 응용 프로그램 플러그인에 대해 일시 중지 해제를 처리하는 방법입니다
+* Discover - 지정된 애플리케이션 플러그인에 대한 스토리지 객체 검색을 처리하는 방법입니다
+* scdump - 지원 정보, 데이터베이스, 운영 체제 및 SnapDrive의 수집을 처리하는 방법입니다
+* Restore - 지정된 애플리케이션 플러그인에 대한 복구를 처리하는 방법입니다
+* restore_pre - 지정된 애플리케이션 플러그인에 대한 PreRestore 작업을 처리하는 방법입니다(Snap Creator의 내장 복원 CLI를 사용할 수 있음).
+* restore_post - 지정된 애플리케이션 플러그인에 대한 사후 복구 작업을 처리하는 방법입니다. Snap Creator의 내장 복원 CLI를 사용할 수 있습니다.
+* Clone_pre - 지정된 애플리케이션 플러그인에 대한 사전 클론 작업을 처리하는 방법입니다
+* Clone_Post - 지정된 애플리케이션 플러그인에 대한 사후 클론 작업을 처리하는 방법입니다
+* 설명 - 플러그인이 구현하는 내용을 설명하는 방법입니다. Perl 플러그인은 선택 사항이지만 플러그인/기본 제공 방식의 기본 플러그인에 필요합니다.
+* Clone_All - 지정된 애플리케이션 플러그인에 대한 클론 생성을 처리하는 방법(기본 제공 클론 생성 인터페이스를 사용할 수 없음)
+* Clone_Cleanup - 클론 작업이 실패한 경우 정리 작업을 처리하는 방법입니다
+* restore_cleanup - 복구 작업이 실패한 경우 정리 작업을 처리하는 방법입니다
+
+
+
+NOTE: 플러그인 프레임워크는 프로그래밍을 위한 Perl, PowerShell, Java, UNIX Shell 및 Python을 지원합니다. 참고: 플러그인 프레임워크를 사용하면 Snap Creator 내에 있는 오브젝트와 함수를 구현할 수 있습니다.
+
+예를 들어, 오류 처리를 사용할 수 있습니다. 즉, 플러그인에서 표준 구현을 사용할 수 있습니다. Snap Creator 에서는 이렇게 하면 플러그인을 만드는 데 필요한 작업이 줄어듭니다.
+
+* Perl 플러그인은 /plug-ins/plug-in-name/plug-in.pm에 설치됩니다.
+* 네이티브 플러그인은 /plug-ins/native/plug-in.sh, plug-in.java.plug-in.bat 등에 설치됩니다.
+* 플러그인을 실행할 위치에 설치해야 합니다. Snap Creator의 설정에 따라 Snap Creator Server 또는 Snap Creator Agent가 될 수 있습니다.
+
+
+플러그인 프레임워크, 플러그인 및 플러그인 사용자 가이드에 대한 자세한 내용은 를 참조하십시오 http://community.netapp.com/t5/Snap-Creator-Framework-Discussions/bd-p/snap-creator-framework-discussions["Snap Creator 프레임워크 토론 커뮤니티 포럼"].

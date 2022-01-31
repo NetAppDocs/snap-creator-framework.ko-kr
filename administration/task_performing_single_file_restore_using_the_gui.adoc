@@ -1,0 +1,37 @@
+---
+permalink: administration/task_performing_single_file_restore_using_the_gui.html 
+sidebar: sidebar 
+keywords: snap, creator, gui, file, restore, wizard 
+summary: Snap Creator GUI를 사용하여 단일 파일 복원 작업을 수행할 수 있습니다. 
+---
+= 단일 파일 복구 작업을 수행하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 단일 파일 복원 작업을 수행할 수 있습니다.
+
+. Snap Creator GUI의 기본 메뉴에서 * 관리 * > * 구성 * 을 선택합니다.
+. 프로파일 및 구성 창의 구성 탭에서 구성 파일을 선택합니다.
+. Action * > * Restore * 를 선택합니다.
++
+오른쪽 창에 복원 마법사가 열립니다.
+
+. 복원 마법사 완료:
++
+.. "'Restore details'" 섹션에서 컨트롤러 또는 SVM 이름, 복원 볼륨 이름, 정책 및 복원 스냅샷 복사본 이름을 선택한 다음 복원 유형 목록에서 * Single File Restore * 를 선택합니다.
++
+image::../media/restore_wizard_restore_details.gif[복원 마법사 복원 세부 정보]
+
+.. 복원할 파일을 선택합니다.
+.. 파일을 복원할 위치를 선택합니다.
+.. 요약을 검토하고 * Finish * 를 클릭합니다.
+
+
++
+복원할 항목이 더 있는지 묻는 경고 메시지가 나타납니다.
+
+. 복원할 항목이 더 이상 없으면 * 아니요 * 를 클릭하고 복원 확인 페이지에서 * 확인 * 을 클릭합니다.
+. 콘솔 창에서 표시된 메시지를 검토하여 선택한 파일이 성공적으로 복원되었는지 확인합니다.
+

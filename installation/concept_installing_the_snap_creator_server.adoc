@@ -1,0 +1,15 @@
+---
+permalink: installation/concept_installing_the_snap_creator_server.html 
+sidebar: sidebar 
+keywords: installing, install, snap, creator, server 
+summary: Windows 및 UNIX 호스트에 Snap Creator Server를 설치할 수 있습니다. 
+---
+= Snap Creator 서버 설치
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows 및 UNIX 호스트에 Snap Creator Server를 설치할 수 있습니다.
+
+일반적인 설치의 경우 Snap Creator Server와 Snap Creator Agent가 별도의 호스트에 설치됩니다. 그러나 경우에 따라 서버와 에이전트를 동시에 설치할 수 있습니다. 이 설정에서는 설치 중에 서버만 구성됩니다.

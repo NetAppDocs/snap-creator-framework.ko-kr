@@ -1,0 +1,34 @@
+---
+permalink: sap-hana-ops/concept_requirements.html 
+sidebar: sidebar 
+keywords: requirements, sap, hana, plug-in, create, backups, point-in-time, recovery, databases 
+summary: SAP HANA 플러그인을 사용하면 백업을 생성하고 HANA 데이터베이스의 시점 복구를 수행할 수 있습니다. 
+---
+= 요구 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAP HANA 플러그인을 사용하면 백업을 생성하고 HANA 데이터베이스의 시점 복구를 수행할 수 있습니다.
+
+SAP HANA 플러그인에 대한 지원은 다음과 같습니다.
+
+* 호스트 운영 체제: SUSE Linux Enterprise Server(SLES), 32비트 및 64비트
+* 7-Mode에서 운영되는 clustered Data ONTAP 또는 Data ONTAP
+* NFS를 통해 연결된 SAP HANA 데이터베이스 노드가 하나 이상 있습니다
+* SPS(서비스 팩 스택) 7 이상을 실행하는 SAP HANA
+
+
+
+NOTE: 지원에 대한 최신 정보를 보거나 호환성 매트릭스를 보려면 을 참조하십시오 http://mysupport.netapp.com/matrix["NetApp 상호 운용성 매트릭스 툴"].
+
+* 필요한 라이선스 *
+
+운영 스토리지 컨트롤러에는 SnapRestore 및 SnapVault 라이센스가 설치되어 있어야 합니다. 보조 스토리지에 SnapVault 라이센스가 설치되어 있어야 합니다.
+
+Snap Creator 및 Snap Creator SAP HANA 플러그인에는 라이센스가 필요하지 않습니다.
+
+* Snapshot 백업의 용량 요구 사항 *
+
+기존 데이터베이스의 변경률에 비해 스토리지 계층의 블록 변경률이 더 높도록 고려해야 합니다. 열 저장소의 테이블 병합 프로세스로 인해 블록 변경 내용보다 훨씬 많은 데이터가 디스크에 기록됩니다. 더 많은 고객 데이터를 사용할 수 있을 때까지 변경 비율의 현재 추정치는 하루에 20% ~ 50%입니다.

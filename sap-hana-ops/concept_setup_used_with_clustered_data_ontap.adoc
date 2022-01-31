@@ -1,0 +1,16 @@
+---
+permalink: sap-hana-ops/concept_setup_used_with_clustered_data_ontap.html 
+sidebar: sidebar 
+keywords: setup, sap, hana, clustered, data, ontap 
+summary: clustered Data ONTAP과 함께 사용되는 설정 
+---
+= clustered Data ONTAP과 함께 사용되는 설정
+:icons: font
+:imagesdir: ../media/
+
+
+다음 그림은 clustered Data ONTAP에 사용된 설정을 보여줍니다. 설정은 다음 그림에 표시된 SVM(스토리지 가상 머신) 및 볼륨 이름을 사용하는 단일 노드 SAP HANA 구성을 기반으로 합니다.
+
+image::../media/sap_hana_cdot_setup.gif[에는 clustered Data ONTAP에 사용된 설정이 나와 있습니다. SVM(스토리지 가상 머신) 및 볼륨 이름을 포함하는 단일 노드 SAP HANA 구성을 기반으로 설정됩니다.]
+
+7-Mode에서 운영되는 clustered Data ONTAP 및 Data ONTAP에서는 SnapVault 작업을 준비, 시작, 재개 및 복원하는 방식이 다릅니다. 이러한 차이점을 이 가이드의 해당 섹션에서 설명합니다.

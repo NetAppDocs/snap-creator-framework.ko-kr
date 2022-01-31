@@ -1,0 +1,20 @@
+---
+permalink: administration/task_viewing_assigned_configuration_files_for_a_profile.html 
+sidebar: sidebar 
+keywords: configuration, file, assign, profile 
+summary: 프로파일에 할당된 구성 파일 목록을 볼 수 있습니다. 
+---
+= 프로파일에 할당된 구성 파일 목록 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+프로파일에 할당된 구성 파일 목록을 볼 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 관리 * > * 구성 * 을 선택합니다.
+. 프로파일 및 구성 창에서 프로파일의 내용을 확장합니다.
++
+프로파일에 할당된 구성 파일이 프로파일 이름 아래에 나열됩니다.
+
+

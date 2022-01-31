@@ -1,0 +1,13 @@
+---
+permalink: administration/concept_managing_snap_creator_agent.html 
+sidebar: sidebar 
+keywords: start, verify, snap, creator, agent, port, managing, unix, windows 
+summary: Snap Creator Agent를 시작, 확인 및 중지하고, Agent 포트를 변경하고, Windows 및 UNIX 시스템에서 Agent 보안을 관리할 수 있습니다. 
+---
+= Snap Creator 에이전트 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Agent를 시작, 확인 및 중지하고, Agent 포트를 변경하고, Windows 및 UNIX 시스템에서 Agent 보안을 관리할 수 있습니다.

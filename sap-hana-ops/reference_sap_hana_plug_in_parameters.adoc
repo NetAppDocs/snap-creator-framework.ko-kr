@@ -1,0 +1,142 @@
+---
+permalink: sap-hana-ops/reference_sap_hana_plug_in_parameters.html 
+sidebar: sidebar 
+keywords: sap, hana, plug-in, parameters 
+summary: SAP HANA 플러그인 매개 변수 
+---
+= SAP HANA 플러그인 매개 변수
+:icons: font
+:imagesdir: ../media/
+
+
+다음 표에는 SAP HANA 플러그인 매개 변수가 나와 있으며, 매개 변수 설정에 대한 설명과 매개 변수가 나와 있습니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+HANA_SID
+ a| 
+예: ABC
+ a| 
+HANA 데이터베이스 SID
+
+
+
+ a| 
+hana_nodes를 선택합니다
+ a| 
+예: node1, node2, node3
+ a| 
+hdbsql 문을 실행할 수 있는 쉼표로 구분된 HANA 노드 목록입니다.
+
+
+
+ a| 
+hana_user_name을 입력합니다
+ a| 
+예: backupUser
+ a| 
+HANA 데이터베이스 사용자 이름입니다. 이 사용자에게 필요한 최소 권한은 백업 관리자 권한입니다.
+
+
+
+ a| 
+hana_password 를 입력합니다
+ a| 
+예: hfasfh87r83r
+ a| 
+HANA 데이터베이스 암호.
+
+
+
+ a| 
+hana_instance를 선택합니다
+ a| 
+예: 42
+ a| 
+HANA 노드 인스턴스 번호입니다.
+
+
+
+ a| 
+HANA_HDBSQL_CMD
+ a| 
+예: /usr/sa p/hdbclient/hdbsql
+ a| 
+hdbsql 명령의 경로입니다. 이 매개 변수를 설정하지 않으면 검색 경로에 hdbsql이 사용됩니다. 기본값은 hdbsql 입니다.
+
+
+
+ a| 
+HANA_OSDB_USER입니다
+ a| 
+예: user1
+ a| 
+hdbsql(일반적으로 sidadm)을 실행하는 운영 체제 사용자는 검색 경로에 hdbsql 바이너리와 이를 실행할 권한이 있어야 합니다.
+
+
+
+ a| 
+hana_USERSTORE_keys
+ a| 
+예: node1:key1, node 2:key2, node3:ke y3
+ a| 
+hdbsql 문을 실행할 수 있는 HANA 사용자 저장소 키 및 노드 쌍의 쉼표로 구분된 목록입니다.
+
+
+
+ a| 
+hana_file_backup_enable을 선택합니다
+ a| 
+"Y" 또는 "N"
+ a| 
+Snap Creator에서 SAP HANA 플러그인에 대해 파일 기반 백업을 사용하도록 설정해야 하는지 여부를 결정합니다. 이 설정은 SAP HANA 파일 기반 백업 작업을 수행하려는 경우에 유용합니다.
+
+
+
+ a| 
+hana_file_backup_path를 입력합니다
+ a| 
+예: /HANA/data/scn/mnt00001
+ a| 
+(선택 사항) 데이터베이스 파일 백업을 저장할 수 있는 디렉토리의 경로입니다. 이 매개 변수가 설정되지 않은 경우 기본값을 사용합니다.
+
+
+
+ a| 
+hana_file_backup_prefix
+ a| 
+예: SnapCreator_<HANA_FILE_BACKUP_PREFIX>__<Current_TIMESTAMP>
+ a| 
+(선택 사항) 백업 파일 이름에 접두사를 추가합니다. 기본값: SnapCreator__<Current_timestamp>
+
+
+
+ a| 
+hana_integrity_check_enable
+ a| 
+"Y" 또는 "N"
+ a| 
+Snap Creator에서 SAP HANA 플러그인에 대한 무결성 검사를 활성화해야 할지 여부를 결정합니다. 이 설정은 SAP HANA 무결성 검사 작업을 수행하려는 경우에 주로 사용됩니다.
+
+
+
+ a| 
+hana_TEMP_FILE_BACKUP_PATH를 선택합니다
+ a| 
+예: /temp
+ a| 
+(선택 사항) 무결성 검사를 위한 임시 데이터베이스 파일을 저장할 수 있는 경로입니다. 확실하지 않은 경우 기본값을 사용합니다.
+
+
+
+ a| 
+hana_log_cleanup_enable
+ a| 
+"Y" 또는 "N"
+ a| 
+로그 카탈로그 정리를 활성화합니다.
+
+|===

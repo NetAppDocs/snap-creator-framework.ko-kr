@@ -1,0 +1,22 @@
+---
+permalink: administration/task_assigning_roles_to_snap_creator_users.html 
+sidebar: sidebar 
+keywords: snap, creator, user, gui, role, management 
+summary: Snap Creator GUI를 사용하여 Snap Creator 사용자에게 역할을 할당할 수 있습니다. 
+---
+= Snap Creator 사용자에게 역할 할당
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 Snap Creator 사용자에게 역할을 할당할 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 사용자 및 역할 * > * 사용자 관리 * 를 선택합니다.
+. 사용자 관리 탭에서 원하는 사용자 이름을 선택한 다음 * 프로파일 할당 * 을 클릭합니다.
+. 왼쪽 열에서 오른쪽 열로 원하는 역할을 이동한 다음 * Save * (저장 *)를 클릭합니다.
++
+열 간에 역할을 선택하고 끌거나 화살표를 클릭하여 열 간에 역할을 이동할 수 있습니다.
+
+. 사용자를 선택하고 * Assigned Profiles and Roles *(할당된 프로필 및 역할 *) 창에서 할당된 역할을 확인하여 역할이 할당되었는지 확인합니다.
+

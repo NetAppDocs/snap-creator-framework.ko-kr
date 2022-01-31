@@ -1,0 +1,73 @@
+---
+permalink: administration/reference_pre_commands.html 
+sidebar: sidebar 
+keywords: snap, creator, server, configuration, pre, command, quiesce, cmd, ntap, clone, exit 
+summary: Snap Creator Server에는 몇 가지 구성 파일 사전 명령이 포함되어 있습니다. 
+---
+= 사전 명령
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Server에는 몇 가지 구성 파일 사전 명령이 포함되어 있습니다.
+
+
+NOTE: Windows의 경우 사전 명령 전에 cmd.exe /c를 포함해야 합니다.
+
+|===
+| 명령 | 설명 
+
+
+ a| 
+pre_app_quiesce_CMD##
+ a| 
+이 명령은 사전 애플리케이션 백업 시작 명령입니다. 여기서 ##은 01-99의 숫자입니다.
+
+
+
+ a| 
+PRE_NTAP_CMD##
+ a| 
+이 명령은 사전 스냅샷 명령입니다. 여기서 ##은 01-99의 숫자입니다. 이 명령은 모든 작업 전에 실행됩니다.
+
+
+
+ a| 
+pre_app_unquiesce_CMD##
+ a| 
+이 명령은 사전 애플리케이션 백업 중지 명령입니다. 여기서 ##은 01-99의 숫자입니다.
+
+
+
+ a| 
+pre_ntap_clone_delete_CMD##
+ a| 
+이 명령은 사전 클론 삭제 명령으로, ##은 01-99의 숫자입니다. * 참고: * clone delete 명령의 목적은 복제한 LUN을 테이프 백업 목적으로 마운트할 수 있도록 마운트 스크립트 또는 명령을 호출하는 것입니다.
+
+
+
+ a| 
+pre_exit_CMD##
+ a| 
+이 명령은 스냅 생성기가 종료되기 전에 심각한 오류가 발생한 후 실행되는 선택적 명령입니다. 이 기능은 Snap Creator가 실행되기 전의 상태로 되돌리는 데 유용합니다. * 참고: *
+
+* 이 명령은 오류 때문에 Snap Creator가 종료되기 전에 애플리케이션을 정상 작동 모드로 되돌립니다.
+* app_name 은 Snap Creator에서 내부적으로 처리되므로 이 옵션은 무시됩니다.
+
+
+
+
+ a| 
+pre_restore_CMD##
+ a| 
+이 명령은 대화형 복원을 입력하기 전에 실행할 수 있는 선택적 명령입니다. 이렇게 하면 복원 중인 응용 프로그램과 상호 작용할 수 있습니다. 예를 들어, 복원을 수행하기 전에 응용 프로그램을 종료할 수 있습니다. * 참고: * MySQL 플러그인에서는 지원되지 않습니다.
+
+
+
+ a| 
+pre_clone_create_CMD##
+ a| 
+이것은 ONTAPI 클론 생성 작업이 수행되기 전에 실행할 수 있는 선택적 명령입니다. 여기서 ##은 01-99의 숫자입니다.
+
+|===

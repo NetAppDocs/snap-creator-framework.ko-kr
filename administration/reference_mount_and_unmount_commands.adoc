@@ -1,0 +1,31 @@
+---
+permalink: administration/reference_mount_and_unmount_commands.html 
+sidebar: sidebar 
+keywords: cloning, mount_cmd, unmount_cmd, command, snap, creator, pre, post 
+summary: 클론 생성 시 Snap Creator pre 또는 POST 명령 대신 mount_CMD 및 umount_CMD 명령을 사용해야 합니다. 
+---
+= 명령을 마운트 및 마운트 해제합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클론 생성 시 Snap Creator pre 또는 POST 명령 대신 mount_CMD 및 umount_CMD 명령을 사용해야 합니다.
+
+|===
+| 명령 | 설명 
+
+
+ a| 
+mount_CMD##
+ a| 
+마운트 명령은 클론 생성 또는 마운트 작업을 위해 파일 시스템을 마운트하는 데 사용됩니다. 여기서 ##은 01-99부터 시작하는 숫자입니다.
+
+
+
+ a| 
+umount_CMD##
+ a| 
+마운트 해제 명령은 클론 생성 또는 마운트 작업을 위해 파일 시스템을 마운트하는 데 사용됩니다. 여기서 ##은 01-99부터 시작하는 숫자입니다.
+
+|===

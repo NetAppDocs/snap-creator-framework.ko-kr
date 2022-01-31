@@ -1,0 +1,22 @@
+---
+permalink: installation/concept_configuring_settings_for_the_domino_plug_in.html 
+sidebar: sidebar 
+keywords: configuring, configure, settings 
+summary: Snap Creator Agent 설치의 일부로 포함된 IBM Domino 플러그인을 사용하려는 경우에만 특정 설정을 구성해야 합니다. 
+---
+= Domino 플러그인의 설정 구성
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Agent 설치의 일부로 포함된 IBM Domino 플러그인을 사용하려는 경우에만 특정 설정을 구성해야 합니다.
+
+
+NOTE: 다른 호스트에 Snap Creator Server 및 Snap Creator Agent를 설치하는 것이 가장 좋습니다.
+
+운영 체제에 따라 IBM Domino 플러그인용 Snap Creator Agent를 설치하기 전에 이러한 설정을 구성해야 합니다.
+
+* Windows 환경의 경우 환경 변수에 Domino 경로를 추가해야 합니다.
+* UNIX 환경의 경우 Domino의 공유 객체 파일에 링크할 심볼 링크를 생성해야 합니다.
+

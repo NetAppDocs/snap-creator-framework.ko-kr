@@ -1,0 +1,41 @@
+---
+permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_agent_on_unix.html 
+sidebar: sidebar 
+keywords: snap, creator, agent, service, verify, start, stop, unix 
+summary: Snap Creator Agent 서비스를 시작 및 중지하고 Snap Creator Agent 서비스가 UNIX 시스템에서 실행 중인지 확인할 수 있습니다. 
+---
+= UNIX에서 Snap Creator Agent 시작, 확인 및 중지
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Agent 서비스를 시작 및 중지하고 Snap Creator Agent 서비스가 UNIX 시스템에서 실행 중인지 확인할 수 있습니다.
+
+. Snap Creator Agent를 시작 또는 중지하거나 Snap Creator Server 서비스가 실행 중인지 확인합니다(해당하는 경우).
++
+|===
+| 원하는 작업 | 다음을 입력하십시오. 
+
+
+ a| 
+Snap Creator 에이전트 서비스를 시작합니다
+ a| 
+install_path/scAgent4.3.0/bin/scAgent가 시작됩니다
+
+
+
+ a| 
+Snap Creator Agent 서비스가 실행 중인지 확인합니다
+ a| 
+install_path/scAgent4.3.0/bin/scAgent 상태입니다
+
+
+
+ a| 
+Snap Creator 에이전트 서비스를 중지합니다
+ a| 
+install_path/scAgent4.3.0/bin/Agent 중지
+
+|===
+

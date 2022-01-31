@@ -1,0 +1,26 @@
+---
+permalink: administration/concept_backup_and_recovery_workflow_with_plug_ins.html 
+sidebar: sidebar 
+keywords: backup, recovery, workflow, snap, creator, framework 
+summary: Snap Creator GUI를 사용하면 워크플로우를 백업 및 복구 프로세스의 지침으로 사용할 수 있습니다. 
+---
+= 백업 및 복구 워크플로우
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하면 워크플로우를 백업 및 복구 프로세스의 지침으로 사용할 수 있습니다.
+
+이러한 작업을 수행할 때는 Snap Creator가 실행되고 있어야 하며 Snap Creator GUI가 열려 있어야 합니다. 그렇지 않은 경우 웹 브라우저( 에서 Snap Creator Server의 URL을 입력할 수 있습니다"https://IP_address:gui_port"[] 기본적으로 포트는 8443)입니다. 그런 다음 Snap Creator GUI 자격 증명을 사용하여 로그인합니다.
+
+다음 그림에서는 플러그인을 사용할 때 시스템의 백업 및 복구를 수행할 때의 전체 작업 세트를 보여 줍니다.
+
+
+NOTE: 워크플로에 설명된 작업은 CLI(Command-Line Interface)에서도 수행할 수 있습니다. CLI에 대한 자세한 내용은 CLI 명령줄에 대한 자세한 내용은 관련 참조 를 참조하십시오.
+
+image::../media/sc_workflow_with_plugin.gif[플러그인이 있는 SC 워크플로]
+
+* 관련 정보 *
+
+xref:reference_guidelines_for_using_the_snap_creator_command_line.adoc[Snap Creator 명령줄 인터페이스 사용 지침]

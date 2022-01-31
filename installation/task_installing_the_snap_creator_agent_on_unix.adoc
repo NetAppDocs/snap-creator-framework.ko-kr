@@ -1,0 +1,147 @@
+---
+permalink: installation/task_installing_the_snap_creator_agent_on_unix.html 
+sidebar: sidebar 
+keywords: installing, install, snap, creator, agent, unix 
+summary: 'Snap Creator Agent는 모든 개방형 시스템 플랫폼(AIX, HP-UX, Linux 및 Solaris)에서 실행됩니다.' 
+---
+= UNIX 기반 시스템에 Snap Creator Agent 설치
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Agent는 모든 개방형 시스템 플랫폼(AIX, HP-UX, Linux 및 Solaris)에서 실행됩니다.
+
+JRE 1.8 업데이트 72 이상이 설치되어 있어야 합니다. 자세한 내용은 Snap Creator 서버에 Java를 설치하는 방법에 대한 관련 링크의 정보를 참조하십시오.
+
+설치를 수행하는 사람은 충분한 액세스 권한과 권한을 가지고 있어야 합니다.
+
+Snap Creator Agent의 기본 포트는 9090입니다. netstat 또는 유사한 도구를 사용하여 네트워크 포트(9090 또는 사용할 포트)가 사용 가능하고 아직 사용 중이 아닌지 확인합니다(예: "netstat-nap | grep 9090" 입력).
+
+Snap Creator를 이미 다운로드해야 합니다. 자세한 내용은 Snap Creator 소프트웨어 다운로드에 대한 정보를 참조하십시오.
+
+Linux는 여기에 예제 플랫폼으로 사용됩니다.
+
+. 다운로드한 Snap Creator tar.gz 파일을 Snap Creator Agent를 설치할 위치에 복사합니다.
++
+
+NOTE: IBM Domino 플러그인을 사용하려는 경우 Domino 데이터 폴더 이외의 위치를 선택합니다.
+
++
+.. 하위 디렉토리를 만들려면 디렉토리 이름을 사용하여 다음 명령을 입력합니다.
++
+[listing]
+----
+mkdir snap_creator_directory
+----
++
+[listing]
+----
+mkdir /SC_41
+----
+.. 다음 명령을 입력하여 Snap Creator tar.gz 파일을 새로 생성된 디렉토리에 복사합니다.
++
+[listing]
+----
+cp NetApp_Snap_Creator_Frameworkrelease-os.tar.gz
+/snap_creator_directory
+----
++
+[listing]
+----
+cp NetApp_Snap_Creator_Framework4.1.0-Linux32.tar.gz
+/SC_41
+----
+
+
+. Snap Creator Framework.tar 파일이 있는 디렉토리로 이동한 후 다음 명령을 입력하여 파일 압축을 풉니다.
++
+
+NOTE: UNIX 환경에 따라 tar 명령을 입력하기 전에 파일의 압축을 풀어야 할 수도 있습니다.
+
++
+[listing]
+----
+cd snap_creator_directory
+tar -xvf NetApp_Snap_Creator_Frameworkrelease-os.tar.gz
+----
++
+** Snap_creator_directory는 Snap Creator가 설치될 위치입니다.
+** Release는 Snap Creator 소프트웨어 패키지의 최신 릴리즈입니다.
+** OS는 운영 체제입니다.
++
+[listing]
+----
+cd /sc_41
+tar -xvf NetApp_Snap_Creator_Framework4.1.0-Linux32.tar.gz
+----
+
+
++
+그러면 Server 및 Agent 소프트웨어가 모두 추출됩니다. 일반적으로 Snap Creator 서버만 구성됩니다. 일반적으로 에이전트는 다음 예와 같이 보호할 데이터베이스 또는 애플리케이션 서버에 상주합니다.
+
++
+를 누릅니다
+
++
+[listing]
+----
+NetApp_Snap_Creator_Framework4.1.0-Linux32.tar.gz  scServer4.1.0
+scAgent4.1.0
+----
+. 다음 명령을 입력하고 예제에 표시된 프롬프트에 응답하여 Snap Creator Agent를 설정합니다.
++
+[listing]
+----
+cd scAgent*
+./snapcreator --setup
+Welcome to the NetApp Snap Creator Framework release-version!
+\#\#\# Installation options \#\#\#
+01. NetApp Snap Creator Framework release-version Agent
+Select install option (enter a number or "q" to quit): <Enter 01>
+
+END USER LICENSE AGREEMENT
+<...the EULA displays...>
+
+Do you accept the End User License Agreement (y|n): <Enter y>
+
+Enter Snap Creator server port [9090]: <Enter agent port>
+
+INFO: Updated NetApp Snap Creator Framework release-version
+/install_path/scAgentrelease-version/engine/etc/agent.properties
+
+
+INFO: To start scAgent please do the following:
+
+/install_path/scAgentrelease-version/bin/scAgent start
+----
+. Snap Creator 에이전트 시작:
++
+[listing]
+----
+/install_path/scAgentrelease-version/bin/scAgent start
+----
++
+
+NOTE: 시작 시 Snap Creator Agent가 자동으로 실행되도록 하려면 스크립트에 start 명령을 추가합니다.
+
++
+스크립트를 생성하는 단계는 사용되는 운영 체제와 서버를 관리하는 시스템 관리자의 기본 설정에 따라 약간 다릅니다. 일반적으로 Snap Creator Agent의 start 명령은 /path/to/rc2.d 하위 디렉토리에 있는 S9(예: S99scAgent)로 시작하는 파일에 추가할 수 있습니다. rc2.d 하위 디렉토리는 일반적으로 /etc/아래에 있지만, 이는 호스트 운영 체제 및 서버의 특정 구성에 따라 달라질 수 있습니다. 자세한 내용은 사용 중인 운영 체제 설명서를 참조하십시오.
+
++
+다음 메시지가 나타납니다.
+
++
+[listing]
+----
+Starting scAgent:
+    Watchdog: Running
+       Agent: Running
+----
+
+
+* 관련 정보 *
+
+xref:task_installing_java_on_snap_creator_hosts.adoc[Snap Creator 호스트에 Java 설치]
+
+xref:task_downloading_the_snap_creator_software.adoc[Snap Creator 소프트웨어 다운로드]

@@ -1,0 +1,19 @@
+---
+permalink: installation/concept_set_up_the_hosts_to_be_in_sync_with_the_same_ntp_server.html 
+sidebar: sidebar 
+keywords: synchronizing, synchronize, time, snap, creator, server, agent, hosts 
+summary: 'Snap Creator를 설치하기 전에 Snap Creator Server 호스트의 시간이 Agent 호스트의 시간과 동기화되어 있는지 확인해야 합니다. 이 작업은 동일한 NTP(Network Time Protocol) 서버와 호스트의 시간을 동기화하여 수행할 수 있습니다.' 
+---
+= Snap Creator Server 및 Agent 호스트에서 시간을 동기화하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator를 설치하기 전에 Snap Creator Server 호스트의 시간이 Agent 호스트의 시간과 동기화되어 있는지 확인해야 합니다. 이 작업은 동일한 NTP(Network Time Protocol) 서버와 호스트의 시간을 동기화하여 수행할 수 있습니다.
+
+자세한 내용은 다음 문서를 참조하십시오.
+
+* Clustered Data ONTAP --_clustered Data ONTAP 소프트웨어 설정 가이드 _ 사용 중인 Data ONTAP 버전에 해당합니다. 특히, 시스템 시간을 확인하고 클러스터 전체에서 시스템 시간을 동기화하는 것과 관련된 정보를 참조하십시오.
+* 7-Mode에서 작동하는 Data ONTAP -- 기술 자료 문서 1011954 에서 NTP 시간 동기화를 설정하는 방법 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/ONTAP_OS/How_to_set_up_NTP_time_synchronization_in_Data_ONTAP_7-Mode["Data ONTAP 7-Mode에서 NTP 시간 동기화를 설정하는 방법"].
+

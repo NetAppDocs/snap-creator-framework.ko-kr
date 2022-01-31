@@ -1,0 +1,32 @@
+---
+permalink: domino-ops/concept_creating_a_configuration_for_domino_using_the_gui.html 
+sidebar: sidebar 
+keywords: domino, ibm, creating, create, backup, restore, configuration 
+summary: 구성 파일에서 백업 및 복원 작업에 필요한 대부분의 정보를 지정합니다. 구성 파일은 Snap Creator 백업 및 복원 작업에 대한 입력 파일입니다. 
+---
+= 백업 및 복원 구성을 생성하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 파일에서 백업 및 복원 작업에 필요한 대부분의 정보를 지정합니다. 구성 파일은 Snap Creator 백업 및 복원 작업에 대한 입력 파일입니다.
+
+필요한 만큼 구성 파일을 작성할 수 있지만 작업에 대한 입력으로 단일 구성 파일만 지정할 수 있습니다. Snap Creator GUI 또는 Snap Creator CLI를 사용하여 구성 파일을 생성할 수 있습니다.
+
+
+NOTE: 이 안내서는 GUI를 사용하여 구성 파일을 작성하는 방법을 보여줍니다. CLI 사용 방법에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+스냅 Creatorprofiles에서 구성 파일을 구성합니다. 프로파일과 구성 파일은 Snap Creator 설치 디렉토리의 \engine\configs 하위 디렉토리에 있습니다.
+
+* UNIX 호스트의 경우 설치 파일이 추출된 디렉토리입니다
+* Windows 호스트에서는 기본적으로 C:\Program Files\NetApp\Snap_Creator_Framework\scServer4.1.x가 사용됩니다
+
+
+* 관련 정보 *
+
+link:concept_general_configuration_file_information.adoc["Snap Creator GUI에 로그인합니다"]
+
+
+
+

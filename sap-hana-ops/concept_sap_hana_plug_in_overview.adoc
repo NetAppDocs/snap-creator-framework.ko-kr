@@ -1,0 +1,45 @@
+---
+permalink: sap-hana-ops/concept_sap_hana_plug_in_overview.html 
+sidebar: sidebar 
+keywords: sap, hana, plug-in, overview 
+summary: SAP HANA 플러그인은 Snap Creator 프레임워크와 함께 작동하여 NetApp 스토리지 백엔드를 기반으로 하는 SAP HANA 데이터베이스를 위한 백업 솔루션을 제공합니다 Snap Creator에서 생성된 스냅샷 백업은 HANA 카탈로그에 등록되며 HANA Studio에 표시됩니다. 
+---
+= SAP HANA 플러그인 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAP HANA 플러그인은 Snap Creator 프레임워크와 함께 작동하여 NetApp 스토리지 백엔드를 기반으로 하는 SAP HANA 데이터베이스를 위한 백업 솔루션을 제공합니다 Snap Creator에서 생성된 스냅샷 백업은 HANA 카탈로그에 등록되며 HANA Studio에 표시됩니다.
+
+Snap Creator Framework는 단일 컨테이너 및 MDC(멀티테넌트 데이터베이스 컨테이너) 단일 테넌트 데이터베이스라는 두 가지 유형의 SAP HANA 데이터베이스를 지원합니다.
+
+Snap Creator와 SAP HANA 플러그인은 7-Mode로 운영되는 Data ONTAP와 NFS 또는 파이버 채널을 사용하는 스토리지 컨트롤러에 연결된 SAP HANA 데이터베이스 노드가 있는 clustered Data ONTAP에서 지원됩니다. SAP HANA 데이터베이스에 필요한 인터페이스는 SPS(Service Pack Stack) 7 이상에서 사용할 수 있습니다.
+
+Snap Creator 프레임워크는 스토리지 시스템과 통신하여 스냅샷 복사본을 생성하고 SnapVault을 사용하여 데이터를 2차 스토리지로 복제합니다. 또한 Snap Creator는 운영 스토리지의 SnapRestore 또는 보조 스토리지의 SnapVault 복구 기능을 통해 데이터를 복구하는 데 사용됩니다.
+
+SAP HANA용 Snap Creator 플러그인은 SAP HANA hdbsql 클라이언트를 사용하여 SQL 명령을 실행하여 데이터베이스 정합성을 보장하고 SAP HANA 백업 카탈로그를 관리합니다. SAP HANA 플러그인은 SAP 인증 하드웨어 어플라이언스 및 TDI(Tailored Datacenter Integration) 프로그램 모두에 대해 지원됩니다.
+
+SAP HANA용 Snap Creator 플러그인은 SAP HANA hdbsql 클라이언트를 사용하여 다음 작업에 대해 SQL 명령을 실행합니다.
+
+* 데이터베이스 정합성을 제공하여 스토리지 기반 Snapshot 백업을 준비합니다
+* 파일 시스템 레벨에서 로그 파일 백업 보존 관리
+* 데이터 파일 및 로그 파일 백업을 위한 SAP HANA 백업 카탈로그를 관리합니다
+* 블록 무결성 검사를 위한 파일 기반 백업을 실행합니다
+
+
+다음 그림에서는 스토리지 및 SAP HANA 데이터베이스와 Snap Creator의 통신 경로를 간략하게 보여 줍니다.
+
+image::../media/sap_hana_overview_of_communication_path.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+Snap Creator는 다음 단계를 수행하여 데이터베이스를 백업합니다.
+
+. 지속성 계층에서 일관된 이미지를 얻기 위해 SAP HANA 데이터베이스 스냅샷 복사본을 생성합니다.
+. 데이터 볼륨의 스토리지 스냅샷 복사본을 생성합니다.
+. SAP HANA 백업 카탈로그 내에 스토리지 스냅샷 백업을 등록합니다.
+. SAP HANA 스냅샷 복사본을 삭제합니다.
+. 데이터 볼륨에 대한 SnapVault 업데이트를 실행합니다.
+. 운영 스토리지 및 보조 스토리지의 백업에 대해 정의된 보존 정책을 기반으로 운영 스토리지 및/또는 보조 스토리지에서 스토리지 Snapshot 복제본을 삭제합니다.
+. 운영 스토리지와 보조 스토리지에 더 이상 백업이 없는 경우 SAP HANA 백업 카탈로그 항목을 삭제합니다.
+. 파일 시스템과 SAP HANA 백업 카탈로그 내에서 가장 오래된 데이터 백업보다 오래된 모든 로그 백업을 삭제합니다.
+

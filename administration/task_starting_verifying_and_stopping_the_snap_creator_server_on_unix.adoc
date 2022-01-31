@@ -1,0 +1,44 @@
+---
+permalink: administration/task_starting_verifying_and_stopping_the_snap_creator_server_on_unix.html 
+sidebar: sidebar 
+keywords: snap, creator, service, server, start, verify, stop, unix 
+summary: Snap Creator Server 서비스를 시작 및 중지하고 Snap Creator Server 서비스가 UNIX 시스템에서 실행 중인지 확인할 수 있습니다. 
+---
+= UNIX에서 Snap Creator Server 시작, 확인 및 중지
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Server 서비스를 시작 및 중지하고 Snap Creator Server 서비스가 UNIX 시스템에서 실행 중인지 확인할 수 있습니다.
+
+. Snap Creator Server 서비스 'install_path/scServer4.3.0/bin/scServer start'를 시작한다
+. Snap Creator 그래픽 사용자 인터페이스(GUI)를 엽니다.
++
+.. 웹 브라우저에 Snap Creator Server의 URL을 입력합니다. "https://IP_address:gui_port"[]
++
+기본적으로 포트는 8443입니다.
+
+.. Snap Creator GUI에 대한 자격 증명을 사용하여 로그인합니다.
+
+
+. 해당하는 경우 Snap Creator Server 서비스가 실행 중인지 또는 Snap Creator Server 서비스를 중지했는지 확인합니다.
++
+|===
+| 원하는 작업 | 다음을 입력하십시오. 
+
+
+ a| 
+Snap Creator Server 서비스가 실행 중인지 확인합니다
+ a| 
+'install_path/scServer4.3.0/bin/scServer status'
+
+
+
+ a| 
+Snap Creator Server 서비스를 중지합니다
+ a| 
+'install_path/scServer4.3.0/bin/scServer stop'
+
+|===
+

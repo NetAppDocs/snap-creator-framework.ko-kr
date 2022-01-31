@@ -1,0 +1,29 @@
+---
+permalink: administration/task_viewing_user_names_assigned_to_a_role_by_using_the_cli.html 
+sidebar: sidebar 
+keywords: snap, creator, command-line, interface, cli 
+summary: 'CLI(Command-Line Interface)만 사용하여 각 역할에 할당된 모든 Snap Creator 사용자의 목록을 볼 수 있습니다.' 
+---
+= CLI를 사용하여 역할에 할당된 Snap Creator 사용자 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CLI(Command-Line Interface)만 사용하여 각 역할에 할당된 모든 Snap Creator 사용자의 목록을 볼 수 있습니다.
+
+. 다음 명령을 입력합니다.
++
+'scapcreator -- server host_name -- port port_number -- user sc_user_name -- passwd sc_passwd -- action userListAssigned -- roleName role_name -- verbose'
+
++
+예를 들면 다음과 같습니다.
+
++
+[listing]
+----
+snapcreator --server localhost --port 8080 --user SCadmin
+--passwd passwd123 –-action userListAssigned
+–rolename ADMINISTRATOR –verbose
+----
+

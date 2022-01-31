@@ -1,0 +1,55 @@
+---
+permalink: sap-hana-ops/task_restoring_databases_after_a_primary_storage_failure_with_data_ontap_operating_in_7_mode.html 
+sidebar: sidebar 
+keywords: restoring, restore, databases, primary, storage, failure, data, ontap, operating, 7-mode 
+summary: 7-Mode에서 작동하는 Data ONTAP를 실행하는 운영 스토리지 시스템에서 장애가 발생한 후 SAP HANA 데이터베이스를 복원할 수 있습니다. 
+---
+= 7-Mode에서 작동 중인 Data ONTAP에서 운영 스토리지 장애 발생 후 데이터베이스 복원
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+7-Mode에서 작동하는 Data ONTAP를 실행하는 운영 스토리지 시스템에서 장애가 발생한 후 SAP HANA 데이터베이스를 복원할 수 있습니다.
+
+. 이 경우 SnapVault restore--s snapshot_name -S backup_controller:backup_volumessource_controller:source_volume 명령을 사용하여 보조 스토리지 시스템에서 직접 복원을 실행해야 합니다
++
+SAP HANA 데이터베이스에 속한 모든 볼륨에 대해 이 단계를 수행합니다.
+
++
+[listing]
+----
+hana1a>  snapvault restore -s Backup-ANA-SV_hourly_20140410103943 -S
+hana2b:/vol/backup_data_00001/mnt00001 hana1a:/vol/data_00001/mnt00001
+Restore will overwrite existing data in /vol/data_00001/mnt00001.
+Are you sure you want to continue? y
+Thu Apr 10 11:55:55 CEST [hana1a:vdisk.qtreePreserveComplete:info]: Qtree preserve is complete for /vol/data_00001/mnt00001.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+----
++
+[listing]
+----
+hana1a>  snapvault restore -s Backup-ANA-SV_hourly_20140410103943 -S
+hana2b:/vol/backup_data_00003/mnt00003 hana1a:/vol/data_00003/mnt00003
+Restore will overwrite existing data in /vol/data_00003/mnt00003.
+Are you sure you want to continue? y
+Thu Apr 10 11:58:18 CEST [hana1a:vdisk.qtreePreserveComplete:info]: Qtree preserve is complete for /vol/data_00003/mnt00003.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+----
++
+[listing]
+----
+hana1b>  snapvault restore -s Backup-ANA-SV_hourly_20140410103943 -S
+hana2b:/vol/backup_data_00002/mnt00002 hana1b:/vol/data_00002/mnt00002
+Restore will overwrite existing data in /vol/data_00002/mnt00002.
+Are you sure you want to continue? y
+Thu Apr 10 12:01:29 CEST [hana1b:vdisk.qtreePreserveComplete:info]: Qtree preserve is complete for /vol/data_00002/mnt00002.
+Transfer started.
+Monitor progress with 'snapvault status' or the snapmirror log.
+----
++
+복원 프로세스가 완료되면 SAP HANA를 사용하여 복구를 수행합니다.
+
+

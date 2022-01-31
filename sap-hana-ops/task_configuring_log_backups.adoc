@@ -1,0 +1,30 @@
+---
+permalink: sap-hana-ops/task_configuring_log_backups.html 
+sidebar: sidebar 
+keywords: configuring, log, backups 
+summary: 로그 백업은 운영 스토리지가 아닌 다른 스토리지 시스템에 저장해야 합니다. 데이터 백업에 사용되는 스토리지 시스템을 로그 백업에도 사용할 수 있습니다. 
+---
+= 로그 백업을 구성하는 중입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+로그 백업은 운영 스토리지가 아닌 다른 스토리지 시스템에 저장해야 합니다. 데이터 백업에 사용되는 스토리지 시스템을 로그 백업에도 사용할 수 있습니다.
+
+보조 스토리지에서 로그 백업을 보관하도록 볼륨을 구성해야 합니다. 이 볼륨에 대한 자동 스냅샷 복사본의 스위치가 꺼져 있는지 확인합니다.
+
+. mount 명령을 실행하거나 파일 시스템 테이블(fstab) 파일을 편집하여 각 데이터베이스 노드에 볼륨을 마운트합니다.
++
+[listing]
+----
+hana2b:/vol/backup_log_ANA /mnt/backup_log_ANA nfs
+rw,bg,vers=3,hard,timeo=600,rsize=65536,wsize=65536,actimeo=0,noatime   0  0
+----
++
+SAP HANA Studio 내에서 로그 백업 대상은 다음 그림과 같이 구성됩니다.
+
++
+image::../media/sap_hana_studio_log_backup_destination_gui.gif[이 이미지는 주변 텍스트로 설명됩니다.]
+
+

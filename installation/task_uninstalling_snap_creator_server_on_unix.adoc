@@ -1,0 +1,47 @@
+---
+permalink: installation/task_uninstalling_snap_creator_server_on_unix.html 
+sidebar: sidebar 
+keywords: uninstalling, uninstall, snap, creator, server, unix 
+summary: Snap Creator Server 설치 폴더를 삭제하여 UNIX에서 Snap Creator Server를 제거할 수 있습니다. 
+---
+= UNIX에서 Snap Creator Server를 제거합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator Server 설치 폴더를 삭제하여 UNIX에서 Snap Creator Server를 제거할 수 있습니다.
+
+Snap Creator Server 엔진 디렉토리(/install_path/scServer4.1.0/engine) 내에서 다음 디렉토리와 모든 관련 하위 디렉토리와 파일을 백업합니다.
+
+* Snap Creator 데이터베이스(../snapcreator)
+* Snap Creator 서버 속성(../etc)
+* 구성(.../configs)
+* 로그(../로그)
+* 플러그인 리포지토리(활성화된 경우)(../snapcreatorPlugin)
+
+
+
+NOTE: 이러한 디렉토리를 백업했는지 확인하십시오. 그렇지 않으면 사용자 데이터가 손실되고 복구할 수 없게 됩니다.
+
+Snap Creator Server를 제거하려면 다음 단계를 수행하십시오.
+
+
+NOTE: 다음 단계에서 제공되는 경로는 일반 설치 경로를 나타냅니다. 이러한 명령에서 경로를 수정하여 사용자 지정된 Snap Creator Server 설치 경로를 반영할 수 있습니다.
+
+. 다음 스크립트를 사용하여 Snap Creator Server 서비스('s napcreatorserverservice')를 중지합니다.
++
+[listing]
+----
+/install_path/scServer4.1.0/bin/scServer stop
+----
+. Snap Creator Server 설치 폴더를 삭제합니다.
++
+예를 들어 Linux 시스템의 경우 다음 명령을 실행합니다.
+
++
+[listing]
+----
+rm -Rf /install_path/scServer4.1.0
+----
+

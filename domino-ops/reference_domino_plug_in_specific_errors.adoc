@@ -1,0 +1,179 @@
+---
+permalink: domino-ops/reference_domino_plug_in_specific_errors.html 
+sidebar: sidebar 
+keywords: domino, ibm, troubleshooting, plug-ins, errors 
+summary: 일반적인 Snap Creator 오류는 일반 Snap Creator 오류와 Domino 플러그인에서 발생하는 오류의 두 가지 범주로 분류됩니다. Domino 플러그인별 오류는 일반적으로 사전 설치 문제, 잘못된 데이터베이스 또는 사용자 지정 복원 작업 관련 문제와 관련이 있습니다. 
+---
+= Domino 플러그인별 오류 문제 해결
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+일반적인 Snap Creator 오류는 일반 Snap Creator 오류와 Domino 플러그인에서 발생하는 오류의 두 가지 범주로 분류됩니다. Domino 플러그인별 오류는 일반적으로 사전 설치 문제, 잘못된 데이터베이스 또는 사용자 지정 복원 작업 관련 문제와 관련이 있습니다.
+
+
+NOTE: 일반 Snap Creator 오류에 대한 자세한 내용은 를 참조하십시오 link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395422["Snap Creator Framework 4.1.2 관리 가이드"].
+
+
+
+== Domino 플러그인은 이 플랫폼에서 지원되지 않습니다
+
+일반적으로 Domino 플러그인의 사전 요구 사항이 충족되지 않으면 이 오류가 발생합니다. 일반적으로 오류 메시지는 다음과 유사합니다.
+
+[listing]
+----
+Failed to load plug-in domino. Reason: ERROR: [ltd-00009] Domino plug-in
+couldn't be loaded. Reasons could be 1) Domino plug-in is not supported
+on this platform.
+----
+다음 오류 메시지도 나타나는 것으로 알려져 있습니다.
+
+[listing]
+----
+ERROR: [tampico:9090(4.1.x)] SCF-00038: Application quiesce for
+plug-in [domino] failed with exit code [99], continuing with backup.
+----
+또한, 다음 사항을 지원합니다.
+
+[listing]
+----
+ERROR: [scf-00094] Application environment set for plug-in domino failed
+[ERROR: [scf-00060] unknown application object [app] / application domino at snapcreator.pl line 6410.
+----
+이러한 오류 메시지는 다음 조건 중 하나가 충족되지 않으면 나타납니다.
+
+* 사전 설치 단계가 수행되지 않았거나 잘못 수행됨:
++
+** UNIX 호스트에서는 IBM Domino 공유 객체 파일에 대한 심볼 링크를 생성해야 합니다.
+** Windows 호스트에서는 경로 환경 변수에 IBM Domino 설치 경로를 추가해야 합니다. 자세한 내용은 를 참조하십시오 link:https://library.netapp.com/ecm/ecm_download_file/ECMP12395424["Snap Creator Framework 4.1.2 설치 가이드"].
+
+
+* Domino의 비트 레벨은 Snap Creator의 비트 레벨과 다릅니다. 예를 들어, 32비트 Domino를 사용하는 경우 32비트 Snap Creator를 사용해야 합니다.
+
+
+
+
+== 데이터베이스가 잘못되어 Snap Creator 백업이 실패합니다
+
+기본적으로 하나 이상의 데이터베이스가 일관성 없거나 손상된 상태이면 백업 작업이 실패합니다. 단계에서 설명한 대로 오류가 발생해도 플러그인이 백업 작업을 계속 진행하도록 할 수 있습니다 link:task_using_the_gui_to_create_a_configuration_file.md#STEP_AA41331683A24598B7845367CB967F99["GUI를 사용하여 구성 파일을 생성하는 작업"].
+
+
+
+== 사용자 지정 작업을 사용한 Domino 복원이 실패합니다
+
+복구 오류는 일반적으로 복구 경로가 올바르게 설정되지 않은 경우에 발생합니다. 경로에 추가 문자 및 백슬래시가 있는지 확인합니다. 또한 데이터 복원 디렉터리가 올바르게 설정되어 있는지 확인합니다.
+
+오류는 다음과 유사합니다.
+
+[listing]
+----
+########## Custom plug-in action ##########
+[Thu Apr 19 16:05:55 2012] DEBUG: Restoring to current time.
+[Thu Apr 19 16:05:55 2012] DEBUG: Calling dominocore::postRestoreToTime with arguments(C:\Lotus\Domino\notes.ini,F:\Domino\data\,H:\changeinfo\fuji15-daily_20120419130836,-1,F:\Domino\data\restore\mail\dadams.nsf,UP-TO-THE-MINUTE,H:\changeinfo\logs\)
+[Thu Apr 19 16:05:55 2012] TRACE: Notes API initialized
+Applying Change info for:F:\Domino\data\restore\mail\dadams.nsf
+Error: unable to open file 'H:\changeinfo\fuji15-daily_20120419130836/restore_mail_dadams.nsf.info', for path 'F:\Domino\data\restore\mail\dadams.nsf'.
+Error:5114
+NSFRecoverDatabases failed for database:F:\Domino\data\restore\mail\dadams.nsf
+Recovery Manager: Recovery only supported for Backup Files.ERROR_CODE:5114
+[Thu Apr 19 16:05:55 2012] ERROR: [ltd-00008] Restoring databases finished with errors
+[Thu Apr 19 16:05:55 2012] ERROR: [scf-00154] Action custom for plugin domino failed with exit code 1, Exiting!
+[Thu Apr 19 16:05:55 2012] DEBUG: Exiting with error code - 2
+----
+
+
+== 모든 Domino 플러그인별 오류
+
+다음 표에는 IBM Domino 플러그인별 오류 메시지가 참조 형식으로 정리되어 있습니다.
+
+|===
+| 오류 코드 | 오류 메시지 | 설명/해상도 
+
+
+ a| 
+Ltd - 00001
+ a| 
+Domino 플러그인은 snap_timestamp_only=N과 함께 사용할 수 없습니다 snap_timestamp_only를 Y로 설정해야 합니다
+ a| 
+자세한 내용은 단계를 참조하십시오 link:task_using_the_gui_to_create_a_configuration_file.md#STEP_81795CF9D6294AC891BC3D0CE4827CA3["Task_using_the_GUI_to_create_a_configuration_file.md#step_81795CF9D6294AC891BC3D0CE4827CA3"].
+
+
+
+ a| 
+Ltd - 00002
+ a| 
+데이터베이스 정지가 오류와 함께 완료되었습니다
+ a| 
+Domino 플러그인이 모든 데이터베이스를 백업 모드로 전환할 수 없습니다. 로그를 확인하여 오류의 정확한 원인을 찾거나 디버그 모드에서 Snap Creator를 실행하여 오류를 찾습니다.
+
+
+
+ a| 
+Ltd - 00003
+ a| 
+데이터베이스 정지가 오류로 완료되었습니다
+ a| 
+Domino 플러그인이 모든 데이터베이스를 백업 모드에서 해제할 수 없습니다. 로그를 확인하여 오류의 정확한 원인을 찾거나 디버그 모드에서 Snap Creator를 실행하여 오류를 찾습니다.
+
+
+
+ a| 
+Ltd - 00004
+ a| 
+데이터베이스를 검색하지 못했습니다
+ a| 
+응용 프로그램 오류로 인해 응용 프로그램 검색이 실패했습니다. 구성 및 응용 프로그램 설정을 확인합니다. APP_AUTO_DISCOVERY=N을 설정하고 Validate_volumes에 주석을 달 수 있으므로 자동 검색을 사용하지 않도록 설정할 수 있습니다.
+
+
+
+ a| 
+Ltd - 00005
+ a| 
+운영 체제 정보 수집에 실패했습니다 - $@
+ a| 
+운영 체제 정보를 수집하는 동안 오류가 발생하여 scdump 작업이 실패했습니다. 로그를 확인하고 명령을 수동으로 실행해 보십시오.
+
+
+
+ a| 
+Ltd - 00006)을 참조하십시오
+ a| 
+SnapDrive 정보 수집에 실패했습니다 - $@
+ a| 
+SnapDrive 정보를 수집하는 동안 오류가 발생하여 scdump 작업이 실패했습니다. 로그를 확인하고 명령을 수동으로 실행해 보십시오.
+
+
+
+ a| 
+Ltd - 00008
+ a| 
+데이터베이스 복원이 오류와 함께 완료되었습니다
+ a| 
+Domino 플러그인이 모든 데이터베이스를 복원할 수 없습니다. 로그를 확인하여 오류의 정확한 원인을 찾거나 디버그 모드에서 Snap Creator를 실행하여 오류를 찾습니다.
+
+
+
+ a| 
+Ltd - 00009
+ a| 
+Domino 플러그인은 루트로 실행할 수 없습니다
+ a| 
+그 이유는 다음과 같습니다.
+
+* Domino 플러그인은 이 플랫폼에서 지원되지 않습니다.
+* Domino 플러그인을 실행하기 위한 사전 요구 사항이 충족되지 않았습니다.
+
+
+자세한 내용은 을 참조하십시오 link:reference_domino_plug_in_specific_errors.html#domino-plug-in-is-not-supported-on-this-platform["Domino 플러그인은 이 플랫폼에서 지원되지 않습니다"].
+
+
+
+ a| 
+Ltd - 00010
+ a| 
+데이터베이스를 여는 동안 오류가 발생했습니다
+ a| 
+로그를 확인하여 오류의 정확한 원인을 찾거나 디버그 모드에서 Snap Creator를 실행하여 오류를 찾습니다.
+
+|===

@@ -1,0 +1,17 @@
+---
+permalink: administration/concept_managing_policies.html 
+sidebar: sidebar 
+keywords: managing, retention, policies, list, delete, policies, snapshot, snapvault 
+summary: 보존 정책을 생성하고 정책을 나열하고 삭제할 수 있습니다. 
+---
+= 보존 정책 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보존 정책을 생성하고 정책을 나열하고 삭제할 수 있습니다.
+
+보존 정책은 일반적으로 유지해야 하는 스냅샷 복사본의 수와 기간 등의 스냅샷 보존 설정을 정의합니다. 예를 들어, 일별 정책에 따라 30일 이상 경과해야 하는 스냅샷 복사본이 30일 동안 유지될 수 있습니다. 보존 기간 설정을 사용하면 같은 날짜에 생성된 여러 스냅샷 복사본이 30일 이전의 스냅샷 복사본이어야 한다고 명시하는 서비스 수준 계약(SLA)을 거치지 않도록 할 수 있습니다.
+
+SnapVault를 사용하는 경우 이 정책은 SnapVault 복제본에 대한 보존 설정도 정의합니다.

@@ -1,0 +1,30 @@
+---
+permalink: domino-ops/task_using_the_snap_creator_reports_option_to_view_logs.html 
+sidebar: sidebar 
+keywords: domino, ibm, viewing, view, logs, report pane 
+summary: Console 창에서 로그를 표시하는 데 사용되는 것과 동일한 형식으로 Snap CreatorReports 창에서 로그를 볼 수 있습니다. 보고서 창에서 오류 로그와 표준 로그를 볼 수 있습니다. 
+---
+= 보고서 창에서 로그 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Console 창에서 로그를 표시하는 데 사용되는 것과 동일한 형식으로 Snap CreatorReports 창에서 로그를 볼 수 있습니다. 보고서 창에서 오류 로그와 표준 로그를 볼 수 있습니다.
+
+. Snap Creator Framework 창의 상단에서 * Reports * > * Logs * 를 클릭합니다.
+. 보고서 창에서 프로필, 구성 파일, 로그 유형 및 로그 파일을 선택합니다. 로그 유형은 다음과 같습니다.
++
+** * Out Logs * 는 작업에 대한 자세한 수준 정보를 제공합니다.
+** * 디버그 로그 * 자세한 수준 정보와 디버깅에 유용한 정보를 제공합니다.
+** * stderr 로그 * 는 표준 오류에 기록된 오류에 대한 정보를 제공합니다.
+** * 오류 로그 * 는 모든 오류 정보를 제공합니다. * 참고: * 작업 크기에 따라 * 디버그 로그 * 를 선택하면 브라우저가 느려지거나 응답하지 않을 수 있습니다.
+
+
+. 다음을 클릭합니다.
++
+** * 선택한 로그 * 를 다운로드하여 선택한 로그를 다운로드합니다.
+** * GUI 로그를 다운로드하려면 GUI 로그 * 를 다운로드합니다. 다운로드 대화 상자에서 * 열기 * 또는 * 저장 * 을 필요에 따라 클릭합니다.
+
+
+

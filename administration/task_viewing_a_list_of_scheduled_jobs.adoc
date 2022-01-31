@@ -1,0 +1,20 @@
+---
+permalink: administration/task_viewing_a_list_of_scheduled_jobs.html 
+sidebar: sidebar 
+keywords: schedule, job, view, list, snap, creator, gui 
+summary: 예약된 작업 목록을 볼 수 있습니다. 
+---
+= 예약된 작업 목록 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+예약된 작업 목록을 볼 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * Management * > * Schedules * 를 선택합니다.
+. 일정 탭에서 예약된 작업 목록을 검토합니다.
++
+마지막 실행 결과 필드에는 마지막으로 예약된 작업의 상태가 표시됩니다. 필드의 녹색 확인 표시는 작업이 성공적으로 실행되었음을 나타내고 빨간색 "X"는 오류가 있음을 나타냅니다.
+
+

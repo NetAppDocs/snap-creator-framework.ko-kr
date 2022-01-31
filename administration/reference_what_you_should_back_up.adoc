@@ -1,0 +1,36 @@
+---
+permalink: administration/reference_what_you_should_back_up.html 
+sidebar: sidebar 
+keywords: create, backup, copy, snap, creator, directories, information, server, snapcreator 
+summary: 최상의 방법은 특정 Snap Creator 디렉토리의 백업 복사본을 생성하여 Snap Creator 데이터를 손실 없이 복원할 수 있도록 하는 것입니다. 
+---
+= 어떤 Snap Creator 정보를 백업해야 하는지
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+최상의 방법은 특정 Snap Creator 디렉토리의 백업 복사본을 생성하여 Snap Creator 데이터를 손실 없이 복원할 수 있도록 하는 것입니다.
+
+다음 디렉토리의 백업 복제본을 생성해야 합니다.
+
+* Snap Creator Server 4.3 엔진 하위 디렉토리:
++
+** Snap Creator 데이터베이스(..\snapcreator)
+** Snap Creator 서버 속성(..\etc)
+** 프로필 및 구성(..\configs)
+** 로그(..\logs)
+** 플러그인 리포지토리(활성화된 경우)(..\snapcreatorPlugin)
+
+
+* Snap Creator 에이전트 디렉토리:
++
+** Snap Creator 에이전트 속성(..\etc)
+** 로그(활성화된 경우)(..\logs)
+** 플러그인(..\plugins)
+
+
+
+
+
+NOTE: Snap Creator 데이터 및 프로세스가 일관되게 백업되도록 최적으로 백업을 예약해야 합니다.

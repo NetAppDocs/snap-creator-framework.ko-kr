@@ -1,0 +1,95 @@
+---
+permalink: administration/reference_troubleshooting_network_issues.html 
+sidebar: sidebar 
+keywords: network, issues, snap, creator, authorization, failure, troubleshoot, nat 
+summary: Snap Creator에서 인증 오류 등의 네트워크 문제가 발생할 수 있습니다. 이러한 문제를 인식하고 문제 해결 방법을 알고 있어야 합니다. 
+---
+= 네트워크 문제 해결
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator에서 인증 오류 등의 네트워크 문제가 발생할 수 있습니다. 이러한 문제를 인식하고 문제 해결 방법을 알고 있어야 합니다.
+
+* * 문제 *
++
+Snap Creator 내에 인증 실패 문제가 발생합니다.
+
+* * 원인 *
++
+인증 실패는 구성, 방화벽 권한 또는 NAT(네트워크 주소 변환) 때문일 수 있습니다.
+
+* * 시정 조치 *
++
+다음을 확인합니다.
+
++
+** IP/호스트 이름입니다
++
+호스트 등기를 사용하지 않는 경우 컨트롤러의 hostname 명령에 있는 스토리지 시스템 이름은 Snap Creator 구성 파일에 입력된 이름과 같아야 합니다.
+
++
+스토리지 시스템의 호스트 이름이 축약된 경우에는 FQDN(정규화된 도메인 이름)을 사용하지 마십시오.
+
++
+IP 해상도가 지정한 이름과 일치하는지 확인합니다. 불일치가 있는 경우 스토리지 시스템에서 호스트 등기를 사용하여 수정하십시오.
+
++
+호스트 등기를 활성화하려면 다음 단계를 수행하십시오.
+
++
+... 다음 명령을 입력합니다. options https.admin.hostsequiv.enable on
+... /etc/hostsequiv 파일을 편집하고 IP/Host_name_in_Snap_Creator config_fileSnap_Creator_user를 추가합니다
+
+
+** NetApp Management Console 데이터 보호 기능
++
+Snap Creator 구성 매개 변수 볼륨에 정의된 스토리지 컨트롤러 이름은 NetApp Management Console 데이터 보호 기능의 스토리지 컨트롤러 이름과 일치해야 합니다. 스토리지 컨트롤러 이름이 일치하지 않으면 운영 체제 호스트 파일을 사용하여 스토리지 컨트롤러 이름이 일치하도록 할 수 있습니다.
+
+** 방화벽
++
+Snap Creator를 실행하는 호스트와 스토리지 시스템 간에 방화벽이 있는 경우, 80, 443 또는 둘 다에 대해 양방향 ACL(액세스 제어 목록)이 열려 있는지 확인하십시오.
+
++
+*** 80: HTTP가 선택된 경우 스토리지 시스템과 통신하는 데 사용됩니다
+*** 443: Linux, Solaris 또는 AIX에 HTTPS(443)를 사용하도록 HTTPS를 선택한 경우 스토리지 시스템과 통신하는 데 사용됩니다. SSL을 사용하는 데 필요한 openssl 라이브러리를 설치합니다.
+
+
+
+
++
+Snap Creator Agent가 실행 중인 경우 Agent가 실행 중인 포트가 열려 있어야 합니다. 스토리지 시스템의 반환 트래픽이 최소한 권한이 없는 포트에서 Snap Creator를 실행 중인 시스템으로 이동할 수 있는지 확인합니다.
+
++
+** Snap Creator 프레임워크는 SSL이 비활성화되어 있는 경우 TLS를 사용하여 7-Mode로 운영되는 clustered Data ONTAP 및 Data ONTAP와 통신할 수 있습니다.
++
+Snap Creator Framework에서는 호스트 및 스토리지 시스템에서 SSLv3을 사용하지 않도록 설정할 수 있습니다.
+
++
+*** AIX, Unix 또는 Windows에서 SSLv3을 비활성화하려면 java.security 파일에서 JDK.tls.disabledAlgorithms 매개 변수를 다음과 같이 업데이트해야 합니다.
++
+JDK.TLS.disabledAlgorithms=SSLv3
+
++
+java.security 파일은 /java/jre/lib/security/ 경로 아래에 있습니다
+
+*** 스토리지 시스템에서 SSLv3을 사용하지 않도록 설정하려면 system service web modify 명령을 실행하고 다음 매개 변수를 구성해야 합니다.
++
+TLSv1 사용: 참
+
++
+SSLv3 사용: false
+
++
+SSLv2 사용: false
+
+
+
+** NAT
++
+NAT를 사용하는 경우 TCP(Transmission Control Protocol) 패킷에서 소스/대상 IP 주소가 변경되지 않았는지 확인합니다. 호스트 및 스토리지 시스템은 통신 중인 사람을 알아야 합니다. 실제 호스트 또는 컨트롤러 IP 대신 방화벽 IP를 제시하면 문제가 발생할 수 있습니다.
+
+
+
+

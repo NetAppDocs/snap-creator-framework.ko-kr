@@ -1,0 +1,203 @@
+---
+permalink: administration/reference_information_required_to_configure_snap_creator.html 
+sidebar: sidebar 
+keywords: snap, creator, built-in, native, plug-in, oracle, db2, mysql, sybase, ase, domino, snapmanager, micorsoft, sql 
+summary: 'Snap Creator는 Oracle, DB2, MySQL, Sybase ASE, Domino, Microsoft SQL Server용 SnapManager, Microsoft Exchange용 SnapManager, MaxDB, VMware(vSphere 및 vCloud Director), Red Hat KVM, Citrix XenServer 및 SAP HANA. 커뮤니티 플러그인은 패키지에 포함되어 있지 않으며 별도로 다운로드해야 합니다.' 
+---
+= Snap Creator를 구성하는 데 필요한 플러그인 정보입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator는 Oracle, DB2, MySQL, Sybase ASE, Domino, Microsoft SQL Server용 SnapManager, Microsoft Exchange용 SnapManager, MaxDB, VMware(vSphere 및 vCloud Director), Red Hat KVM, Citrix XenServer 및 SAP HANA. 커뮤니티 플러그인은 패키지에 포함되어 있지 않으며 별도로 다운로드해야 합니다.
+
+다음 표에는 플러그인 매개 변수 및 설정이 정리되어 있습니다.
+
+|===
+| 매개 변수 | 설정 | 설명 
+
+
+ a| 
+APP_NAME입니다
+ a| 
+오라클
+| DB2 
+
+
+| MySQL | 도미노 | 진동 
+
+
+| SMSQL | SME | Sybase 
+
+
+| maxdb입니다 | KVM | Xen 
+
+
+| HANA <플러그인>  a| 
+백업할 응용 프로그램을 결정합니다. Snap Creator는 나열된 애플리케이션을 기본적으로 지원합니다. app_name을 사용하거나 app_quiesce_cMDXX, app_unquiesce_cMDXX, pre_exit_cMDXX를 구성할 수 있습니다. 응용 프로그램이 Snap Creator에서 직접 지원되지 않는 경우 플러그인을 사용하거나 사용자 고유의 응용 프로그램 중지 또는 중지 해제 명령 또는 스크립트를 실행할 수 있습니다. plug-in>: 플러그인을 /path_to_scServer에 복사합니다
+| scAgent/plug-ins 디렉토리를 입력하고 app_name 매개 변수에 플러그인을 지정합니다. 명령 또는 스크립트:---- app_quiesce_cMD01=path_to_quiesceCMD app_unquiesCMD_CMD01=path_to_unquiesCMD pre_exit_CMD01=path_to_unquiesceCMD--- 
+
+
+ a| 
+app_ignore_error
+ a| 
+(Y
+| 해당 없음) 
+
+
+ a| 
+Snap Creator가 애플리케이션 플러그인의 오류를 무시할지 여부를 결정합니다. 이 기능은 여러 데이터베이스를 백업하려는 경우 한 데이터베이스의 일시 중지 또는 일시 중지 해제 작업이 실패할 경우 백업을 중지하지 않으려는 경우에 유용합니다.
+ a| 
+app_defined_backup을 선택합니다
+ a| 
+(Y
+
+
+
+| 해당 없음)  a| 
+애플리케이션 플러그인은 중지, 스냅샷 복사본 생성 및 정지 해제를 포함하여 전체 백업 작업을 수행해야 합니다. 내장 플러그인은 이러한 종류의 백업을 지원하지 않습니다.
+ a| 
+app_defined_restore 를 선택합니다
+
+
+
+ a| 
+(Y
+| 해당 없음)  a| 
+애플리케이션 기반 복원 작업을 지원합니다. 복구 작업이 발생하는 경우 Snap Creator는 애플리케이션 플러그인으로 요청을 전송하고 플러그인은 요청을 처리합니다.
+
+
+
+ a| 
+app_defined_mount 를 선택합니다
+ a| 
+(Y
+| 해당 없음) 
+
+
+ a| 
+Snap Creator의 내장 마운트 기능은 무시됩니다. 대신, 플러그인은 볼륨 또는 LUN 클론 생성을 포함한 모든 마운트 작업을 담당합니다. 내장 플러그인은 이 유형의 마운트를 지원하지 않습니다.
+ a| 
+app_defined_umount 를 선택합니다
+ a| 
+(Y
+
+
+
+| 해당 없음)  a| 
+Snap Creator에 내장된 마운트 해제 기능은 무시됩니다. 대신 볼륨 또는 LUN 클론 삭제를 비롯한 모든 마운트 해제 작업을 처리하는 플러그인이 사용됩니다. 내장 플러그인은 이러한 유형의 마운트 해제 작업을 지원하지 않습니다.
+ a| 
+APP_AUTO_DISCOVERY
+
+
+
+ a| 
+(Y
+| 해당 없음)  a| 
+애플리케이션 자동 검색을 활성화합니다. Snap Creator가 검색 요청을 애플리케이션 플러그인으로 전송하면 플러그인이 스토리지 구성 검색을 담당합니다. 이 작업은 구성 파일에 정보를 저장할 경우 APP_CONF_persistence 매개 변수를 사용하여 동적으로 수행하거나 영구적으로 수행할 수 있습니다.
+
+
+
+ a| 
+App_CONF_지속성
+ a| 
+(Y
+| 해당 없음) 
+
+
+ a| 
+자동 검색이 지속되도록 설정합니다. 즉, 변경 사항이 구성 파일에서 동적으로 업데이트됩니다.
+ a| 
+app_defined_clone을 선택합니다
+ a| 
+(Y
+
+
+
+| 해당 없음)  a| 
+Snap Creator의 내장 복제 기능은 무시됩니다. 대신, 플러그인은 볼륨 또는 LUN 클론 생성 및 삭제를 비롯한 모든 클론 작업을 처리합니다. 내장 플러그인은 이 유형의 클론을 지원하지 않습니다.
+ a| 
+FS_NAME입니다
+
+
+
+ a| 
+플러그인
+ a| 
+파일 시스템 작업에 사용 중인 플러그인을 결정합니다.
+ a| 
+java_home입니다
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 .class 및 .jar 파일을 실행하는 데 사용해야 하는 JVM(Java Virtual Machine)을 가리킵니다.
+ a| 
+jvm_args입니다
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 기본 Java .class 또는 .jar 파일이 실행될 때 JVM 설정을 제어합니다. 기본 설정은 -Xms32M-Xmx128M입니다.
+ a| 
+JAVA_CLASSPATH
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 Java 클래스 경로를 정의합니다. 기본적으로 플러그인/기본 은 구성되어 있으며 이 환경 변수를 사용하여 완료할 수 있습니다. 이 환경 변수는 기본값에 추가됩니다.
+ a| 
+META_DATA_VOLUME
+
+
+
+ a| 
+ a| 
+일시 중지 해제 작업 후에 지정된 볼륨의 스냅샷 복사본을 생성할 수 있습니다. 이는 데이터의 스냅샷 복사본을 다른 시간에 생성해야 하는 특정 플러그인에 유용할 수 있습니다. 매개 변수는 볼륨뿐만 아니라 컨트롤러도 지정해야 합니다(예: 'controller1:volume1, volume2;controller2:volume3, volume4;controller3:volume5, volume6').
+ a| 
+Perl_home
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 .PL 파일 실행에 사용해야 하는 Perl 해석기를 가리킵니다.
+ a| 
+Perl_OPTS
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 기본 Perl 파일이 실행될 때 PERL 인터프리터 설정을 제어합니다. 추가 설정에 대한 옵션에는 Perl 인터프리터로 전달할 수 있는 디렉토리(-i)가 포함됩니다.
+ a| 
+Python_Home을 참조하십시오
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 .py 파일을 실행하는 데 사용해야 하는 Python 해석기를 가리킵니다.
+ a| 
+Python_OPTS
+
+
+
+ a| 
+텍스트
+ a| 
+이 설정은 기본 Python 파일이 실행될 때 Python 인터프리터 설정을 제어합니다.
+ a| 
+Validate_volumes를 참조하십시오
+
+|===

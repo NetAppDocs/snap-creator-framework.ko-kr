@@ -1,0 +1,35 @@
+---
+permalink: administration/task_performing_volume_restore_using_the_gui.html 
+sidebar: sidebar 
+keywords: volume, restore, snap, creator, gui, perform, wizard 
+summary: Snap Creator GUI를 사용하여 볼륨 복원을 수행할 수 있습니다. 
+---
+= 볼륨 복원 수행 중
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator GUI를 사용하여 볼륨 복원을 수행할 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 관리 * > * 구성 * 을 선택합니다.
+. 구성 * 탭의 * 프로파일 및 구성 * 창에서 구성 파일을 선택합니다.
+. Action * > * Restore * 를 선택합니다.
++
+오른쪽 창에 복원 마법사가 표시됩니다.
+
+. 복원 마법사의 페이지를 완료하여 복원을 수행합니다.
++
+.. Restore details * 페이지에서 컨트롤러/SVM 이름, 볼륨 이름 복원, 정책 및 스냅샷 복사본 이름 복원을 선택한 다음 * Restore type * 드롭다운 목록에서 * Volume Restore * 를 선택합니다.
++
+image::../media/restore_wizard_restore_details.gif[복원 마법사 복원 세부 정보]
+
+.. 요약을 검토하고 * Finish * 를 클릭합니다.
+
+
++
+복원할 항목이 더 있는지 여부를 묻는 경고 메시지가 나타납니다.
+
+. 아니요 * 를 클릭한 다음 복원 확인 페이지에서 * 확인 * 을 클릭합니다.
+. Console* 창에서 메시지를 확인하여 복원이 성공적으로 완료되었는지 확인합니다.
+

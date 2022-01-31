@@ -1,0 +1,17 @@
+---
+permalink: administration/task_viewing_policies.html 
+sidebar: sidebar 
+keywords: retention, policy, view, list, snap, creator, gui 
+summary: 보존 정책 목록을 볼 수 있습니다. 
+---
+= 보존 정책 보기
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보존 정책 목록을 볼 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * 정책 * > * 정책 관리 * 를 선택합니다.
+. 정책 관리자 탭에서 정책 목록을 봅니다.
+

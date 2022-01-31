@@ -1,0 +1,56 @@
+---
+permalink: administration/task_managing_snap_creator_agent_security.html 
+sidebar: sidebar 
+keywords: snap, creator, agent, server, manage, security, install, snapdrive 
+summary: Snap Creator에서 사용할 수 있는 명령을 추가하여 Snap Creator Agent의 보안 설정을 관리할 수 있습니다. 특정 Snap Creator 서버에만 통신을 제한할 수도 있습니다. 
+---
+= Snap Creator 에이전트 보안 관리
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator에서 사용할 수 있는 명령을 추가하여 Snap Creator Agent의 보안 설정을 관리할 수 있습니다. 특정 Snap Creator 서버에만 통신을 제한할 수도 있습니다.
+
+Snap Creator Agent 보안을 관리하는 절차는 Windows 및 UNIX에서 동일합니다. 다음 절차에서는 UNIX 환경의 예를 사용합니다.
+
+. Snap Creator Agent가 실행 중인 시스템에 로그인하고 설치 디렉토리 내의 etc 하위 디렉토리로 이동합니다.
++
+'cd/install_path/scAgent4.3.0/etc'
+
+. Snap Creator에서 사용할 수 있는 명령을 추가하려면 다음 단계를 수행하십시오.
++
+.. 텍스트 편집기에서 allowed_commands.config 파일을 엽니다.
+.. 각 명령을 별도의 줄에 추가하여 필요에 따라 명령을 추가합니다.
++
+
+NOTE: allowed_commands.config 파일에 입력한 명령은 대/소문자를 구분하며 대문자 및 따옴표를 포함하여 구성 파일의 명령과 정확히 일치해야 합니다.
+
++
+명령: "C:\Program Files\NetApp\SnapDrive\sdcli.exe"
+
++
+
+NOTE: 명령에 공백이 있으면 명령을 따옴표로 묶어야 합니다.
+
+.. 파일을 저장하고 닫습니다.
+
+
+. 특정 Snap Creator 서버에만 통신을 제한하려면 다음 단계를 수행하십시오.
++
+.. 텍스트 편집기에서 agent.properties 파일을 엽니다.
+.. authorized_hosts 매개 변수를 변경하고 호스트 이름을 구분하는 쉼표를 사용합니다.
++
+호스트 이름과 IP 주소가 모두 지원됩니다.
+
++
+authorized_hosts = Lyon, 10.10.10.192, Fuji01
+
+.. 파일을 저장하고 닫습니다.
+
+
+. Snap Creator 에이전트를 다시 시작합니다.
++
+'/install_path/scAgent4.3.0/bin/scAgent 재시작'
+
+

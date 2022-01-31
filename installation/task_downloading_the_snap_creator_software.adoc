@@ -1,0 +1,28 @@
+---
+permalink: installation/task_downloading_the_snap_creator_software.html 
+sidebar: sidebar 
+keywords: downloading, download, snap, creator, software 
+summary: Snap Creator 소프트웨어는 NetApp Support 사이트에서 다운로드할 수 있습니다. Snap Creator는 Snap Creator 프레임워크 아래의 “소프트웨어 다운로드” 섹션에 나열되어 있습니다. 
+---
+= Snap Creator 소프트웨어 다운로드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Snap Creator 소프트웨어는 NetApp Support 사이트에서 다운로드할 수 있습니다. Snap Creator는 Snap Creator 프레임워크의 "소프트웨어 다운로드" 섹션에 나열되어 있습니다.
+
+. NetApp Support 사이트의 소프트웨어 페이지로 이동합니다.
++
+Snap Creator는 * Downloads * > * Software * 섹션에 * Snap Creator Framework * 로 표시됩니다.
+
+. 플랫폼을 선택한 다음 * Go * 를 클릭합니다.
+. View & Download * 를 클릭하여 다운로드할 Snap Creator 버전을 선택합니다.
+. 소프트웨어 다운로드 지침에 따라 * 계속 * 을 클릭합니다.
+. 최종 사용자 사용권 계약을 읽고 동의합니다.
+. 소프트웨어 패키지의 운영 체제 및 비트 레벨을 선택합니다.
+
+
+* 관련 정보 *
+
+http://mysupport.netapp.com/["NetApp Support 사이트: mysupport.netapp.com"]

@@ -1,0 +1,22 @@
+---
+permalink: administration/reference_error_messages.html 
+sidebar: sidebar 
+keywords: error, messages, scf, repo, storage, agt, gui 
+summary: 다른 Snap Creator 작업과 연관된 오류 메시지를 알고 있어야 합니다. 
+---
+= 오류 메시지
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+다른 Snap Creator 작업과 연관된 오류 메시지를 알고 있어야 합니다.
+
+각 오류 메시지에는 지역 코드와 고유한 5자리 식별자(-----)가 포함됩니다. 예를 들어, 오류: [<지역 코드>-<고유 영역 오류 식별자>]<오류 메시지>. 지역 코드는 오류가 발생한 위치를 식별합니다. 다양한 지역 코드는 다음과 같습니다.
+
+* 'CF': Snap Creator 프레임워크
+* 리PO: 리포지터리
+* '스토리지': 스토리지
+* "agt": Snap Creator 에이전트
+* 'GUI': Snap Creator 그래픽 사용자 인터페이스(GUI)
+

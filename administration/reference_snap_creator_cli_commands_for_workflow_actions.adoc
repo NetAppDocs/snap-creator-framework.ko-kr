@@ -1,0 +1,1458 @@
+---
+permalink: administration/reference_snap_creator_cli_commands_for_workflow_actions.html 
+sidebar: sidebar 
+keywords: command-line, interface, cli, snap, creator, workflow, command, backup, copy 
+summary: 'CLI(Command-Line Interface) 명령을 사용하여 GUI(그래픽 사용자 인터페이스)를 기반으로 하는 다양한 Snap Creator 워크플로우 작업을 수행할 수 있습니다.' 
+---
+= Snap Creator CLI 명령으로 워크플로우 작업을 수행할 수 있습니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CLI(Command-Line Interface) 명령을 사용하여 GUI(그래픽 사용자 인터페이스)를 기반으로 하는 다양한 Snap Creator 워크플로우 작업을 수행할 수 있습니다.
+
+다음 표에는 Snap Creator GUI 기반 워크플로우 작업을 수행하기 위한 CLI 명령이 나와 있습니다.
+
+|===
+| 워크플로 영역 | 조치/설명 | 명령 및 관련 매개 변수 
+
+
+ a| 
+백업
+ a| 
+백업 복사본을 생성합니다. 프로파일과 연결된 구성 파일을 기반으로 백업 작업을 수행합니다.
+ a| 
+[listing]
+----
+
+                  snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action backup
+--policy Policy
+--verbose
+----
+
+
+ a| 
+오픈 시스템 SnapVault 백업을 생성합니다. 오픈 시스템 SnapVault를 사용하여 백업 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다. Snap Creator Server는 Snap Creator Agent와 통신하고 SnapVault 업데이트를 수행합니다. 기본 백업 복사본이 작성되지 않습니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action ossv
+--policy Policy
+--verbose
+---- a| 
+백업(계속...)
+
+
+
+ a| 
+백업 복사본을 삭제합니다(수동). 기존 백업을 수동으로 삭제합니다. 이 작업은 메뉴 중심으로 수행됩니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action backupDel
+--policy Policy
+--verbose
+---- a| 
+백업 복사본을 자동으로 삭제합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action backupDel
+--policy Policy
+--verbose
+--nonInteractive
+--cntName controller
+--volName volume
+--backupName name
+---- a| 
+백업 복사본을 나열합니다. 기본 및 보조 스토리지 시스템의 Snap Creator 백업 복사본을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action backupList
+--policy Policy
+--verbose
+----
+
+
+ a| 
+백업 복제본을 마운트합니다. 기존 백업에서 마운트 작업을 수행합니다. 백업을 기반으로 볼륨 클론을 생성하고 mount_CMD 명령을 사용하여 Snap Creator Agent를 통해 클론을 마운트할 수 있습니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action mount
+--backupName name
+--verbose
+---- a| 
+백업(계속...)
+
+
+
+ a| 
+백업 복제본을 마운트 해제합니다. 기존 백업에 대해 마운트 해제 작업을 수행합니다. 백업을 기반으로 볼륨 클론을 삭제하고 umount_CMD 명령을 사용하여 Snap Creator Agent를 통해 클론을 마운트 해제할 수 있습니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action umount
+--backupName name
+--verbose
+---- a| 
+백업 유형
+
+
+
+ a| 
+새 백업 유형을 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action backupTypeAdd
+--backupTypeName name
+--verbose
+---- a| 
+기존 백업 유형을 업데이트합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action backupTypeUpdate
+--backupTypeId 1
+--backupTypeName name
+--verbose
+---- a| 
+기존 백업 유형을 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action backupTypeDelete
+--backupTypeId 1
+
+--verbose
+----
+
+
+ a| 
+백업 유형을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action backupTypeList
+--verbose
+---- a| 
+복제
+
+
+
+ a| 
+LUN 클론을 생성합니다. 운영 스토리지 시스템을 백업한 다음 LUN 클론을 사용하여 백업을 복제합니다. igroup의 볼륨 매핑도 처리됩니다. 이를 위해서는 SAN 또는 ISAN 환경이 필요합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action cloneLun
+--policy Policy
+--verbose
+---- a| 
+볼륨 클론 생성. 운영 스토리지 시스템을 백업한 다음 볼륨 클론을 사용하여 백업을 복제합니다. igroup, NFS 또는 CIFS의 볼륨 매핑도 처리됩니다. 이를 위해서는 SAN, ISAN 또는 NAS 환경이 필요합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action cloneVol
+--policy Policy
+--verbose
+---- a| 
+클론을 삭제합니다. 지정된 보존 정책에 따라 클론 삭제 작업을 수행합니다. LUN 클론의 복제본이 하나만 유지됩니다. 볼륨 클론에는 정책과 관련된 사용량이 있습니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action cloneDel
+--policy Policy
+--verbose
+----
+
+
+ a| 
+Snap Creator 클론을 나열합니다. 지정된 구성에 대한 Snap Creator 볼륨 클론을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action cloneList
+--verbose
+---- a| 
+Snap Creator 볼륨을 나열합니다. 운영 스토리지 시스템에서 지정된 구성에 대한 Snap Creator 볼륨을 나열합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action volumeList
+--verbose
+---- a| 
+구성 파일
+ a| 
+구성을 가져옵니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action configImport
+--importFile file_path
+--verbose
+---- a| 
+구성을 내보냅니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action configExport
+--exportFile file_path
+--verbose
+----
+
+
+ a| 
+글로벌 구성 파일을 가져옵니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action globalImport
+--importFile file_path
+--verbose
+---- a| 
+글로벌 구성 파일을 내보냅니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action globalExport
+--ExportFile file_path
+--verbose
+---- a| 
+리포지토리에서 글로벌 구성 파일을 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action globalDelete
+--verbose
+----
+
+
+ a| 
+구성 파일(계속...)
+ a| 
+특정 프로파일의 글로벌 구성 파일을 리포지토리로 가져옵니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileglobalImport
+--importFile file_path
+--verbose
+----
+
+
+ a| 
+리포지토리에서 특정 프로파일에 대한 전역 구성 파일을 내보냅니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileglobalExport
+--exportFile file_path
+--verbose
+---- a| 
+리포지토리에서 특정 프로파일에 대한 전역 구성을 삭제합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileglobalDelete
+--verbose
+---- a| 
+프로파일의 이전 구성 파일을 업그레이드합니다. 이전 구성 파일에 새로 도입된 매개 변수를 추가합니다. 이 명령을 실행하기 전에 모든 이전 구성 파일을 scServer/engine/configs 폴더에 프로필 폴더와 함께 복사해야 합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port port
+--user userid
+--passwd password
+--upgradeConfigs
+--profile profile_name
+--verbose
+----
+
+
+ a| 
+작업
+ a| 
+모든 작업 및 상태를 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action jobStatus
+--verbose
+----
+
+
+ a| 
+정책
+ a| 
+새 로컬 정책을 추가합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyAdd
+--schedId 1
+--backupTypeId 1
+--policyType local
+--policyName testPolicy
+--primaryCount 7
+--primaryAge 0
+--verbose
+----
+
+
+ a| 
+정책(계속...)
+ a| 
+새 SnapMirror 정책을 추가합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyAdd
+--schedId 1
+--backupTypeId 1
+--policyType snapmirror
+--policyName testPolicy
+--primaryCount 7
+--primaryAge 0
+--verbose
+----
+
+
+ a| 
+새 SnapVault 정책을 추가합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyAdd
+--schedId 1
+--backupTypeId 1
+--policyType snapvault
+--policyName testPolicy
+--primaryCount 7
+--primaryAge 0
+--secondaryCount 30
+--secondaryAge 0
+--verbose
+---- a| 
+SnapMirror 정책 업데이트
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyUpdate
+--policyId 1
+--schedId 1
+--backupTypeId 1
+--policyType snapmirror
+--policyName testPolicy
+--primaryCount 7
+--primaryAge 0
+--verbose
+---- a| 
+정책(계속...)
+ a| 
+SnapVault 정책을 업데이트합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyUpdate
+--policyId 1
+--schedId 1
+--backupTypeId 1
+--policyType snapvault
+--policyName testPolicy
+--primaryCount 7
+--primaryAge 0
+--secondaryCount 30
+--secondaryAge 0
+--verbose
+---- a| 
+정책을 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyDelete
+--policyId 1
+--verbose
+----
+
+
+ a| 
+모든 정책을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyList
+--verbose
+---- a| 
+특정 정책에 대한 추가 세부 정보를 표시합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policyDetails
+--policyId 1
+--verbose
+---- a| 
+프로필에 정책을 할당합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action policyAssignToProfile
+--policies testPolicy
+--verbose
+----
+
+
+ a| 
+정책(계속...)
+ a| 
+프로파일에 대한 정책 할당을 취소합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action policyUnassignFromProfile
+--verbose
+----
+
+
+ a| 
+프로필에 할당된 모든 정책을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action policyListForProfile
+--verbose
+---- a| 
+정책 스케줄
+
+
+
+ a| 
+시간별 정책 스케줄을 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedAdd
+--schedName HourlyBackup
+--schedFreqId 2
+--schedActionId 1
+--schedMin minute
+--schedActive true
+--verbose
+---- a| 
+일일 정책 스케줄을 생성합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedAdd
+--schedName DailyBackup
+--schedFreqId 3
+--schedActionId 1
+--schedHour hour
+--schedMin minute
+--schedActive true
+--verbose
+---- a| 
+정책 일정(계속...)
+ a| 
+주별 정책 스케줄을 생성합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedAdd
+--schedName WeeklyBackup
+--schedFreqId 4
+--schedActionId 1
+--schedDayOfWeek day_of_week
+--schedHour hour
+--schedMin minute
+--schedActive true
+--verbose
+---- a| 
+cron 정책 스케줄을 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedAdd
+--schedName CronBackup
+--schedFreqId 5
+--schedActionId 1
+--schedCron '0 0/5 14,18 * * ?'
+--schedActive true
+--verbose
+----
+
+
+ a| 
+시간별 정책 스케줄을 업데이트합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedUpdate
+--schedId 1
+--schedName HourlyBackup
+--schedFreqId 2
+--schedActionId 1
+--schedMin minute
+--schedActive true
+--verbose
+---- a| 
+정책 일정(계속...)
+
+
+
+ a| 
+일일 정책 스케줄을 업데이트합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedUpdate
+--schedId 1
+--schedName DailyBackup
+--schedFreqId 3
+--schedActionId 1
+--schedHour hour
+--schedMin minute
+--schedActive true
+--verbose
+---- a| 
+주간 정책 일정을 업데이트합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedUpdate
+--schedId 1
+--schedName WeeklyBackup
+--schedFreqId 4
+--schedActionId 1
+--schedDayOfWeek day_of_week
+--schedHour hour
+--schedMin minute
+--schedActive true
+--verbose
+---- a| 
+cron 정책 일정을 업데이트합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedUpdate
+--schedId 1
+--schedName CronBackup
+--schedFreqId 5
+--schedActionId 1
+--schedCron '0 0/5 14,18 * * ?'
+--schedActive true
+--verbose
+----
+
+
+ a| 
+정책 일정(계속...)
+ a| 
+정책 스케줄을 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedDelete
+--schedId 1
+--verbose
+----
+
+
+ a| 
+정책 일정을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedList
+--verbose
+---- a| 
+정책 스케줄에 대한 추가 정보를 표시합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action policySchedDetails
+--schedId 1
+--verbose
+---- a| 
+프로파일
+ a| 
+새 프로파일을 만듭니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileCreate
+--verbose
+---- a| 
+프로파일을 삭제합니다. * 참고: * 프로파일의 구성 파일도 삭제됩니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--action profileDelete
+--verbose
+----
+
+
+ a| 
+복원
+ a| 
+대화형 복원을 수행합니다. 지정된 정책에 대해 대화형 파일 복원 작업 또는 대화형 볼륨 복원 작업을 수행합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action restore
+--policy Policy
+--verbose
+----
+
+
+ a| 
+비대화형 볼륨 복원을 수행합니다. 비대화형 볼륨 복원을 수행합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action restore
+--policy Policy
+--verbose
+--nonInteractive
+--cntName controller
+--volName volume
+--backupName name
+---- a| 
+비대화형 파일 복원을 수행합니다. 비대화형 파일 복원을 수행합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action restore
+--policy Policy
+--verbose
+--nonInteractive
+--cntName controller
+--volName volume
+--backupName name
+--files file_path1,file_path2,etc.
+---- a| 
+스케줄
+ a| 
+새 시간별 스케줄을 생성합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedCreate
+--policy Policy
+--schedName HourlyBackup
+--schedFreqId 2
+--schedActionId 1
+--schedMin minute
+--schedActive true
+--schedStartDate date
+--verbose
+---- a| 
+새 일별 스케줄을 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedCreate
+--policy Policy
+--schedName DailyBackup
+--schedFreqId 3
+--schedActionId 1
+--schedHour hour
+--schedMin minute
+--schedActive true
+--schedStartDate date
+--verbose
+----
+
+
+ a| 
+새 주별 일정을 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedCreate
+--policy Policy
+--schedName WeeklyBackup
+--schedFreqId 4
+--schedActionId 1
+--schedDayOfWeek day_of_week
+--schedHour hour
+--schedMin minute
+--schedActive true
+--schedStartDate date
+--verbose
+---- a| 
+일정(계속...)
+
+
+
+ a| 
+새 cron 일정을 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedCreate
+--policy Policy
+--schedName CronBackup
+--schedFreqId 5
+--schedActionId 1
+--schedCron "0 0/5 14,18 * * ?"
+--schedActive true
+--schedStartDate date
+--verbose
+---- a| 
+스케줄을 실행합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action schedRun
+--schedId 1
+--verbose
+---- a| 
+스케줄을 삭제합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action schedDelete
+--schedId 10
+--verbose
+----
+
+
+ a| 
+시간별 스케줄을 업데이트합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedUpdate
+--policy Policy
+--schedName HourlyBackup
+--schedFreqId 2
+--schedId 1
+--schedActionId 1
+--schedMin minute
+--schedActive true
+--schedStartDate date
+--verbose
+---- a| 
+일정(계속...)
+
+
+
+ a| 
+일일 일정을 업데이트합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedUpdate
+--policy Policy
+--schedName DailyBackup
+--schedFreqId 3
+--schedId 1
+--schedActionId 1
+--schedHour hour
+--schedMin minute
+--schedActive true
+--schedStartDate date
+--verbose
+---- a| 
+주간 일정을 업데이트합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedUpdate
+--policy Policy
+--schedName WeeklyBackup
+--schedFreqId 4
+--schedId 1
+--schedActionId 1
+--schedDayOfWeek day_of_week
+--schedHour hour
+--schedMin minute
+--schedActive true
+--schedStartDate date
+--verbose
+---- a| 
+cron 일정을 업데이트합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action schedUpdate
+--policy Policy
+--schedName CronBackup
+--schedFreqId 5
+--schedId 1
+--schedActionId 1
+--schedCron "0 0/5 14,18 * * ?"
+--schedActive true
+--schedStartDate date
+--verbose
+----
+
+
+ a| 
+일정(계속...)
+ a| 
+모든 일정을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action schedList
+--verbose
+----
+
+
+ a| 
+지원되는 스케줄러 작업을 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action schedActionList
+--verbose
+---- a| 
+지원되는 스케줄러 빈도를 나열합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action schedFreqList
+--verbose
+---- a| 
+일정 ID에 대한 추가 세부 정보를 표시합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action schedDetails
+--schedId 1
+--verbose
+----
+
+
+ a| 
+scdump를 선택합니다
+ a| 
+scdump 파일을 생성합니다. dump는 스냅 생성기 루트 디렉토리 아래에 있는 scdump라는 .zip 파일의 특정 프로파일에 대한 로그, 구성 파일 및 지원 정보를 생성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+-- profile Profile
+--config Config
+--action scdump
+--policy Policy
+--verbose
+----
+
+
+ a| 
+Snap Creator Server 및 Agent
+ a| 
+Snap Creator Server에 알려진 모든 에이전트의 상태를 나열합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action agentStatus
+--verbose
+----
+
+
+ a| 
+Snap Creator 서버 및 에이전트(계속...)
+ a| 
+Snap Creator 서버에 대해 ping을 수행합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action pingServer
+--verbose
+----
+
+
+ a| 
+Snap Creator 에이전트를 ping합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--action pingAgent
+--agentName host_name
+--agentPort port
+--verbose
+---- a| 
+아카이브
+
+
+
+ a| 
+구성 파일의 설정에 따라 아카이브 로그 관리를 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action arch
+--verbose
+---- a| 
+데이터 보호 기능
+
+
+
+ a| 
+지정된 구성에 대해 NetApp Management Console 데이터 보호 기능 데이터 세트를 구성합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action pmsetup
+--verbose
+---- a| 
+컨트롤러에 대한 SnapVault 및 SnapMirror 관계의 데이터 보호 상태를 표시합니다. SnapVault 또는 SnapMirror가 구성되지 않은 경우 결과가 표시되지 않습니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action dpstatus
+--verbose
+---- a| 
+정지/정지 해제
+ a| 
+지정된 응용 프로그램에 대해 일시 중지 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
+
+
+
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action quiesce
+--verbose
+---- a| 
+지정된 응용 프로그램에 대해 일시 중지 해제 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action unquiesce
+--verbose
+----
+
+
+ a| 
+파악
+ a| 
+지정된 애플리케이션에 대해 검색을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
+ a| 
+[listing]
+----
+snapcreator
+--server IP
+--port Port
+--user User
+--passwd Password
+--profile Profile
+--config Config
+--action discover
+--verbose
+----
+|===

@@ -1,0 +1,21 @@
+---
+permalink: administration/task_editing_scheduled_jobs.html 
+sidebar: sidebar 
+keywords: edit, schedule, job, snap, creator, gui 
+summary: 예약된 작업을 편집할 수 있습니다. 
+---
+= 예약된 작업 편집
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+예약된 작업을 편집할 수 있습니다.
+
+. Snap Creator GUI 기본 메뉴에서 * Management * > * Schedules * 를 선택합니다.
+. 일정 탭의 예약된 작업 목록에서 작업을 선택하고 * 편집 * 을 클릭합니다.
+. 원하는 필드를 수정하고 * Save * (저장 *)를 클릭합니다.
++
+예약된 작업이 수정과 함께 저장됩니다.
+
+
