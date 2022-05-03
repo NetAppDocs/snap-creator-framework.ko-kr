@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="SnapDrive를 사용하여 복원하려는 파일의 스냅샷 복사본을 마운트할 수 있습니다. 그런 다음 파일을 데이터 복원 디렉터리에 수동으로 복사할 수 있습니다.">
-  <meta name="keywords" content=" domino, ibm, using, snapdrive, mount, snapshot, copy">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="SnapDrive를 사용하여 복원하려는 파일의 스냅샷 복사본을 마운트할 수 있습니다. 그런 다음 파일을 데이터 복원 디렉터리에 수동으로 복사할 수 있습니다.">
+  <meta name="keywords" content=" domino, ibm, using, snapdrive, mount, snapshot, copy"><!-- Icons -->
   <link rel="icon" href="/ko-kr/snap-creator-framework/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -54,52 +45,65 @@
   <link rel="stylesheet" href='/ko-kr/snap-creator-framework/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/ko-kr/snap-creator-framework/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/ko-kr/snap-creator-framework/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/snap-creator-framework/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ko-kr/snap-creator-framework/css/product-family.css' type="text/css">
-  
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
 
-  
-  <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/na-feature.css' type='text/css'>
-  
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
 
+    function OptanonWrapper() { }
 
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/ko-kr/snap-creator-framework/js/na-search.js'></script>
-  
 
-  
-  <script src='/ko-kr/snap-creator-framework/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/snap-creator-framework/js/na-search.js'></script><script src='/ko-kr/snap-creator-framework/js/na-pagenav.js'></script><link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/snap-creator-framework/css/prism-netapp.css' type='text/css'>
 
 
   <script src='/ko-kr/snap-creator-framework/js/na-utility.js'></script>
   <script src='/ko-kr/snap-creator-framework/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/ko-kr/snap-creator-framework/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ko-kr/snap-creator-framework/js/toc.js'></script>
-  <script src='/ko-kr/snap-creator-framework/js/customscripts.js'></script>
-
-  <script>
+  <script src='/ko-kr/snap-creator-framework/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -148,17 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/ko-kr/snap-creator-framework/js/version-dropdown.js'></script>
-  <script src='/ko-kr/snap-creator-framework/js/product-family.js'></script>
+  <script src='/ko-kr/snap-creator-framework/js/custom-dropdown.js'></script>
   <script src='/ko-kr/snap-creator-framework/js/FileSaver.min.js'></script>
   <script src='/ko-kr/snap-creator-framework/js/jszip-utils.min.js'></script>
   <script src='/ko-kr/snap-creator-framework/js/jszip.min.js'></script>
@@ -166,11 +161,26 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/issues/new?body=Page%3A%20[SnapDrive를 사용하여 스냅샷 복사본 마운트](https://docs.netapp.com/ko-kr/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/blob/main/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/snap-creator-framework/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -253,7 +263,8 @@
           data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
           data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
           data-results-found="{hitCount}개의 결과를 찾음"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -281,13 +292,15 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/us-en/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/ja-jp/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/zh-cn/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -342,6 +355,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/ko-kr/snap-creator-framework/pdfs/fullsite-sidebar/Snap_Creator_프레임워크_4_3_3.pdf" >
           <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
 
@@ -352,6 +368,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/설치.pdf" 
@@ -365,6 +384,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_프레임워크의_기능.pdf" 
@@ -378,6 +400,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_아키텍처.pdf" 
@@ -415,6 +440,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator의_사전_설치_요구사항.pdf" 
@@ -432,6 +460,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Data_ONTAP용_Snap_Creator_사용자_생성.pdf" 
@@ -462,6 +493,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Domino_플러그인의_설정_구성.pdf" 
@@ -477,6 +511,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/UNIX_관련_설정_구성__심볼_링크_생성.pdf" 
@@ -521,6 +558,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_서버_설치.pdf" 
@@ -534,6 +574,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Windows_호스트에_Snap_Creator_Server_설치.pdf" 
@@ -569,6 +612,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_에이전트_설치.pdf" 
@@ -582,6 +628,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Windows에_Snap_Creator_Agent_설치.pdf" 
@@ -619,6 +668,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_업그레이드_중.pdf" 
@@ -636,6 +688,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_3_6_x에서_업그레이드.pdf" 
@@ -666,6 +721,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_4_0_x에서_업그레이드.pdf" 
@@ -696,6 +754,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_4_1_x에서_업그레이드.pdf" 
@@ -737,6 +798,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_제거_중.pdf" 
@@ -752,6 +816,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/UNIX에서_Snap_Creator_제거.pdf" 
@@ -787,6 +854,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/CLI_참조.pdf" 
@@ -800,6 +870,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Clustered_Data_ONTAP에서_Snap_Creator_사용자에_대한_역할을_생성하는_CLI_명령입니다.pdf" 
@@ -844,6 +917,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/IBM___Domino___플러그인_작업.pdf" 
@@ -857,6 +933,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/IBM_Domino_플러그인_개요.pdf" 
@@ -885,6 +964,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/IBM_Domino_백업_및_복구_준비.pdf" 
@@ -900,6 +982,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SnapMirror_및_SnapVault_설정.pdf" 
@@ -935,6 +1020,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_및_복원_구성을_생성하는_중입니다.pdf" 
@@ -952,6 +1040,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_및_복원_구성에_명령_추가.pdf" 
@@ -991,6 +1082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터베이스_백업.pdf" 
@@ -1017,6 +1111,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터베이스를_복원하는_중입니다.pdf" 
@@ -1034,6 +1131,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAN_환경에서_단일_파일_복원_수행.pdf" 
@@ -1082,6 +1182,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/작업_상태_및_로그_보기.pdf" 
@@ -1123,6 +1226,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA___플러그인_운영.pdf" 
@@ -1136,6 +1242,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA_백업_및_복원_솔루션_개요.pdf" 
@@ -1168,6 +1277,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/필수_소프트웨어_구성_요소_설치_및_구성.pdf" 
@@ -1194,6 +1306,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터_백업_구성.pdf" 
@@ -1211,6 +1326,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SnapVault_관계_시작.pdf" 
@@ -1250,6 +1368,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/로그_백업을_구성하는_중입니다.pdf" 
@@ -1276,6 +1397,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터베이스_백업을_실행하는_중입니다.pdf" 
@@ -1306,6 +1430,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA_파일_기반_백업_및_데이터베이스_무결성_검사.pdf" 
@@ -1344,6 +1471,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA_데이터베이스_복원_및_복구.pdf" 
@@ -1361,6 +1491,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/복원_후_SnapVault_관계를_다시_시작합니다.pdf" 
@@ -1387,6 +1520,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/운영_스토리지_장애_후_데이터베이스_복구.pdf" 
@@ -1437,6 +1573,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/관리.pdf" 
@@ -1450,6 +1589,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_프레임워크의_기능.pdf" 
@@ -1474,6 +1616,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_아키텍처.pdf" 
@@ -1502,6 +1647,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_서버_관리.pdf" 
@@ -1532,6 +1680,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_에이전트_관리.pdf" 
@@ -1551,6 +1702,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_에이전트_보안.pdf" 
@@ -1586,6 +1740,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_및_복구_워크플로우.pdf" 
@@ -1613,6 +1770,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/보존_정책_생성_중.pdf" 
@@ -1645,6 +1805,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/클론_생성.pdf" 
@@ -1671,6 +1834,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/복구_작업을_수행하는_중입니다.pdf" 
@@ -1708,6 +1874,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/사용자_액세스_관리.pdf" 
@@ -1752,6 +1921,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/프로파일_관리.pdf" 
@@ -1780,6 +1952,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/구성_파일_관리.pdf" 
@@ -1812,6 +1987,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/보존_정책_관리.pdf" 
@@ -1846,6 +2024,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_관리.pdf" 
@@ -1876,6 +2057,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/예약된_작업_관리.pdf" 
@@ -1908,6 +2092,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/클론_관리.pdf" 
@@ -1936,6 +2123,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator를_구성하는_데_필요한_플러그인_정보입니다.pdf" 
@@ -1973,6 +2163,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/VMware_Vibe_플러그인.pdf" 
@@ -2012,6 +2205,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_문제_해결.pdf" 
@@ -2025,6 +2221,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/오류_메시지_유형_및_문제_해결_로그.pdf" 
@@ -2049,6 +2248,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_GUI_오류_문제_해결.pdf" 
@@ -2077,6 +2279,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/보안_문제_해결.pdf" 
@@ -2105,6 +2310,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_Server_또는_Snap_Creator_Agent_문제_해결.pdf" 
@@ -2133,6 +2341,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/CLI_명령_오류_문제_해결.pdf" 
@@ -2165,6 +2376,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/오류_메시지.pdf" 
@@ -2206,6 +2420,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_구성_파일_변수__매개_변수_및_명령.pdf" 
@@ -2260,6 +2477,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_명령줄_인터페이스_사용_지침.pdf" 
@@ -2990,30 +3210,27 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">홈</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">설명서</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ko-kr/snap-creator-framework/">Snap&nbsp;Creator&nbsp;Framework</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          SnapDrive를 사용하여 스냅샷 복사본 마운트
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -3042,16 +3259,12 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 16:06:21 +0000">01/31/2022</time>
+    <time datetime="2022-05-03 11:05:21 +0000">05/03/2022</time>
     
   
 
-<span>기여자
-</span>
-
 
 </p>
-
 
 <div class="paragraph lead">
 <p>SnapDrive를 사용하여 복원하려는 파일의 스냅샷 복사본을 마운트할 수 있습니다. 그런 다음 파일을 데이터 복원 디렉터리에 수동으로 복사할 수 있습니다.</p>
@@ -3110,27 +3323,7 @@
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/issues/new?body=Page%3A%20[SnapDrive를 사용하여 스냅샷 복사본 마운트](https://docs.netapp.com/ko-kr/snap-creator-framework/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/blob/main/domino-ops/task_using_snapdrive_for_windows_to_mount_snapshot_copy.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/snap-creator-framework/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">이 페이지의 내용</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -3138,103 +3331,125 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">의견을 공유해 주십시오</a>
-  <a href="https://docs.netapp.com/ko-kr/announcements/" class="n-footer__copyright">공지 사항</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">이용 약관</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">개인 정보 보호 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">쿠키 정책</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">쿠키 설정</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?</span>
+              <a target="_self" href="javascript:netapp_mailto()">의견을 공유해 주십시오</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/ko-kr/announcements/">공지 사항</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/ko-kr/snap-creator-framework/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -3249,7 +3464,4 @@
     </script>
     <script src='/ko-kr/snap-creator-framework/js/www-ntap.js'></script>
     <script src='/ko-kr/snap-creator-framework/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>
