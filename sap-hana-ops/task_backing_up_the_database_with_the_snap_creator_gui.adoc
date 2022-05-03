@@ -5,6 +5,7 @@ keywords: backing, up, database, snap, creator, gui, user, interface, ui
 summary: Snap Creator GUI를 사용하여 데이터베이스를 백업할 수 있습니다. 
 ---
 = Snap Creator GUI를 사용하여 데이터베이스 백업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

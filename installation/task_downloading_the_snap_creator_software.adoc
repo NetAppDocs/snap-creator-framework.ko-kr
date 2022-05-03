@@ -5,6 +5,7 @@ keywords: downloading, download, snap, creator, software
 summary: Snap Creator 소프트웨어는 NetApp Support 사이트에서 다운로드할 수 있습니다. Snap Creator는 Snap Creator 프레임워크 아래의 “소프트웨어 다운로드” 섹션에 나열되어 있습니다. 
 ---
 = Snap Creator 소프트웨어 다운로드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: managing, snap, creator, server, start, veridy, stop, port, windows, u
 summary: Windows 및 UNIX 시스템에서 Snap Creator Server를 시작, 확인 및 중지하고 서버 포트를 변경할 수 있습니다. 
 ---
 = Snap Creator 서버 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

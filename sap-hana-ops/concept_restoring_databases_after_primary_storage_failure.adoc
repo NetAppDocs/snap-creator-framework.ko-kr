@@ -5,6 +5,7 @@ keywords: restoring, restore, database, primary, storage, failure
 summary: 운영 스토리지 장애가 발생하거나 모든 스냅샷 복사본이 운영 스토리지의 볼륨에서 삭제된 경우, 운영 스토리지 시스템에 SnapVault 관계가 더 이상 없으므로 Snap Creator에서 복원을 처리할 수 없습니다. 
 ---
 = 운영 스토리지 장애 후 데이터베이스 복구
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

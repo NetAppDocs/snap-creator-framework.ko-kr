@@ -5,6 +5,7 @@ keywords: configuring, configure, data, backups, back-ups
 summary: 필수 구성 요소를 설치한 후 데이터 백업을 구성해야 합니다 
 ---
 = 데이터 백업 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: domino, ibm, storage, layout, requirements,
 summary: 일반적인 IBM Domino 환경에는 Domino 데이터, Domino 트랜잭션 로그 및 플러그인 changeinfo 디렉토리용으로 각각 하나씩 최소 3개의 Domino 볼륨이 있습니다. 또한 대부분의 사이트에는 Domino DAOS 및 뷰 재구축을 위한 볼륨도 있습니다. 
 ---
 = 스토리지 레이아웃 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

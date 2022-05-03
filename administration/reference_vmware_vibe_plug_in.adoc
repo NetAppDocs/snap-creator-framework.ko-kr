@@ -5,6 +5,7 @@ keywords: snap, creator, support, backup, virtual, machine, vmware, windows, lin
 summary: Snap Creator는 VMware Vibe 플러그인을 통해 VMware 가상 머신 및 vApp의 백업을 지원합니다. VMware 플러그인은 vSphere 및 vCloud Director를 사용하는 vApp이 있는 가상 머신 모두를 위한 통합 플러그인입니다. 
 ---
 = VMware Vibe 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

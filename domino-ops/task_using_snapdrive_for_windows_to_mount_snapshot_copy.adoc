@@ -5,6 +5,7 @@ keywords: domino, ibm, using, snapdrive, mount, snapshot, copy
 summary: SnapDrive를 사용하여 복원하려는 파일의 스냅샷 복사본을 마운트할 수 있습니다. 그런 다음 파일을 데이터 복원 디렉터리에 수동으로 복사할 수 있습니다. 
 ---
 = SnapDrive를 사용하여 스냅샷 복사본 마운트
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

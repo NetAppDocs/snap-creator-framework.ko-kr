@@ -5,6 +5,7 @@ keywords: volume, restore, snap, creator, gui, perform, wizard
 summary: Snap Creator GUI를 사용하여 볼륨 복원을 수행할 수 있습니다. 
 ---
 = 볼륨 복원 수행 중
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

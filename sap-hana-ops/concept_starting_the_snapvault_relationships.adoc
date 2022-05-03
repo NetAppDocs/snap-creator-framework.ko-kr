@@ -5,6 +5,7 @@ keywords: starting, start, snapvault, relationships
 summary: 7-Mode 및 clustered Data ONTAP에서 작동하는 Data ONTAP와 SnapVault 관계를 시작해야 합니다. 
 ---
 = SnapVault 관계 시작
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: table, repository, error, message, global, configuration, repo
 summary: 다음 표에는 리포지토리 오류 메시지가 나열되어 있습니다. 
 ---
 = 리포지토리 오류 메시지
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

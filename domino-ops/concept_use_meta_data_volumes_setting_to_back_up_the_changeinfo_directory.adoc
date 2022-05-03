@@ -5,6 +5,7 @@ keywords: domino, ibm, backing up, backup, changeinfo, directory
 summary: changeinfo 디렉토리를 백업하려는 경우 디렉토리가 포함된 볼륨을 메타데이터 볼륨으로 구성해야 합니다. 이렇게 하면 데이터베이스 파일의 스냅샷 복사본을 생성한 후 IBM Domino 플러그인에서 changeinfo 볼륨의 스냅샷 복사본을 생성합니다. 
 ---
 = changeinfo 디렉토리를 백업하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

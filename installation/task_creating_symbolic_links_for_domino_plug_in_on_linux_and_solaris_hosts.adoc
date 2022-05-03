@@ -5,6 +5,7 @@ keywords: creating, create, symbolic, links, domino, plug-in, linux, solaris, ho
 summary: Linux 및 Solaris 호스트에서 Domino 플러그인에 대한 심볼 링크를 생성하려면 이 절차를 수행해야 합니다. 
 ---
 = Linux 및 Solaris 호스트에서 Domino 플러그인의 심볼 링크 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configuring, configure, windows, settings, adding, add, path, environm
 summary: Windows에 Snap Creator Agent를 설치하려면 Domino 바이너리 파일의 경로를 Windows 환경 변수에 추가해야 합니다. 
 ---
 = Windows 관련 설정 구성: 환경 변수에 경로 추가
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: plug-in, framework, snap, creator, reuse, quiesce, unquiesce, discover
 summary: 플러그인 프레임워크를 사용하여 Snap Creator용 자체 플러그인을 만들거나 기존 플러그인을 다시 사용할 수 있습니다. 이 플러그인은 Snap Creator에서 특정 애플리케이션의 백업 및 복구를 처리하기 위한 단계를 제공합니다. 
 ---
 = 플러그인 프레임워크를 사용하여 사용자 지정 플러그인을 만듭니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

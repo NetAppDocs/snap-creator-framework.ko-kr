@@ -5,6 +5,7 @@ keywords: domino, ibm, preparing, prepare, ibm, domino, backup, restore
 summary: IBM Domino 플러그인을 구축하기 전에 스토리지 시스템과 호스트가 최소한의 리소스 요구 사항을 충족하는지 확인하십시오. 또한 데이터베이스의 스토리지 시스템 레이아웃을 구성하고 SnapMirror 및 SnapVault 관계를 선택적으로 설정해야 합니다. 
 ---
 = IBM Domino 백업 및 복구 준비
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

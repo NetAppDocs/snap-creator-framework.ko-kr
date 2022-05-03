@@ -5,6 +5,7 @@ keywords: installing, install, snap, creator, agent, unix
 summary: 'Snap Creator Agent는 모든 개방형 시스템 플랫폼(AIX, HP-UX, Linux 및 Solaris)에서 실행됩니다.' 
 ---
 = UNIX 기반 시스템에 Snap Creator Agent 설치
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

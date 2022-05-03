@@ -5,6 +5,7 @@ keywords: cli, commands, creating, cluster, roles, role create
 summary: 다음 표에는 새 클러스터 사용자에 대한 역할을 생성하는 데 필요한 명령이 나와 있습니다. 
 ---
 = 클러스터 역할을 생성하는 CLI 명령입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

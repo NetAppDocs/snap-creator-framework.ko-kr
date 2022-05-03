@@ -5,6 +5,7 @@ keywords: hypervisoer, virtualization, plug-in, vmware, vcloud, multilevel, appl
 summary: '하이퍼바이저(가상화라고도 함) 플러그인(VMware(VMware vCloud Director 및 VMware vSphere), KVM 및 Citrix XenServer)을 사용하고 다단계 애플리케이션 정지 및 백업 작업을 수행하려면 이러한 유형의 설정에 맞게 Snap Creator를 구성해야 합니다.' 
 ---
 = 하이퍼바이저 플러그인을 사용할 때 다중 레벨 애플리케이션 정지 작업을 위해 Snap Creator를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

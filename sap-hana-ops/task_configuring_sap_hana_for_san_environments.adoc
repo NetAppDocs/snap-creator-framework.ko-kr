@@ -5,6 +5,7 @@ keywords: configuring, sap, hana, san, environments
 summary: '데이터 백업을 구성한 후에는 SAP HANA 시스템이 파이버 채널 SAN(Storage Area Network)을 사용하여 스토리지 컨트롤러에 연결된 환경에서 Snap Creator 구성 파일에 새로운 명령을 추가해야 합니다.' 
 ---
 = SAN 환경을 위한 SAP HANA 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

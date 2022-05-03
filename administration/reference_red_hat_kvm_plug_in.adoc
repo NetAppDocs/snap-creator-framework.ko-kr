@@ -5,6 +5,7 @@ keywords: kernel, kvm, virtualization, linux, snap, creator, virsh, command, plu
 summary: '커널 기반 가상 머신(KVM)은 Linux 커널용 가상화 솔루션입니다. Snap Creator는 KVM 플러그인을 사용하여 게스트 가상 머신을 백업 및 복구합니다.' 
 ---
 = Red Hat KVM 플러그인 지침
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

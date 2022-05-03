@@ -5,6 +5,7 @@ keywords: domino, ibm, performing, single-file, restore, single, file, san
 summary: SAN 환경에서 단일 파일 복원의 경우 SnapDrive를 사용하여 Snap Creator 에이전트 호스트에 스냅샷 복사본을 마운트할 수 있습니다. 
 ---
 = SAN 환경에서 단일 파일 복원 수행
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

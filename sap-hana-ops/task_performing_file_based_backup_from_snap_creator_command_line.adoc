@@ -5,6 +5,7 @@ keywords: sap, hana, performing, file-based, backup, snap, creator, command, lin
 summary: Snap Creator 명령줄을 사용하여 파일 기반 백업을 수행할 수 있습니다. 
 ---
 = Snap Creator 명령줄에서 파일 기반 백업 수행
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

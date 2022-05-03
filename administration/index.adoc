@@ -5,6 +5,7 @@ keywords: administration, guide, snap, creator, server, agent, profiles, policie
 summary: 사용자 액세스 및 프로필, 정책, 스케줄 작업, 백업 및 복구 작업을 비롯하여 Snap Creator Server 및 Agent를 관리하기 위한 핫 데이터를 설명합니다 
 ---
 = 관리 가이드 를 참조하십시오
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

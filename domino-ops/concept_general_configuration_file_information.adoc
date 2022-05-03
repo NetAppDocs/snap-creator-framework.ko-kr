@@ -5,6 +5,7 @@ keywords: domino, ibm, logging into, Snap Creator, GUI, login
 summary: 웹 브라우저를 사용하여 Snap Creator GUI에 로그인합니다. 관리자에게 Snap Creator Server IP 주소, 포트 및 로그인 자격 증명을 문의하십시오. 
 ---
 = Snap Creator GUI에 로그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

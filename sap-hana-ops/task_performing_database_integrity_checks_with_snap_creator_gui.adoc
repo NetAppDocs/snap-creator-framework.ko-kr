@@ -5,6 +5,7 @@ keywords: sap, hana, peforming, database, integrity, checks, snap, creator, gui,
 summary: 'Snap Creator 그래픽 사용자 인터페이스(GUI)에서 데이터베이스 무결성 검사를 수행할 수 있습니다.' 
 ---
 = Snap Creator GUI에서 데이터베이스 무결성 검사 수행
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

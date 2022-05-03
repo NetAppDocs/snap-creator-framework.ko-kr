@@ -5,6 +5,7 @@ keywords: domino, ibm, backup, recovery, workflows
 summary: IBM Domino 플러그인을 사용하여 백업을 생성하려면 Snap Creator Server 및 Agent 소프트웨어를 설치하고 NetApp 스토리지를 프로비저닝해야 합니다. 재해 복구 및 아카이빙을 위해 스냅샷 복사본을 2차 스토리지로 복제할 계획이라면 SnapMirror 및 SnapVault 관계를 설정해야 합니다. 
 ---
 = IBM Domino 백업 및 복구 워크플로우
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

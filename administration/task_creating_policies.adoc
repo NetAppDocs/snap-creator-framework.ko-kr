@@ -5,6 +5,7 @@ keywords: create, retention, policy, snap, creator, gui, guideline, policy, mana
 summary: Snap Creator GUI를 통해 보존 횟수가 다른 여러 스냅샷 정책을 구성하여 새로운 보존 정책을 생성할 수 있습니다. 
 ---
 = 정책 생성 중
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

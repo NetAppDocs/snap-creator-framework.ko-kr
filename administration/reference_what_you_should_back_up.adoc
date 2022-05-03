@@ -5,6 +5,7 @@ keywords: create, backup, copy, snap, creator, directories, information, server,
 summary: 최상의 방법은 특정 Snap Creator 디렉토리의 백업 복사본을 생성하여 Snap Creator 데이터를 손실 없이 복원할 수 있도록 하는 것입니다. 
 ---
 = 어떤 Snap Creator 정보를 백업해야 하는지
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

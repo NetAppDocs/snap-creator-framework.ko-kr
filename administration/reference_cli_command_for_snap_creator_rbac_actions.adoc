@@ -5,6 +5,7 @@ keywords: snap, creator, rbac, cli, command, user, access
 summary: CLI 명령을 사용하여 Snap Creator RBAC 작업을 수행할 수 있습니다. 
 ---
 = Snap Creator 사용자 액세스를 관리하는 데 사용되는 명령입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

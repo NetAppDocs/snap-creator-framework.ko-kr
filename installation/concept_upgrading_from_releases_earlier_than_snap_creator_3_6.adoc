@@ -5,6 +5,7 @@ keywords: upgrading, upgrade, releases, earlier, before, snap, creator, 3.6
 summary: Snap Creator 3.6 이전의 릴리즈에서 업그레이드하는 경우, 먼저 한 번에 한 가지 버전의 Snap Creator 3.6으로 업그레이드해야 합니다. 
 ---
 = Snap Creator 3.6 이전의 릴리즈에서 업그레이드 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

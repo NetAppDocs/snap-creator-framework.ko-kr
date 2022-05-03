@@ -5,6 +5,7 @@ keywords: snap, creator, error, troubleshoot, cmd, output, debug, warn, error, o
 summary: Snap Creator는 유용한 오류 메시지와 문제 해결 로그를 제공합니다. 
 ---
 = 오류 메시지 유형 및 문제 해결 로그
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

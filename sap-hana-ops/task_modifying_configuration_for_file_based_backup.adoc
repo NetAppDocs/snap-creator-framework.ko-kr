@@ -5,6 +5,7 @@ keywords: sap, hana, modifying, modify, change, changing, configuration, file-ba
 summary: 파일 기반 백업에 대해 구성된 매개 변수를 수정할 수 있습니다. 이후의 예약된 파일 또는 주문형 파일 기반 백업 작업에는 업데이트된 정보가 반영됩니다. 
 ---
 = 파일 기반 백업에 대한 구성을 수정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

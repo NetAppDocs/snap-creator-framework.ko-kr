@@ -5,6 +5,7 @@ keywords: backing up, database, snap, creator, command, line
 summary: Snap Creator 명령줄을 사용하여 데이터베이스를 백업할 수도 있습니다. 
 ---
 = Snap Creator 명령줄을 사용하여 데이터베이스 백업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: sap, hana, plug-in, parameters
 summary: SAP HANA 플러그인 매개 변수 
 ---
 = SAP HANA 플러그인 매개 변수
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

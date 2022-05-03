@@ -5,6 +5,7 @@ keywords: snap, creator, agent, service, start, verify, stop, windows
 summary: Snap Creator Agent 서비스를 시작 및 중지하고 Snap Creator Agent 서비스가 Windows 시스템에서 실행 중인지 확인할 수 있습니다. 
 ---
 = Windows에서 Snap Creator Agent 시작, 확인 및 중지
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snap, creator, server, configuration, post, command, quiescecmde, cmd,
 summary: Snap Creator Server에는 몇 가지 구성 파일 POST 명령이 포함되어 있습니다. 
 ---
 = POST 명령
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

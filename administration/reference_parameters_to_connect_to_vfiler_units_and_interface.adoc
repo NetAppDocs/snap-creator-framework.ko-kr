@@ -5,6 +5,7 @@ keywords: several, parameter, snap, creator, sefver, vfiler, unit, interface, ma
 summary: Snap Creator Server를 vFiler 유닛 및 인터페이스에 연결하려면 몇 가지 매개 변수가 필요합니다. 
 ---
 = vFiler 유닛 및 인터페이스에 연결하는 매개 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snap, creator, profile, view
 summary: 기존 Snap Creator 프로파일을 나열할 수 있습니다. 
 ---
 = 프로파일 보기
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

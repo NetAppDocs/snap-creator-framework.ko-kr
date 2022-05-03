@@ -5,6 +5,7 @@ keywords: sap,hana, resuming, resume, snapvault, relationship, data, ontap, oper
 summary: 최신 스냅샷 이외의 스냅샷 백업을 사용하여 복원하는 경우, Snap Creator에서 백업을 계속 실행할 수 있도록 SnapVault 관계를 재개해야 합니다. 
 ---
 = 7-Mode에서 작동 중인 Data ONTAP와 SnapVault 관계 재시작
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

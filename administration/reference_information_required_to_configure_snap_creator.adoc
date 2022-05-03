@@ -5,6 +5,7 @@ keywords: snap, creator, built-in, native, plug-in, oracle, db2, mysql, sybase, 
 summary: 'Snap Creator는 Oracle, DB2, MySQL, Sybase ASE, Domino, Microsoft SQL Server용 SnapManager, Microsoft Exchange용 SnapManager, MaxDB, VMware(vSphere 및 vCloud Director), Red Hat KVM, Citrix XenServer 및 SAP HANA. 커뮤니티 플러그인은 패키지에 포함되어 있지 않으며 별도로 다운로드해야 합니다.' 
 ---
 = Snap Creator를 구성하는 데 필요한 플러그인 정보입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

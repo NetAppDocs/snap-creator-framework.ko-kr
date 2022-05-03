@@ -5,6 +5,7 @@ keywords: domino, ibm, adding, supplemental, commands
 summary: 구성 파일을 만든 후 구성에 추가 명령을 추가할 수 있습니다. Snap Creator Server 또는 Agent에서 명령을 실행할 수 있습니다. 
 ---
 = 구성에 보조 명령 추가
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

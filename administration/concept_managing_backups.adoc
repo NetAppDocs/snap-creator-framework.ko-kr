@@ -5,6 +5,7 @@ keywords: managing, backups, backup, copies,
 summary: 백업 복사본을 생성하고, 백업 복사본 목록을 보고, 더 이상 필요하지 않은 백업 복사본을 삭제할 수 있습니다. 
 ---
 = 백업 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

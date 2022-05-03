@@ -5,6 +5,7 @@ keywords: schedule, job, run, snap, creator, gui
 summary: 예약된 작업을 실행할 수 있습니다. 
 ---
 = 예약된 작업 실행 중
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

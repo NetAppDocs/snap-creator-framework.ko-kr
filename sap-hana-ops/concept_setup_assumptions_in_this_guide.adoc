@@ -5,6 +5,7 @@ keywords: setup, assumptions
 summary: 일반적인 Snap Creator 설치에서는 서버가 한 호스트에 설치되어 있고 에이전트가 다른 호스트에 설치되어 있다고 가정하지만, 이 가이드에 사용된 설정은 SAP HANA 다중 노드 어플라이언스를 기반으로 합니다. 
 ---
 = 이 가이드에서 가정을 설정합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

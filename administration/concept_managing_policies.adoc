@@ -5,6 +5,7 @@ keywords: managing, retention, policies, list, delete, policies, snapshot, snapv
 summary: 보존 정책을 생성하고 정책을 나열하고 삭제할 수 있습니다. 
 ---
 = 보존 정책 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

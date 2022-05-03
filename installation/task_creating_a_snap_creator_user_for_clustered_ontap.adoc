@@ -5,6 +5,7 @@ keywords: creating, create, snap, center, user, ontap
 summary: 'Clustered Data ONTAP의 경우 Snap Creator를 위한 사용자를 생성해야 합니다. 하지만 생성하는 사용자 유형은 clustered Data ONTAP 버전에 따라 다릅니다. 두 유형의 사용자는 클러스터 사용자와 SVM(스토리지 가상 시스템) 사용자입니다.' 
 ---
 = Clustered Data ONTAP용 Snap Creator 사용자 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

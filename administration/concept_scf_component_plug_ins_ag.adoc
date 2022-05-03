@@ -5,6 +5,7 @@ keywords: plug-in, applications, databases, snap, creator, plug-ins, binary, ins
 summary: 플러그인은 애플리케이션 또는 데이터베이스를 일관된 상태로 전환하는 데 사용됩니다. Snap Creator에는 바이너리 파일의 일부이며 추가 설치가 필요하지 않은 여러 플러그인이 포함되어 있습니다. 
 ---
 = 애플리케이션 통합을 위한 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

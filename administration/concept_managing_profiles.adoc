@@ -5,6 +5,7 @@ keywords: create, view, delete, profiles, managing, rbac
 summary: 프로파일을 작성, 보기 및 삭제할 수 있습니다. 
 ---
 = 프로파일 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

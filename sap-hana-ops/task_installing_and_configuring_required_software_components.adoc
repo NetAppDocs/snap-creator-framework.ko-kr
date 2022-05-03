@@ -5,6 +5,7 @@ keywords: installing, install, configuring, configure, required, software
 summary: Snap Creator 프레임워크 및 SAP HANA 플러그인을 사용하는 SAP HANA 백업 및 복원 솔루션의 경우, Snap Creator 소프트웨어 구성요소와 SAP HANA hdbsql 클라이언트 소프트웨어를 설치해야 합니다. 
 ---
 = 필수 소프트웨어 구성 요소 설치 및 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

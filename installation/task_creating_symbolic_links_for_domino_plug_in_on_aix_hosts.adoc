@@ -5,6 +5,7 @@ keywords: creating, create, symbolic, links, domino, plug-in, aix, hosts
 summary: AIX 호스트에서 Domino 플러그인에 대한 심볼 링크를 추가하려면 이 절차를 수행해야 합니다. 
 ---
 = AIX 호스트에서 Domino 플러그인에 대한 심볼 링크 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

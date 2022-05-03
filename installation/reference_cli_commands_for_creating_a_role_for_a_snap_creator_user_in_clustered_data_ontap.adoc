@@ -5,6 +5,7 @@ keywords: cli, commands, create, creating, role
 summary: Clustered Data ONTAP에서 Snap Creator 사용자를 생성하는 동안 다양한 명령을 실행하여 새 클러스터 사용자 또는 SVM 사용자에 대한 역할을 생성해야 합니다. 
 ---
 = Clustered Data ONTAP에서 Snap Creator 사용자에 대한 역할을 생성하는 CLI 명령입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cloning, mount_cmd, unmount_cmd, command, snap, creator, pre, post
 summary: 클론 생성 시 Snap Creator pre 또는 POST 명령 대신 mount_CMD 및 umount_CMD 명령을 사용해야 합니다. 
 ---
 = 명령을 마운트 및 마운트 해제합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

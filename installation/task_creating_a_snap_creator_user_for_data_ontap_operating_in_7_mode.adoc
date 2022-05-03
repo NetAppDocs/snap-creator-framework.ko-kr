@@ -5,6 +5,7 @@ keywords: creating, create, snap, creator, user, ontap, 7-mode
 summary: Snap Creator는 Data ONTAP API를 사용하여 스토리지 시스템과 통신합니다. 사용자 계정에 Snap Creator에만 대한 액세스 권한이 부여되도록 각 스토리지 컨트롤러에서 새 역할, 그룹 및 사용자를 생성합니다. 역할이 그룹에 할당되고 그룹에 사용자가 포함됩니다. 이 옵션은 액세스를 제어하고 Snap Creator 계정의 범위를 제한합니다. 
 ---
 = 7-Mode에서 작동하는 Data ONTAP용 Snap Creator 사용자 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

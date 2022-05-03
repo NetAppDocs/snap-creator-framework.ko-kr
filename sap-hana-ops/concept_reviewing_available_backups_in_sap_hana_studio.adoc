@@ -5,6 +5,7 @@ keywords: reviewing, review, available, backups, sap, hana, studio
 summary: SAP HANA Studio에서 스토리지 스냅샷 백업 목록을 볼 수 있습니다. 
 ---
 = SAP HANA Studio에서 사용 가능한 백업 검토
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

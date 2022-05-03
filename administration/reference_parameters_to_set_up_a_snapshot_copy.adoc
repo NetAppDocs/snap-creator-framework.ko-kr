@@ -5,6 +5,7 @@ keywords: parameter, snapshot, copy, snap, creator, server, retention, snapdrive
 summary: Snap Creator Server에 대한 스냅샷 복사본을 설정하려면 몇 가지 구성 파일 매개 변수가 필요합니다. 
 ---
 = 스냅샷 복사본 설정을 위한 매개 변수
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

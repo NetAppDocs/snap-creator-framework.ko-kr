@@ -5,6 +5,7 @@ keywords: domino, ibm, creating, create, backup, restore, configuration
 summary: 구성 파일에서 백업 및 복원 작업에 필요한 대부분의 정보를 지정합니다. 구성 파일은 Snap Creator 백업 및 복원 작업에 대한 입력 파일입니다. 
 ---
 = 백업 및 복원 구성을 생성하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -26,7 +27,7 @@ NOTE: 이 안내서는 GUI를 사용하여 구성 파일을 작성하는 방법�
 * 관련 정보 *
 
 link:concept_general_configuration_file_information.adoc["Snap Creator GUI에 로그인합니다"]
-
-
-
-
+link:task_using_the_gui_to_create_a_configuration_file.adoc["구성 파일 생성"]
+link:concept_adding_commands_to_the_backup_and_restore_configuration.adoc["백업 및 복원 구성에 명령 추가"]
+link:task_setting_the_snap_creator_archive_log_management_settings.adoc["Domino 트랜잭션 로그의 아카이빙된 복제본을 정리하는 중입니다"]
+link:concept_use_meta_data_volumes_setting_to_back_up_the_changeinfo_directory.adoc["changeinfo 디렉토리를 백업하는 중입니다"]

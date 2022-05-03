@@ -5,6 +5,7 @@ keywords: upgrading, snap, creator, agent, 4.1.x, windows
 summary: Windows의 Snap Creator Agent 4.1.x에서 업그레이드할 수 있습니다. 
 ---
 = Windows에서 Snap Creator Agent 4.1.x 업그레이드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

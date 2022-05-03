@@ -5,6 +5,7 @@ keywords: snap, creator, security, features, rbac, snapcreator
 summary: 'Snap Creator는 역할 기반 액세스 제어\(RBAC\)와 같은 보안 기능을 제공하여 Snap Creator 내에서 사용자 액세스를 관리할 수 있도록 지원합니다.' 
 ---
 = 사용자 액세스 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

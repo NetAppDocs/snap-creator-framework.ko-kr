@@ -5,6 +5,7 @@ keywords: create, copy, download, list, delete, configuration, managing, files
 summary: 구성 파일을 생성, 복사, 다운로드, 나열 및 삭제할 수 있습니다. 
 ---
 = 구성 파일 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

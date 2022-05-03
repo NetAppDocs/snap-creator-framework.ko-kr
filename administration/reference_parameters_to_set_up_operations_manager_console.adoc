@@ -5,6 +5,7 @@ keywords: parameter, required, operation, manager, host, user, pwd, port
 summary: Operations Manager 콘솔을 설정하려면 여러 매개 변수가 필요합니다. 
 ---
 = Operations Manager 콘솔을 설정하는 매개 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

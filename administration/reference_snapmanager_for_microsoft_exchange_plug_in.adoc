@@ -5,6 +5,7 @@ keywords: snapmanager, microsoft, exchange, plug-in, centralize, backup, operati
 summary: SnapManager for Microsoft Exchange 플러그인은 Snap Creator를 통해 Microsoft Exchange Server의 백업 작업을 중앙 집중화하는 데 사용됩니다. 이 플러그인을 사용하면 Snap Creator를 통해 수만 또는 수백 개의 Exchange Server용 SnapManager를 구성하여 단일 인터페이스에서 모든 SnapManager for Exchange 백업 작업 및 상태를 확인할 수 있습니다. 
 ---
 = Microsoft Exchange 플러그인용 SnapManager
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: housekeeping, log, backups
 summary: SAP HANA에서 로그 백업의 하우스키핑은 HANA Studio 내의 기능 또는 선택한 백업보다 오래된 모든 백업을 삭제할 수 있는 SQL 문을 기반으로 합니다. 
 ---
 = 로그 백업 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

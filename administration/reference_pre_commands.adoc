@@ -5,6 +5,7 @@ keywords: snap, creator, server, configuration, pre, command, quiesce, cmd, ntap
 summary: Snap Creator Server에는 몇 가지 구성 파일 사전 명령이 포함되어 있습니다. 
 ---
 = 사전 명령
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

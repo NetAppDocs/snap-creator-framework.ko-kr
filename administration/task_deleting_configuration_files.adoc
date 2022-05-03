@@ -5,6 +5,7 @@ keywords: delete, configuration, file, profile, management
 summary: 프로필에서 구성 파일을 삭제할 수 있습니다. 
 ---
 = 프로파일에서 구성 파일을 삭제하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

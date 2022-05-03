@@ -5,6 +5,7 @@ keywords: snap, creator, permission, gui, role, management
 summary: Snap Creator GUI를 사용하여 역할에 할당된 모든 Snap Creator 권한 목록을 볼 수 있습니다. 
 ---
 = 역할에 할당된 Snap Creator 권한 보기
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

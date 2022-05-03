@@ -5,6 +5,7 @@ keywords: snap, creator, policies, guidelines, retendtion, snapshot
 summary: Snap Creator 정책은 운영 스토리지의 Snapshot 복사본 및 2차 스토리지의 SnapVault 및 SnapMirror 복사본에 적용되는 사용자 정의 스냅샷 복사본 보존 정책입니다. 정책을 사용하여 유지할 스냅샷 복사본의 수와 스냅샷 복사본 기간을 정의할 수 있습니다. 
 ---
 = Snap Creator 정책을 정의하는 지침
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

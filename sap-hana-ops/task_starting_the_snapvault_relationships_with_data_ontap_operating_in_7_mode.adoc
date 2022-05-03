@@ -5,6 +5,7 @@ keywords: sap, hana, starting, snapvault, relationship, data, ontap, operating, 
 summary: 2차 스토리지 시스템에서 실행되는 명령을 사용하여 SnapVault 관계를 시작할 수 있습니다. 
 ---
 = 7-Mode에서 운영되는 Data ONTAP와 SnapVault 관계를 시작합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: sap, hana, modifying, modify, housekeeping, log, backups
 summary: 로그 정리 작업을 비활성화하려면 로그 백업의 하우스키핑에 대해 구성된 매개 변수를 수정할 수 있습니다. 
 ---
 = 로그 백업의 정리 작업 수정
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

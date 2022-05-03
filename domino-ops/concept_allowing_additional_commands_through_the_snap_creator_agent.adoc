@@ -5,6 +5,7 @@ keywords: domino, ibm, allowing, allow, additional, commands, snap, creator, age
 summary: Snap Creator Agent에서 추가 명령을 실행하려면 Agent의 allowed_commands.config 파일에 명령을 포함하여 명령을 명시적으로 실행해야 합니다. 
 ---
 = Snap Creator Agent에서 추가 명령 허용
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

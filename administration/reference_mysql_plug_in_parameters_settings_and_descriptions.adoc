@@ -5,6 +5,7 @@ keywords: mysql, plug-in, net-mysql, interoperability, matrix
 summary: MySQL 플러그인은 Net-MySQL을 사용하여 데이터베이스와 통신합니다. 
 ---
 = MySQL 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

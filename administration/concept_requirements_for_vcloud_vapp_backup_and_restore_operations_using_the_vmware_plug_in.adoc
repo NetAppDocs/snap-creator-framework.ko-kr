@@ -5,6 +5,7 @@ keywords: snap, creator, backup, vcloud, vapp, vmware, director, api, vsphere, d
 summary: Snap Creator는 VMware 플러그인을 통해 vCloud vApp 백업을 지원합니다. vApp 및 가상 머신 백업 복제본은 VMware vCloud Director API와 VMware vCenter Server에서 각각 호출되는 vCloud Director API와 vSphere API를 통해 VMware 플러그인에서 만들어집니다. 
 ---
 = VMware 플러그인을 사용한 vCloud vApp 백업 및 복구 작업에 대한 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: copyrighted
 summary: 저작권 정보 
 ---
 = 저작권 정보
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

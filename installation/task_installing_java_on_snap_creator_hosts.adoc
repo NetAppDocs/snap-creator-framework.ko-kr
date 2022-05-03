@@ -5,6 +5,7 @@ keywords: installing, install, java, snap, creator, hosts
 summary: '모든 Snap Creator Server 및 Agent 호스트에 OpenJDK 및 Oracle Java Runtime Environment(JRE) 1.8 업데이트 72 이상이 설치되어 있어야 합니다. TLS\(Transport Layer Security\) 취약점을 방지하려면 Snap Creator Server 및 Agent 호스트에 최신 버전의 JRE 1.8 업데이트 72를 설치하는 것이 좋습니다.' 
 ---
 = Snap Creator 호스트에 Java 설치
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

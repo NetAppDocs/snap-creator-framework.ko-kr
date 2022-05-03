@@ -5,6 +5,7 @@ keywords: installing, install, snap, creator, server, unix, unix-based
 summary: 'UNIX 플랫폼(AIX, HP-UX, Linux 및 Solaris)의 경우 Snap Creator 설치 프로세스는 Snap Creator 소프트웨어 패키지(Snap Creator Server와 Snap Creator Agent가 모두 포함된 .tar 파일)를 압축 해제하고, 설치 스크립트를 실행하고, 서비스를 시작하고, 포트의 유효성을 검사하는 과정으로 구성됩니다.' 
 ---
 = UNIX 기반 시스템에 Snap Creator Server 설치
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

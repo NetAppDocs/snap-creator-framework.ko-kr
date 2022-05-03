@@ -5,6 +5,7 @@ keywords: troubleshooting
 summary: 문제 해결 섹션에서는 오류 코드, 오류 메시지에 대한 정보를 제공하며 문제 해결을 위한 설명 또는 해결 방법을 제공합니다. 
 ---
 = 문제 해결
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

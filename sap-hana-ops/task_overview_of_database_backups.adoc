@@ -5,6 +5,7 @@ keywords: snap, creator, backing, up, database,
 summary: Snap Creator가 데이터베이스를 백업하는 경우 다음 단계가 실행됩니다. 
 ---
 = 데이터베이스 백업 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

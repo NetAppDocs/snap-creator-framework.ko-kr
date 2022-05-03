@@ -5,6 +5,7 @@ keywords: setup, sap, hana, clustered, data, ontap
 summary: clustered Data ONTAP과 함께 사용되는 설정 
 ---
 = clustered Data ONTAP과 함께 사용되는 설정
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

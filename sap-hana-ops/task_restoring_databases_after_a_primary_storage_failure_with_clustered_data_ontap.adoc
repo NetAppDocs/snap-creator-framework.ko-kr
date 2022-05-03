@@ -5,6 +5,7 @@ keywords: sap, hana, restore, restoring, databases, primary, storage, failure, c
 summary: Clustered Data ONTAP을 실행하는 운영 스토리지 시스템에서 장애가 발생한 후 SAP HANA 데이터베이스를 복원할 수 있습니다. 
 ---
 = Clustered Data ONTAP을 사용하여 운영 스토리지 장애 발생 후 데이터베이스 복원
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: domino, ibm, backup, operations, ibm, understanding
 summary: 다른 백업 기술과 달리 IBM Domino 플러그인을 사용하면 백업 작업 중에 데이터를 데이터베이스에 쓸 수 있습니다. 이 기능을 사용하면 백업 작업 중에 변경 내용을 데이터베이스에 기록하여 변경 정보라는 임시 디렉토리에 백업함으로써 애플리케이션 데이터와 일관성을 유지할 수 있습니다. 복원 시 스냅샷 복사본에서 데이터를 복원한 후에 변경 내용이 데이터베이스에 적용됩니다. 
 ---
 = IBM Domino 플러그인 백업 작업 이해
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

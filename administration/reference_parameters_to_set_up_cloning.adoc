@@ -5,6 +5,7 @@ keywords: parameter, snap, creator, server, cloning, operation
 summary: Snap Creator Server 클론 복제 작업을 설정하려면 몇 가지 매개 변수가 필요합니다. 
 ---
 = 클론 생성 작업을 설정하는 매개 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

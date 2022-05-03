@@ -5,6 +5,7 @@ keywords: maxdb, plug-in, automates, backup, restore, operations
 summary: MaxDB 플러그인은 MaxDB 데이터베이스에서 백업 및 복원 작업을 자동화합니다. 
 ---
 = MaxDB 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

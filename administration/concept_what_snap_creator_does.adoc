@@ -5,6 +5,7 @@ keywords: snap, creator, framework, unix, applications, third-party, databases, 
 summary: 'Snap Creator 프레임워크는 Windows 및 UNIX(AIX, HP-UX, Linux 및 Solaris) 환경에서 다양한 타사 애플리케이션, 데이터베이스 및 하이퍼바이저의 데이터 보호를 표준화하고 단순화하는 사전 패키지형 및 맞춤형 플러그인을 사용할 수 있도록 지원합니다.' 
 ---
 = Snap Creator 프레임워크의 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

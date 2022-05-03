@@ -5,6 +5,7 @@ keywords: configuring, configure, snap, creator, framework, sap, hana, database,
 summary: Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업을 구성해야 합니다. 
 ---
 = Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업 구성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

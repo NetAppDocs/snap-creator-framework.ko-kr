@@ -5,6 +5,7 @@ keywords: snap, creator, built-in, variable, parameter, basic, configuration, de
 summary: Snap Creator에는 기본 구성에 필요한 내장형 변수와 매개변수가 포함되어 있습니다. 
 ---
 = Snap Creator 변수 및 매개 변수 설명
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: domino, ibm, backing up, backup, databases
 summary: 필요 시 또는 일정에 따라 데이터베이스를 백업할 수 있습니다. Snap Creator GUI 또는 Snap Creator CLI를 사용하여 데이터베이스를 백업할 수 있습니다. 
 ---
 = 데이터베이스 백업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -18,4 +19,4 @@ NOTE: 이 가이드에서는 GUI를 사용하여 데이터베이스를 백업하
 * 관련 정보 *
 
 link:task_creating_a_domino_backup_using_the_snap_creator_gui.adoc["필요 시 데이터베이스 백업"]
-
+link:task_scheduling_actions_using_the_snap_creator_gui.adoc["백업 예약"]

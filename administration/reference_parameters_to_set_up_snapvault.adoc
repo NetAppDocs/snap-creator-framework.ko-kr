@@ -5,6 +5,7 @@ keywords: parameter, snapvault, update, volume, relationship
 summary: SnapVault를 설정하려면 몇 가지 매개 변수가 필요합니다. 
 ---
 = SnapVault를 설정하는 매개 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

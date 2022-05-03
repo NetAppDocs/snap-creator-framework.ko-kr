@@ -5,6 +5,7 @@ keywords: parameter, open, system, snapvault, ossv, enable, homedir, snapshot
 summary: 'OSSV(Open Systems SnapVault)를 설정하는 데 몇 가지 매개 변수가 필요합니다.' 
 ---
 = OSSV 설정 매개 변수
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

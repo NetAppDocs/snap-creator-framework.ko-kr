@@ -5,6 +5,7 @@ keywords: domino, ibm, restore, restoring, databases, understanding, snapmirror,
 summary: IBM Domino 플러그인은 데이터베이스가 저장된 볼륨의 스냅샷 복사본에서 데이터베이스 파일을 복원합니다. 스냅샷 복원이 완료되면 플러그인이 changeinfo 디렉토리에 기록된 모든 변경 사항을 적용합니다. 
 ---
 = 데이터베이스를 복원하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -44,5 +45,5 @@ NOTE: 이 가이드에서는 SAN 환경에서 단일 파일 복원에만 CLI를 
 * 관련 정보 *
 
 link:task_performing_point_in_time_volume_restore.adoc["볼륨 복원 수행"]
-
-
+link:task_performing_point_in_time_single_file_restore_with_nfs.adoc["단일 파일 복원 수행"]
+link:concept_single_file_restore_in_fc_iscsi_environments.adoc["SAN 환경에서 단일 파일 복원 수행"]

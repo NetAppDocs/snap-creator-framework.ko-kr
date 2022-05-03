@@ -5,6 +5,7 @@ keywords: snap, creator, server, snapcreator, properties, file, restart, server,
 summary: Snap Creator Server가 사용하는 포트를 변경하려면 snapcreator.properties 파일을 편집하고 서버를 다시 시작하십시오. 
 ---
 = 설치 후 Snap Creator Server 포트 변경
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

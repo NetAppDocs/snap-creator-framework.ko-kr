@@ -5,6 +5,7 @@ keywords: parameter, snapmirror, snap, creator, server, update, cascading, volum
 summary: Snap Creator Server에 SnapMirror를 설정하려면 몇 가지 매개 변수가 필요합니다. 
 ---
 = SnapMirror 설정을 위한 매개 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: uninstalling, uninstall, snap, creator, server, unix
 summary: Snap Creator Server 설치 폴더를 삭제하여 UNIX에서 Snap Creator Server를 제거할 수 있습니다. 
 ---
 = UNIX에서 Snap Creator Server를 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

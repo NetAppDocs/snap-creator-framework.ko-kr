@@ -5,6 +5,7 @@ keywords: clustered, data, ontap, storage, virtual, machine, svm, cloning, clone
 summary: 'Clustered Data ONTAP의 경우 클론 복제 목적으로 애그리게이트를 SVM(스토리지 가상 머신)에 할당해야 합니다. 그렇지 않으면 cloneVol 작업에서 오류가 반환될 수 있습니다.' 
 ---
 = CLoneVol은 Aggregate가 존재하지 않음을 보고합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

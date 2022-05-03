@@ -5,6 +5,7 @@ keywords: unstalling, snap, creator
 summary: Windows 및 UNIX 시스템에서 Snap Creator를 제거할 수 있습니다. 
 ---
 = Snap Creator 제거 중
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

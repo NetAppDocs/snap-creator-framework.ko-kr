@@ -5,6 +5,7 @@ keywords: parameter, management, snap, creator, server, event, ntap, asup, error
 summary: Snap Creator Server에 대한 이벤트 관리를 설정하려면 몇 가지 매개 변수가 필요합니다. 
 ---
 = 이벤트 관리 설정을 위한 매개 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

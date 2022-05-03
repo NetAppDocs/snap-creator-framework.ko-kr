@@ -5,6 +5,7 @@ keywords: snap, creator, service, server, start, verify, stop, unix
 summary: Snap Creator Server 서비스를 시작 및 중지하고 Snap Creator Server 서비스가 UNIX 시스템에서 실행 중인지 확인할 수 있습니다. 
 ---
 = UNIX에서 Snap Creator Server 시작, 확인 및 중지
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

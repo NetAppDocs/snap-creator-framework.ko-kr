@@ -5,6 +5,7 @@ keywords: executing, database, backups
 summary: Snap Creator GUI 또는 명령줄을 사용하여 SAP HANA 데이터베이스를 백업할 수 있습니다. 백업을 예약하려면 GUI 내에서 스케줄러를 사용하거나 cron과 같은 외부 스케줄러와 함께 명령줄을 사용할 수 있습니다. 
 ---
 = 데이터베이스 백업을 실행하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

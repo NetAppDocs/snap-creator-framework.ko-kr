@@ -5,6 +5,7 @@ keywords: snap, creator, support, backup, vmware, virtual, machines, vsphere, ap
 summary: Snap Creator는 VMware 플러그인을 통해 VMware 가상 머신의 백업을 지원합니다. 가상 머신 백업은 VMware vCenter Server의 vSphere API를 통해 수행됩니다. 
 ---
 = VMware 플러그인을 사용하여 가상 머신 백업 및 복구
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

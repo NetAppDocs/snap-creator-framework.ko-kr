@@ -5,6 +5,7 @@ keywords: domino, ibm, volume, restore
 summary: IBM Domino 플러그인을 사용하면 모든 주요 스토리지 유형에 대해 시점, 최신 또는 선택 가능한 최신 볼륨 복원을 수행할 수 있습니다. 
 ---
 = 볼륨 복원 수행
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

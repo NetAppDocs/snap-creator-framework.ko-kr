@@ -5,6 +5,7 @@ keywords: domino, ibm, cleaning up, purging, archives, archived, copies, transac
 summary: Domino 트랜잭션 로깅을 사용하는 경우 IBM Domino 플러그인은 최신 복원 작업에 사용할 수 있도록 Domino 트랜잭션 로그의 복사본을 changeinfo 디렉토리에 아카이빙합니다. Snap Creator가 더 이상 필요하지 않은 트랜잭션 로그 복사본을 정리하기 전에 트랜잭션 로그 관리를 활성화해야 합니다. 
 ---
 = Domino 트랜잭션 로그의 아카이빙된 복제본을 정리하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

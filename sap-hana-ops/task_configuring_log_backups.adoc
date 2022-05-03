@@ -5,6 +5,7 @@ keywords: configuring, log, backups
 summary: 로그 백업은 운영 스토리지가 아닌 다른 스토리지 시스템에 저장해야 합니다. 데이터 백업에 사용되는 스토리지 시스템을 로그 백업에도 사용할 수 있습니다. 
 ---
 = 로그 백업을 구성하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

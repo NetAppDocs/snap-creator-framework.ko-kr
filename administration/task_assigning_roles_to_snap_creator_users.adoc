@@ -5,6 +5,7 @@ keywords: snap, creator, user, gui, role, management
 summary: Snap Creator GUI를 사용하여 Snap Creator 사용자에게 역할을 할당할 수 있습니다. 
 ---
 = Snap Creator 사용자에게 역할 할당
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

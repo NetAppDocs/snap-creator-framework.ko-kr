@@ -5,6 +5,7 @@ keywords: archive, log, plug-in, snap, creator, archive
 summary: 아카이브 로그 플러그인은 Snap Creator Archive 로그와 함께 작동하며 모든 애플리케이션 또는 데이터베이스의 로그는 지원하지 않습니다. 
 ---
 = 아카이브 로그 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: uninstalling, uninstall, snap, creator, unix
 summary: UNIX에서 Snap Creator를 제거할 때는 먼저 Snap Creator Agent를 제거한 다음 Snap Creator Server를 제거합니다. 
 ---
 = UNIX에서 Snap Creator 제거
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

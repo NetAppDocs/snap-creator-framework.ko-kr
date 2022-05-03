@@ -5,6 +5,7 @@ keywords: oracle, plug-in, sql, plus, database, quiesce, unquiesce, oracle, data
 summary: Oracle 플러그인은 SQL * Plus를 사용하여 데이터베이스와 통신하고 백업을 위해 Oracle 데이터베이스를 중지 및 일시 중지합니다. 
 ---
 = Oracle 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

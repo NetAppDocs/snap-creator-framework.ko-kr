@@ -5,6 +5,7 @@ keywords: sybase, ase, plug-in, isql, command, database, parameter, user, server
 summary: Sybase ASE 플러그인은 isql 명령을 사용하여 Sybase 데이터베이스와 상호 작용합니다. 
 ---
 = Sybase ASE 플러그인
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: domino, ibm, copy, copying, file, data restore directory
 summary: 복원할 파일의 스냅샷 복사본을 마운트한 후 해당 파일을 백업 및 복원 구성 파일에 지정된 데이터 복원 디렉터리에 복사할 수 있습니다. 
 ---
 = 데이터 복원 디렉터리에 파일을 복사하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

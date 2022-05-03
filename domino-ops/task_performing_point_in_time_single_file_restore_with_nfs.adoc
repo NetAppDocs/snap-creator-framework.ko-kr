@@ -5,6 +5,7 @@ keywords: snap creator, ibm, domino, plug-in, perfomring, single-file, single, f
 summary: IBM Domino 플러그인을 사용하면 NFS 환경의 데이터베이스에 대해 시점, 최신 파일 또는 선택 가능한 최신 단일 파일 복원을 수행할 수 있습니다. 
 ---
 = 단일 파일 복원 수행
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

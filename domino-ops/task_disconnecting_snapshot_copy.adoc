@@ -5,6 +5,7 @@ keywords: domino, ibm, disconnecting, disconnect, snapshot, copy
 summary: 복구 작업이 완료되면 마운트된 스냅샷 복사본의 연결을 끊어야 합니다. 
 ---
 = 스냅샷 복사본의 연결을 끊는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

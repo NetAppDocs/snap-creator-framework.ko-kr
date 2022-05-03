@@ -5,6 +5,7 @@ keywords: delete, schedule, job, management
 summary: 예약된 작업을 삭제할 수 있습니다. 
 ---
 = 예약된 작업을 삭제하는 중입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

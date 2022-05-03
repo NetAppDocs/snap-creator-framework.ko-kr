@@ -5,6 +5,7 @@ keywords: domino, ibm, adding, commands, backup, restore, configuration, supplem
 summary: 네이티브 Snap Creator 명령 대신 SnapDrive 명령을 사용하여 운영 체제 레벨에서 파일 시스템의 정합성을 보장할 수 있습니다. 
 ---
 = 백업 및 복원 구성에 명령 추가
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -32,4 +33,4 @@ NOTE: 이 가이드에서는 GUI를 사용하여 명령을 추가하는 방법�
 * 관련 정보 *
 
 link:concept_allowing_additional_commands_through_the_snap_creator_agent.adoc["Snap Creator Agent에서 추가 명령 허용"]
-
+link:task_configuring_snap_creator_to_use_snapdrive_by_using_the_gui.adoc["구성에 보조 명령 추가"]

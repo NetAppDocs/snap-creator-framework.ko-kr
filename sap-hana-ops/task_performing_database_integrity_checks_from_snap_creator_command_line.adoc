@@ -5,6 +5,7 @@ keywords: sap, hana, performing, perform, database, integrity, checks, snap, cre
 summary: Snap Creator 명령줄을 사용하여 데이터베이스 무결성 검사를 수행할 수 있습니다. 
 ---
 = Snap Creator 명령줄에서 데이터베이스 무결성 검사 수행
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

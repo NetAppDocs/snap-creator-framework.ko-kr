@@ -5,6 +5,7 @@ keywords: snap, creator, server, framework, overview, gui
 summary: Snap Creator Server는 Snap Creator 프레임워크의 주요 엔진입니다. 
 ---
 = Snap Creator 서버 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

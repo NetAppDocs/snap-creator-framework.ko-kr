@@ -5,6 +5,7 @@ keywords: snap, creator, agent
 summary: Snap Creator Agent는 일반적으로 애플리케이션이나 데이터베이스가 설치된 동일한 호스트에 설치됩니다. Agent는 플러그인이 있는 위치입니다. 때때로 Snap Creator 내에서 Agent가 scAgent로 짧아집니다. 
 ---
 = Snap Creator 에이전트
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

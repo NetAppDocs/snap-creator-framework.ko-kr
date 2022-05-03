@@ -5,6 +5,7 @@ keywords: snap, creator, agent, quiesce, server, plug-in, multi-tenant
 summary: 일반적으로 응용 프로그램 또는 데이터베이스가 설치된 동일한 호스트에 설치되는 Snap Creator Agent는 Snap Creator Server에서 특정 응용 프로그램으로 일시 중지 및 일시 중지 명령을 처리하고 플러그인이 있는 위치입니다. 에이전트가 Snap Creator 내에서 scAgent로 단축되는 경우도 있습니다. 
 ---
 = Snap Creator 에이전트 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

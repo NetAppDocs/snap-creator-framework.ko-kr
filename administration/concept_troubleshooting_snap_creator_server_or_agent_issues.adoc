@@ -5,6 +5,7 @@ keywords: encounter, issues, snap, creator, server, agent, troubleshoot, issues,
 summary: Snap Creator Server 또는 Snap Creator Agent에 몇 가지 문제가 있을 수 있습니다. 이러한 문제를 인식하고 문제 해결 방법을 알고 있어야 합니다. 
 ---
 = Snap Creator Server 또는 Snap Creator Agent 문제 해결
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

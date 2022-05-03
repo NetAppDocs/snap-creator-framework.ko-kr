@@ -5,6 +5,7 @@ keywords: configuring, configure, unix, settings, create, creating, symbolic, li
 summary: 'UNIX 운영 체제(AIX, Linux 및 Solaris)에 Snap Creator Agent를 설치하려는 경우 IBM Domino 플러그인이 제대로 작동하려면 Domino의 공유 객체 파일에 링크하기 위해 3개의 심볼 링크(symlink)를 생성해야 합니다.' 
 ---
 = UNIX 관련 설정 구성: 심볼 링크 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: domino, ibm,creating, create, configuraiton, file
 summary: IBM Domino 데이터베이스를 백업하려면 먼저 구성 파일을 생성해야 합니다. 구성 파일은 Snap Creator 백업 및 복원 작업에 대한 입력 파일입니다. 
 ---
 = 구성 파일 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
