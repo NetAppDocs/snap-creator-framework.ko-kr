@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/issues/new?body=Page%3A%20[UNIX에서 Snap Creator Agent 4.0.x 업그레이드](https://docs.netapp.com/ko-kr/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/blob/main/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/snap-creator-framework/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/issues/new?body=Page%3A%20[UNIX에서 Snap Creator Agent 4.0.x 업그레이드](https://docs.netapp.com/ko-kr/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/discuss-sm.svg" alt="" class="github-icon" />문서 변경 요청</a><a target="_blank" href="https://github.com/NetAppDocs/snap-creator-framework/blob/main/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snap-creator-framework/images/edit-sm.svg" alt="" class="github-icon" />이 페이지 편집</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/snap-creator-framework/images/article-sm.svg" alt="" class="github-icon" />기여하는 방법 자세히 알아보기</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">이 페이지의 내용</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/ko-kr/snap-creator-framework/search.html"
           data-type="widget" 
-          data-placeholder="설명서 검색" 
-          data-no-results-found="{query}에 대한 결과를 찾을 수 없음" 
-          data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
-          data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
-          data-results-found="{hitCount}개의 결과를 찾음"  
+          data-placeholder="설명서 검색"
+          data-no-results-found="{query}에 대한 결과를 찾을 수 없음"
+          data-did-you-mean="{suggestion}을(를) 검색해보십시오."
+          data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?"
+          data-results-found="{hitCount}개의 결과를 찾음"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -277,35 +279,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">한국어</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">한국어</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/snap-creator-framework/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ko-kr/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/snap-creator-framework/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -349,7 +343,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>사용 가능한 PDF<span>
+    <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>사용 가능한 PDF<span>
     </span>
   </a>
 </div>
@@ -359,7 +353,7 @@
         
         
         <a target="_blank" href="/ko-kr/snap-creator-framework/pdfs/fullsite-sidebar/Snap_Creator_프레임워크_4_3_3.pdf" >
-          <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
+          <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>이 문서 사이트의 PDF</a>
 
 
 
@@ -376,7 +370,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/설치.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             설치
           </a>
           
@@ -392,7 +386,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_프레임워크의_기능.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 프레임워크의 기능
           </a>
           
@@ -408,7 +402,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_아키텍처.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 아키텍처
           </a>
           
@@ -418,8 +412,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -427,8 +419,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -448,7 +438,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator의_사전_설치_요구사항.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator의 사전 설치 요구사항
           </a>
           
@@ -468,7 +458,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Data_ONTAP용_Snap_Creator_사용자_생성.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Data ONTAP용 Snap Creator 사용자 생성
           </a>
           
@@ -476,8 +466,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -501,7 +489,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Domino_플러그인의_설정_구성.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Domino 플러그인의 설정 구성
           </a>
           
@@ -519,7 +507,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/UNIX_관련_설정_구성__심볼_링크_생성.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             UNIX 관련 설정 구성: 심볼 링크 생성
           </a>
           
@@ -527,8 +515,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -536,8 +522,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -545,8 +529,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -566,7 +548,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_서버_설치.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 서버 설치
           </a>
           
@@ -582,14 +564,12 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Windows_호스트에_Snap_Creator_Server_설치.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Windows 호스트에 Snap Creator Server 설치
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -599,8 +579,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -620,7 +598,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_에이전트_설치.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 에이전트 설치
           </a>
           
@@ -636,14 +614,12 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Windows에_Snap_Creator_Agent_설치.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Windows에 Snap Creator Agent 설치
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -655,8 +631,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -676,7 +650,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_업그레이드_중.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 업그레이드 중
           </a>
           
@@ -696,7 +670,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_3_6_x에서_업그레이드.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 3.6.x에서 업그레이드
           </a>
           
@@ -708,8 +682,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -729,7 +701,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_4_0_x에서_업그레이드.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 4.0.x에서 업그레이드
           </a>
           
@@ -739,19 +711,10 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ko-kr/snap-creator-framework/pdfs/pages/installation/task_upgrading_the_snap_creator_agent_4_0_x_on_unix.pdf" >
-    <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
-
-          
         </li>
       </ul>
     
@@ -771,7 +734,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_4_1_x에서_업그레이드.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 4.1.x에서 업그레이드
           </a>
           
@@ -783,8 +746,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -794,8 +755,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -815,7 +774,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_제거_중.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 제거 중
           </a>
           
@@ -833,7 +792,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/UNIX에서_Snap_Creator_제거.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             UNIX에서 Snap Creator 제거
           </a>
           
@@ -841,8 +800,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -850,8 +807,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -871,7 +826,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/CLI_참조.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             CLI 참조
           </a>
           
@@ -887,7 +842,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Clustered_Data_ONTAP에서_Snap_Creator_사용자에_대한_역할을_생성하는_CLI_명령입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Clustered Data ONTAP에서 Snap Creator 사용자에 대한 역할을 생성하는 CLI 명령입니다
           </a>
           
@@ -895,8 +850,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -904,8 +857,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -913,8 +864,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -934,7 +883,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/IBM___Domino___플러그인_작업.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             IBM ® Domino ® 플러그인 작업
           </a>
           
@@ -950,7 +899,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/IBM_Domino_플러그인_개요.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             IBM Domino 플러그인 개요
           </a>
           
@@ -958,8 +907,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -981,7 +928,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/IBM_Domino_백업_및_복구_준비.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             IBM Domino 백업 및 복구 준비
           </a>
           
@@ -999,7 +946,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SnapMirror_및_SnapVault_설정.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SnapMirror 및 SnapVault 설정
           </a>
           
@@ -1007,8 +954,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1016,8 +961,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1037,7 +980,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_및_복원_구성을_생성하는_중입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             백업 및 복원 구성을 생성하는 중입니다
           </a>
           
@@ -1057,7 +1000,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_및_복원_구성에_명령_추가.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             백업 및 복원 구성에 명령 추가
           </a>
           
@@ -1065,8 +1008,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1078,8 +1019,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1099,7 +1038,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터베이스_백업.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             데이터베이스 백업
           </a>
           
@@ -1107,8 +1046,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1128,7 +1065,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터베이스를_복원하는_중입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             데이터베이스를 복원하는 중입니다
           </a>
           
@@ -1148,7 +1085,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAN_환경에서_단일_파일_복원_수행.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SAN 환경에서 단일 파일 복원 수행
           </a>
           
@@ -1160,8 +1097,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1169,8 +1104,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1190,7 +1123,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/작업_상태_및_로그_보기.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             작업 상태 및 로그 보기
           </a>
           
@@ -1200,8 +1133,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1213,8 +1144,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1234,7 +1163,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA___플러그인_운영.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SAP HANA ® 플러그인 운영
           </a>
           
@@ -1250,7 +1179,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA_백업_및_복원_솔루션_개요.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SAP HANA 백업 및 복원 솔루션 개요
           </a>
           
@@ -1264,8 +1193,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1285,7 +1212,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/필수_소프트웨어_구성_요소_설치_및_구성.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             필수 소프트웨어 구성 요소 설치 및 구성
           </a>
           
@@ -1293,8 +1220,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1314,7 +1239,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터_백업_구성.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             데이터 백업 구성
           </a>
           
@@ -1334,7 +1259,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SnapVault_관계_시작.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SnapVault 관계 시작
           </a>
           
@@ -1342,8 +1267,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1353,8 +1276,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1376,7 +1297,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/로그_백업을_구성하는_중입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             로그 백업을 구성하는 중입니다
           </a>
           
@@ -1384,8 +1305,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1405,7 +1324,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/데이터베이스_백업을_실행하는_중입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             데이터베이스 백업을 실행하는 중입니다
           </a>
           
@@ -1417,8 +1336,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1438,7 +1355,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA_파일_기반_백업_및_데이터베이스_무결성_검사.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SAP HANA 파일 기반 백업 및 데이터베이스 무결성 검사
           </a>
           
@@ -1458,8 +1375,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1479,7 +1394,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/SAP_HANA_데이터베이스_복원_및_복구.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             SAP HANA 데이터베이스 복원 및 복구
           </a>
           
@@ -1499,7 +1414,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/복원_후_SnapVault_관계를_다시_시작합니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             복원 후 SnapVault 관계를 다시 시작합니다
           </a>
           
@@ -1507,8 +1422,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1528,7 +1441,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/운영_스토리지_장애_후_데이터베이스_복구.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             운영 스토리지 장애 후 데이터베이스 복구
           </a>
           
@@ -1536,8 +1449,13 @@
 
 
 
+        </li>
+      </ul>
+    
 
-          
+  
+
+
         </li>
       </ul>
     
@@ -1546,22 +1464,11 @@
 
 
 
-          
-        </li>
-      </ul>
-    
-
-  
 
 
 
 
 
-
-
-
-
-          
         </li>
       </ul>
     
@@ -1581,7 +1488,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             관리
           </a>
           
@@ -1597,14 +1504,12 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_프레임워크의_기능.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 프레임워크의 기능
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1624,7 +1529,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_아키텍처.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 아키텍처
           </a>
           
@@ -1634,8 +1539,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1655,7 +1558,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_서버_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 서버 관리
           </a>
           
@@ -1667,8 +1570,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1688,7 +1589,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_에이전트_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 에이전트 관리
           </a>
           
@@ -1710,7 +1611,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_에이전트_보안.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 에이전트 보안
           </a>
           
@@ -1718,8 +1619,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1727,8 +1626,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1748,7 +1645,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_및_복구_워크플로우.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             백업 및 복구 워크플로우
           </a>
           
@@ -1778,7 +1675,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/보존_정책_생성_중.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             보존 정책 생성 중
           </a>
           
@@ -1792,8 +1689,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1813,7 +1708,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/클론_생성.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             클론 생성
           </a>
           
@@ -1821,8 +1716,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1842,7 +1735,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/복구_작업을_수행하는_중입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             복구 작업을 수행하는 중입니다
           </a>
           
@@ -1852,8 +1745,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1861,8 +1752,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1882,7 +1771,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/사용자_액세스_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             사용자 액세스 관리
           </a>
           
@@ -1908,8 +1797,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1929,7 +1816,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/프로파일_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             프로파일 관리
           </a>
           
@@ -1939,8 +1826,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1960,7 +1845,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/구성_파일_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             구성 파일 관리
           </a>
           
@@ -1974,8 +1859,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1995,7 +1878,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/보존_정책_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             보존 정책 관리
           </a>
           
@@ -2011,8 +1894,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2032,7 +1913,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/백업_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             백업 관리
           </a>
           
@@ -2044,8 +1925,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2065,7 +1944,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/예약된_작업_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             예약된 작업 관리
           </a>
           
@@ -2079,8 +1958,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2100,7 +1977,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/클론_관리.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             클론 관리
           </a>
           
@@ -2110,8 +1987,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2131,7 +2006,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator를_구성하는_데_필요한_플러그인_정보입니다.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator를 구성하는 데 필요한 플러그인 정보입니다
           </a>
           
@@ -2171,7 +2046,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/VMware_Vibe_플러그인.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             VMware Vibe 플러그인
           </a>
           
@@ -2179,8 +2054,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2192,8 +2065,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2213,7 +2084,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_문제_해결.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 문제 해결
           </a>
           
@@ -2229,14 +2100,12 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/오류_메시지_유형_및_문제_해결_로그.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             오류 메시지 유형 및 문제 해결 로그
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -2256,7 +2125,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_GUI_오류_문제_해결.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator GUI 오류 문제 해결
           </a>
           
@@ -2264,8 +2133,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2287,7 +2154,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/보안_문제_해결.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             보안 문제 해결
           </a>
           
@@ -2297,8 +2164,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2318,7 +2183,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_Server_또는_Snap_Creator_Agent_문제_해결.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator Server 또는 Snap Creator Agent 문제 해결
           </a>
           
@@ -2328,8 +2193,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2349,7 +2212,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/CLI_명령_오류_문제_해결.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             CLI 명령 오류 문제 해결
           </a>
           
@@ -2361,8 +2224,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2384,7 +2245,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/오류_메시지.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             오류 메시지
           </a>
           
@@ -2398,8 +2259,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2407,8 +2266,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2428,7 +2285,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_구성_파일_변수__매개_변수_및_명령.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 구성 파일 변수, 매개 변수 및 명령
           </a>
           
@@ -2462,8 +2319,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2485,7 +2340,7 @@
               href="/ko-kr/snap-creator-framework/pdfs/sidebar/Snap_Creator_명령줄_인터페이스_사용_지침.pdf" 
             
           >
-            <img src="/ko-kr/snap-creator-framework/images/pdf.png" width="16" height="16"/>
+            <img src="/ko-kr/snap-creator-framework/images/pdf.png" alt="" width="16" height="16"/>
             Snap Creator 명령줄 인터페이스 사용 지침
           </a>
           
@@ -2493,8 +2348,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2502,21 +2355,18 @@
   
 
 
-
-          
         </li>
       </ul>
     
 
   
-
 
 
 
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/ko-kr/snap-creator-framework/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/ko-kr/snap-creator-framework/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -2549,7 +2399,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ko-kr/snap-creator-framework/index.html">
         홈
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snap-creator-framework/releasenotes.html">
@@ -3263,6 +3113,9 @@
     
   
 
+<span>기여자
+</span>
+
 
 </p>
 
@@ -3576,4 +3429,5 @@ allowed_commands.config 또는 agent.properties 파일을 변경한 경우 변�
     </script>
     <script src='/ko-kr/snap-creator-framework/js/www-ntap.js'></script>
     <script src='/ko-kr/snap-creator-framework/js/tabbed-blocks.js'></script>
+    <script src='/ko-kr/snap-creator-framework/js/sidebar.js'></script>
   </body></html>
