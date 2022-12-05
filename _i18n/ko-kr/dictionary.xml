@@ -3879,7 +3879,6 @@
   <block id="fecc8aff3c88a0445bf428ef692f1cea" category="paragraph">NTAP_SnapVault_update</block>
   <block id="dbd64b7506acb36055eca79b8b364a18" category="paragraph">SnapVault 업데이트 기능을 켜거나 끌 수 있습니다.</block>
   <block id="d1ba6e7eb95663aa596dd570add83f9a" category="paragraph">SnapVault_volumes</block>
-  <block id="a1fc7f749c5ea5718722bdebdc587614" category="paragraph">에는 SnapVault 업데이트를 수행할 소스 스토리지 시스템 및 볼륨이 나와 있습니다(예: 컨트롤러1: vol1, vol2, vol3; 컨트롤러 2: vol1; 컨트롤러 3: vol2, vol3). * 참고: *</block>
   <block id="487eb327be46517fae6f993840d60362" category="list-text">SnapVault 및 SnapMirror 업데이트가 작동하려면 관계가 존재해야 합니다.</block>
   <block id="b3b87058bbcfac523b85dde91deb1c09" category="paragraph">Snap Creator는 관계를 생성하지 않습니다.</block>
   <block id="1ea062b82f2f00248618134e362b06c1" category="list-text">SnapMirror 또는 SnapVault 관계의 호스트 이름은 볼륨, SnapMirror_볼륨 및 SnapVault_볼륨 옵션에 지정된 것과 같아야 합니다. 또한 Snap Creator가 실행되는 호스트에서 호스트 이름을 확인할 수 있어야 합니다.</block>
@@ -4597,4 +4596,9 @@
   <block id="3fa7ec916163970da88e2e2759209761" category="sidebar">IBM ® Domino ® 플러그인 작업</block>
   <block id="3cc13999b80491b390e27e7298102ccb" category="sidebar">SAP HANA ® 플러그인 운영</block>
   <block id="7258e7251413465e0a3eb58094430bde" category="sidebar">관리</block>
+  <block id="eae66b4b74b6b82ce35a83d2757f6d46" category="cell">(예/아니요)</block>
+  <block id="0fed4fd40330e62e1aa81d896b62ecb5" category="paragraph">NTAP_allow_MIRRORVAULT_AS_MIRROR</block>
+  <block id="069d4fc9438ae257bab719c9b98b55ff" category="paragraph">SnapVault 또는 SnapMirror로 mirror_vault 보호 정책 유형을 사용할 수 있습니다. (기본값) N: SnapVault에 대한 mirror_vault 보호 정책 유형을 활성화합니다. Y: SnapMirror에 대한 mirror_vault 보호 정책 유형을 설정합니다.</block>
+  <block id="6235e974fbd5143adbb2a8573ca76e9a" category="paragraph">에는 SnapVault 업데이트를 수행할 소스 스토리지 시스템 및 볼륨이 나와 있습니다(예: 컨트롤러1: vol1, vol2, vol3; 컨트롤러 2: vol1; 컨트롤러 3: vol2, vol3).</block>
+  <block id="2a8806d1dbd2f7d98c2367f622afe0f8" category="paragraph">최대 대역폭 SnapVault는 kbps 단위로 사용할 수 있습니다. 설정되지 않은 경우 SnapVault는 최대 가용 대역폭을 사용합니다.</block>
 </blocks>
