@@ -82,6 +82,6 @@ Windows용 SnapDrive를 사용하여 백업을 생성하려면 스냅샷 복사�
 
 
 . 입력한 내용이 만족스러우면 * Enter * 를 누릅니다.
-. 단계를 반복합니다 ,단계 #STEP_3F9C83DD05D84075AD0277213FD67C56 부터 까지 ,STEP_FBEDD7AE105F42138EB35315EA9FA7CC 다른 명령을 추가합니다.
+. 단계를 반복합니다 <<STEP_3F9C83DD05D84075AD0277213FD67C56,단계 #STEP_3F9C83DD05D84075AD0277213FD67C56>> 부터 까지 <<STEP_FBEDD7AE105F42138EB35315EA9FA7CC,STEP_FBEDD7AE105F42138EB35315EA9FA7CC>> 다른 명령을 추가합니다.
 . 구성 내용 창에서 * 저장 * 을 클릭하여 변경 사항을 저장합니다.
 

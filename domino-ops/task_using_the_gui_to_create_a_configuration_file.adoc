@@ -299,7 +299,7 @@ TIP: Domino 환경은 수백 또는 수천 개의 데이터베이스로 구성�
 
 .. SnapVault * 를 클릭하여 스냅샷 복사본을 아카이브합니다.
 .. 아카이빙된 스냅샷 복사본에 대한 정책을 지정합니다.
-.. 지침은 다음 단계에 있습니다,13.
+.. 지침은 다음 단계에 있습니다<<STEP_81795CF9D6294AC891BC3D0CE4827CA3,13>>.
 .. SnapVault 대기 시간 * 에서 Snap Creator가 SnapVault 작업이 완료될 때까지 대기하는 시간(분)을 입력합니다.
 .. 2차 스토리지로 복제를 수행하기 전에 에서 SnapMirror 및 SnapVault 관계를 설정해야 합니다. 자세한 내용은 을 참조하십시오 xref:concept_snapmirror_and_snapvault_setup.adoc[SnapMirror 및 SnapVault 설정].
 
