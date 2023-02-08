@@ -15,6 +15,7 @@ CLI(Command-Line Interface) 명령을 사용하여 GUI(그래픽 사용자 인�
 
 다음 표에는 Snap Creator GUI 기반 워크플로우 작업을 수행하기 위한 CLI 명령이 나와 있습니다.
 
+[cols="15,40,45"]
 |===
 | 워크플로 영역 | 조치/설명 | 명령 및 관련 매개 변수 
 
@@ -26,8 +27,7 @@ CLI(Command-Line Interface) 명령을 사용하여 GUI(그래픽 사용자 인�
  a| 
 [listing]
 ----
-
-                  snapcreator
+snapcreator
 --server IP
 --port Port
 --user User
@@ -40,8 +40,8 @@ CLI(Command-Line Interface) 명령을 사용하여 GUI(그래픽 사용자 인�
 ----
 
 
- a| 
-오픈 시스템 SnapVault 백업을 생성합니다. 오픈 시스템 SnapVault를 사용하여 백업 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다. Snap Creator Server는 Snap Creator Agent와 통신하고 SnapVault 업데이트를 수행합니다. 기본 백업 복사본이 작성되지 않습니다.
+|   a| 
+오픈 시스템 SnapVault 백업을 생성합니다. Open Systems SnapVault를 사용하여 백업 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다. Snap Creator Server는 Snap Creator Agent와 통신하고 SnapVault 업데이트를 수행합니다. 기본 백업 복사본이 작성되지 않습니다.
  a| 
 [listing]
 ----
@@ -55,13 +55,11 @@ snapcreator
 --action ossv
 --policy Policy
 --verbose
----- a| 
-백업(계속...)
+----
 
 
-
- a| 
-백업 복사본을 삭제합니다(수동). 기존 백업을 수동으로 삭제합니다. 이 작업은 메뉴 중심으로 수행됩니다.
+|   a| 
+백업 복제본을 수동으로 삭제합니다. 기존 백업을 수동으로 삭제합니다. 이 작업은 메뉴 중심으로 수행됩니다.
  a| 
 [listing]
 ----
@@ -75,11 +73,11 @@ snapcreator
 --action backupDel
 --policy Policy
 --verbose
----- a| 
+----
+
+
+|   a| 
 백업 복사본을 자동으로 삭제합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -97,8 +95,11 @@ snapcreator
 --cntName controller
 --volName volume
 --backupName name
----- a| 
-백업 복사본을 나열합니다. 기본 및 보조 스토리지 시스템의 Snap Creator 백업 복사본을 나열합니다.
+----
+
+
+|   a| 
+백업 사본을 나열합니다. 에는 운영 및 2차 스토리지 시스템의 Snap Creator 백업 복사본이 나와 있습니다.
  a| 
 [listing]
 ----
@@ -115,7 +116,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 백업 복제본을 마운트합니다. 기존 백업에서 마운트 작업을 수행합니다. 백업을 기반으로 볼륨 클론을 생성하고 mount_CMD 명령을 사용하여 Snap Creator Agent를 통해 클론을 마운트할 수 있습니다.
  a| 
 [listing]
@@ -130,12 +131,10 @@ snapcreator
 --action mount
 --backupName name
 --verbose
----- a| 
-백업(계속...)
+----
 
 
-
- a| 
+|   a| 
 백업 복제본을 마운트 해제합니다. 기존 백업에 대해 마운트 해제 작업을 수행합니다. 백업을 기반으로 볼륨 클론을 삭제하고 umount_CMD 명령을 사용하여 Snap Creator Agent를 통해 클론을 마운트 해제할 수 있습니다.
  a| 
 [listing]
@@ -150,11 +149,11 @@ snapcreator
 --action umount
 --backupName name
 --verbose
----- a| 
+----
+
+
+ a| 
 백업 유형
-
-
-
  a| 
 새 백업 유형을 생성합니다.
  a| 
@@ -168,11 +167,11 @@ snapcreator
 --action backupTypeAdd
 --backupTypeName name
 --verbose
----- a| 
+----
+
+
+|   a| 
 기존 백업 유형을 업데이트합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -185,7 +184,10 @@ snapcreator
 --backupTypeId 1
 --backupTypeName name
 --verbose
----- a| 
+----
+
+
+|   a| 
 기존 백업 유형을 삭제합니다.
  a| 
 [listing]
@@ -197,12 +199,11 @@ snapcreator
 --passwd Password
 --action backupTypeDelete
 --backupTypeId 1
-
 --verbose
 ----
 
 
- a| 
+|   a| 
 백업 유형을 나열합니다.
  a| 
 [listing]
@@ -214,13 +215,13 @@ snapcreator
 --passwd Password
 --action backupTypeList
 --verbose
----- a| 
-복제
-
+----
 
 
  a| 
-LUN 클론을 생성합니다. 운영 스토리지 시스템을 백업한 다음 LUN 클론을 사용하여 백업을 복제합니다. igroup의 볼륨 매핑도 처리됩니다. 이를 위해서는 SAN 또는 ISAN 환경이 필요합니다.
+복제
+ a| 
+LUN의 클론을 생성합니다. 운영 스토리지 시스템을 백업한 다음 LUN 클론을 사용하여 백업을 복제합니다. igroup의 볼륨 매핑도 처리됩니다. 이를 위해서는 SAN 또는 ISAN 환경이 필요합니다.
  a| 
 [listing]
 ----
@@ -234,11 +235,11 @@ snapcreator
 --action cloneLun
 --policy Policy
 --verbose
----- a| 
-볼륨 클론 생성. 운영 스토리지 시스템을 백업한 다음 볼륨 클론을 사용하여 백업을 복제합니다. igroup, NFS 또는 CIFS의 볼륨 매핑도 처리됩니다. 이를 위해서는 SAN, ISAN 또는 NAS 환경이 필요합니다.
+----
 
 
-
+|   a| 
+볼륨의 클론을 생성합니다. 운영 스토리지 시스템을 백업한 다음 볼륨 클론을 사용하여 백업을 복제합니다. igroup, NFS 또는 CIFS의 볼륨 매핑도 처리됩니다. 이를 위해서는 SAN, ISAN 또는 NAS 환경이 필요합니다.
  a| 
 [listing]
 ----
@@ -252,7 +253,10 @@ snapcreator
 --action cloneVol
 --policy Policy
 --verbose
----- a| 
+----
+
+
+|   a| 
 클론을 삭제합니다. 지정된 보존 정책에 따라 클론 삭제 작업을 수행합니다. LUN 클론의 복제본이 하나만 유지됩니다. 볼륨 클론에는 정책과 관련된 사용량이 있습니다.
  a| 
 [listing]
@@ -270,8 +274,8 @@ snapcreator
 ----
 
 
- a| 
-Snap Creator 클론을 나열합니다. 지정된 구성에 대한 Snap Creator 볼륨 클론을 나열합니다.
+|   a| 
+Snap Creator 클론 나열 에서는 지정된 구성에 대한 Snap Creator 볼륨 클론을 보여 줍니다.
  a| 
 [listing]
 ----
@@ -284,11 +288,11 @@ snapcreator
 --config Config
 --action cloneList
 --verbose
----- a| 
-Snap Creator 볼륨을 나열합니다. 운영 스토리지 시스템에서 지정된 구성에 대한 Snap Creator 볼륨을 나열합니다.
+----
 
 
-
+|   a| 
+Snap Creator 볼륨을 나열합니다. 에서는 운영 스토리지 시스템의 지정된 구성에 대한 Snap Creator 볼륨을 보여 줍니다.
  a| 
 [listing]
 ----
@@ -301,13 +305,13 @@ snapcreator
 --config Config
 --action volumeList
 --verbose
----- a| 
+----
+
+
+ a| 
 구성 파일
  a| 
 구성을 가져옵니다.
-
-
-
  a| 
 [listing]
 ----
@@ -321,7 +325,10 @@ snapcreator
 --action configImport
 --importFile file_path
 --verbose
----- a| 
+----
+
+
+|   a| 
 구성을 내보냅니다.
  a| 
 [listing]
@@ -339,7 +346,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 글로벌 구성 파일을 가져옵니다.
  a| 
 [listing]
@@ -352,11 +359,11 @@ snapcreator
 --action globalImport
 --importFile file_path
 --verbose
----- a| 
+----
+
+
+|   a| 
 글로벌 구성 파일을 내보냅니다.
-
-
-
  a| 
 [listing]
 ----
@@ -368,7 +375,10 @@ snapcreator
 --action globalExport
 --ExportFile file_path
 --verbose
----- a| 
+----
+
+
+|   a| 
 리포지토리에서 글로벌 구성 파일을 삭제합니다.
  a| 
 [listing]
@@ -384,7 +394,6 @@ snapcreator
 
 
  a| 
-구성 파일(계속...)
  a| 
 특정 프로파일의 글로벌 구성 파일을 리포지토리로 가져옵니다.
  a| 
@@ -402,7 +411,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 리포지토리에서 특정 프로파일에 대한 전역 구성 파일을 내보냅니다.
  a| 
 [listing]
@@ -416,11 +425,11 @@ snapcreator
 --action profileglobalExport
 --exportFile file_path
 --verbose
----- a| 
+----
+
+
+|   a| 
 리포지토리에서 특정 프로파일에 대한 전역 구성을 삭제합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -432,7 +441,10 @@ snapcreator
 --profile Profile
 --action profileglobalDelete
 --verbose
----- a| 
+----
+
+
+|   a| 
 프로파일의 이전 구성 파일을 업그레이드합니다. 이전 구성 파일에 새로 도입된 매개 변수를 추가합니다. 이 명령을 실행하기 전에 모든 이전 구성 파일을 scServer/engine/configs 폴더에 프로필 폴더와 함께 복사해야 합니다.
  a| 
 [listing]
@@ -489,7 +501,6 @@ snapcreator
 
 
  a| 
-정책(계속...)
  a| 
 새 SnapMirror 정책을 추가합니다.
  a| 
@@ -511,7 +522,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 새 SnapVault 정책을 추가합니다.
  a| 
 [listing]
@@ -531,11 +542,11 @@ snapcreator
 --secondaryCount 30
 --secondaryAge 0
 --verbose
----- a| 
+----
+
+
+|   a| 
 SnapMirror 정책 업데이트
-
-
-
  a| 
 [listing]
 ----
@@ -553,13 +564,12 @@ snapcreator
 --primaryCount 7
 --primaryAge 0
 --verbose
----- a| 
-정책(계속...)
+----
+
+
+ a| 
  a| 
 SnapVault 정책을 업데이트합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -579,7 +589,10 @@ snapcreator
 --secondaryCount 30
 --secondaryAge 0
 --verbose
----- a| 
+----
+
+
+|   a| 
 정책을 삭제합니다.
  a| 
 [listing]
@@ -595,7 +608,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 모든 정책을 나열합니다.
  a| 
 [listing]
@@ -607,11 +620,11 @@ snapcreator
 --passwd Password
 --action policyList
 --verbose
----- a| 
+----
+
+
+|   a| 
 특정 정책에 대한 추가 세부 정보를 표시합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -623,7 +636,10 @@ snapcreator
 --action policyDetails
 --policyId 1
 --verbose
----- a| 
+----
+
+
+|   a| 
 프로필에 정책을 할당합니다.
  a| 
 [listing]
@@ -641,7 +657,6 @@ snapcreator
 
 
  a| 
-정책(계속...)
  a| 
 프로파일에 대한 정책 할당을 취소합니다.
  a| 
@@ -658,7 +673,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 프로필에 할당된 모든 정책을 나열합니다.
  a| 
 [listing]
@@ -671,11 +686,11 @@ snapcreator
 --profile Profile
 --action policyListForProfile
 --verbose
----- a| 
+----
+
+
+ a| 
 정책 스케줄
-
-
-
  a| 
 시간별 정책 스케줄을 생성합니다.
  a| 
@@ -693,11 +708,11 @@ snapcreator
 --schedMin minute
 --schedActive true
 --verbose
----- a| 
+----
+
+
+|   a| 
 일일 정책 스케줄을 생성합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -714,13 +729,12 @@ snapcreator
 --schedMin minute
 --schedActive true
 --verbose
----- a| 
-정책 일정(계속...)
+----
+
+
+ a| 
  a| 
 주별 정책 스케줄을 생성합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -738,7 +752,10 @@ snapcreator
 --schedMin minute
 --schedActive true
 --verbose
----- a| 
+----
+
+
+|   a| 
 cron 정책 스케줄을 생성합니다.
  a| 
 [listing]
@@ -758,7 +775,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 시간별 정책 스케줄을 업데이트합니다.
  a| 
 [listing]
@@ -776,11 +793,10 @@ snapcreator
 --schedMin minute
 --schedActive true
 --verbose
----- a| 
-정책 일정(계속...)
+----
 
 
-
+ a| 
  a| 
 일일 정책 스케줄을 업데이트합니다.
  a| 
@@ -800,11 +816,11 @@ snapcreator
 --schedMin minute
 --schedActive true
 --verbose
----- a| 
+----
+
+
+|   a| 
 주간 정책 일정을 업데이트합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -823,7 +839,10 @@ snapcreator
 --schedMin minute
 --schedActive true
 --verbose
----- a| 
+----
+
+
+|   a| 
 cron 정책 일정을 업데이트합니다.
  a| 
 [listing]
@@ -845,7 +864,6 @@ snapcreator
 
 
  a| 
-정책 일정(계속...)
  a| 
 정책 스케줄을 삭제합니다.
  a| 
@@ -862,7 +880,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 정책 일정을 나열합니다.
  a| 
 [listing]
@@ -874,11 +892,11 @@ snapcreator
 --passwd Password
 --action policySchedList
 --verbose
----- a| 
+----
+
+
+|   a| 
 정책 스케줄에 대한 추가 정보를 표시합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -890,13 +908,13 @@ snapcreator
 --action policySchedDetails
 --schedId 1
 --verbose
----- a| 
+----
+
+
+ a| 
 프로파일
  a| 
 새 프로파일을 만듭니다.
-
-
-
  a| 
 [listing]
 ----
@@ -908,7 +926,10 @@ snapcreator
 --profile Profile
 --action profileCreate
 --verbose
----- a| 
+----
+
+
+|   a| 
 프로파일을 삭제합니다. * 참고: * 프로파일의 구성 파일도 삭제됩니다.
  a| 
 [listing]
@@ -944,7 +965,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 비대화형 볼륨 복원을 수행합니다. 비대화형 볼륨 복원을 수행합니다.
  a| 
 [listing]
@@ -963,11 +984,11 @@ snapcreator
 --cntName controller
 --volName volume
 --backupName name
----- a| 
+----
+
+
+|   a| 
 비대화형 파일 복원을 수행합니다. 비대화형 파일 복원을 수행합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -985,14 +1006,14 @@ snapcreator
 --cntName controller
 --volName volume
 --backupName name
---files file_path1,file_path2,etc.
----- a| 
+--fileNames file_path1,file_path2,etc.
+----
+
+
+ a| 
 스케줄
  a| 
 새 시간별 스케줄을 생성합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -1012,7 +1033,10 @@ snapcreator
 --schedActive true
 --schedStartDate date
 --verbose
----- a| 
+----
+
+
+|   a| 
 새 일별 스케줄을 생성합니다.
  a| 
 [listing]
@@ -1037,7 +1061,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 새 주별 일정을 생성합니다.
  a| 
 [listing]
@@ -1060,11 +1084,10 @@ snapcreator
 --schedActive true
 --schedStartDate date
 --verbose
----- a| 
-일정(계속...)
+----
 
 
-
+ a| 
  a| 
 새 cron 일정을 생성합니다.
  a| 
@@ -1086,12 +1109,11 @@ snapcreator
 --schedActive true
 --schedStartDate date
 --verbose
----- a| 
-스케줄을 실행합니다.
-
+----
 
 
  a| 
+| 스케줄을 실행합니다.  a| 
 [listing]
 ----
 snapcreator
@@ -1102,7 +1124,10 @@ snapcreator
 --action schedRun
 --schedId 1
 --verbose
----- a| 
+----
+
+
+|   a| 
 스케줄을 삭제합니다.
  a| 
 [listing]
@@ -1118,7 +1143,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 시간별 스케줄을 업데이트합니다.
  a| 
 [listing]
@@ -1140,11 +1165,10 @@ snapcreator
 --schedActive true
 --schedStartDate date
 --verbose
----- a| 
-일정(계속...)
+----
 
 
-
+ a| 
  a| 
 일일 일정을 업데이트합니다.
  a| 
@@ -1168,11 +1192,11 @@ snapcreator
 --schedActive true
 --schedStartDate date
 --verbose
----- a| 
+----
+
+
+|   a| 
 주간 일정을 업데이트합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -1195,7 +1219,10 @@ snapcreator
 --schedActive true
 --schedStartDate date
 --verbose
----- a| 
+----
+
+
+|   a| 
 cron 일정을 업데이트합니다.
  a| 
 [listing]
@@ -1221,7 +1248,6 @@ snapcreator
 
 
  a| 
-일정(계속...)
  a| 
 모든 일정을 나열합니다.
  a| 
@@ -1237,7 +1263,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 지원되는 스케줄러 작업을 나열합니다.
  a| 
 [listing]
@@ -1249,11 +1275,11 @@ snapcreator
 --passwd Password
 --action schedActionList
 --verbose
----- a| 
+----
+
+
+|   a| 
 지원되는 스케줄러 빈도를 나열합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -1264,7 +1290,10 @@ snapcreator
 --passwd Password
 --action schedFreqList
 --verbose
----- a| 
+----
+
+
+|   a| 
 일정 ID에 대한 추가 세부 정보를 표시합니다.
  a| 
 [listing]
@@ -1318,7 +1347,6 @@ snapcreator
 
 
  a| 
-Snap Creator 서버 및 에이전트(계속...)
  a| 
 Snap Creator 서버에 대해 ping을 수행합니다.
  a| 
@@ -1334,7 +1362,7 @@ snapcreator
 ----
 
 
- a| 
+|   a| 
 Snap Creator 에이전트를 ping합니다.
  a| 
 [listing]
@@ -1348,11 +1376,11 @@ snapcreator
 --agentName host_name
 --agentPort port
 --verbose
----- a| 
+----
+
+
+ a| 
 아카이브
-
-
-
  a| 
 구성 파일의 설정에 따라 아카이브 로그 관리를 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
  a| 
@@ -1367,11 +1395,11 @@ snapcreator
 --config Config
 --action arch
 --verbose
----- a| 
+----
+
+
+ a| 
 데이터 보호 기능
-
-
-
  a| 
 지정된 구성에 대해 NetApp Management Console 데이터 보호 기능 데이터 세트를 구성합니다.
  a| 
@@ -1386,11 +1414,11 @@ snapcreator
 --config Config
 --action pmsetup
 --verbose
----- a| 
+----
+
+
+|   a| 
 컨트롤러에 대한 SnapVault 및 SnapMirror 관계의 데이터 보호 상태를 표시합니다. SnapVault 또는 SnapMirror가 구성되지 않은 경우 결과가 표시되지 않습니다.
-
-
-
  a| 
 [listing]
 ----
@@ -1403,13 +1431,13 @@ snapcreator
 --config Config
 --action dpstatus
 --verbose
----- a| 
+----
+
+
+ a| 
 정지/정지 해제
  a| 
 지정된 응용 프로그램에 대해 일시 중지 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
-
-
-
  a| 
 [listing]
 ----
@@ -1422,7 +1450,10 @@ snapcreator
 --config Config
 --action quiesce
 --verbose
----- a| 
+----
+
+
+|   a| 
 지정된 응용 프로그램에 대해 일시 중지 해제 작업을 수행합니다. 이 작업을 수행하려면 Snap Creator Agent가 필요합니다.
  a| 
 [listing]

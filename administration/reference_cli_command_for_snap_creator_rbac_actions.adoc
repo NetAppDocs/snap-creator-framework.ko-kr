@@ -22,7 +22,7 @@ CLI 명령을 사용하여 Snap Creator RBAC 작업을 수행할 수 있습니�
  a| 
 사용자
  a| 
-새 사용자를 생성합니다.
+새 사용자를 생성합니다
  a| 
 [listing]
 ----
@@ -38,9 +38,7 @@ snapcreator
 ----
 
 
- a| 
-사용자를 삭제합니다.
- a| 
+|  | 사용자를 삭제합니다  a| 
 [listing]
 ----
 snapcreator
@@ -51,12 +49,11 @@ snapcreator
 --action userDelete
 --username user_name
 --verbose
----- a| 
-모든 사용자를 나열합니다.
-
+----
 
 
  a| 
+| 모든 사용자를 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -66,9 +63,11 @@ snapcreator
 --passwd Password
 --action userList
 --verbose
----- a| 
-역할에 할당된 모든 사용자를 나열합니다.
+----
+
+
  a| 
+| 역할에 할당된 모든 사용자를 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -83,8 +82,7 @@ snapcreator
 
 
  a| 
-프로파일이 할당된 모든 사용자를 나열합니다.
- a| 
+| 프로파일이 할당된 모든 사용자를 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -95,13 +93,13 @@ snapcreator
 --profile Profile
 --action userListForProfile
 --verbose
----- a| 
-역할
-
+----
 
 
  a| 
-새 역할을 만듭니다.
+역할
+ a| 
+새 역할을 만듭니다
  a| 
 [listing]
 ----
@@ -114,12 +112,11 @@ snapcreator
 --roleName role_name
 --roleDesc role_description
 --verbose
----- a| 
-역할을 삭제합니다.
-
+----
 
 
  a| 
+| 역할을 삭제합니다  a| 
 [listing]
 ----
 snapcreator
@@ -130,9 +127,11 @@ snapcreator
 --action roleDelete
 --roleName role_name
 --verbose
----- a| 
-사용자에게 역할을 할당합니다.
+----
+
+
  a| 
+| 사용자에게 역할을 할당합니다  a| 
 [listing]
 ----
 snapcreator
@@ -148,8 +147,7 @@ snapcreator
 
 
  a| 
-사용자의 역할 할당을 취소합니다.
- a| 
+| 사용자의 역할 할당을 취소합니다  a| 
 [listing]
 ----
 snapcreator
@@ -161,12 +159,11 @@ snapcreator
 --userName user_name
 --roleName role_name
 --verbose
----- a| 
-사용자에게 할당된 모든 역할을 나열합니다.
-
+----
 
 
  a| 
+| 사용자에게 할당된 모든 역할을 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -177,13 +174,13 @@ snapcreator
 --action roleListAssigned
 --userName user_name
 --verbose
----- a| 
+----
+
+
+ a| 
 권한
  a| 
-새 권한을 만듭니다.
-
-
-
+새 권한을 만듭니다
  a| 
 [listing]
 ----
@@ -196,9 +193,11 @@ snapcreator
 --permName permission_name
 --permDesc permission_description
 --verbose
----- a| 
-권한을 삭제합니다.
+----
+
+
  a| 
+| 권한을 삭제합니다  a| 
 [listing]
 ----
 snapcreator
@@ -213,8 +212,7 @@ snapcreator
 
 
  a| 
-사용자에게 권한을 할당합니다.
- a| 
+| 사용자에게 권한을 할당합니다  a| 
 [listing]
 ----
 snapcreator
@@ -226,12 +224,11 @@ snapcreator
 --permName permission_name
 --roleName role_name
 --verbose
----- a| 
-사용자의 권한 할당을 취소합니다.
-
+----
 
 
  a| 
+| 사용자의 권한 할당을 취소합니다  a| 
 [listing]
 ----
 snapcreator
@@ -243,9 +240,11 @@ snapcreator
 --permName
 --roleName role_name
 --verbose
----- a| 
-모든 권한을 나열합니다.
+----
+
+
  a| 
+| 모든 권한을 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -259,8 +258,7 @@ snapcreator
 
 
  a| 
-역할에 할당된 모든 권한을 나열합니다.
- a| 
+| 역할에 할당된 모든 권한을 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -271,13 +269,13 @@ snapcreator
 --action permListAssigned
 --roleName role_name
 --verbose
----- a| 
-운영
-
+----
 
 
  a| 
-사용 권한에 작업을 할당합니다.
+운영
+ a| 
+사용 권한에 작업을 할당합니다
  a| 
 [listing]
 ----
@@ -290,12 +288,11 @@ snapcreator
 --opName operation_name
 --permName permission_name
 --verbose
----- a| 
-사용 권한에서 작업 할당을 취소합니다.
-
+----
 
 
  a| 
+| 사용 권한에서 작업 할당을 취소합니다.  a| 
 [listing]
 ----
 snapcreator
@@ -307,9 +304,11 @@ snapcreator
 --opName operation_name
 --permName permission_name
 --verbose
----- a| 
-모든 작업을 나열합니다.
+----
+
+
  a| 
+| 모든 작업을 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -323,8 +322,7 @@ snapcreator
 
 
  a| 
-권한에 할당된 모든 작업을 나열합니다.
- a| 
+| 권한에 할당된 모든 작업을 나열합니다  a| 
 [listing]
 ----
 snapcreator
@@ -335,11 +333,11 @@ snapcreator
 --action opListAssigned
 --permName permission_name
 --verbose
----- a| 
+----
+
+
+ a| 
 프로파일
-
-
-
  a| 
 사용자에게 프로필을 할당합니다.
  a| 
@@ -354,12 +352,11 @@ snapcreator
 --action profileAssign
 --userName user_name
 --verbose
----- a| 
-사용자의 프로필 할당을 취소합니다.
-
+----
 
 
  a| 
+| 사용자의 프로필 할당을 취소합니다  a| 
 [listing]
 ----
 snapcreator
@@ -371,9 +368,11 @@ snapcreator
 --action profileUnassign
 --userName user_name
 --verbose
----- a| 
-사용자에게 할당된 모든 프로파일을 나열합니다.
+----
+
+
  a| 
+| 사용자에게 할당된 모든 프로파일을 나열합니다  a| 
 [listing]
 ----
 snapcreator
