@@ -72,6 +72,6 @@ UNIX 기반 시스템의 Snap Creator Server 4.1.x에서 업그레이드할 수 
 
 IMPORTANT: 이전 버전으로 되돌릴 필요가 없다는 확신이 있을 때까지 백업 복사본을 삭제하지 마십시오.
 
-또한 지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다 (https://IP_address:gui_port)[].
+또한 지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다 .
 
 HTTPS를 사용하여 연결해야 합니다. 그렇지 않으면 연결이 자동으로 HTTPS 연결로 리디렉션되지 않고 GUI가 작동하지 않습니다.
