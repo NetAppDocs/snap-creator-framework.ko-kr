@@ -371,8 +371,6 @@
   <block id="783a31669561f1d178a886abb95db3b8" category="admonition">Domino 복제를 허용하는 다른 방법은 이 매개 변수를 명령 밖으로 나가는 것입니다.</block>
   <block id="f447bda56146d91841d49b1f3a3ac07a" category="list-text">Domino 복제를 사용하지 않으려면 Y를 입력합니다. 플러그인은 복구된 데이터베이스 파일에 대한 새 Domino 복제본 ID를 설정합니다. 참고: 명령에 -verbose를 추가하면 복원 작업에 대한 추가 정보가 표시됩니다. 그렇지 않으면 명령 실행이 완료되면 명령 프롬프트로 즉시 반환됩니다.</block>
   <block id="6ab3c031640de9f051fd3053d9ef25d0" category="summary">IBM Domino 플러그인을 구성하고 사용하여 IBM Domino 데이터베이스를 백업 및 복구하는 방법에 대해 설명합니다.</block>
-  <block id="a4c0ef56255949441dd09edc12f41371" category="doc">IBM ® Domino ® 플러그인 운영 가이드 를 참조하십시오</block>
-  <block id="cc3a19846ca6e33308cf189700ad91ff" category="paragraph">Snap Creator 4.3.3용 IBM Domino 플러그인을 구성하고 사용하여 IBM Domino 데이터베이스를 백업 및 복원하는 방법에 대해 설명합니다.</block>
   <block id="0afd7a83df93e0fa7b351606e26b7ea7" category="summary">Snap Creator 작업 모니터에서 작업의 상태를 볼 수 있습니다. 작업이 실행 중인 동안 콘솔 창 또는 작업에 대한 로그아웃 로그에서 작업 조치 로그를 볼 수 있습니다. 또한 다양한 특수 로그도 사용할 수 있습니다.</block>
   <block id="11eddee4e4c4512a266ce665b3ac71f2" category="doc">작업 상태 및 로그 보기</block>
   <block id="cca91a0c4734a835e861c7a39952156c" category="paragraph">GUI에서 다음 로그를 볼 수 있습니다.</block>
@@ -539,11 +537,8 @@
   <block id="dd88ae1c7da9a02dae9d4f15b884f8e3" category="paragraph"><block ref="dd88ae1c7da9a02dae9d4f15b884f8e3" category="inline-xref-macro-rx"></block></block>
   <block id="048dcc44ddae739f17a6629986271f8b" category="summary">필요 시 또는 일정에 따라 데이터베이스를 백업할 수 있습니다. Snap Creator GUI 또는 Snap Creator CLI를 사용하여 데이터베이스를 백업할 수 있습니다.</block>
   <block id="0ba7491209eff42b44e5b09d3f197fba" category="doc">데이터베이스 백업</block>
-  <block id="ad73d215b4068f86a2168bb00365aa4b" category="admonition">이 가이드에서는 GUI를 사용하여 데이터베이스를 백업하는 방법을 보여 줍니다. CLI 사용 방법에 대한 자세한 내용은 를 참조하십시오<block ref="532a3900f75badacc0e81c54213a5176" category="inline-link-rx"></block>.</block>
   <block id="bca0aee87ef36633d99e45277f3b105a" category="inline-link-macro">필요 시 데이터베이스 백업</block>
   <block id="7972a2702811e61123cb7047cd446e47" category="inline-link-macro">백업 예약</block>
-  <block id="e19b088d506e1543600ef88f3c2dc29d" category="paragraph"><block ref="bccc93100305f81ed5222f7d2c994a98" category="inline-link-macro-rx"></block>
-<block ref="eeecaa0a7e94a6df0bf227ac0c175759" category="inline-link-macro-rx"></block></block>
   <block id="62625163d0bb562ce4c8ab5e1904d4d6" category="summary">Domino 트랜잭션 로깅을 사용하는 경우 IBM Domino 플러그인은 최신 복원 작업에 사용할 수 있도록 Domino 트랜잭션 로그의 복사본을 changeinfo 디렉토리에 아카이빙합니다. Snap Creator가 더 이상 필요하지 않은 트랜잭션 로그 복사본을 정리하기 전에 트랜잭션 로그 관리를 활성화해야 합니다.</block>
   <block id="5928108dab26be1ac08a15ca5330f622" category="paragraph">Domino 플러그인은 changeinfo 디렉토리에 changeinfo 파일과 Domino 트랜잭션 로그의 아카이브 복사본을 저장합니다. 플러그인은 구성에 대한 보존 정책을 기반으로 .info 파일을 자동으로 정리합니다. Snap Creator에서 트랜잭션 로그 관리를 명시적으로 설정하지 않으면 불필요한 트랜잭션 로그 복사본이 정리되지 않습니다.</block>
   <block id="b656e56969d381784ca1c79ca5f67530" category="paragraph">트랜잭션 로그 관리를 설정할 때는 최신 복원 작업과 changeinfo 디렉토리가 포함된 볼륨의 크기 간에 보관하려는 트랜잭션 로그의 보관된 복사본 수 간에 적절한 균형을 유지해야 합니다.</block>
@@ -1742,8 +1737,6 @@
   <block id="70a35ecb1c2ea534ced89ae1e85393ea" category="doc">Snap Creator 명령줄에서 데이터베이스 무결성 검사 수행</block>
   <block id="c3be5951a12036c5f4d16a5c7818d646" category="list-text">데이터베이스 무결성 검사를 수행하려면 다음 명령을 실행합니다.</block>
   <block id="5b3df86caff0ed84d5406907a8e0790f" category="summary">SAP HANA 플러그인을 구성 및 사용하여 SAP HANA 데이터베이스를 백업 및 복원하는 방법에 대해 설명합니다.</block>
-  <block id="692115423201e22849bdeabbf9ff7062" category="doc">SAP HANA ® 플러그인 운영 가이드 를 참조하십시오</block>
-  <block id="d3938dfe42202c326833fdfff39c7ff7" category="paragraph">이 가이드에서는 SAP HANA 데이터베이스를 백업 및 복원하기 위해 Snap Creator 4.3.3용 SAP HANA 플러그인을 구성하고 사용하는 방법을 설명합니다.</block>
   <block id="448dc5e4b1217f111ccec92fe159f8a8" category="summary">SAP HANA에서 로그 백업의 하우스키핑은 HANA Studio 내의 기능 또는 선택한 백업보다 오래된 모든 백업을 삭제할 수 있는 SQL 문을 기반으로 합니다.</block>
   <block id="535219fc0aeeee1a00c932afb4f9d620" category="doc">로그 백업 관리</block>
   <block id="09ef981a7264c408b62bc7bf927734eb" category="paragraph">Snap Creator는 운영 또는 2차 스토리지에서 스냅샷 복사본을 삭제하고 정의된 보존 정책을 기반으로 HANA 카탈로그 내에서 해당 항목을 삭제하여 데이터 백업(스냅샷 복사본)의 관리 업무를 처리합니다.</block>
@@ -2075,9 +2068,7 @@
   <block id="04325964845984b062819fbeb5613bf0" category="summary">NetApp Snapshot ™ 기술을 사용하여 몇 분 내에 데이터베이스 백업을 생성할 수 있습니다. 스냅샷 복사본은 데이터 블록을 이동하지 않으므로 스냅샷 복사본을 만드는 데 필요한 시간은 데이터베이스의 크기와 상관없습니다.</block>
   <block id="c8d591b036c6345c614160fd9eb8e2b7" category="doc">제공하는 데 이 때 넷엡솔루션이 사용됩니다</block>
   <block id="071af596f89d1ebeeefa6e4c1c41b146" category="paragraph">스냅샷 기술을 사용해도 운영 SAP 시스템의 성능에는 영향을 미치지 않습니다. 따라서 최대 사용 기간을 고려하지 않고도 스냅샷 복사본 생성을 예약할 수 있습니다. SAP 및 NetApp 고객은 일반적으로 낮 동안 여러 온라인 Snapshot 백업을 예약합니다. 예를 들어 4시간마다 백업이 발생할 수 있습니다. 이러한 스냅샷 백업은 일반적으로 기본 스토리지 시스템에서 3~5일 동안 유지됩니다.</block>
-  <block id="51c60f3b9cd56c81c81d782bd24ba37f" category="paragraph">스냅샷 복사본은 복원 및 복구 작업에 있어 중요한 이점을 제공합니다. NetApp SnapRestore ® 기능을 사용하면 사용 가능한 스냅샷 복사본이 생성된 시점으로 전체 데이터베이스 또는 데이터베이스 일부를 복원할 수 있습니다. 이 복원 프로세스는 데이터베이스 크기와 관계없이 몇 분 내에 수행됩니다. 또한 하루 동안 여러 개의 스냅샷 복사본이 생성되었으므로 복구 프로세스에 필요한 시간도 크게 줄어듭니다.</block>
   <block id="3eb0f3a04996c76f86b1c7c7ac2edf21" category="paragraph">스냅샷 백업은 활성 온라인 데이터와 동일한 디스크 시스템에 저장됩니다. 따라서 디스크 또는 테이프와 같은 2차 위치에 백업하는 경우에는 스냅샷 백업을 보조용으로 사용하지 않는 것이 좋습니다. 2차 위치에 대한 백업은 여전히 필요하지만 복원 및 복구에 이러한 백업이 필요할 가능성은 약간 있습니다. 대부분의 복구 및 복구 작업은 운영 스토리지 시스템에서 SnapRestore를 사용하여 처리됩니다. 2차 위치에서의 복원은 스냅샷 복사본을 보관하는 운영 스토리지 시스템이 손상되었거나 스냅샷 복사본에서 더 이상 사용할 수 없는 백업을 복원해야 하는 경우에만 필요합니다. 예를 들어 2주 전에 백업을 복원해야 할 수 있습니다.</block>
-  <block id="3a150be2095b787600f9a7d829ddf0c5" category="paragraph">2차 위치에 대한 백업은 항상 운영 스토리지에 생성된 Snapshot 복사본을 기반으로 합니다. 따라서 SAP 데이터베이스 서버에 부하를 생성하지 않고 운영 스토리지 시스템에서 직접 데이터를 읽습니다. 운영 스토리지는 보조 스토리지와 직접 통신하고 SnapVault ® D2D 백업을 사용하여 백업 데이터를 대상으로 전송합니다. NetApp SnapVault 기능은 기존 백업에 비해 월등한 장점을 제공합니다. 모든 데이터가 소스에서 대상으로 전송되어야 하는 초기 데이터 전송 후 이후의 모든 백업은 변경된 블록만 보조 스토리지로 복사합니다. 따라서 운영 스토리지 시스템의 부하와 전체 백업에 필요한 시간이 크게 줄어듭니다. SnapVault는 변경된 블록만 대상에 저장하므로 전체 데이터베이스 백업에는 더 적은 디스크 공간이 필요합니다.</block>
   <block id="2e96d7ab8e8f5fe210dbfe2055daf4fb" category="paragraph">장기 백업으로 데이터를 테이프에 백업해야 할 수도 있습니다. 예를 들어 1년 동안 유지되는 주간 백업일 수 있습니다. 이 경우 테이프 인프라스트럭처를 보조 스토리지에 직접 연결할 수 있으며 NDMP(Network Data Management Protocol)를 사용하여 테이프에 데이터를 기록할 수 있습니다.</block>
   <block id="cc122cb506b560736d7f7e5e0e2dafa4" category="image-alt">에서는 Snap Creator SAP HANA 솔루션 개요를 설명합니다</block>
   <block id="e1549e2c5ba3f5dd56cd97604f25ac1d" category="summary">2차 스토리지 시스템에서 실행되는 명령을 사용하여 SnapVault 관계를 시작할 수 있습니다.</block>
@@ -4551,8 +4542,6 @@
   <block id="8cf04a9734132302f96da8e113e80ce5" category="sidebar">홈</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">릴리스 정보</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="sidebar">설치</block>
-  <block id="3fa7ec916163970da88e2e2759209761" category="sidebar">IBM ® Domino ® 플러그인 작업</block>
-  <block id="3cc13999b80491b390e27e7298102ccb" category="sidebar">SAP HANA ® 플러그인 운영</block>
   <block id="7258e7251413465e0a3eb58094430bde" category="sidebar">관리</block>
   <block id="eae66b4b74b6b82ce35a83d2757f6d46" category="cell">(예/아니요)</block>
   <block id="0fed4fd40330e62e1aa81d896b62ecb5" category="paragraph">NTAP_allow_MIRRORVAULT_AS_MIRROR</block>
@@ -4603,4 +4592,15 @@
   <block id="5951214569068cd75f070997baaf8545" category="paragraph">클론 작업을 활성화합니다. {pre/POST}_clone_create_CMDxx 매개 변수와 함께 * cloneVol * 매개 변수를 사용하면 원격 측에서 원격 스토리지 객체를 관리할 수 있습니다(예: 파일 시스템 마운트 또는 마운트 해제).</block>
   <block id="536365244f2630ddcece364e33664d40" category="paragraph">클론 타겟을 지정하려면 해당 이름 또는 IP 주소와 콜론, 그리고 Snap Creator Agent가 수신 대기 중인 포트를 입력해야 합니다.</block>
   <block id="0dda1c02ea357a92a449c913a623f7be" category="paragraph">Snap Creator Server에서 Snap Creator Agent로 실행된 모든 작업에 대해 로그를 생성할 수 있습니다. 오류가 발생하면 이러한 로그를 확인할 수 있습니다. Snap Creator Server가 Snap Creator Agent에 작업을 전송합니다. Snap Creator Agent가 Snap Creator Server에 콜백을 전송하기 전에 오류가 발생하면 Snap Creator Agent 메시지가 손실될 수 있습니다. 이 매개 변수는 Snap Creator Agent 메시지가 Snap Creator Agent에 기록되므로 이러한 메시지가 손실되지 않습니다.</block>
+  <block id="51be88021ba9d8479fd3db824b232a95" category="admonition">GUI를 사용하여 데이터베이스를 백업할 수 있습니다. CLI 사용 방법에 대한 자세한 내용은 를 참조하십시오<block ref="9c6fee504ba6f4e3cdf48b013fcc9205" category="inline-link-rx"></block>.</block>
+  <block id="bccc93100305f81ed5222f7d2c994a98" category="list-text"><block ref="bccc93100305f81ed5222f7d2c994a98" category="inline-link-macro-rx"></block></block>
+  <block id="eeecaa0a7e94a6df0bf227ac0c175759" category="list-text"><block ref="eeecaa0a7e94a6df0bf227ac0c175759" category="inline-link-macro-rx"></block></block>
+  <block id="c0e9c32b291af530f8baeb6c5d003126" category="doc">IBM Domino 플러그인 작업</block>
+  <block id="3fce5d11cc667ab536dda3b5efa02fc0" category="paragraph">Snap Creator 4.3.3용 IBM Domino 플러그인을 구성하고 사용하여 IBM Domino 데이터베이스를 백업 및 복원할 수 있습니다.</block>
+  <block id="4ff49151ecc7b311b935b44393cb1817" category="paragraph">NetApp 스냅샷 기술을 사용하여 몇 분 내에 데이터베이스 백업을 생성할 수 있습니다. 스냅샷 복사본은 데이터 블록을 이동하지 않으므로 스냅샷 복사본을 만드는 데 필요한 시간은 데이터베이스의 크기와 상관없습니다.</block>
+  <block id="4ec821c3afee07e7a10c59cb24aba9e8" category="paragraph">스냅샷 복사본은 복원 및 복구 작업에 있어 중요한 이점을 제공합니다. NetApp SnapRestore 기능을 사용하면 사용 가능한 스냅샷 복사본이 생성된 시점으로 전체 데이터베이스 또는 데이터베이스의 일부를 복원할 수 있습니다. 이 복원 프로세스는 데이터베이스 크기와 관계없이 몇 분 내에 수행됩니다. 또한 하루 동안 여러 개의 스냅샷 복사본이 생성되었으므로 복구 프로세스에 필요한 시간도 크게 줄어듭니다.</block>
+  <block id="8fadff52f43bec1c2c213bd4047b08a1" category="paragraph">2차 위치에 대한 백업은 항상 운영 스토리지에 생성된 Snapshot 복사본을 기반으로 합니다. 따라서 SAP 데이터베이스 서버에서 로드를 생성하지 않고 운영 스토리지 시스템에서 직접 데이터를 읽습니다. 운영 스토리지는 보조 스토리지와 직접 통신하고 SnapVault D2D 백업을 사용하여 백업 데이터를 대상으로 전송합니다. NetApp SnapVault 기능은 기존 백업에 비해 월등한 장점을 제공합니다. 모든 데이터가 소스에서 대상으로 전송되어야 하는 초기 데이터 전송 후 이후의 모든 백업은 변경된 블록만 보조 스토리지로 복사합니다. 따라서 운영 스토리지 시스템의 부하와 전체 백업에 필요한 시간이 크게 줄어듭니다. SnapVault는 변경된 블록만 대상에 저장하므로 전체 데이터베이스 백업에는 필요한 디스크 공간이 더 적습니다.</block>
+  <block id="91b5d4f93ff87a8d44feaabae5e745d1" category="doc">SAP HANA 플러그인 운영 가이드 를 참조하십시오</block>
+  <block id="367423d79cfdd3fdc216a55f4bcd023d" category="paragraph">Snap Creator 4.3.3용 SAP HANA 플러그인을 구성하고 사용하여 SAP HANA 데이터베이스를 백업 및 복원할 수 있습니다.</block>
+  <block id="fbd81bedca700187dabfca4bf4718312" category="sidebar">SAP HANA 플러그인 운영</block>
 </blocks>

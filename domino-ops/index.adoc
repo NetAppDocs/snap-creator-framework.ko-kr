@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: domino, ibm, plug-in, operations, guide, configure, use, backup, back up, restore, databases 
 summary: IBM Domino 플러그인을 구성하고 사용하여 IBM Domino 데이터베이스를 백업 및 복구하는 방법에 대해 설명합니다. 
 ---
-= IBM ® Domino ® 플러그인 운영 가이드 를 참조하십시오
+= IBM Domino 플러그인 작업
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="Lead"]
-Snap Creator 4.3.3용 IBM Domino 플러그인을 구성하고 사용하여 IBM Domino 데이터베이스를 백업 및 복원하는 방법에 대해 설명합니다.
+Snap Creator 4.3.3용 IBM Domino 플러그인을 구성하고 사용하여 IBM Domino 데이터베이스를 백업 및 복원할 수 있습니다.
