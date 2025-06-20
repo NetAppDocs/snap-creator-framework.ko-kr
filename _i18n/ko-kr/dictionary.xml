@@ -2084,14 +2084,10 @@
   <block id="dfca444be8847bfb7e8789138fa70cd5" category="paragraph">기존 데이터베이스의 변경률에 비해 스토리지 계층의 블록 변경률이 더 높도록 고려해야 합니다. 열 저장소의 테이블 병합 프로세스로 인해 블록 변경 내용보다 훨씬 많은 데이터가 디스크에 기록됩니다. 더 많은 고객 데이터를 사용할 수 있을 때까지 변경 비율의 현재 추정치는 하루에 20% ~ 50%입니다.</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
-  <block id="de6edae22bc37b97b38a15c7f8af62e2" category="paragraph"><block ref="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
-  <block id="547ea2e305891e64d8e744949b0aca2c" category="paragraph"><block ref="547ea2e305891e64d8e744949b0aca2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
-  <block id="50921fca0d376fca62102a5e608994e2" category="paragraph"><block ref="50921fca0d376fca62102a5e608994e2" category="inline-link-rx"></block></block>
-  <block id="24efa7ee4511563b16144f39706d594f" category="section-title">주의</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="fbffcc97b23f2482efa1265639ca9ea9" category="inline-link-macro">Snap Creator Framework 4.3.3에 대한 참고 사항</block>
   <block id="f94c31b52b4ebee56570076538640af3" category="paragraph"><block ref="f94c31b52b4ebee56570076538640af3" category="inline-link-macro-rx"></block></block>
@@ -4595,4 +4591,13 @@
   <block id="fbd81bedca700187dabfca4bf4718312" category="sidebar">SAP HANA 플러그인 운영</block>
   <block id="8712f94c0adf6f85a8f736374d93a2f4" category="doc">ONTAP Snap Creator의 사전 설치 요구사항</block>
   <block id="715ea6698bcadbb2aa63560067f0847c" category="list-text">Oracle Java 또는 OpenJDK JRE(Java Runtime Environment) 1.8 업데이트 72 이상 버전을 Snap Creator Server 및 Agent 호스트에 설치합니다.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
 </blocks>
