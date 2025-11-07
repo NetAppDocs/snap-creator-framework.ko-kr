@@ -150,7 +150,6 @@
   <block id="9b3c109ae2b77eb2ec9614080ac54ec6" category="admonition">이 섹션의 절차에서는 clustered Data ONTAP에서 복제 관계를 설정하는 방법에 대해 설명합니다. 7-Mode에서 작동하는 Data ONTAP에서 이러한 관계를 설정하는 방법에 대한 자세한 내용은 에서 확인할 수 있습니다.</block>
   <block id="823fd69164963be6529d5ea1b02cbfce" category="summary">일반적인 Snap Creator 오류는 일반 Snap Creator 오류와 Domino 플러그인에서 발생하는 오류의 두 가지 범주로 분류됩니다. Domino 플러그인별 오류는 일반적으로 사전 설치 문제, 잘못된 데이터베이스 또는 사용자 지정 복원 작업 관련 문제와 관련이 있습니다.</block>
   <block id="4f4e96588318879b2e5c291b19557de6" category="doc">Domino 플러그인별 오류 문제 해결</block>
-  <block id="614f7ecf115d81d8a01dc4b6717a82be" category="admonition">일반 Snap Creator 오류에 대한 자세한 내용은 를 참조하십시오 <block ref="399bd91a6650953c6fe4851b3dba0f37" category="inline-link-macro-rx"></block>.</block>
   <block id="a8923c43f724405f693d83285c0a2fa0" category="section-title">Domino 플러그인은 이 플랫폼에서 지원되지 않습니다</block>
   <block id="36c6b4422b24bc73a86ca134e4e46ebf" category="paragraph">일반적으로 Domino 플러그인의 사전 요구 사항이 충족되지 않으면 이 오류가 발생합니다. 일반적으로 오류 메시지는 다음과 유사합니다.</block>
   <block id="790cdc3394c61c58a0005bf343e94df0" category="paragraph">다음 오류 메시지도 나타나는 것으로 알려져 있습니다.</block>
@@ -159,7 +158,6 @@
   <block id="512d257d0bc656d012a1968376b32132" category="list-text">사전 설치 단계가 수행되지 않았거나 잘못 수행됨:</block>
   <block id="33f3a0cdc618b254e4f98a446500da5b" category="list-text">UNIX 호스트에서는 IBM Domino 공유 객체 파일에 대한 심볼 링크를 생성해야 합니다.</block>
   <block id="0a2656ef06ed70792bfee61010dd4d5a" category="inline-link-macro">Snap Creator Framework 4.1.2 설치 가이드</block>
-  <block id="52b6c74b7dbccc8de6a8f088084dbcbf" category="list-text">Windows 호스트에서는 경로 환경 변수에 IBM Domino 설치 경로를 추가해야 합니다. 자세한 내용은 를 참조하십시오 <block ref="53bd5e8cff945f51f28434f5020e5ffb" category="inline-link-macro-rx"></block>.</block>
   <block id="9ad524478b1e43346db798b7df29ca7d" category="list-text">Domino의 비트 레벨은 Snap Creator의 비트 레벨과 다릅니다. 예를 들어, 32비트 Domino를 사용하는 경우 32비트 Snap Creator를 사용해야 합니다.</block>
   <block id="fab2d7050c1fb6ae0a19b0c4085dc9b9" category="section-title">데이터베이스가 잘못되어 Snap Creator 백업이 실패합니다</block>
   <block id="3039512c0a947e1baa63b77622d683fc" category="inline-link-macro">GUI를 사용하여 구성 파일을 생성하는 작업</block>
@@ -4600,4 +4598,7 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="1608083cf52ae1340c41228aed06ee43" category="paragraph">Active IQ, AltaVault, Arch Design, ASUP, AutoSupport, Campaign Express, Clustered Data ONTAP, Customer Fitness, Data ONTAP, DataMotion, Fitness, Flash Accel, Flash Cache, Flash Pool, FlexCache, FlexClone, FlexGroup, FlexPod, FlexScale, FlexShare, FlexVol, FPolicy, Fueled by SolidFire, GetSuccessful, Helix Design, LockVault, Manage ONTAP, MetroCluster, MultiStore, NetApp, NetApp Insight, OnCommand, ONTAP, ONTAPI, RAID DP, RAID-TEC, SANscreen, SANshare, SANtricity, SecureShare, Simplicity, Simulate ONTAP, Snap Creator, SnapCenter, SnapCopy, SnapDrive, SnapIntegrator, SnapLock, SnapManager, SnapMirror, SnapMover SnapProtect, SnapRestore, Snapshot, SnapValidator, SnapVault, SolidFire, SolidFire Helix, StorageGRID, SyncMirror, Tech OnTap, Unbound Cloud, WAFL 및 기타 이름은 미국 및/또는 기타 국가에서 NetApp, Inc.의 상표 또는 등록 상표입니다.  다른 모든 브랜드 또는 제품은 해당 소유자의 상표 또는 등록 상표이므로 그에 따라 취급해야 합니다.  NetApp 상표의 현재 목록은 웹에서 확인할 수 있습니다.</block>
+  <block id="b76926cf8f58acc96af344359c5d2b2c" category="admonition">일반 Snap Creator 오류에 대한 정보는 다음을 참조하세요.<block ref="3b0c025e228e0d658ee39b24066f4d94" category="inline-link-macro-rx"></block> .</block>
+  <block id="1d7ce8621814d7cbb17fc470a4344f97" category="inline-link-macro">Snap Creator Framework 설치 가이드 - 환경 변수에 경로 추가</block>
+  <block id="b407da2907a6b37afb80f35075ea8531" category="list-text">Windows 호스트에서는 IBM Domino 설치 경로를 PATH 환경 변수에 추가해야 합니다. 자세한 내용은 다음을 참조하세요.<block ref="48a25fc471122170a85c7c8edf958c44" category="inline-link-macro-rx"></block> .</block>
 </blocks>
