@@ -43,26 +43,23 @@ maxdb입니다
  a| 
 XUSER_ENABLE을 선택합니다
  a| 
-(Y
-| 해당 없음) 
-
-
+(예|아니오)
  a| 
 데이터베이스 사용자에게 암호가 필요하지 않도록 MaxDB에 대한 xuser 사용을 활성화 또는 비활성화합니다.
+
+
+
  a| 
 handle_LOGWRITER
  a| 
-(Y
-
-
-
-| 해당 없음)  a| 
+(예|아니오)
+ a| 
 로그 작성기 일시 중지(N) 또는 로그 작성기 다시 시작(Y) 작업을 실행합니다.
+
+
+
  a| 
 DBMCLICMD
-
-
-
  a| 
 path_to_dbmcli_cmd를 입력합니다
  a| 
@@ -70,23 +67,23 @@ MaxDB dbmcli 명령의 경로를 지정합니다. 설정하지 않으면 검색 
 
 
 NOTE: Windows 환경에서 경로는 큰따옴표("...")에 포함되어야 합니다.
+
+
+
  a| 
 SQLCLICMD를 참조하십시오
-
-
-
  a| 
 sqlcli_cmd 경로
  a| 
 MaxDB sqlcli 명령의 경로를 지정합니다. 설정하지 않으면 sqlcli가 검색 경로에 사용됩니다.
+
+
+
  a| 
 MAXDB_UPDATE_HIST_LOG
-
-
-
  a| 
-(Y
-| 해당 없음)  a| 
+(예|아니오)
+ a| 
 MaxDB 백업 프로그램에서 MaxDB 기록 로그를 업데이트할지 여부를 지정합니다.
 
 

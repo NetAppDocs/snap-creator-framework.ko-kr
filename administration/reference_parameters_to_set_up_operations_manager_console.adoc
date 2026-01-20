@@ -52,6 +52,8 @@ Operations Manager 콘솔과의 통신에 사용할 포트; 8088은 기본 HTTP 
  a| 
 OM_EVENT_GENERATE
  a| 
-(Y
-| 해당 없음) 
+(예|아니오)
+ a| 
+Operations Manager 콘솔에서 이벤트 생성을 활성화 또는 비활성화합니다.
+
 |===

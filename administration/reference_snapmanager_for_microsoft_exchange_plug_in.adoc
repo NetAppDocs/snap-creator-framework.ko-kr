@@ -56,8 +56,10 @@ Microsoft Exchange Server 이름에 대한 SnapManager을 지정합니다.
  a| 
 SME_32비트
  a| 
-(Y
-| 해당 없음) 
+(예|아니오)
+ a| 
+PowerShell의 32비트 버전 사용을 활성화 또는 비활성화합니다.
+
 |===
 * 관련 정보 *
 

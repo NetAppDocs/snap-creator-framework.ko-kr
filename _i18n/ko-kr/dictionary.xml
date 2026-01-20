@@ -2418,7 +2418,6 @@
   <block id="753a1538e677ad3506d7add4ce7a92b8" category="paragraph">이름</block>
   <block id="5c49f341285932f237ba99f32c24e5f2" category="paragraph">고유해야 하는 스냅샷 복사본 명명 규칙을 지정합니다. 스냅샷 복사본은 명명 규칙에 따라 삭제됩니다.</block>
   <block id="740ebe928a5240e1244f14491222510f" category="paragraph">snap_timestamp_only</block>
-  <block id="b3ece1f3eecb9db7cbfc880c8f76c58d" category="paragraph">(Y</block>
   <block id="702d85fa2ec6c3fb97501d4c0cd298bd" category="cell">해당 없음)</block>
   <block id="2264c6ec3fc3f34277934e26281d982e" category="paragraph">스냅샷 명명 규칙을 Y로 설정하면 스냅샷 복사본이 YYMMDDHHMMSS로 종료됩니다. 그렇지 않으면 새 스냅샷 복사본의 이름이 YYYYMMDDHHMMSS로 끝으로 변경됩니다.</block>
   <block id="09d856179f65ec18dc1cfae7d63edcec" category="paragraph">볼륨</block>
@@ -2542,15 +2541,12 @@
   <block id="3420213108d85f921270d8bf4116781c" category="paragraph">오아_온도</block>
   <block id="122ad43559cb7c871a7232ce20c529b1" category="paragraph">임시 파일을 저장할 디렉토리 경로(예: /tmp). Oracle 사용자는 이 디렉토리에 대한 적절한 권한을 가지고 있어야 합니다.</block>
   <block id="f5078f21f47485897c87d1fbf5d9e19f" category="paragraph">archive_log_only(보관 로그 전용)</block>
-  <block id="971063cd9d6a788d0c6a3fe3ea0df2ff" category="cell">정책:&lt;Y</block>
-  <block id="ed6602eb57ddaa11f48abca427c60f87" category="cell">n&gt;)</block>
   <block id="101f18023eaa7790ef6ba727af65d6be" category="paragraph">Oracle 플러그인에서 스위치 로그 작업만 수행하도록 알림 이 설정은 아카이브 로그 백업을 데이터 백업과 별도로 처리하는 경우에 유용합니다.</block>
   <block id="e1f651debac4f720c13ae930ff3ca14a" category="paragraph">ORACLE_HOME</block>
   <block id="84f63854b03bc743e9613cb2423fba8f" category="paragraph">Oracle 홈 디렉토리의 경로입니다</block>
   <block id="d9d6fdba68448106aac5729e8c538906" category="paragraph">ORACLE_HOME_SID</block>
   <block id="7564a8506de540057f4a75b92113eddd" category="paragraph">지정된 SID(시스템 식별자)에 대한 Oracle 홈 디렉토리 경로 여러 데이터베이스를 백업할 때 둘 이상의 Oracle 홈 디렉토리를 지정하는 것이 중요합니다.</block>
   <block id="65fc35d1054d0995c4d10ad24cd695fa" category="paragraph">oracle_export_parameters</block>
-  <block id="6cf67f81440dbb166c74c36ba4c92808" category="cell">해당 없음)</block>
   <block id="e38df05b7bc8106cbcaa3d5564d87ff8" category="paragraph">ORACLE_HOME 및 ORACLE_SID 환경 매개 변수는 export 명령을 사용하여 내보냅니다. 이는 UNIX 또는 Linux 기반 환경에서만 적용됩니다.</block>
   <block id="8b2da37f068707b163e017f0609318eb" category="paragraph">ORACLE_BACKUPMODE를 참조하십시오</block>
   <block id="5907a203d13cd6e76d9e09273adbfef7" category="paragraph">Snap Creator 정책을 사용하여 오프라인 또는 온라인 백업을 구성하는 옵션입니다. 기본 옵션은 온라인입니다. ORACLE_BACKUPMODE=HOURLY: 온라인, 일별: 오프라인</block>
@@ -3002,7 +2998,6 @@
   <block id="a49f27ed85d7cc90f7976cd39ec12a78" category="doc">아카이브 로그 플러그인</block>
   <block id="8c7dc9b130a71ed7c1a47474378707c8" category="paragraph">다음 표에는 아카이브 로그 플러그인 매개 변수가 나열되어 있고, 해당 설정에 대한 설명이 나와 있습니다.</block>
   <block id="96611acf5bf8bf22163153db770f7f60" category="paragraph">archive_log_enable입니다</block>
-  <block id="2fb33ec1462b9029d75715a12e44964a" category="cell">정책: 연령)</block>
   <block id="3291ad0946050f7aa4f9a9380b2bec20" category="paragraph">아카이브 로그 관리를 활성화합니다(이전 아카이브 로그 삭제).</block>
   <block id="0012a5e5e44a9bf77fffdc82e8b485cd" category="paragraph">archive_log_retention 을 선택합니다</block>
   <block id="21f2f76c313df826d6e15803c794ee11" category="paragraph">일 수</block>
@@ -4601,4 +4596,32 @@
   <block id="b76926cf8f58acc96af344359c5d2b2c" category="admonition">일반 Snap Creator 오류에 대한 정보는 다음을 참조하세요.<block ref="3b0c025e228e0d658ee39b24066f4d94" category="inline-link-macro-rx"></block> .</block>
   <block id="1d7ce8621814d7cbb17fc470a4344f97" category="inline-link-macro">Snap Creator Framework 설치 가이드 - 환경 변수에 경로 추가</block>
   <block id="b407da2907a6b37afb80f35075ea8531" category="list-text">Windows 호스트에서는 IBM Domino 설치 경로를 PATH 환경 변수에 추가해야 합니다. 자세한 내용은 다음을 참조하세요.<block ref="48a25fc471122170a85c7c8edf958c44" category="inline-link-macro-rx"></block> .</block>
+  <block id="a4b10ba4184c91876de7584578453006" category="paragraph">(예/아니오/정책:연령)</block>
+  <block id="6c66b4d2e5944ca886c4b9a9893da0b7" category="paragraph">(예|아니오)</block>
+  <block id="8d777f385d3dfec8815d20f7496026dc" category="paragraph">데이터</block>
+  <block id="29052802445f7d4f3d102b5c718b66ce" category="paragraph">데이터베이스가 저장된 모든 볼륨이 백업 작업에 포함되었는지 확인합니다. 현재로서는 다음과 같은 제한 사항이 있습니다.</block>
+  <block id="44d74d7cf83cd1c3bf4ab4bb1ae30dc5" category="list-text">네트워크 파일 시스템(NFS)만 지원됩니다.</block>
+  <block id="26a3433cdd66ec88654d1ebf84e4d35b" category="list-text">지원되는 데이터베이스의 데이터 파일만 검사합니다.</block>
+  <block id="9585cd9ea994c167725cd420361fa76e" category="paragraph">(예|아니오)</block>
+  <block id="798b04090e54a1cdf065909a17bb574e" category="paragraph">이 매개변수는 MySQL 마스터-슬레이브 데이터베이스 설정에서 작동합니다.</block>
+  <block id="ec33ae0eab0cbcf0f68a1beeebab63c0" category="paragraph">이 옵션을 'Y'로 설정하면 사용 가능한 최신 바이너리 로그 파일까지 바이너리 로그를 삭제합니다.</block>
+  <block id="489a578ac452aa637e84a849df71b5f0" category="paragraph">N으로 설정하면 삭제 쿼리에 최근 타임스탬프가 사용됩니다.</block>
+  <block id="dcf1732d7559ab7b8aa81bdea2e96a8c" category="paragraph">(Y|N|정책:&lt;Y|N&gt;)</block>
+  <block id="757be32f0616f9f740892c8c0fc80776" category="paragraph">Oracle 오프라인 백업을 수행하는 동안 이 옵션을 Y로 설정하면 종료 중단 메커니즘을 사용하여 데이터베이스가 일관된 상태로 종료되도록 합니다. ORACLE_SHUTDOWNABORT 매개변수에 대한 종료 단계는 다음과 같습니다.</block>
+  <block id="5d1c258a7bd4c15972e657524837311b" category="list-text">종료 중단</block>
+  <block id="672525866c66061a202ac9dd9e123406" category="list-text">시작 제한</block>
+  <block id="89e2c99b632a7bfeb86bb5d15d993ac7" category="list-text">즉시 종료</block>
+  <block id="ea9053cb7d9a5295733a4c597e3c402f" category="paragraph">IP 주소를 스토리지 시스템에 사용할 수 있도록 허용합니다. 이는 SnapVault, SnapMirror 및 NetApp Management Console의 데이터 보호 기능에 적용됩니다. IP 주소를 사용하는 것은 문제를 일으킬 수 있으므로 특정 조건에서만 사용해야 합니다.</block>
+  <block id="fc663145389e04ad399fafe44ed4e642" category="paragraph">NetApp Management Console의 데이터 보호 기능을 사용할 때 보조 스냅샷 복사본의 형식을 지정하는 선택적 설정입니다. 이 옵션을 사용하려면 OnCommand 5.0 이상 버전이 필요합니다. 필수 변수:</block>
+  <block id="b3d419be703283d1c8ff46f1a9162193" category="list-text">타임스탬프: %T</block>
+  <block id="2f865c4db2240014a15a1afb9250d27e" category="paragraph">선택적 변수:</block>
+  <block id="ba7a8922105719869fea7de673955831" category="list-text">보존 유형: %R</block>
+  <block id="811cf16f1a1fba73bff1d3e73cc09894" category="list-text">데이터셋 레이블: %L</block>
+  <block id="c5995da4091638026ed9470567f8c933" category="list-text">저장 컨트롤러: %H</block>
+  <block id="cbe2e8252606346bc2a477117e7c22db" category="list-text">볼륨 이름: %N</block>
+  <block id="b49c482aa020f7e97d705602777a831b" category="list-text">응용 프로그램별 데이터: %A</block>
+  <block id="936fd30e8735631071cb62e403722ec4" category="paragraph">이 옵션을 설정하지 않으면 NetApp 관리 콘솔 데이터 보호 기능에 대한 기본 명명 규칙이 사용됩니다. 명명 규칙은 데이터셋 생성 시에만 설정할 수 있습니다.</block>
+  <block id="388306add449258c47380d6b7db98378" category="paragraph">Operations Manager 콘솔에서 이벤트 생성을 활성화 또는 비활성화합니다.</block>
+  <block id="957338adada6845bcc51f661d173fbb3" category="paragraph">다음은 OSSV 백업 프로세스 중 또는 이전에 실행할 스크립트 또는 명령입니다. 여기서 ##는 01부터 99까지의 숫자입니다. 이 기능을 사용하면 OSSV를 이용하여 파일 시스템 스냅샷 복사본을 백업할 수 있습니다.</block>
+  <block id="17c3a9f520927a583d184a69999e24cf" category="paragraph">PowerShell의 32비트 버전 사용을 활성화 또는 비활성화합니다.</block>
 </blocks>

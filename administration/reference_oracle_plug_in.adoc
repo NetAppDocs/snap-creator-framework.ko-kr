@@ -75,11 +75,8 @@ cntl_file_backup_DIR입니다
  a| 
 archive_log_only(보관 로그 전용)
  a| 
-(Y
-| 해당 없음 
-
-
-| 정책:<Y | n>)  a| 
+(Y|N|정책:<Y|N>)
+ a| 
 Oracle 플러그인에서 스위치 로그 작업만 수행하도록 알림 이 설정은 아카이브 로그 백업을 데이터 백업과 별도로 처리하는 경우에 유용합니다.
 
 
@@ -103,24 +100,31 @@ ORACLE_HOME_SID
  a| 
 oracle_export_parameters
  a| 
-(Y
-| 해당 없음) 
-
-
+(예|아니오)
  a| 
 ORACLE_HOME 및 ORACLE_SID 환경 매개 변수는 export 명령을 사용하여 내보냅니다. 이는 UNIX 또는 Linux 기반 환경에서만 적용됩니다.
+
+
+
  a| 
 ORACLE_BACKUPMODE를 참조하십시오
  a| 
-
-
-
  a| 
 Snap Creator 정책을 사용하여 오프라인 또는 온라인 백업을 구성하는 옵션입니다. 기본 옵션은 온라인입니다. ORACLE_BACKUPMODE=HOURLY: 온라인, 일별: 오프라인
+
+
+
  a| 
 ORACLE_SHUTDOWNABORT
  a| 
-(Y
+(예|아니오)
+ a| 
+Oracle 오프라인 백업을 수행하는 동안 이 옵션을 Y로 설정하면 종료 중단 메커니즘을 사용하여 데이터베이스가 일관된 상태로 종료되도록 합니다. ORACLE_SHUTDOWNABORT 매개변수에 대한 종료 단계는 다음과 같습니다.
+
+* 종료 중단
+* 시작 제한
+* 즉시 종료
+
 
 |===
 * 관련 정보 *
