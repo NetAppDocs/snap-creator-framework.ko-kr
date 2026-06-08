@@ -13,7 +13,7 @@ summary: Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업을 
 [role="lead"]
 Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업을 구성해야 합니다.
 
-. Snap Creator 그래픽 사용자 인터페이스(GUI)에 연결: https://host:8443/ui/[].
+. Snap Creator 그래픽 사용자 인터페이스(GUI)에 연결합니다: +https://host:8443/ui/+.
 . 설치 중에 구성된 사용자 이름과 암호를 사용하여 로그인합니다. 로그인 * 을 클릭합니다.
 +
 image::../media/snap_creator_gui.gif[에서는 Snap Creator GUI 로그인을 보여 줍니다]

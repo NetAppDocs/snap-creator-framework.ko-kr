@@ -13,7 +13,7 @@ summary: changeinfo 디렉토리를 백업하려는 경우 디렉토리가 포�
 [role="lead"]
 changeinfo 디렉토리를 백업하려는 경우 디렉토리가 포함된 볼륨을 메타데이터 볼륨으로 구성해야 합니다. 이렇게 하면 IBM Domino 플러그인에서 데이터베이스 파일의 스냅샷 복사본을 생성하는 _after_changeinfo 볼륨의 스냅샷 복사본을 생성합니다.
 
-구성 파일을 만들 때 changeinfo 볼륨을 백업할 볼륨으로 이미 식별했어야 합니다. 자세한 내용은 단계를 참조하십시오 link:task_using_the_gui_to_create_a_configuration_file.md#STEP_2036E43A6921415985798979F2226786["GUI를 사용하여 구성을 생성하는 작업"].
+구성 파일을 생성할 때 changeinfo 볼륨을 백업할 볼륨으로 이미 식별했어야 합니다. 자세한 내용은 link:task_using_the_gui_to_create_a_configuration_file.html["GUI를 사용하여 구성을 생성하는 작업"] 단계를 참조하십시오.
 
 구성 파일에서 meta_data_volume 매개 변수를 사용하여 changeinfo 볼륨을 메타데이터 볼륨으로 식별합니다. GUI에서 매개변수를 사용할 수 없습니다.
 

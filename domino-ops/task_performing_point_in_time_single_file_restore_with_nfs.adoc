@@ -55,7 +55,7 @@ Restore * 를 선택하면 Snap Creator Framework Restore 마법사가 자동으
 
 +
 
-NOTE: SnapVault 복제본에서 복구하는 경우 운영 또는 보조 스토리지에서 복구하라는 메시지가 표시됩니다. 선택 사항은 에 설명된 제한 사항을 처리하는 방법에 따라 달라집니다 link:concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9["concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9"].
+NOTE: SnapVault 복사본에서 복원하는 경우 운영 스토리지 또는 2차 스토리지에서 복원하라는 메시지가 표시됩니다. 선택은 link:concept_domino_database_restore_overview.html["concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9"]에 설명된 제한 사항을 처리하는 방식에 따라 달라집니다.
 
 . Restore details 페이지에서 복구 세부 정보를 지정합니다.
 +

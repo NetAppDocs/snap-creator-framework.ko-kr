@@ -25,7 +25,7 @@ Snap Creator를 사용하여 데이터의 SnapMirror 복사본을 복원할 수�
 
 == 대상 디렉토리 이해
 
-볼륨 복원 및 단일 파일 복원에는 일반적으로 서로 다른 대상 디렉토리가 있습니다. 백업 및 복원 구성 파일의 Data Restore Directory 매개 변수에서 대상 디렉토리를 지정합니다(단계 참조) link:task_using_the_gui_to_create_a_configuration_file.md#STEP_E6C507729B3647FD8B2E8D0818F22D3B["Task_using_the_GUI_to_create_a_configuration_file.md#step_E6C507729B3647FD8B2E8D0818F22D3B"]):
+볼륨 복원과 단일 파일 복원은 일반적으로 서로 다른 대상 디렉터리를 사용합니다. 백업 및 복원 구성 파일의 Data Restore Directory 매개 변수에서 대상 디렉터리를 지정합니다(단계 link:task_using_the_gui_to_create_a_configuration_file.html["GUI를 사용하여 구성 파일을 생성하는 작업"] 참조):
 
 * 볼륨 복구의 경우 데이터 복원 디렉토리를 Domino 데이터 디렉토리로 설정해야 합니다.
 * 단일 파일 복구의 경우 데이터 복원 디렉토리를 Domino 데이터 볼륨의 하위 디렉토리로 설정해야 합니다.

@@ -93,7 +93,6 @@
   <block id="60b704346dc8e1674230c7eca7c45a51" category="inline-xref-macro">changeinfo 디렉토리를 백업하는 중입니다</block>
   <block id="6444a7987b5250fb710f5e1df916a0fd" category="admonition">changeinfo 디렉토리를 백업하려는 경우 에 설명된 대로 디렉토리를 포함하는 볼륨을 메타데이터 볼륨으로 구성해야 합니다 <block ref="a52a18b3ffb480e5ada8a0b65641afaa" category="inline-xref-macro-rx"></block>. 이 옵션은 IBM Domino 플러그인에 데이터베이스 파일의 스냅샷 복사본을 생성하는 _after_changeinfo 볼륨의 스냅샷 복사본을 생성하도록 지시합니다.</block>
   <block id="243877d5557b57d0b9875c6f5696c880" category="list-text">컨트롤러/Vserver 자격 증명 페이지에서 * 추가 * 를 클릭하여 다른 운영 스토리지 시스템에 백업할 SVM 세부 정보와 볼륨을 지정합니다.</block>
-  <block id="0e33d0f095749d70239b8072d114880e" category="list-text">스냅샷 세부 정보 페이지에서 스냅샷 구성 정보를 지정합니다.</block>
   <block id="d2e55fe2815a901d5273ef24b1df02f0" category="paragraph">스냅샷 복사본 이름</block>
   <block id="a41a68c5e4b3590257035029ec213a71" category="paragraph">스냅샷 복사본의 이름을 입력합니다. * 팁: * 구성 파일 전체에서 스냅샷 복사본 이름을 다시 사용하려면 * 중복 스냅샷 복사본 이름 허용 * 을 클릭합니다.</block>
   <block id="046a079d340e681724bcb031c0b84fe4" category="paragraph">스냅샷 복사본 레이블</block>
@@ -115,7 +114,6 @@
   <block id="35eea9b89c19c0fc43a4d34027a1f92f" category="list-text">SnapVault * 를 클릭하여 스냅샷 복사본을 아카이브합니다.</block>
   <block id="07d3cfdf2930165b1835cca001593bb3" category="list-text">아카이빙된 스냅샷 복사본에 대한 정책을 지정합니다.</block>
   <block id="c51ce410c124a10e0db5e4b97fc2af39" category="inline-xref">13</block>
-  <block id="5fd345bfd34f1dbedd6eea8ecba43b53" category="list-text">지침은 다음 단계에 있습니다<block ref="dc8c8989a76c527157eaaaba08f215b4" category="inline-xref-macro-rx"></block>.</block>
   <block id="90391274a8ef2fb943542f2c5bb3f276" category="list-text">SnapVault 대기 시간 * 에서 Snap Creator가 SnapVault 작업이 완료될 때까지 대기하는 시간(분)을 입력합니다.</block>
   <block id="d5a4f1ba59f569126d478fbb7b62f69f" category="list-text">2차 스토리지로 복제를 수행하기 전에 에서 SnapMirror 및 SnapVault 관계를 설정해야 합니다. 자세한 내용은 을 참조하십시오 <block ref="677c6346df1833887064805e07455305" category="inline-xref-macro-rx"></block>.</block>
   <block id="48f4893c5290e5ab6988032734c66fe6" category="list-text">데이터 보호 볼륨 페이지에서 * 추가 * 를 클릭한 다음 운영 스토리지 시스템의 SVM을 선택합니다.</block>
@@ -161,7 +159,6 @@
   <block id="9ad524478b1e43346db798b7df29ca7d" category="list-text">Domino의 비트 레벨은 Snap Creator의 비트 레벨과 다릅니다. 예를 들어, 32비트 Domino를 사용하는 경우 32비트 Snap Creator를 사용해야 합니다.</block>
   <block id="fab2d7050c1fb6ae0a19b0c4085dc9b9" category="section-title">데이터베이스가 잘못되어 Snap Creator 백업이 실패합니다</block>
   <block id="3039512c0a947e1baa63b77622d683fc" category="inline-link-macro">GUI를 사용하여 구성 파일을 생성하는 작업</block>
-  <block id="169bde998ccd22889a188ad2688e9636" category="paragraph">기본적으로 하나 이상의 데이터베이스가 일관성 없거나 손상된 상태이면 백업 작업이 실패합니다. 단계에서 설명한 대로 오류가 발생해도 플러그인이 백업 작업을 계속 진행하도록 할 수 있습니다 <block ref="68713facb150aaf8a16ec3bc033545b5" category="inline-link-macro-rx"></block>.</block>
   <block id="ac083052e450f94307ce17bfb9e4c0f0" category="section-title">사용자 지정 작업을 사용한 Domino 복원이 실패합니다</block>
   <block id="b35b37e5dfd02fb2c4f68017ce62f3cf" category="paragraph">복구 오류는 일반적으로 복구 경로가 올바르게 설정되지 않은 경우에 발생합니다. 경로에 추가 문자 및 백슬래시가 있는지 확인합니다. 또한 데이터 복원 디렉터리가 올바르게 설정되어 있는지 확인합니다.</block>
   <block id="d5d3b5388b67bf2822cc7c1e49259268" category="paragraph">오류는 다음과 유사합니다.</block>
@@ -172,8 +169,6 @@
   <block id="6aa45615f90b81da480a83a0cb38fdcd" category="cell">설명/해상도</block>
   <block id="db72f16b2e63a3aac561590ad879345b" category="paragraph">Ltd - 00001</block>
   <block id="0d0770cb57fe9fb140dff3bd4b362c28" category="paragraph">Domino 플러그인은 snap_timestamp_only=N과 함께 사용할 수 없습니다 snap_timestamp_only를 Y로 설정해야 합니다</block>
-  <block id="8147fc928886ba91d35a3899022159e5" category="inline-link-macro">Task_using_the_GUI_to_create_a_configuration_file.md#step_81795CF9D6294AC891BC3D0CE4827CA3</block>
-  <block id="26f81fcc7c8f5bf64ccf1abad19d3885" category="paragraph">자세한 내용은 단계를 참조하십시오 <block ref="1dfb6713ea8755b74139965c9df333ce" category="inline-link-macro-rx"></block>.</block>
   <block id="8a273526af815a83f5749723414ec744" category="paragraph">Ltd - 00002</block>
   <block id="b4cd68010b738e02134627a7be58a2c2" category="paragraph">데이터베이스 정지가 오류와 함께 완료되었습니다</block>
   <block id="edd5c8c3a27f07220e438eacc5042616" category="paragraph">Domino 플러그인이 모든 데이터베이스를 백업 모드로 전환할 수 없습니다. 로그를 확인하여 오류의 정확한 원인을 찾거나 디버그 모드에서 Snap Creator를 실행하여 오류를 찾습니다.</block>
@@ -246,8 +241,6 @@
   <block id="1653f8d09197faddd964f0eb6e719c65" category="list-text">백업할 볼륨의 데이터베이스, 템플릿 및 메일박스 목록을 표시합니다.</block>
   <block id="fa1251539c7cc5324177b6f6745a3d99" category="list-text">한 번에 하나의 데이터베이스씩 백업 모드로 파일을 저장합니다.</block>
   <block id="a6b13afc8745a813586f4caf09ae7961" category="list-text">일관되지 않거나 손상된 데이터베이스가 있는지 확인합니다.</block>
-  <block id="064a52274f32140c04205f882712fd78" category="inline-link-macro">Task_using_the_GUI_to_create_a_configuration_file.md#step_AA41331683A24598B7845367CB967F99</block>
-  <block id="0913569dece5fad64895431cefcba650" category="admonition">단계에서 설명한 대로 오류가 발생해도 플러그인이 백업 작업을 계속 진행하도록 할 수 있습니다 <block ref="acadadf5aacd131fbb7a4816c7029d73" category="inline-link-macro-rx"></block>.</block>
   <block id="e46a0dd5d1c9ef41b0d2f406e51dca97" category="list-text">각 볼륨의 스냅샷 복사본을 만듭니다.</block>
   <block id="e17d26fc621a96f9d352fae8af3cb983" category="list-text">Domino 트랜잭션 로깅을 사용하는 경우 최신 복원 작업에 사용할 Domino 트랜잭션 로그의 아카이브 복제본입니다.</block>
   <block id="e5f46f136d89dd33c0ff8c6dfcb09236" category="list-text">한 번에 한 데이터베이스씩 백업 모드에서 파일을 꺼냅니다.</block>
@@ -294,9 +287,6 @@
   <block id="c65b651594cbe290578ca53308ef1569" category="list-text">%SNAME-%SNAP_TYPE_%SNAP_TIME은 스냅샷 복사본 이름이 구성 파일 이름, 스냅샷 정책(시간별, 일별 또는 월별) 및 스냅샷 복사본이 생성된 시간과 날짜를 기준으로 생성되도록 지정합니다.</block>
   <block id="0ae2161f56fadd7adc1b267bd110fa66" category="list-text">D는 스위치이고 F G H는 백업할 데이터의 마운트 지점입니다. 팁: 서버에서 명령을 실행하려면 명령 앞에 텍스트 서버를 붙이고 콜론(:)을 추가합니다.</block>
   <block id="16bd5c3a470a850289f84a3609e8cbdc" category="list-text">입력한 내용이 만족스러우면 * Enter * 를 누릅니다.</block>
-  <block id="8d59aaca41546d470ad46ddacfd14ff2" category="inline-xref">단계 #STEP_3F9C83DD05D84075AD0277213FD67C56</block>
-  <block id="a912e7fa35c4b085dbefa935ce952134" category="inline-xref">STEP_FBEDD7AE105F42138EB35315EA9FA7CC</block>
-  <block id="9bef9a9588579445462a340a5ab8f1c9" category="list-text">단계를 반복합니다 <block ref="54cf7e79e142d6e0d2e79d5ce4457f91" category="inline-xref-macro-rx"></block> 부터 까지 <block ref="24344f94f5c5aa5c497bbae13d30cbab" category="inline-xref-macro-rx"></block> 다른 명령을 추가합니다.</block>
   <block id="173052de14a7e1bece3fab1d51b606f3" category="list-text">구성 내용 창에서 * 저장 * 을 클릭하여 변경 사항을 저장합니다.</block>
   <block id="86cc678d3c96799cfd92cab21357cf12" category="summary">IBM Domino 플러그인을 사용하면 모든 주요 스토리지 유형에 대해 시점, 최신 또는 선택 가능한 최신 볼륨 복원을 수행할 수 있습니다.</block>
   <block id="49f5c8c0bb580e7b39dc1ee4594e9f8e" category="doc">볼륨 복원 수행</block>
@@ -340,7 +330,6 @@
   <block id="c9e9233de9450524363733c7dcb64b52" category="summary">changeinfo 디렉토리를 백업하려는 경우 디렉토리가 포함된 볼륨을 메타데이터 볼륨으로 구성해야 합니다. 이렇게 하면 데이터베이스 파일의 스냅샷 복사본을 생성한 후 IBM Domino 플러그인에서 changeinfo 볼륨의 스냅샷 복사본을 생성합니다.</block>
   <block id="528f591c9fce803647c99e04c216ba50" category="paragraph">changeinfo 디렉토리를 백업하려는 경우 디렉토리가 포함된 볼륨을 메타데이터 볼륨으로 구성해야 합니다. 이렇게 하면 IBM Domino 플러그인에서 데이터베이스 파일의 스냅샷 복사본을 생성하는 _after_changeinfo 볼륨의 스냅샷 복사본을 생성합니다.</block>
   <block id="805179e4a7f11d19d7cd612c2379d246" category="inline-link-macro">GUI를 사용하여 구성을 생성하는 작업</block>
-  <block id="c4a9b25f3868fd8e8d03e3aed8aa5ddc" category="paragraph">구성 파일을 만들 때 changeinfo 볼륨을 백업할 볼륨으로 이미 식별했어야 합니다. 자세한 내용은 단계를 참조하십시오 <block ref="47c62e0ad4db2535299629d225b69b91" category="inline-link-macro-rx"></block>.</block>
   <block id="c867ca66c93d3fa2afedd9a86d4962a4" category="paragraph">구성 파일에서 meta_data_volume 매개 변수를 사용하여 changeinfo 볼륨을 메타데이터 볼륨으로 식별합니다. GUI에서 매개변수를 사용할 수 없습니다.</block>
   <block id="d5ed1725653091705c56d535ed18e9a3" category="list-text">텍스트 편집기에서 구성 파일을 엽니다.</block>
   <block id="4d06ba727c36904a50e5cc898cc0946f" category="paragraph">구성 파일은 Snap Creator 설치 디렉토리의 프로파일 이름이 인 하위 디렉토리에 있습니다. 예를 들어, Windows 호스트에서 C:\Program Files\NetApp\Snap_Creator_Framework\scServer4.1.x\engine\configs\Domino\Fuji15.conf는 프로파일의 이름이고 Fuji15.conf는 구성 파일의 이름입니다.</block>
@@ -410,8 +399,6 @@
   <block id="2e906a1fc4d6a16c8e26307bd6cbb910" category="paragraph">Snap Creator를 사용하여 데이터의 SnapMirror 복사본을 복원할 수는 없습니다. 미러 복제본을 복구하려면 먼저 미러를 해제한 다음 데이터를 수동으로 복구해야 합니다. 자세한 내용은 를 참조하십시오 <block ref="77ae7c406b27cd3b7525056c4177e7bc" category="inline-link-macro-rx"></block>.</block>
   <block id="9ee26bc2d4a82589202bf23e8d486bfa" category="paragraph">보조 스토리지에서 SnapVault 복사본을 복원할 때는 시점 볼륨 복원만 가능합니다. 최신 볼륨 복원 또는 단일 파일 복원을 수행할 수 없습니다. 먼저 보조 스토리지에서 운영 스토리지로 복원하여 이러한 제한 사항을 해결할 수 있습니다. 그런 다음 운영 스토리지에서 최신 볼륨 복원 또는 단일 파일 복원을 필요에 따라 수행할 수 있습니다.</block>
   <block id="46e54b4752f39069f3449eca307220cf" category="section-title">대상 디렉토리 이해</block>
-  <block id="ef0b3823b79ebf9bb3590e86169e315f" category="inline-link-macro">Task_using_the_GUI_to_create_a_configuration_file.md#step_E6C507729B3647FD8B2E8D0818F22D3B</block>
-  <block id="3fc45d4ffd0c24ca01102983a71df3fd" category="paragraph">볼륨 복원 및 단일 파일 복원에는 일반적으로 서로 다른 대상 디렉토리가 있습니다. 백업 및 복원 구성 파일의 Data Restore Directory 매개 변수에서 대상 디렉토리를 지정합니다(단계 참조) <block ref="67143f3be6464ba99ce577b07c16b02e" category="inline-link-macro-rx"></block>):</block>
   <block id="f8b4c0dcfaae97b701b513a39f4bf73f" category="list-text">볼륨 복구의 경우 데이터 복원 디렉토리를 Domino 데이터 디렉토리로 설정해야 합니다.</block>
   <block id="99f35710a15900a2a9fa6811f679f67f" category="list-text">단일 파일 복구의 경우 데이터 복원 디렉토리를 Domino 데이터 볼륨의 하위 디렉토리로 설정해야 합니다.</block>
   <block id="9565a7ad06ece04d3f20f5adecdadda9" category="paragraph">즉, 대체 복원 유형을 사용하는 경우 각 복원 유형에 대해 올바른 설정을 가리키도록 데이터 복원 디렉터리를 수정해야 합니다. 그렇지 않으면 변경 정보가 올바르게 적용되지 않으며 데이터가 복원하려는 데이터베이스 상태와 일치하지 않습니다. 물론 원하는 경우 볼륨 및 단일 파일 복원을 위한 다양한 구성을 생성할 수 있습니다.</block>
@@ -471,7 +458,6 @@
   <block id="50aaf22c31cd5a034a44905a602cf38e" category="list-text">프로파일 및 구성 창에서 구성 파일을 선택한 다음 * 작업 * &gt; * 복원 * 을 클릭합니다.</block>
   <block id="3e5e0d72f574d33f42a3a54dc2f68a21" category="paragraph">Restore * 를 선택하면 Snap Creator Framework Restore 마법사가 자동으로 시작됩니다. 복원 마법사 전체에서 다음 페이지로 이동하려면 * 다음 * 을 클릭하고 이전 페이지로 돌아가려면 * 뒤로 * 를 클릭합니다.</block>
   <block id="0026be306327635206bae50042c4079d" category="inline-link-macro">concept_domino_database_restore_overview.md#GUID-4D864E27-DE54-43BF-9B9F-EF2F240F65D9</block>
-  <block id="790db2e499d327d9a188c2688b4b0ad7" category="admonition">SnapVault 복제본에서 복구하는 경우 운영 또는 보조 스토리지에서 복구하라는 메시지가 표시됩니다. 선택 사항은 에 설명된 제한 사항을 처리하는 방법에 따라 달라집니다 <block ref="0ffc1830d80e572080cbd8ec075981fd" category="inline-link-macro-rx"></block>.</block>
   <block id="9dd91aaa559a62b4d77887a3afb0f151" category="paragraph">단일 파일 복원 * 을 선택합니다.</block>
   <block id="c49bc64c41adaa719020cea972ebf31c" category="list-text">다음 페이지에서 복원하려는 파일을 선택합니다.</block>
   <block id="a2a9c3d132ee3e5990df764d30bab727" category="paragraph">소스 경로 * 필드에 전체 경로 이름과 함께 파일이 표시됩니다.</block>
@@ -884,7 +870,6 @@
   <block id="bd2bccd6198bdccd22e66e9485fa2289" category="paragraph">/INSTALL_PATH/scServer4.1.x/bin/scServer 시작</block>
   <block id="bac2ab3e2eef8e8dab643f76efe93116" category="paragraph">또한 Snap Creator 4.0 설치 디렉토리를 삭제합니다.</block>
   <block id="80403f621f4c2b05686a84b5601e9ea8" category="admonition">이전 버전으로 되돌릴 필요가 없다는 확신이 있을 때까지 백업 복사본을 삭제하지 마십시오.</block>
-  <block id="60423eb91f721e0a33aed7e4eac50e20" category="paragraph">또한 지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다 <block ref="42630c73f8e8aa332e945497c14fb90f" category="inline-link-rx"></block>.</block>
   <block id="82e84f69df06c74df48a9fb785545b73" category="paragraph">HTTPS를 사용하여 연결해야 합니다. 그렇지 않으면 연결이 자동으로 HTTPS 연결로 리디렉션되지 않고 GUI가 작동하지 않습니다.</block>
   <block id="aeef8fa1b8a133bc9bece4161d0545bb" category="inline-xref-macro">UNIX 기반 시스템에 Snap Creator Server 설치</block>
   <block id="4158b3408fd5cbc02c13a182201195cd" category="paragraph"><block ref="4158b3408fd5cbc02c13a182201195cd" category="inline-xref-macro-rx"></block></block>
@@ -1235,7 +1220,6 @@
   <block id="c54ee80e8593e201f44b1a6e9c01d904" category="list-text">설치가 완료되면 * 다음 * 을 클릭합니다.</block>
   <block id="01903e3b334cdd16d2701b61eda9e874" category="paragraph">Snap Creator Server 서비스 설치 중에 설치 옵션의 일부로 서비스를 선택한 경우 명령 프롬프트가 표시됩니다. 이 프로세스는 기존 서비스를 시작하려고 하므로 이 단계의 일부로 나열된 오류 메시지를 확인하는 것이 일반적입니다.</block>
   <block id="5b3c9afe30619ae787968e6b584f143f" category="list-text">Finish * 를 클릭하여 Windows 설치 프로그램을 닫습니다.</block>
-  <block id="50e4c75af866aed1b9452d9e9751d5e1" category="list-text">지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증합니다 <block ref="42630c73f8e8aa332e945497c14fb90f" category="inline-link-rx"></block>.</block>
   <block id="169674b073a9cd8a7012722e7536300b" category="inline-xref-macro">명령 프롬프트에서 서버 시작</block>
   <block id="1e123287cf021a38205b497b35a4de67" category="paragraph"><block ref="1e123287cf021a38205b497b35a4de67" category="inline-xref-macro-rx"></block></block>
   <block id="887aea7f664a36a47399c34f56a58d75" category="summary">Windows 설치 프로그램을 사용하여 Snap Creator Agent를 Windows 호스트에 설치할 수 있습니다.</block>
@@ -1295,7 +1279,6 @@
   <block id="250387257b482e82243fcc2912148272" category="list-text">서버 포트, 시스템 IP 및 Java 입력 용지함 경로를 입력한 다음 메시지를 계속 표시합니다.</block>
   <block id="05d1639bb77ce574920dce6d4b2862fc" category="admonition">작업 모니터 크기 * 에 허용되는 최대 값은 10,000이지만 최대 크기는 1000입니다.</block>
   <block id="bbf93e416f960162a1c199472da774e1" category="list-text">Snap Creator Framework Server를 시작합니다.</block>
-  <block id="5d160ed8ae07687a00086523c3503a4e" category="list-text">지정된 포트에서 로컬 호스트(예:<block ref="4c1ad3a67f3cf2eeb8131c381a9574c4" category="inline-link-rx"></block>.</block>
   <block id="bbb6a1e01690e523a1f4ab3c70489eae" category="paragraph">HTTPS를 사용하여 연결해야 합니다. 그렇지 않으면 GUI가 작동하지 않습니다.</block>
   <block id="da12800860861c59633dbfc17ffe6d2a" category="paragraph">통신이 방화벽을 통과하는 경우 네트워크 포트를 엽니다.</block>
   <block id="1a0ae55af0187cf229884a96ef292d5f" category="summary">UNIX 기반 시스템의 Snap Creator Agent 4.1.x에서 업그레이드할 수 있습니다.</block>
@@ -1346,7 +1329,6 @@
   <block id="d0da6d9060d375a376877e8d69a56596" category="list-text">명령 프롬프트를 열고 Snap Creator 설치 경로(C:\Program Files\NetApp\Snap_Creator_Framework\scServer4.1.x\engine)에서 Engine 하위 디렉토리로 변경합니다.</block>
   <block id="67e6a8afa377814d428d285906805661" category="paragraph">업그레이드 프로세스가 완료되면 다음 중 하나를 수행하여 Snap Creator Server 서비스를 시작합니다.</block>
   <block id="b1ddd4a0d0f04bf0099c13c36075f283" category="list-text">명령 프롬프트에서 'sc start snapcreatorserverservice'를 입력합니다</block>
-  <block id="442e9767828a85b26ac377a4071f0799" category="paragraph">또한 지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다 <block ref="42630c73f8e8aa332e945497c14fb90f" category="inline-link-rx"></block>.</block>
   <block id="7fc79d4b9f950b7f52a866be52616019" category="inline-xref-macro">Snap Creator 서버 설치</block>
   <block id="c9143915a0a3e586dd4f0c977fe4093e" category="paragraph"><block ref="c9143915a0a3e586dd4f0c977fe4093e" category="inline-xref-macro-rx"></block></block>
   <block id="e2ce35b64c1adb4e1ccedbe97695f929" category="summary">Windows 및 UNIX 시스템에서 Snap Creator를 제거할 수 있습니다.</block>
@@ -1844,7 +1826,6 @@
   <block id="eb2cb4bc78804a00d7eeeba505624b68" category="paragraph">SAP 데이터베이스 백업을 실행하면 운영 SAP 시스템에 상당한 성능 영향을 줄 수 있습니다. 백업 시간이 줄어들고 백업해야 하는 데이터의 양이 증가함에 따라 비즈니스 프로세스에 미치는 영향을 최소화하면서 백업을 수행할 수 있는 시점을 정의하기가 어렵습니다. SAP 시스템의 복원 및 복구에 필요한 시간은 다운타임을 최소화해야 하므로 특히 중요합니다.</block>
   <block id="d0485c7814c605733673c3eb73b6d38b" category="summary">Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업을 구성해야 합니다.</block>
   <block id="e62168db839f7eced532152bd538a398" category="doc">Snap Creator 프레임워크 및 SAP HANA 데이터베이스 백업 구성</block>
-  <block id="02910bd24028b122233e4482d05964fd" category="list-text">Snap Creator 그래픽 사용자 인터페이스(GUI)에 연결:<block ref="9dc9badd5cd8ab37fd392481173e134c" category="inline-link-rx"></block>.</block>
   <block id="9c570b1c700912cd7b2e96ed902081dc" category="list-text">설치 중에 구성된 사용자 이름과 암호를 사용하여 로그인합니다. 로그인 * 을 클릭합니다.</block>
   <block id="ebe42e5e31c12cacd2dd99c2a7331bab" category="image-alt">에서는 Snap Creator GUI 로그인을 보여 줍니다</block>
   <block id="00ae7e41c9df04aef30fcd6c4ea3c8e5" category="list-text">프로파일 이름을 입력하고 * 확인 * 을 클릭합니다.</block>
@@ -4624,4 +4605,19 @@
   <block id="388306add449258c47380d6b7db98378" category="paragraph">Operations Manager 콘솔에서 이벤트 생성을 활성화 또는 비활성화합니다.</block>
   <block id="957338adada6845bcc51f661d173fbb3" category="paragraph">다음은 OSSV 백업 프로세스 중 또는 이전에 실행할 스크립트 또는 명령입니다. 여기서 ##는 01부터 99까지의 숫자입니다. 이 기능을 사용하면 OSSV를 이용하여 파일 시스템 스냅샷 복사본을 백업할 수 있습니다.</block>
   <block id="17c3a9f520927a583d184a69999e24cf" category="paragraph">PowerShell의 32비트 버전 사용을 활성화 또는 비활성화합니다.</block>
+  <block id="d686234adc6679bd997bc84acf405f7a" category="inline-link-macro">GUI를 사용하여 구성 파일을 생성하는 작업</block>
+  <block id="389dbc83cdd33ec2f9525698c2615867" category="admonition"><block ref="ae4c2ceef95239719683584bbf3a84c3" category="inline-link-macro-rx"></block> 단계에 설명된 대로 오류가 발생하더라도 플러그인이 백업 작업을 계속 진행하도록 강제할 수 있습니다.</block>
+  <block id="5f85fca306c01161913eac827fa6977a" category="paragraph">볼륨 복원과 단일 파일 복원은 일반적으로 서로 다른 대상 디렉터리를 사용합니다. 백업 및 복원 구성 파일의 Data Restore Directory 매개 변수에서 대상 디렉터리를 지정합니다(단계 <block ref="92738f9d1e8860cb12901f6ce8c9efe3" category="inline-link-macro-rx"></block> 참조):</block>
+  <block id="b092a130c3c3d9105c19f0dff663a5c1" category="paragraph">구성 파일을 생성할 때 changeinfo 볼륨을 백업할 볼륨으로 이미 식별했어야 합니다. 자세한 내용은 <block ref="8e943375bddb4a1ec79831ef3c9ae1a9" category="inline-link-macro-rx"></block> 단계를 참조하십시오.</block>
+  <block id="21d3a5e27bcde8ce5d792042cd07cbcf" category="paragraph">기본적으로 하나 이상의 데이터베이스가 일관되지 않거나 손상된 상태이면 백업 작업이 실패합니다. 오류가 발생하더라도 플러그인이 백업 작업을 계속 진행하도록 강제할 수 있습니다. 자세한 내용은 <block ref="92738f9d1e8860cb12901f6ce8c9efe3" category="inline-link-macro-rx"></block> 단계를 참조하십시오.</block>
+  <block id="22995ec68e29b5e3a880224d8117937a" category="paragraph">자세한 내용은 <block ref="ae4c2ceef95239719683584bbf3a84c3" category="inline-link-macro-rx"></block> 단계를 참조하십시오.</block>
+  <block id="d61982de022c35ef712a538121143630" category="list-text">3단계와 4단계를 반복하여 다른 명령을 추가합니다.</block>
+  <block id="a1173661431508b0244246d26cb1441c" category="admonition">SnapVault 복사본에서 복원하는 경우 운영 스토리지 또는 2차 스토리지에서 복원하라는 메시지가 표시됩니다. 선택은 <block ref="ec60fee3293ee9dd2dd29a8210e13018" category="inline-link-macro-rx"></block>에 설명된 제한 사항을 처리하는 방식에 따라 달라집니다.</block>
+  <block id="bc8a82dc9ff08c82ef1214b79d2a1443" category="list-text">[[thirteenth-step]]Snapshot 세부 정보 페이지에서 Snapshot 구성 정보를 지정합니다.</block>
+  <block id="76db4967480a049adfd4fc0c6b74e3f2" category="list-text">지침은 다음 단계에 있습니다<block ref="d9b421d83918fed17b926e47f4dfb9d5" category="inline-xref-macro-rx"></block>.</block>
+  <block id="6977d3a07cd73545be9fa7fb44508127" category="list-text">지정된 포트에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증하십시오<block ref="03ed9ad94b150aeeee98d3c4058cad05" category="inline-link-rx"></block>.</block>
+  <block id="bce09b564bd742f6b47bceaa26bdd913" category="list-text">지정된 포트의 로컬 호스트로 이동하여(예: <block ref="d620275798bb903394d688f46f99577f" category="inline-link-rx"></block>) Snap Creator Framework GUI 시작을 검증합니다.</block>
+  <block id="e86dfb50925745c4423fcca952f011c3" category="paragraph">지정된 포트 +<block ref="03ed9ad94b150aeeee98d3c4058cad05" category="inline-link-rx"></block>에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다.</block>
+  <block id="a0fece1967628d0210d289574bbf0262" category="paragraph">또한 지정된 포트+<block ref="03ed9ad94b150aeeee98d3c4058cad05" category="inline-link-rx"></block>에서 로컬 호스트로 이동하여 Snap Creator Framework GUI 시작을 검증해야 합니다.</block>
+  <block id="1bb7a8af421762475cdc4503924535c1" category="list-text">Snap Creator 그래픽 사용자 인터페이스(GUI)에 연결합니다: +https://host:8443/ui/+.</block>
 </blocks>
