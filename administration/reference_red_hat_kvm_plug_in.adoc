@@ -54,6 +54,7 @@ NOTE: LHU 키트가 설치되어 있지 않고 구성이 네트워크 연결 스
 
 
 
+[[supported-kvm-configurations]]
 == 지원되는 KVM 구성
 
 * SAN: 원시 다중 경로 장치(다중 경로가 있는 LUN)에 설치된 게스트 가상 시스템을 지원합니다.

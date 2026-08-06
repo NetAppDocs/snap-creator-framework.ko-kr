@@ -15,6 +15,7 @@ summary: 네이티브 Snap Creator 명령 대신 SnapDrive 명령을 사용하�
 
 
 
+[[where-to-run-supplemental-commands]]
 == 추가 명령을 실행할 위치
 
 기본적으로 보조 명령은 Snap Creator Agent에서 실행됩니다. 텍스트 서버에 명령 앞에 콜론(:)을 붙여 서버에서 추가 명령을 실행할 수 있습니다. 예를 들어 server:C:\myscript.bat가 있습니다.
@@ -23,6 +24,7 @@ Agent에서 추가 명령을 실행하려면 Agent의 allowed_commands.config �
 
 
 
+[[where-to-add-supplemental-commands]]
 == 추가 명령을 추가할 위치
 
 Snap Creator GUI 또는 Snap Creator CLI를 사용하여 백업 및 복원 구성에 명령을 추가할 수 있습니다.

@@ -42,6 +42,7 @@ plink.exe 경로를 시스템 환경 변수에 추가하는 방법에 대한 자
 
 
 
+[[supported-citrix-xenserver-configurations]]
 == 지원되는 Citrix XenServer 구성
 
 지원되는 Citrix XenServer 구성은 다음과 같습니다.
@@ -62,6 +63,7 @@ plink.exe 경로를 시스템 환경 변수에 추가하는 방법에 대한 자
 
 
 
+[[parameters]]
 == 매개 변수
 
 다음 표에는 Citrix XenServer 플러그인 매개 변수가 나열되어 있습니다.

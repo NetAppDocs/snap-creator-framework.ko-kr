@@ -18,6 +18,7 @@ NOTE: 일반 Snap Creator 오류에 대한 정보는 다음을 참조하세요.l
 
 
 
+[[domino-plug-in-is-not-supported-on-this-platform]]
 == Domino 플러그인은 이 플랫폼에서 지원되지 않습니다
 
 일반적으로 Domino 플러그인의 사전 요구 사항이 충족되지 않으면 이 오류가 발생합니다. 일반적으로 오류 메시지는 다음과 유사합니다.
@@ -55,12 +56,14 @@ ERROR: [scf-00094] Application environment set for plug-in domino failed
 
 
 
+[[snap-creator-backup-fails-because-of-a-bad-database]]
 == 데이터베이스가 잘못되어 Snap Creator 백업이 실패합니다
 
 기본적으로 하나 이상의 데이터베이스가 일관되지 않거나 손상된 상태이면 백업 작업이 실패합니다. 오류가 발생하더라도 플러그인이 백업 작업을 계속 진행하도록 강제할 수 있습니다. 자세한 내용은 link:task_using_the_gui_to_create_a_configuration_file.html["GUI를 사용하여 구성 파일을 생성하는 작업"] 단계를 참조하십시오.
 
 
 
+[[domino-restore-using-custom-action-fails]]
 == 사용자 지정 작업을 사용한 Domino 복원이 실패합니다
 
 복구 오류는 일반적으로 복구 경로가 올바르게 설정되지 않은 경우에 발생합니다. 경로에 추가 문자 및 백슬래시가 있는지 확인합니다. 또한 데이터 복원 디렉터리가 올바르게 설정되어 있는지 확인합니다.
@@ -84,6 +87,7 @@ Recovery Manager: Recovery only supported for Backup Files.ERROR_CODE:5114
 ----
 
 
+[[all-domino-plug-in-specific-errors]]
 == 모든 Domino 플러그인별 오류
 
 다음 표에는 IBM Domino 플러그인별 오류 메시지가 참조 형식으로 정리되어 있습니다.
